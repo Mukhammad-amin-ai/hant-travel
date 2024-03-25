@@ -583,7 +583,7 @@ const Header = () => {
           </div>
         </div>
         <div className="sidebar-bottom">
-          <div className="hotline-area">
+          {/* <div className="hotline-area">
             <div className="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -597,12 +597,12 @@ const Header = () => {
               </svg>
             </div>
             <div className="content">
-              <span>To More Inquiry</span>
+              <span>Whatsup</span>
               <h6>
                 <a href="tel:+990737621432">+990-737 621 432</a>
               </h6>
             </div>
-          </div>
+          </div> */}
           <div className="email-area">
             <div className="icon">
               <svg

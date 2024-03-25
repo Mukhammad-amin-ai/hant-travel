@@ -34,7 +34,7 @@ export default function Home() {
       <Home1WhyChoose />
       <Home1FacilitySlide />
       <Home1Vise />
-      <Newslatter />
+      {/* <Newslatter /> */}
       <Home1Testimonail />
       <Footer />
     </>

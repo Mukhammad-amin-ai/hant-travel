@@ -1,4 +1,5 @@
 "use client";
+import "react-datepicker/dist/react-datepicker.css";
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
 import Breadcrumb from "@/components/common/Breadcrumb";
@@ -6,12 +7,9 @@ import QuantityCounter from "@/uitils/QuantityCounter";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import DatePicker from "react-datepicker";
-
-import "react-datepicker/dist/react-datepicker.css";
-import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import Topbar from "@/components/topbar/Topbar";
+
 const Page = () => {
   const [isOpen, setOpen] = useState(false);
   const [isOpenimg, setOpenimg] = useState({
@@ -46,7 +44,6 @@ const Page = () => {
   ];
   return (
     <>
-      {/* <Topbar /> */}
       <Header />
       <Breadcrumb pagename="Package Details" pagetitle="Package Details" />
       <div className="package-details-area pt-120 mb-120 position-relative">
@@ -672,7 +669,7 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-              <div className="review-wrapper">
+              {/* <div className="review-wrapper">
                 <h4>Customer Review</h4>
                 <div className="review-box">
                   <div className="total-review">
@@ -698,7 +695,6 @@ const Page = () => {
                       <span>2590 Reviews</span>
                     </div>
                   </div>
-                  {/* modal for review */}
                   <div
                     className="modal fade"
                     id="exampleModalToggle"
@@ -1293,7 +1289,7 @@ const Page = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="col-xl-4">
               <div className="booking-form-wrap mb-40">
@@ -1612,7 +1608,7 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-              <div className="banner2-card">
+              {/* <div className="banner2-card">
                 <img src="/assets/img/innerpage/support-img.jpg" alt="" />
                 <div className="banner2-content-wrap">
                   <div className="banner2-content">
@@ -1638,7 +1634,7 @@ const Page = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -1665,7 +1661,6 @@ const Page = () => {
           />
         </React.Fragment>
       </div>
-      <Newslatter />
       <Footer />
     </>
   );
