@@ -13,7 +13,7 @@ import Topbar from "@/components/topbar/Topbar";
 const page = () => {
   return (
     <>
-      <Topbar />
+      {/* <Topbar /> */}
       <Header />
       <Breadcrumb
         pagename="Package Top Search"

@@ -189,8 +189,7 @@ const Footer = ({style}) => {
                 </li>
               </ul>
               <p>
-                ©Copyright 2023 TripRex | Design By{" "}
-                <a href="https://www.egenslab.com/">Egens Lab</a>
+                ©Copyright 2023 Hant Travel 
               </p>
               <div className="footer-right">
                 <ul>

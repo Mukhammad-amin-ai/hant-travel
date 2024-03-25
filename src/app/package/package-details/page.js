@@ -46,7 +46,7 @@ const Page = () => {
   ];
   return (
     <>
-      <Topbar />
+      {/* <Topbar /> */}
       <Header />
       <Breadcrumb pagename="Package Details" pagetitle="Package Details" />
       <div className="package-details-area pt-120 mb-120 position-relative">

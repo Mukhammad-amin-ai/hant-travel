@@ -60,7 +60,7 @@ const Page = () => {
   }, []);
   return (
     <>
-      <Topbar />
+      {/* <Topbar /> */}
       <Header />
       <Breadcrumb pagename="Package Category" pagetitle="Package Category" />
       <div className="package-category-nav-section">

@@ -48,60 +48,60 @@ const Destination1 = () => {
           <div className="row g-4">
             <div className="col-lg-3 col-sm-6">
               <div className="destination-card">
-                <img src="/assets/img/home1/destination-card-img1.jpg" alt="" />
+                <img style={{height:"350px"}} src="/assets/images/destination/tadjikistanс.jpg" alt="" />
                 <div className="overlay" />
                 <div className="card-title">
-                  <h4>Brazil</h4>
+                  <h4>Tadjikistan</h4>
                 </div>
                 <div className="content">
                   <h4>
-                    <Link href="/destination/destination-details">Brazil</Link>
+                    <Link href="/destination/destination-details">Tadjikistan</Link>
                   </h4>
                   <div className="eg-tag">
-                    <span>50 Tour</span>
+                    <span>0 Tour</span>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-lg-5 col-sm-6">
               <div className="destination-card">
-                <img src="/assets/img/home1/destination-card-img2.jpg" alt="" />
+                <img src="/assets/images/destination/kazakstan.jpg" alt="" />
                 <div className="overlay" />
                 <div className="card-title">
-                  <h4>Italy</h4>
+                  <h4>Kazakhstan</h4>
                 </div>
                 <div className="content">
                   <h4>
-                    <Link href="/destination/destination-details">Italy</Link>
+                    <Link href="/destination/destination-details">Kazakhstan</Link>
                   </h4>
                   <div className="eg-tag">
-                    <span>30 Tour</span>
+                    <span>0 Tour</span>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-lg-4 col-sm-6">
               <div className="destination-card">
-                <img src="/assets/img/home1/destination-card-img3.jpg" alt="" />
+                <img style={{height:"350px"}} src="/assets/images/destination/kyrgyzstan.jpg" alt="" />
                 <div className="overlay" />
                 <div className="card-title">
-                  <h4>New York</h4>
+                  <h4>Kyrgyzstan</h4>
                 </div>
                 <div className="content">
                   <h4>
                     <Link href="/destination/destination-details">
-                      New York
+                    Kyrgyzstan
                     </Link>
                   </h4>
                   <div className="eg-tag">
-                    <span>30 Tour</span>
+                    <span>0 Tour</span>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-lg-5 col-sm-6">
               <div className="destination-card">
-                <img src="/assets/img/home1/destination-card-img4.jpg" alt="" />
+                <img src="/assets/images/destination/saudi.jpg" alt="" />
                 <div className="overlay" />
                 <div className="card-title">
                   <h4>Saudi Arab</h4>
@@ -120,14 +120,14 @@ const Destination1 = () => {
             </div>
             <div className="col-lg-3 col-sm-6">
               <div className="destination-card">
-                <img src="/assets/img/home1/destination-card-img5.jpg" alt="" />
+                <img style={{height:"302px"}} src="/assets/images/destination/uaa.jpg" alt="" />
                 <div className="overlay" />
                 <div className="card-title">
-                  <h4>Europe</h4>
+                  <h4>UAA</h4>
                 </div>
                 <div className="content">
                   <h4>
-                    <Link href="/destination/destination-details">Europe</Link>
+                    <Link href="/destination/destination-details">UAA</Link>
                   </h4>
                   <div className="eg-tag">
                     <span>50 Tour</span>

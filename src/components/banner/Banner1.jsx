@@ -41,7 +41,7 @@ const Banner1 = () => {
                   className="home1-banner-wrapper"
                   style={{
                     backgroundImage:
-                      "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(assets/images/Registan.jpg)",
+                      "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(assets/images/banner/Registan.jpg)",
                   }}
                 >
                   <div className="container">
@@ -124,7 +124,7 @@ const Banner1 = () => {
                   className="home1-banner-wrapper"
                   style={{
                     backgroundImage:
-                      "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(assets/images/ark.jpg)",
+                      "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(assets/images/banner/ark.jpg)",
                   }}
                 >
                   <div className="container">
@@ -207,7 +207,7 @@ const Banner1 = () => {
                   className="home1-banner-wrapper"
                   style={{
                     backgroundImage:
-                      "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(assets/images/shahrisabz.jpg)",
+                      "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(assets/images/banner/shahrisabz.jpg)",
                   }}
                 >
                   <div className="container">
@@ -290,7 +290,7 @@ const Banner1 = () => {
                   className="home1-banner-wrapper"
                   style={{
                     backgroundImage:
-                      "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(assets/images/xiva.jpg)",
+                      "linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(assets/images/banner/xiva.jpg)",
                   }}
                 >
                   <div className="container">
