@@ -30,6 +30,8 @@ export default function Home() {
       {/* <Topbar2 /> */}
       {/* <Home1popularTour /> */}
       {/* <Home1Blog /> */}
+      {/* <Home1Activities />
+      <Home1Banner2 /> */}
       <Header />
       <Banner1 />
       <Banner1Bottom />
@@ -39,8 +41,6 @@ export default function Home() {
       <Home1TourPackage />
       <Home1WhyChoose />
       <Home1FacilitySlide />
-      <Home1Activities />
-      <Home1Banner2 />
       <Home1Vise />
       <Newslatter />
       <Home1Testimonail />

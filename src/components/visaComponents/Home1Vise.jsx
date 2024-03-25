@@ -52,7 +52,7 @@ const Home1Vise = () => {
   }, []);
   return (
     <>
-      <div className="visa-section mb-120">
+      <div className="visa-section mb-120 mt-120">
         <img
           src="/assets/img/home1/section-vector2.png"
           alt=""
@@ -124,7 +124,8 @@ const Home1Vise = () => {
                     <div className="package-card2">
                       <Link href="/visas/visas-details">
                         <img
-                          src="/assets/img/home1/package-card2-img1.png"
+                          style={{ height: "415px !important" }}
+                          src="/assets/images/destination/egypt.jpg"
                           alt=""
                         />
                       </Link>
@@ -138,7 +139,7 @@ const Home1Vise = () => {
                           <h6>E-Visa - Only Processing</h6>
                         </div>
                         <div className="price-area">
-                          <span>$5,978</span>
+                          <span>$1,000</span>
                           <p>TAXES INCL/PERS</p>
                         </div>
                       </div>
@@ -148,13 +149,14 @@ const Home1Vise = () => {
                     <div className="package-card2 style-2">
                       <Link href="/visas/visas-details">
                         <img
-                          src="/assets/img/home1/package-card2-img2.png"
+                          style={{ height: "415px !important" }}
+                          src="/assets/images/destination/saudi.jpg"
                           alt=""
                         />
                       </Link>
                       <div className="eg-tag">
                         <h4>
-                          <Link href="/visas/visas-details">NEPAL</Link>
+                          <Link href="/visas/visas-details">Saudi Arabia</Link>
                         </h4>
                       </div>
                       <div className="package-card2-content">
@@ -162,7 +164,7 @@ const Home1Vise = () => {
                           <h6>E-Visa - Only Processing</h6>
                         </div>
                         <div className="price-area">
-                          <span>$4,618</span>
+                          <span>$1,000</span>
                           <p>TAXES INCL/PERS</p>
                         </div>
                       </div>
@@ -172,13 +174,14 @@ const Home1Vise = () => {
                     <div className="package-card2">
                       <Link href="/visas/visas-details">
                         <img
-                          src="/assets/img/home1/package-card2-img3.png"
+                          style={{ height: "415px !important" }}
+                          src="/assets/images/destination/uaa.jpg"
                           alt=""
                         />
                       </Link>
                       <div className="eg-tag">
                         <h4>
-                          <Link href="/visas/visas-details">NEW YORK</Link>
+                          <Link href="/visas/visas-details">UAA</Link>
                         </h4>
                       </div>
                       <div className="package-card2-content">
@@ -186,7 +189,7 @@ const Home1Vise = () => {
                           <h6>E-Visa - Only Processing</h6>
                         </div>
                         <div className="price-area">
-                          <span>$3,798</span>
+                          <span>$1,000</span>
                           <p>TAXES INCL/PERS</p>
                         </div>
                       </div>
@@ -196,7 +199,8 @@ const Home1Vise = () => {
                     <div className="package-card2 style-2">
                       <Link href="/visas/visas-details">
                         <img
-                          src="/assets/img/home1/package-card2-img4.png"
+                          style={{ height: "415px !important" }}
+                          src="/assets/images/visa/india.jpg"
                           alt=""
                         />
                       </Link>
@@ -210,31 +214,7 @@ const Home1Vise = () => {
                           <h6>E-Visa - Only Processing</h6>
                         </div>
                         <div className="price-area">
-                          <span>$3,618</span>
-                          <p>TAXES INCL/PERS</p>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <div className="package-card2">
-                      <Link href="/visas/visas-details">
-                        <img
-                          src="/assets/img/home1/package-card2-img5.png"
-                          alt=""
-                        />
-                      </Link>
-                      <div className="eg-tag">
-                        <h4>
-                          <Link href="/visas/visas-details">Brazil</Link>
-                        </h4>
-                      </div>
-                      <div className="package-card2-content">
-                        <div className="title">
-                          <h6>E-Visa - Only Processing</h6>
-                        </div>
-                        <div className="price-area">
-                          <span>$8,798</span>
+                          <span>$1,000</span>
                           <p>TAXES INCL/PERS</p>
                         </div>
                       </div>

@@ -131,22 +131,6 @@ const Home1Testimonail = () => {
               <li className="nav-item" role="presentation">
                 <div
                   className="nav-link"
-                  id="facebook-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#facebook"
-                  role="tab"
-                  aria-controls="facebook"
-                  aria-selected="false"
-                >
-                  <div className="icon">
-                    <img src="/assets/img/home1/icon/facebook-logo.svg" alt="" />
-                  </div>
-                  Facebook
-                </div>
-              </li>
-              <li className="nav-item" role="presentation">
-                <div
-                  className="nav-link"
                   id="google-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#google"
