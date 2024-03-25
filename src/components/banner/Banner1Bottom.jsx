@@ -28,7 +28,7 @@ const Banner1Bottom = () => {
                 Tour
               </button>
             </li>
-            <li className="nav-item" role="presentation">
+            {/* <li className="nav-item" role="presentation">
               <button className="nav-link" id="hotel-tab" data-bs-toggle="pill" data-bs-target="#hotel" type="button" role="tab" aria-controls="hotel" aria-selected="false">
                 <svg xmlns="http://www.w3.org/2000/svg" width={23} height={23} viewBox="0 0 23 23">
                   <g>
@@ -37,7 +37,7 @@ const Banner1Bottom = () => {
                 </svg>
                 Hotel
               </button>
-            </li>
+            </li> */}
             <li className="nav-item" role="presentation">
               <button className="nav-link" id="visa-tab" data-bs-toggle="pill" data-bs-target="#visa" type="button" role="tab" aria-controls="visa" aria-selected="false">
                 <svg xmlns="http://www.w3.org/2000/svg" width={23} height={23} viewBox="0 0 23 23">
@@ -54,7 +54,7 @@ const Banner1Bottom = () => {
                 Activities
               </button>
             </li>
-            <li className="nav-item" role="presentation">
+            {/* <li className="nav-item" role="presentation">
               <button className="nav-link" id="transport-tab" data-bs-toggle="pill" data-bs-target="#transport" type="button" role="tab" aria-controls="transport" aria-selected="false">
                 <svg xmlns="http://www.w3.org/2000/svg" width={23} height={23} viewBox="0 0 51 51">
                   <path fillRule="evenodd" clipRule="evenodd" d="M45.8564 34.4958C45.8564 35.7619 46.8834 36.7871 48.1488 36.7871H50.2528C50.5289 36.7871 50.7528 36.5633 50.7528 36.2871V31.249C50.7528 30.9728 50.5289 30.749 50.2528 30.749H48.1488C46.883 30.749 45.8564 31.7757 45.8564 33.0413V34.4958ZM48.1488 35.7871C47.435 35.7871 46.8564 35.2088 46.8564 34.4958V33.0413C46.8564 32.328 47.4354 31.749 48.1488 31.749H49.7528V35.7871H48.1488Z" />
@@ -75,7 +75,7 @@ const Banner1Bottom = () => {
                 </svg>
                 Transport
               </button>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="filter-group">
