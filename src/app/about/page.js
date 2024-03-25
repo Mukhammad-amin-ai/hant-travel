@@ -7,9 +7,9 @@ import Home2Team from "@/components/team/Home2Team";
 import Home2WhyChoose from "@/components/whyChoose/Home2WhyChoose";
 import Home2About from "@/components/about/Home2About";
 export const metadata = {
-  title: "TripRex - Tour & Travel Agency  NextJs Template",
+  title: "HANT TRAVEL",
   description:
-    "TripRex is a NextJs Template for Tour and Travel Agency purpose",
+    "About HANT TRAVEL tour agency",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },

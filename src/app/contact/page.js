@@ -1,5 +1,14 @@
 import React from "react";
 
+export const metadata = {
+  title: "HANT TRAVEL",
+  description:
+    "Contact us",
+  icons: {
+    icon: "/assets/img/sm-logo.svg",
+  },
+};
+
 const page = () => {
   return (
     <>

@@ -1,27 +1,24 @@
-"use client";
+// "use client";
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import Topbar from "@/components/topbar/Topbar";
 import SelectComponent from "@/uitils/SelectComponent";
 import Link from "next/link";
 import React from "react";
 
+export const metadata = {
+  title: "HANT TRAVEL",
+  description:
+    "Hant travel our best tour packages",
+  icons: {
+    icon: "/assets/img/sm-logo.svg",
+  },
+};
 
-// export const metadata = {
-//   title: "HANT TRAVEL",
-//   description:
-//     "Hant travel tour agency official webpage",
-//   icons: {
-//     icon: "/assets/img/sm-logo.svg",
-//   },
-// };
 
 const page = () => {
   return (
     <>
-      {/* <Topbar /> */}
       <Header />
       <Breadcrumb pagename="Package Grid" pagetitle="Package Grid" />
       <div className="package-grid-with-sidebar-section pt-120 mb-120">
@@ -799,7 +796,6 @@ const page = () => {
           </div>
         </div>
       </div>
-      <Newslatter />
       <Footer />
     </>
   );

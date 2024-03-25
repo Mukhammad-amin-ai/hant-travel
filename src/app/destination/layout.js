@@ -4,9 +4,9 @@ import Header from "@/components/header/Header";
 import Topbar from "@/components/topbar/Topbar";
 import React from "react";
 export const metadata = {
-  title: "TripRex - Tour & Travel Agency  NextJs Template",
+  title: "HANT TRAVEL",
   description:
-    "TripRex is a NextJs Template for Tour and Travel Agency purpose",
+    "Hant travel our best tour destinations",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },
