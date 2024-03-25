@@ -1,14 +1,12 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import Topbar from "@/components/topbar/Topbar";
 import Link from "next/link";
 import React from "react";
 export const metadata = {
-  title: "TripRex - Tour & Travel Agency  NextJs Template",
+  title: "HANT TRAVEL",
   description:
-    "TripRex is a NextJs Template for Tour and Travel Agency purpose",
+    "Frequently asked question",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },
@@ -16,13 +14,12 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <Topbar />
       <Header />
       <Breadcrumb pagename="FAQ" pagetitle="FAQ" />
       <div className="faq-section pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5">
-            <div className="col-lg-4">
+            {/* <div className="col-lg-4">
               <div className="banner-and-inquiry-form">
                 <div className="banner2-card four">
                   <img src="/assets/img/home1/banner2-card-img2.png" alt="" />
@@ -38,7 +35,7 @@ const page = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="col-lg-8">
               <div className="faq-content-wrap mb-80">
                 <div className="faq-content-title mb-50">
@@ -375,7 +372,6 @@ const page = () => {
           </div>
         </div>
       </div>
-      <Newslatter />
       <Footer />
     </>
   );

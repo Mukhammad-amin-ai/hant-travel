@@ -114,5 +114,11 @@
         "label": "Contact",
         "link": "/contact",
         "icon": false
+    },
+    {
+        "id": "6",
+        "label": "FAQ",
+        "link": "/faq",
+        "icon": false
     }
 ]
