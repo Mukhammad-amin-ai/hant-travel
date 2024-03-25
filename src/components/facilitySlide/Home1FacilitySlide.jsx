@@ -284,7 +284,7 @@ const Home1FacilitySlide = () => {
             </div>
             <div className="col-lg-6">
               <div className="franctional-slider-right-img">
-                <img src="/assets/img/home1/facility-img.png" alt="" />
+                <img src="/assets/images/facilitiyslide/tour-agency.webp" alt="" />
                 <div className="logo">
                   <img
                     src="/assets/img/home1/icon/tripadvisor-logo2.svg "

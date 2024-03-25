@@ -40,7 +40,7 @@ const Home1WhyChoose = () => {
                     />
                   </svg>
                 </span>
-                <h2>Why Choose TripRex</h2>
+                <h2>Why Choose Hant Travel</h2>
               </div>
             </div>
           </div>
