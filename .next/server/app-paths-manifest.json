@@ -1,5 +1,6 @@
 {
+  "/package/page": "app/package/page.js",
   "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/destination/page": "app/destination/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/blog/page": "app/blog/page.js"
 }

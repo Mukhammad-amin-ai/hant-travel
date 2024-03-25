@@ -1,16 +1,16 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/page.css",
+      "static/chunks/app/page.js"
     ],
     "/loading": [
       "static/chunks/webpack.js",
@@ -22,25 +22,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
     ],
-    "/contact/page": [
+    "/package/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contact/page.js"
+      "static/chunks/app/package/page.js"
     ],
-    "/contact/layout": [
+    "/blog/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/contact/layout.js"
-    ],
-    "/destination/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/destination/page.js"
-    ],
-    "/destination/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/destination/layout.js"
+      "static/chunks/app/blog/page.js"
     ]
   }
 }
