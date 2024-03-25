@@ -43,7 +43,7 @@ const About1 = () => {
                       />
                     </svg>
                   </span>
-                  <h2>Let’s know About Our Journey For TripRex.</h2>
+                  <h2>Let’s know About Our Journey For Hant Travel.</h2>
                 </div>
                 <ul className="nav nav-pills" id="pills-tab3" role="tablist">
                   <li className="nav-item" role="presentation">
@@ -143,9 +143,9 @@ const About1 = () => {
                     More About
                   </Link>
                   <div className="counter-area">
-                    <div className="customer-img-grp">
+                    {/* <div className="customer-img-grp">
                       <img src="/assets/img/home1/customer-img-grp.png" alt="" />
-                    </div>
+                    </div> */}
                     <div className="content">
                       <div className="number">
                         <h6 className="counter">
@@ -160,8 +160,8 @@ const About1 = () => {
               </div>
             </div>
             <div className="col-lg-6 d-flex justify-content-end">
-              <div className="about-img">
-                <img src="/assets/img/home1/about-img.png" alt="" />
+              <div className="about-img" style={{paddingTop:"50px"}}>
+                <img style={{borderRadius:"20px"}} src="/assets/images/about/travel-agency.jpg" alt="" />
                 <img
                   src="/assets/img/home1//vector/about-img-bg-vector.svg"
                   alt=""

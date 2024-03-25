@@ -94,7 +94,7 @@ const Home1Fecilities2 = () => {
                     Tour Package
                   </button>
                 </li>
-                <li className="nav-item" role="presentation">
+                {/* <li className="nav-item" role="presentation">
                   <button
                     className="nav-link"
                     id="Hotel-tab"
@@ -213,7 +213,7 @@ const Home1Fecilities2 = () => {
                     </svg>
                     Transports
                   </button>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
