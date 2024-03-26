@@ -189,7 +189,7 @@ const page = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
-        <div className="banner3-section">
+        {/* <div className="banner3-section">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -228,7 +228,7 @@ const page = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -138,10 +138,10 @@ const Home2About = () => {
               </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center">
-              <div className="about-img-wrap">
+              <div className="about-img-wrap" >
                 <div className="about-img">
                   <img
-                    src="/assets/img/home2/home2-about-img1.png"
+                    src="/assets/images/about/tour-agency.jpg"
                     alt=""
                     className="about-img"
                   />

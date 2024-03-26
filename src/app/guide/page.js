@@ -19,7 +19,7 @@ const page = () => {
               <div className="teams-card">
                 <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                 <div className="teams-img">
-                  <img src="/assets/img/home2/teams-card-img1.png" alt="" />
+                  <img src="/assets/images/guid/teams-card-img1.png" alt="" />
                 </div>
                 <div className="teams-content">
                   <h4>Landry Palmer</h4>
@@ -62,7 +62,7 @@ const page = () => {
               <div className="teams-card">
                 <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                 <div className="teams-img">
-                  <img src="/assets/img/home2/teams-card-img2.png" alt="" />
+                  <img src="/assets/images/guid/teams-card-img2.png" alt="" />
                 </div>
                 <div className="teams-content">
                   <h4>Jackson Mason</h4>
@@ -105,7 +105,7 @@ const page = () => {
               <div className="teams-card">
                 <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                 <div className="teams-img">
-                  <img src="/assets/img/home2/teams-card-img3.png" alt="" />
+                  <img src="/assets/images/guid/teams-card-img3.png" alt="" />
                 </div>
                 <div className="teams-content">
                   <h4>Joseph David</h4>
@@ -148,7 +148,7 @@ const page = () => {
               <div className="teams-card">
                 <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                 <div className="teams-img">
-                  <img src="/assets/img/home2/teams-card-img4.png" alt="" />
+                  <img src="/assets/images/guid/teams-card-img4.png" alt="" />
                 </div>
                 <div className="teams-content">
                   <h4>Josiah Caleb</h4>
@@ -191,7 +191,7 @@ const page = () => {
               <div className="teams-card">
                 <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                 <div className="teams-img">
-                  <img src="/assets/img/home2/teams-card-img5.png" alt="" />
+                  <img src="/assets/images/guid/teams-card-img5.png" alt="" />
                 </div>
                 <div className="teams-content">
                   <h4>David Luis</h4>
@@ -234,7 +234,7 @@ const page = () => {
               <div className="teams-card">
                 <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                 <div className="teams-img">
-                  <img src="/assets/img/home2/teams-card-img6.png" alt="" />
+                  <img src="/assets/images/guid/teams-card-img6.png" alt="" />
                 </div>
                 <div className="teams-content">
                   <h4>Alison Bekkar</h4>
@@ -277,7 +277,7 @@ const page = () => {
               <div className="teams-card">
                 <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                 <div className="teams-img">
-                  <img src="/assets/img/home2/teams-card-img7.png" alt="" />
+                  <img src="/assets/images/guid/teams-card-img7.png" alt="" />
                 </div>
                 <div className="teams-content">
                   <h4>Arthor Morgan</h4>
