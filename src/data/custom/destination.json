@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "img": "/assets/images/destination/tadjikistan.jpg",
+    "name": "Tadjikistan",
+    "tours": "0",
+    "class": "col-lg-3"
+  },
+  {
+    "id": 2,
+    "img": "/assets/images/destination/kazakstan.jpg",
+    "name": "Kazakhstan",
+    "tours": "0",
+    "class": "col-lg-5"
+  },
+  {
+    "id": 3,
+    "img": "/assets/images/destination/kyrgyzstan.jpg",
+    "name": "Kyrgyzstan",
+    "tours": "0",
+    "class": "col-lg-4"
+  },
+  {
+    "id": 4,
+    "img": "/assets/images/destination/saudi.jpg",
+    "name": "Saudi Arab",
+    "tours": "0",
+    "class": "col-lg-4"
+  },
+  {
+    "id": 5,
+    "img": "/assets/images/destination/uaa.jpg",
+    "name": "UAA",
+    "tours": "0",
+    "class": "col-lg-3"
+  },
+  {
+    "id": 6,
+    "img": "/assets/images/destination/egypt.jpg",
+    "name": "Egypt",
+    "tours": "0",
+    "class": "col-lg-5"
+  },
+  {
+    "id": 7,
+    "img": "/assets/images/destination/iran.jpg",
+    "name": "Iran",
+    "tours": "0",
+    "class": "col-lg-3"
+  },
+  {
+    "id": 8,
+    "img": "/assets/images/destination/turkmenistan.jpg",
+    "name": "Turkmenistan",
+    "tours": "0",
+    "class": "col-lg-5"
+  },
+  {
+    "id": 8,
+    "img": "/assets/images/destination/georgia.jpg",
+    "name": "Georgia",
+    "tours": "0",
+    "class": "col-lg-4"
+  }
+]
