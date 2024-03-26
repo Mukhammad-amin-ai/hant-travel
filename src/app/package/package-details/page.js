@@ -1,3 +1,4 @@
+"use client";
 import "react-datepicker/dist/react-datepicker.css";
 import React, { useState } from "react";
 import ModalVideo from "react-modal-video";
@@ -8,17 +9,6 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import DatePicker from "react-datepicker";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-
-
-export const metadata = {
-  title: "HANT TRAVEL",
-  description:
-    "Tour packege details",
-  icons: {
-    icon: "/assets/img/sm-logo.svg",
-  },
-};
-
 
 const Page = () => {
   const [isOpen, setOpen] = useState(false);
