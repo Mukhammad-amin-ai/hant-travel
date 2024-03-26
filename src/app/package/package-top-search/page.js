@@ -8,12 +8,10 @@ import GuestDropdown from "@/components/banner/GuestDropdown";
 import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import Topbar from "@/components/topbar/Topbar";
 
 const page = () => {
   return (
     <>
-      {/* <Topbar /> */}
       <Header />
       <Breadcrumb
         pagename="Package Top Search"

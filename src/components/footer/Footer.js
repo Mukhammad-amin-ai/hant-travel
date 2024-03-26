@@ -41,12 +41,6 @@ const Footer = ({style}) => {
                   <li>
                     <Link href="/package-grid">Tour Package</Link>
                   </li>
-                  <li>
-                    <Link href="/guide2">Tour Guide</Link>
-                  </li>
-                  <li>
-                    <Link href="/blog-grid">Article</Link>
-                  </li>
                 </ul>
               </div>
             </div>

@@ -13,7 +13,6 @@ import Link from "next/link";
 import Footer from "@/components/footer/Footer";
 import Newslatter from "@/components/common/Newslatter";
 import Header from "@/components/header/Header";
-import Topbar from "@/components/topbar/Topbar";
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
 
@@ -60,7 +59,6 @@ const Page = () => {
   }, []);
   return (
     <>
-      {/* <Topbar /> */}
       <Header />
       <Breadcrumb pagename="Package Category" pagetitle="Package Category" />
       <div className="package-category-nav-section">

@@ -294,10 +294,10 @@ const Home1FacilitySlide = () => {
               </div>
             </div>
           </div>
-          <div className="rating-wrapper">
+          {/* <div className="rating-wrapper">
             <img src="/assets/img/home1/rating-img1.png" alt="" />
             <img src="/assets/img/home1/rating-img2.png" alt="" />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

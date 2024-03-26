@@ -3,7 +3,6 @@ import React from "react";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import QuantityCounter from "@/uitils/QuantityCounter";
 import Link from "next/link";
-import Topbar from "@/components/topbar/Topbar";
 import Header from "@/components/header/Header";
 import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
@@ -18,7 +17,6 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      {/* <Topbar /> */}
       <Header />
       <Breadcrumb pagename="Visa" pagetitle="Visa" />
       <div className="package-search-filter-wrapper">

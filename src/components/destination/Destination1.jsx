@@ -48,14 +48,20 @@ const Destination1 = () => {
           <div className="row g-4">
             <div className="col-lg-3 col-sm-6">
               <div className="destination-card">
-                <img style={{height:"350px"}} src="/assets/images/destination/tadjikistanс.jpg" alt="" />
+                <img
+                  style={{ height: "350px" }}
+                  src="/assets/images/destination/tadjikistanс.jpg"
+                  alt=""
+                />
                 <div className="overlay" />
                 <div className="card-title">
                   <h4>Tadjikistan</h4>
                 </div>
                 <div className="content">
                   <h4>
-                    <Link href="/destination/destination-details">Tadjikistan</Link>
+                    <Link href="/destination/destination-details">
+                      Tadjikistan
+                    </Link>
                   </h4>
                   <div className="eg-tag">
                     <span>0 Tour</span>
@@ -72,7 +78,9 @@ const Destination1 = () => {
                 </div>
                 <div className="content">
                   <h4>
-                    <Link href="/destination/destination-details">Kazakhstan</Link>
+                    <Link href="/destination/destination-details">
+                      Kazakhstan
+                    </Link>
                   </h4>
                   <div className="eg-tag">
                     <span>0 Tour</span>
@@ -82,7 +90,11 @@ const Destination1 = () => {
             </div>
             <div className="col-lg-4 col-sm-6">
               <div className="destination-card">
-                <img style={{height:"350px"}} src="/assets/images/destination/kyrgyzstan.jpg" alt="" />
+                <img
+                  style={{ height: "350px" }}
+                  src="/assets/images/destination/kyrgyzstan.jpg"
+                  alt=""
+                />
                 <div className="overlay" />
                 <div className="card-title">
                   <h4>Kyrgyzstan</h4>
@@ -90,7 +102,7 @@ const Destination1 = () => {
                 <div className="content">
                   <h4>
                     <Link href="/destination/destination-details">
-                    Kyrgyzstan
+                      Kyrgyzstan
                     </Link>
                   </h4>
                   <div className="eg-tag">
@@ -120,7 +132,11 @@ const Destination1 = () => {
             </div>
             <div className="col-lg-3 col-sm-6">
               <div className="destination-card">
-                <img style={{height:"302px"}} src="/assets/images/destination/uaa.jpg" alt="" />
+                <img
+                  style={{ height: "302px" }}
+                  src="/assets/images/destination/uaa.jpg"
+                  alt=""
+                />
                 <div className="overlay" />
                 <div className="card-title">
                   <h4>UAA</h4>
@@ -136,7 +152,7 @@ const Destination1 = () => {
               </div>
             </div>
             <div className="col-lg-4 col-sm-6">
-              <div className="destination-banner">
+              {/* <div className="destination-banner">
                 <div className="destination-banner-content">
                   <div className="batch">
                     <span>Get 10% Off</span>
@@ -145,6 +161,25 @@ const Destination1 = () => {
                   <Link href="/destination" className="primary-btn1">
                     View All Destination
                   </Link>
+                </div>
+              </div> */}
+              <div className="destination-card">
+                <img
+                  style={{ height: "302px" }}
+                  src="/assets/images/destination/egypt.jpg"
+                  alt=""
+                />
+                <div className="overlay" />
+                <div className="card-title">
+                  <h4>Egypt</h4>
+                </div>
+                <div className="content">
+                  <h4>
+                    <Link href="/destination/destination-details">Egypt</Link>
+                  </h4>
+                  <div className="eg-tag">
+                    <span>0 Tour</span>
+                  </div>
                 </div>
               </div>
             </div>

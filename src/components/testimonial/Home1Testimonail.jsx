@@ -972,7 +972,8 @@ const Home1Testimonail = () => {
                       </div>
                     </Swiper>
                   </div>
-                  <div
+
+                  {/* <div
                     className="tab-pane fade"
                     id="facebook"
                     role="tabpanel"
@@ -1393,7 +1394,8 @@ const Home1Testimonail = () => {
                         </SwiperSlide>
                       </div>
                     </Swiper>
-                  </div>
+                  </div> */}
+                 
                   <div
                     className="tab-pane fade"
                     id="google"
