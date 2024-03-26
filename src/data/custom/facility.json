@@ -1,0 +1,21 @@
+[
+    {
+        "id": "1",
+        "batch": "6 Days / 5 Night",
+        "img": "/assets/img/home1/package-card-img1.png",
+        "location_list": [
+            "Nepal",
+            "Indonesia Tour"
+        ],
+        "title": "A Journey through Historical and Culture.",
+        "price": "8,629",
+        "place_list": [
+            "Mecca",
+            "Medina",
+            "Riyadh",
+            "Doha",
+            "Al Wakrah",
+            "Al Rayyan"
+        ]
+    }
+]

@@ -780,7 +780,7 @@ const Home1Fecilities2 = () => {
                     </div>
                   </div>
                 </div>
-                <div
+                 {/* <div
                   className="tab-pane fade"
                   id="Hotel"
                   role="tabpanel"
@@ -2593,8 +2593,8 @@ const Home1Fecilities2 = () => {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  </div> 
+                </div> */}
               </div>
             </div>
           </div>

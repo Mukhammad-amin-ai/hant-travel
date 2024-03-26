@@ -1,9 +1,9 @@
 {
-  "/package/package-details/page": "app/package/package-details/page.js",
-  "/about/page": "app/about/page.js",
-  "/package/page": "app/package/page.js",
-  "/faq/page": "app/faq/page.js",
   "/page": "app/page.js",
+  "/visas/visas-details/page": "app/visas/visas-details/page.js",
+  "/package/package-details/page": "app/package/package-details/page.js",
+  "/package/page": "app/package/page.js",
+  "/not-found": "app/not-found.js",
   "/contact/page": "app/contact/page.js",
-  "/destination/page": "app/destination/page.js"
+  "/destination/destination-details/page": "app/destination/destination-details/page.js"
 }

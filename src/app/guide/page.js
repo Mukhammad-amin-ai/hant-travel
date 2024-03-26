@@ -1,8 +1,8 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 export const metadata = {
-  title: "Hant Travel - Tour & Travel Agency  NextJs Template",
+  title: "HANT TRAVEL",
   description:
-    "Hant Travel is a NextJs Template for Tour and Travel Agency purpose",
+    "Hant Travel's tour guide's",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },

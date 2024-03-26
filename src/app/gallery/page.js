@@ -1,10 +1,20 @@
-"use client";
-import Newslatter from "@/components/common/Newslatter";
+
+import { useState } from "react";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+
+export const metadata = {
+  title: "HANT TRAVEL",
+  description:
+    "Gallery",
+  icons: {
+    icon: "/assets/img/sm-logo.svg",
+  },
+};
+
+
 
 const Page = () => {
   const [isOpenimg, setOpenimg] = useState({
@@ -186,7 +196,6 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <Newslatter />
       <Footer />
       <Lightbox
         className="img-fluid"

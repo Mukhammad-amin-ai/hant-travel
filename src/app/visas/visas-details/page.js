@@ -5,9 +5,9 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import SelectComponent from "@/uitils/SelectComponent";
 export const metadata = {
-  title: "Hant Travel - Tour & Travel Agency  NextJs Template",
+  title: "HANT TRAVEL",
   description:
-    "Hant Travel is a NextJs Template for Tour and Travel Agency purpose",
+    "Visa Deatils",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },
