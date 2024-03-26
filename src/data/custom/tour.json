@@ -1,18 +1,82 @@
 [
   {
     "id": "1",
-    "batch": "3 Days / 4 Night",
-    "img": "/assets/img/home1/package-card-img1.png",
-    "location_list": ["Nepal", "Indonesia Tour"],
-    "title": "A Journey through Historical and Culture.",
-    "price": "8,629",
+    "batch": "6 Days / 5 Night",
+    "img": "/assets/images/tour/uzbekistan.jpg",
+    "location_list": ["Uzbekistan Tour"],
+    "title": "Three capitals of Uzbekistan",
+    "price": "980",
+    "place_list": ["Tashkent", "Samarkand", "Bukhara", "Tashkent"]
+  },
+  {
+    "id": "2",
+    "batch": "8 Days / 7 Night",
+    "img": "/assets/images/tour/Khiva.jpg",
+    "location_list": ["Uzbekistan Tour"],
+    "title": "Four pearls of Uzbekistan",
+    "price": "2728 ",
+    "place_list": ["Khiva", "Bukhara", "Samarkand", "Tashkent"]
+  },
+  {
+    "id": "3",
+    "batch": "4 Days",
+    "img": "/assets/images/tour/buhara.jpg",
+    "location_list": ["Uzbekistan Tour"],
+    "title": "Two Legends",
+    "price": "2728 ",
+    "place_list": ["Bukhara", "Samarkand"]
+  },
+  {
+    "id": "4",
+    "batch": "2 Weeks",
+    "img": "/assets/images/tour/central-asia.jpg",
+    "location_list": ["Central Asia"],
+    "title": "Central Asia Tour in 2 weeks",
+    "price": "530 ",
     "place_list": [
-      "Mecca",
-      "Medina",
-      "Riyadh",
-      "Doha",
-      "Al Wakrah",
-      "Al Rayyan"
+      "Kazakhstan",
+      "Kyrgyzstan",
+      "Uzbekistan",
+      "Tadjikistan",
+      "Turkmenistan"
+    ]
+  },
+  {
+    "id": "5",
+    "batch": " 14 Day",
+    "img": "/assets/images/tour/Urganch.jpg",
+    "location_list": ["Uzbekistan Tour"],
+    "title": "Creative Tour in Uzbekistan",
+    "price": "2250",
+    "place_list": [
+      "Urganch",
+      "Khiva",
+      "Bukhara",
+      "Samarkand",
+      "Shakhrisabz",
+      "Tashkent"
+    ]
+  },
+  {
+    "id": "6",
+    "batch": "14 Day",
+    "img": "/assets/images/tour/Bishkek.jpg",
+    "location_list": ["Central Asia Tourr"],
+    "title": "Central Asia Tour",
+    "price": "3215",
+    "place_list": [
+      "Bishkek",
+      "Burana",
+      "Issyk Kul",
+      "Osh",
+      "Fergana",
+      "Tashkent",
+      "Kokand",
+      "Urganch",
+      "Khiva",
+      "Bukhara",
+      "Samarkand",
+      "Tashkent"
     ]
   }
 ]
