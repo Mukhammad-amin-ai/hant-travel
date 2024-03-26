@@ -58,7 +58,7 @@ const Home2Destinationslide = () => {
             <div className="col-lg-12">
               <div className="section-title2 text-center">
                 <div className="eg-section-tag">
-                  <span>Journey TripRex</span>
+                  <span>Journey Hant Travel</span>
                 </div>
                 <h2>Trendy Travel Locations</h2>
               </div>

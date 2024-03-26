@@ -5,9 +5,9 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import SelectComponent from "@/uitils/SelectComponent";
 export const metadata = {
-  title: "TripRex - Tour & Travel Agency  NextJs Template",
+  title: "Hant Travel - Tour & Travel Agency  NextJs Template",
   description:
-    "TripRex is a NextJs Template for Tour and Travel Agency purpose",
+    "Hant Travel is a NextJs Template for Tour and Travel Agency purpose",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },

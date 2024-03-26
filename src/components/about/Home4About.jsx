@@ -11,7 +11,7 @@ const Home4About = () => {
               <div className="about-content">
                 <div className="section-title3">
                   <h2>
-                    Welcome To <span>TripRex</span> And Find Some Amazing Tour.
+                    Welcome To <span>Hant Travel</span> And Find Some Amazing Tour.
                   </h2>
                   <p>
                     Etiam ac tortor id purus commodo vulputate. Vestibulum

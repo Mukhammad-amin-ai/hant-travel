@@ -8,7 +8,7 @@ const Home4Feature = () => {
           <div className="row mb-50">
             <div className="col-lg-12 d-flex justify-content-center">
               <div className="section-title3 text-center">
-                <h2>What TripRex Offers </h2>
+                <h2>What Hant Travel Offers </h2>
                 <p>
                   Etiam ac tortor id purus commodo vulputate. Vestibulum
                   porttitor erat felis and sed vehicula tortor malesuada

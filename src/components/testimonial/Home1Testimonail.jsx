@@ -216,7 +216,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img1.png"
+                                  src="/assets/images/testimonials/testi-author-img1.png"
                                   alt=""
                                 />
                               </div>
@@ -235,7 +235,7 @@ const Home1Testimonail = () => {
                                   “I love Tour! This is an amazing service and
                                   it has saved me and my small business so much
                                   time. I plan to use it for a long time to
-                                  come. And i travel with TripRex again ”{" "}
+                                  come. And i travel with Hant Travel again ”{" "}
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
@@ -280,7 +280,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img2.png"
+                                  src="/assets/images/testimonials/testi-author-img2.png"
                                   alt=""
                                 />
                               </div>
@@ -344,7 +344,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img3.png"
+                                  src="/assets/images/testimonials/testi-author-img3.png"
                                   alt=""
                                 />
                               </div>
@@ -408,7 +408,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img1.png"
+                                  src="/assets/images/testimonials/testi-author-img1.png"
                                   alt=""
                                 />
                               </div>
@@ -427,7 +427,7 @@ const Home1Testimonail = () => {
                                   “I love Tour! This is an amazing service and
                                   it has saved me and my small business so much
                                   time. I plan to use it for a long time to
-                                  come. And i travel with TripRex again ”{" "}
+                                  come. And i travel with Hant Travel again ”{" "}
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
@@ -472,7 +472,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img2.png"
+                                  src="/assets/images/testimonials/testi-author-img2.png"
                                   alt=""
                                 />
                               </div>
@@ -536,7 +536,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img3.png"
+                                  src="/assets/images/testimonials/testi-author-img3.png"
                                   alt=""
                                 />
                               </div>
@@ -618,7 +618,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img1.png"
+                                  src="/assets/images/testimonials/testi-author-img1.png"
                                   alt=""
                                 />
                               </div>
@@ -637,7 +637,7 @@ const Home1Testimonail = () => {
                                   “I love Tour! This is an amazing service and
                                   it has saved me and my small business so much
                                   time. I plan to use it for a long time to
-                                  come. And i travel with TripRex again ”{" "}
+                                  come. And i travel with Hant Travel again ”{" "}
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
@@ -686,7 +686,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img2.png"
+                                  src="/assets/images/testimonials/testi-author-img2.png"
                                   alt=""
                                 />
                               </div>
@@ -754,7 +754,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img3.png"
+                                  src="/assets/images/testimonials/testi-author-img3.png"
                                   alt=""
                                 />
                               </div>
@@ -822,7 +822,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img1.png"
+                                  src="/assets/images/testimonials/testi-author-img1.png"
                                   alt=""
                                 />
                               </div>
@@ -841,7 +841,7 @@ const Home1Testimonail = () => {
                                   “I love Tour! This is an amazing service and
                                   it has saved me and my small business so much
                                   time. I plan to use it for a long time to
-                                  come. And i travel with TripRex again ”{" "}
+                                  come. And i travel with Hant Travel again ”{" "}
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
@@ -890,7 +890,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img2.png"
+                                  src="/assets/images/testimonials/testi-author-img2.png"
                                   alt=""
                                 />
                               </div>
@@ -958,7 +958,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img3.png"
+                                  src="/assets/images/testimonials/testi-author-img3.png"
                                   alt=""
                                 />
                               </div>
@@ -1041,7 +1041,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img1.png"
+                                  src="/assets/images/testimonials/testi-author-img1.png"
                                   alt=""
                                 />
                               </div>
@@ -1060,7 +1060,7 @@ const Home1Testimonail = () => {
                                   “I love Tour! This is an amazing service and
                                   it has saved me and my small business so much
                                   time. I plan to use it for a long time to
-                                  come. And i travel with TripRex again ”{" "}
+                                  come. And i travel with Hant Travel again ”{" "}
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
@@ -1109,7 +1109,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img2.png"
+                                  src="/assets/images/testimonials/testi-author-img2.png"
                                   alt=""
                                 />
                               </div>
@@ -1177,7 +1177,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img3.png"
+                                  src="/assets/images/testimonials/testi-author-img3.png"
                                   alt=""
                                 />
                               </div>
@@ -1245,7 +1245,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img1.png"
+                                  src="/assets/images/testimonials/testi-author-img1.png"
                                   alt=""
                                 />
                               </div>
@@ -1264,7 +1264,7 @@ const Home1Testimonail = () => {
                                   “I love Tour! This is an amazing service and
                                   it has saved me and my small business so much
                                   time. I plan to use it for a long time to
-                                  come. And i travel with TripRex again ”{" "}
+                                  come. And i travel with Hant Travel again ”{" "}
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
@@ -1313,7 +1313,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img2.png"
+                                  src="/assets/images/testimonials/testi-author-img2.png"
                                   alt=""
                                 />
                               </div>
@@ -1381,7 +1381,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img3.png"
+                                  src="/assets/images/testimonials/testi-author-img3.png"
                                   alt=""
                                 />
                               </div>
@@ -1464,7 +1464,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img1.png"
+                                  src="/assets/images/testimonials/testi-author-img1.png"
                                   alt=""
                                 />
                               </div>
@@ -1483,7 +1483,7 @@ const Home1Testimonail = () => {
                                   “I love Tour! This is an amazing service and
                                   it has saved me and my small business so much
                                   time. I plan to use it for a long time to
-                                  come. And i travel with TripRex again ”{" "}
+                                  come. And i travel with Hant Travel again ”{" "}
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
@@ -1532,7 +1532,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img2.png"
+                                  src="/assets/images/testimonials/testi-author-img2.png"
                                   alt=""
                                 />
                               </div>
@@ -1600,7 +1600,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img3.png"
+                                  src="/assets/images/testimonials/testi-author-img3.png"
                                   alt=""
                                 />
                               </div>
@@ -1668,7 +1668,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img1.png"
+                                  src="/assets/images/testimonials/testi-author-img1.png"
                                   alt=""
                                 />
                               </div>
@@ -1687,7 +1687,7 @@ const Home1Testimonail = () => {
                                   “I love Tour! This is an amazing service and
                                   it has saved me and my small business so much
                                   time. I plan to use it for a long time to
-                                  come. And i travel with TripRex again ”{" "}
+                                  come. And i travel with Hant Travel again ”{" "}
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
@@ -1736,7 +1736,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img2.png"
+                                  src="/assets/images/testimonials/testi-author-img2.png"
                                   alt=""
                                 />
                               </div>
@@ -1804,7 +1804,7 @@ const Home1Testimonail = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img3.png"
+                                  src="/assets/images/testimonials/testi-author-img3.png"
                                   alt=""
                                 />
                               </div>

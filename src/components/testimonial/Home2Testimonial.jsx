@@ -163,7 +163,7 @@ const Home2Testimonial = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img1.png"
+                                  src="/assets/images/testimonials/testi-author-img1.png"
                                   alt=""
                                 />
                               </div>
@@ -215,7 +215,7 @@ const Home2Testimonial = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img2.png"
+                                  src="/assets/images/testimonials/testi-author-img2.png"
                                   alt=""
                                 />
                               </div>
@@ -267,7 +267,7 @@ const Home2Testimonial = () => {
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/img/home1/testi-author-img3.png"
+                                  src="/assets/images/testimonials/testi-author-img3.png"
                                   alt=""
                                 />
                               </div>
