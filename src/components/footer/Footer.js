@@ -11,7 +11,7 @@ const Footer = ({style}) => {
               <div className="footer-widget">
                 <div className="footer-logo">
                   <Link href="/">
-                    <img src="/assets/img/logo2.svg" alt="" />
+                    <img src="/assets/img/logo.svg" alt="" />
                   </Link>
                 </div>
                 <h3>
@@ -58,9 +58,9 @@ const Footer = ({style}) => {
                         <path d="M17.5107 13.2102L14.9988 10.6982C14.1016 9.80111 12.5765 10.16 12.2177 11.3262C11.9485 12.1337 11.0514 12.5822 10.244 12.4028C8.44974 11.9542 6.0275 9.62168 5.57894 7.73772C5.3098 6.93027 5.84808 6.03314 6.65549 5.76404C7.82176 5.40519 8.18061 3.88007 7.28348 2.98295L4.77153 0.470991C4.05382 -0.156997 2.97727 -0.156997 2.34929 0.470991L0.644745 2.17553C-1.0598 3.96978 0.82417 8.72455 5.04066 12.941C9.25716 17.1575 14.0119 19.1313 15.8062 17.337L17.5107 15.6324C18.1387 14.9147 18.1387 13.8382 17.5107 13.2102Z" />
                       </g>
                     </svg>
-                    <h5>More Inquiry</h5>
+                    <h5>Whatsup</h5>
                   </div>
-                  <a href="tel:999858624984">+999-858 624 984</a>
+                  <a href="tel:999858624984">+998-91-123-45-67</a>
                 </div>
                 <div className="single-contact mb-35">
                   <div className="widget-title">
@@ -93,8 +93,7 @@ const Footer = ({style}) => {
                     <h5>Address</h5>
                   </div>
                   <a href="https://www.google.com/maps/place/Egens+Lab/@23.8340712,90.3631117,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c14c8682a473:0xa6c74743d52adb88!8m2!3d23.8340663!4d90.3656866!16s%2Fg%2F11rs9vlwsk?entry=ttu">
-                    House 168/170, Avenue 01, Mirpur <br /> DOHS, Dhaka
-                    Bangladesh
+                    Samarkand,Uzbekistan
                   </a>
                 </div>
               </div>
@@ -110,7 +109,7 @@ const Footer = ({style}) => {
                 </p>
                 <div className="payment-partner">
                   <div className="widget-title">
-                    <h5>Payment Partner</h5>
+                    <h5>Payment Methods</h5>
                   </div>
                   <div className="icons">
                     <ul>

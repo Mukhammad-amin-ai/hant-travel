@@ -11,6 +11,7 @@ import Home1Testimonail from "@/components/testimonial/Home1Testimonail";
 import Home1TourPackage from "@/components/tourPackage/Home1TourPackage";
 import Home1Vise from "@/components/visaComponents/Home1Vise";
 import Home1WhyChoose from "@/components/whyChoose/Home1WhyChoose";
+
 export const metadata = {
   title: "HANT TRAVEL",
   description:

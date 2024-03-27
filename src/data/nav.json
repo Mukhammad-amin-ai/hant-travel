@@ -73,7 +73,7 @@
     },
     {
         "id": "4",
-        "label": "Destination",
+        "label": "Countries",
         "link": "/destination",
         "icon": true,
         "subMenu": [
@@ -108,6 +108,12 @@
                 "link": "/destination/destination-details"
             }
         ]
+    },
+    {
+        "id": "5",
+        "label": "Gallery",
+        "link": "/gallery",
+        "icon": false
     },
     {
         "id": "6",
