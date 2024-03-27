@@ -6,7 +6,7 @@ import destination from "../../data/custom/destination.json";
 const page = () => {
   return (
     <>
-      <Breadcrumb pagename="Countries" pagetitle="Countries" />
+      <Breadcrumb pagename="Countries to Go" pagetitle="Countries" />
       <div className="destination-gallery-section pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5 mb-70">
