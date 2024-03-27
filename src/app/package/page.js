@@ -18,7 +18,6 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <Header />
       <Breadcrumb pagename="Tour Packages" pagetitle="Tour" />
       <div className="package-grid-with-sidebar-section pt-120 mb-120">
         <div className="container">
@@ -324,7 +323,6 @@ const page = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

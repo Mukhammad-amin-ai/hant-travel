@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "galley": [],
+    "title": "",
+    "price": 0,
+    "maxPeople":0,
+    "location":"",
+    "length":"",
+    "iclueded":[],
+    "excluded":[],
+    "highlights":[],
+    "plan":[]
+  }
+]

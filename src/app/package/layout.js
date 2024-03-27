@@ -3,7 +3,7 @@ import Header from "@/components/header/Header";
 
 export const metadata = {
   title: "HANT TRAVEL",
-  description: "Gallery",
+  description: "Package Details",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },

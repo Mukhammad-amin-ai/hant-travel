@@ -82,6 +82,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/gallery/layout.js"
+    ],
+    "/package/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/package/layout.js"
     ]
   }
 }

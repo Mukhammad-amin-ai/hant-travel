@@ -180,43 +180,47 @@ const page = () => {
               </div>
             </div> */}
           </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <nav className="inner-pagination-area">
-                <ul className="pagination-list">
-                  <li>
-                    <a href="#" className="shop-pagi-btn">
-                      <i className="bi bi-chevron-left" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">1</a>
-                  </li>
-                  <li>
-                    <a href="#" className="active">
-                      2
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">3</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="bi bi-three-dots" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">6</a>
-                  </li>
-                  <li>
-                    <a href="#" className="shop-pagi-btn">
-                      <i className="bi bi-chevron-right" />
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+          {destination?.length > 9 ? (
+            <div className="row">
+              <div className="col-lg-12">
+                <nav className="inner-pagination-area">
+                  <ul className="pagination-list">
+                    <li>
+                      <a href="#" className="shop-pagi-btn">
+                        <i className="bi bi-chevron-left" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">1</a>
+                    </li>
+                    <li>
+                      <a href="#" className="active">
+                        2
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">3</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="bi bi-three-dots" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">6</a>
+                    </li>
+                    <li>
+                      <a href="#" className="shop-pagi-btn">
+                        <i className="bi bi-chevron-right" />
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
             </div>
-          </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </>

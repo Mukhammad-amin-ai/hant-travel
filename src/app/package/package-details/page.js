@@ -44,7 +44,6 @@ const Page = () => {
   ];
   return (
     <>
-      <Header />
       <Breadcrumb pagename="Package Details" pagetitle="Package Details" />
       <div className="package-details-area pt-120 mb-120 position-relative">
         <div className="container">
@@ -1661,7 +1660,6 @@ const Page = () => {
           />
         </React.Fragment>
       </div>
-      <Footer />
     </>
   );
 };
