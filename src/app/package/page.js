@@ -151,7 +151,7 @@ const page = () => {
                               <p>TAXES INCL/PERS</p>
                             </div>
                             <Link
-                              href="/package/package-details"
+                              href={`/package/${item.id}`}
                               className="primary-btn2"
                             >
                               Book a Trip
