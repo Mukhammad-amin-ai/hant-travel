@@ -42,8 +42,8 @@ const Page = () => {
   return (
     <>
       <Breadcrumb
-        pagename="Destination Details"
-        pagetitle="Destination Details"
+        pagename="Country Details"
+        pagetitle="Country Details"
       />
       <div className="destination-details-wrap mb-120 pt-120">
         <div className="container">
@@ -211,7 +211,7 @@ const Page = () => {
                     <h5>Egyptian pound</h5>
                   </div>
                 </div>
-                <div className="banner2-card four">
+                {/* <div className="banner2-card four">
                   <img src="/assets/img/home1/banner2-card-img2.png" alt="" />
                   <div className="banner2-content-wrap">
                     <div className="banner2-content">
@@ -223,7 +223,7 @@ const Page = () => {
                       Book Now
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

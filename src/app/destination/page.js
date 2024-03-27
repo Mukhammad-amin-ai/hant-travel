@@ -25,7 +25,7 @@ const page = () => {
                   <div className="content">
                     <h4>
                       <Link
-                        href={`/destination/destination-details/${index + 1}`}
+                        href={`/destination/${index + 1}`}
                       >
                         {item.name}
                       </Link>
