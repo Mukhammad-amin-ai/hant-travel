@@ -2,14 +2,15 @@
   {
     "id": 1,
     "galley": [],
-    "title": "",
-    "price": 0,
-    "maxPeople":0,
-    "location":"",
-    "length":"",
-    "iclueded":[],
-    "excluded":[],
-    "highlights":[],
-    "plan":[]
+    "title": "Three capitals of Uzbekistan",
+    "description": "",
+    "price": 980,
+    "maxPeople": 10,
+    "location": "Uzbekistan",
+    "length": "6 Days / 5 Night",
+    "iclueded": [],
+    "excluded": [],
+    "highlights": [],
+    "plan": []
   }
 ]

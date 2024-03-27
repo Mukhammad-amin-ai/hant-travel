@@ -93,7 +93,7 @@ const page = () => {
               <div className="list-grid-product-wrap mb-70">
                 <div className="row gy-4">
                   {Tour.map((item, index) => (
-                    <div className="col-md-6 item">
+                    <div className="col-md-6 item" key={index}>
                       <div className="package-card">
                         <div className="package-card-img-wrap">
                           <Link
@@ -119,7 +119,7 @@ const page = () => {
                               </svg>
                               <ul className="location-list">
                                 {item.location_list.map((item, index) => (
-                                  <li>
+                                  <li key={index}>
                                     <Link href="/package">{item}</Link>
                                   </li>
                                 ))}
@@ -137,7 +137,7 @@ const page = () => {
                             <div className="location-area">
                               <ul className="location-list scrollTextAni">
                                 {item.place_list.map((item, index) => (
-                                  <li>
+                                  <li key={index}>
                                     <Link href="/package">{item}</Link>
                                   </li>
                                 ))}

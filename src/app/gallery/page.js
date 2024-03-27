@@ -15,7 +15,7 @@ const Page = () => {
         <div className="container">
           <div className="row g-4 mb-70">
             {gallery.map((item, index) => (
-              <div className={`${item.class} col-sm-6`}>
+              <div className={`${item.class} col-sm-6`} key={index}>
                 <div className="gallery-img-wrap">
                   <img src={item.img} alt="" />
                   <a
