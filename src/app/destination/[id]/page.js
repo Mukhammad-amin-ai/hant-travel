@@ -147,7 +147,7 @@ const Page = ({ params }) => {
         </div>
       </div>
       <DestinationLocationGallery
-        data={DestinationDetails[router].location}
+        data={DestinationDetails[router].locations}
         galery={DestinationDetails[router].locationGalery}
       />
       <RecommendatedPackage />

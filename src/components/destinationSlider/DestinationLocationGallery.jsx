@@ -3,7 +3,7 @@ import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 
-const DestinationLocationGallery = ({ data, galery }) => {
+const DestinationLocationGallery = (props) => {
   const [isOpenimg, setOpenimg] = useState({
     openingState: false,
     openingIndex: 0,
@@ -44,21 +44,32 @@ const DestinationLocationGallery = ({ data, galery }) => {
             </div>
             <div className="col-lg-12 mb-60">
               <ul className="nav nav-pills" id="pills-tab" role="tablist">
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link active"
-                    id="location1-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#location1"
-                    type="button"
-                    role="tab"
-                    aria-controls="location1"
-                    aria-selected="true"
-                  >
-                    Cox’s Bazar
-                  </button>
-                </li>
-                {/* <li className="nav-item" role="presentation">
+                {props.data.map((item, index) => (
+                  <li className="nav-item" role="presentation" key={item.id}>
+                    <button
+                      className={`nav-link ${
+                        index === item.id ? "active" : ""
+                      }`}
+                      style={
+                        index === item.id
+                          ? { backgroundImage: `url(${item.img})` }
+                          : {}
+                      }
+                      id={`location${item.id}-tab`}
+                      data-bs-toggle="pill"
+                      data-bs-target={`#location${item.id}`}
+                      type="button"
+                      role="tab"
+                      aria-controls={`location${item.id}`}
+                      aria-selected={index === item.id ? "true" : "false"}
+                    >
+                      {item.title}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+
+              {/* <li className="nav-item" role="presentation">
                   <button
                     className="nav-link"
                     id="location2-tab"
@@ -128,7 +139,6 @@ const DestinationLocationGallery = ({ data, galery }) => {
                     Sea Beach
                   </button>
                 </li> */}
-              </ul>
             </div>
           </div>
           <div className="row">
@@ -141,26 +151,25 @@ const DestinationLocationGallery = ({ data, galery }) => {
                 >
                   <div className="destination-gallery">
                     <div className="row g-4">
-                      <div className="col-lg-4 col-sm-6">
-                        <div className="gallery-img-wrap">
-                          <img
-                            src="/assets/img/innerpage/gallery-06.jpg"
-                            alt=""
-                          />
-                          <a
-                            data-fancybox="gallery-01"
-                            onClick={() =>
-                              setOpenimg({
-                                openingState: true,
-                                openingIndex: 0,
-                              })
-                            }
-                          >
-                            <i className="bi bi-eye" /> Discover Island
-                          </a>
+                      {props.galery.map((item, index) => (
+                        <div className={`${item.class} col-sm-6`}>
+                          <div className="gallery-img-wrap">
+                            <img src={item.img} alt="" />
+                            <a
+                              data-fancybox="gallery-01"
+                              onClick={() =>
+                                setOpenimg({
+                                  openingState: true,
+                                  openingIndex: index,
+                                })
+                              }
+                            >
+                              <i className="bi bi-eye" /> Discover
+                            </a>
+                          </div>
                         </div>
-                      </div>
-                      <div className="col-lg-5 col-sm-6">
+                      ))}
+                      {/* <div className="col-lg-5 col-sm-6">
                         <div className="gallery-img-wrap">
                           <img
                             src="/assets/img/innerpage/gallery-01.jpg"
@@ -254,11 +263,11 @@ const DestinationLocationGallery = ({ data, galery }) => {
                             <i className="bi bi-eye" /> Discover Island
                           </a>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
-                <div className="tab-pane fade" id="location2" role="tabpanel">
+                {/* <div className="tab-pane fade" id="location2" role="tabpanel">
                   <div className="destination-gallery">
                     <div className="row g-4">
                       <div className="col-lg-4 col-sm-6">
@@ -857,7 +866,7 @@ const DestinationLocationGallery = ({ data, galery }) => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -870,8 +879,8 @@ const DestinationLocationGallery = ({ data, galery }) => {
         index={isOpenimg.openingIndex}
         close={() => setOpenimg(false)}
         styles={{ container: { backgroundColor: "rgba(0, 0, 0, .9)" } }}
-        slides={images.map(function (elem) {
-          return { src: elem.imageBig };
+        slides={props.galery.map(function (elem) {
+          return { src: elem.img };
         })}
       />
     </>
