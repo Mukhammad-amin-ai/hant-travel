@@ -75,97 +75,20 @@ const Page = ({ params }) => {
                       </div>
                     </div>
                   ))}
-
-                  {/* <div className="col-lg-5 col-sm-6">
-                    <div className="gallery-img-wrap">
-                      <img src="/assets/img/innerpage/gallery-01.jpg" alt="" />
-                      <a
-                        data-fancybox="gallery-01"
-                        onClick={() =>
-                          setOpenimg({ openingState: true, openingIndex: 1 })
-                        }
-                      >
-                        <i className="bi bi-eye" /> Discover Island
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-sm-6">
-                    <div className="gallery-img-wrap">
-                      <img src="/assets/img/innerpage/gallery-02.jpg" alt="" />
-                      <a
-                        data-fancybox="gallery-01"
-                        onClick={() =>
-                          setOpenimg({ openingState: true, openingIndex: 2 })
-                        }
-                      >
-                        <i className="bi bi-eye" /> Discover Island
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-lg-3 col-sm-6">
-                    <div className="gallery-img-wrap">
-                      <img src="/assets/img/innerpage/gallery-03.jpg" alt="" />
-                      <a
-                        data-fancybox="gallery-01"
-                        onClick={() =>
-                          setOpenimg({ openingState: true, openingIndex: 3 })
-                        }
-                      >
-                        <i className="bi bi-eye" /> Discover Island
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-lg-4 col-sm-6">
-                    <div className="gallery-img-wrap">
-                      <img src="/assets/img/innerpage/gallery-04.jpg" alt="" />
-                      <a
-                        data-fancybox="gallery-01"
-                        onClick={() =>
-                          setOpenimg({ openingState: true, openingIndex: 4 })
-                        }
-                      >
-                        <i className="bi bi-eye" /> Discover Island
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-lg-5 col-sm-6">
-                    <div className="gallery-img-wrap">
-                      <img src="/assets/img/innerpage/gallery-05.jpg" alt="" />
-                      <a
-                        data-fancybox="gallery-01"
-                        onClick={() =>
-                          setOpenimg({ openingState: true, openingIndex: 5 })
-                        }
-                      >
-                        <i className="bi bi-eye" /> Discover Island
-                      </a>
-                    </div>
-                  </div> */}
                 </div>
               </div>
-              <h2>Heaven On Earth</h2>
-              <p>
-                Egypt has one of the longest histories of any country, tracing
-                its heritage along the Nile Delta back to the 6th–4th millennia
-                BCE. Considered a cradle of civilisation, Ancient Egypt saw some
-                of the earliest developments of writing, agriculture,
-                urbanisation, organised religion and central government.[15]
-                Egypt's long and rich cultural heritage is an integral part of
-                its national
-              </p>
-              <ul>
-                <li>Exploring ancient ruins, historical landmar.</li>
-                <li>Immersive cultural experiences, local.</li>
-                <li>Hiking, trekking, extreme sports, and out.</li>
-                <li>A romantic destination like Paris, Venice.</li>
-                <li>Kid-friendly activities, theme parks family.</li>
-                <li>Premium accommodations, gourmet.</li>
+              <h2>Things To Do</h2>
+              <ul style={{ columns: "1" }}>
+                {DestinationDetails[router].tourism.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
               </ul>
               <div className="row g-4">
                 <div className="col-lg-6">
                   <div className="destination-img">
                     <img
-                      src="/assets/img/innerpage/destination-img-01.jpg"
+                      style={{ height: "280px", width: "100%" }}
+                      src={DestinationDetails[router].galery[0].img}
                       alt=""
                     />
                   </div>
@@ -173,7 +96,8 @@ const Page = ({ params }) => {
                 <div className="col-lg-6">
                   <div className="destination-img">
                     <img
-                      src="/assets/img/innerpage/destination-img-02.jpg"
+                      style={{ height: "280px", width: "100%" }}
+                      src={DestinationDetails[router].galery[1].img}
                       alt=""
                     />
                   </div>
@@ -185,23 +109,23 @@ const Page = ({ params }) => {
                 <div className="destination-info mb-30">
                   <div className="single-info">
                     <span>Destination:</span>
-                    <h5>Egypt</h5>
+                    <h5>{DestinationDetails[router].destionation}</h5>
                   </div>
                   <div className="single-info">
                     <span>Population:</span>
-                    <h5>90.5 million</h5>
+                    <h5>{DestinationDetails[router].population} million</h5>
                   </div>
                   <div className="single-info">
                     <span>Capital City:</span>
-                    <h5>Cairo</h5>
+                    <h5>{DestinationDetails[router].capital}</h5>
                   </div>
                   <div className="single-info">
                     <span>Language:</span>
-                    <h5>Egyptian Arabic</h5>
+                    <h5>{DestinationDetails[router].language}</h5>
                   </div>
                   <div className="single-info">
                     <span>Currency:</span>
-                    <h5>Egyptian pound</h5>
+                    <h5>{DestinationDetails[router].currency}</h5>
                   </div>
                 </div>
                 {/* <div className="banner2-card four">
@@ -222,7 +146,10 @@ const Page = ({ params }) => {
           </div>
         </div>
       </div>
-      <DestinationLocationGallery />
+      <DestinationLocationGallery
+        data={DestinationDetails[router].location}
+        galery={DestinationDetails[router].locationGalery}
+      />
       <RecommendatedPackage />
       <Lightbox
         className="img-fluid"
@@ -231,8 +158,8 @@ const Page = ({ params }) => {
         index={isOpenimg.openingIndex}
         close={() => setOpenimg(false)}
         styles={{ container: { backgroundColor: "rgba(0, 0, 0, .9)" } }}
-        slides={images.map(function (elem) {
-          return { src: elem.imageBig };
+        slides={DestinationDetails[router].galery.map(function (elem) {
+          return { src: elem.img };
         })}
       />
     </>
