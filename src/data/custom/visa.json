@@ -3,24 +3,44 @@
     "id": 1,
     "name": "Egypt",
     "price": "1,000",
-    "img":"/assets/images/visa/egypt.jpg"
+    "img": "/assets/images/visa/egypt.jpg",
+    "country": "Egypt",
+    "visa": "Tourist",
+    "mode": "Electronic",
+    "valid": 60,
+    "procces": "7-10"
   },
   {
     "id": 2,
     "name": "Saudi Arabia",
     "price": "1,000",
-    "img":"/assets/images/visa/saudi.jpg"
+    "img": "/assets/images/visa/saudi.jpg",
+    "country": "Saudi Arabia",
+    "visa": "Tourist",
+    "mode": "Electronic",
+    "valid": 60,
+    "procces": "7-10"
   },
   {
     "id": 3,
     "name": "UAE",
     "price": "1,000",
-    "img":"/assets/images/visa/uaa.jpg"
+    "img": "/assets/images/visa/uaa.jpg",
+    "country": "UAE",
+    "visa": "Tourist",
+    "mode": "Electronic",
+    "valid": 60,
+    "procces": "7-10"
   },
   {
     "id": 4,
     "name": "India",
     "price": "1,000",
-    "img":"/assets/images/visa/india_1.jpg"
+    "img": "/assets/images/visa/india_1.jpg",
+    "country": "India",
+    "visa": "Tourist",
+    "mode": "Electronic",
+    "valid": 60,
+    "procces": "7-10"
   }
 ]

@@ -1,4 +1,3 @@
-// import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 
@@ -17,7 +16,6 @@ const layout = ({ children }) => {
     <>
       <Header />
       {children}
-      {/* <Newslatter /> */}
       <Footer />
     </>
   );

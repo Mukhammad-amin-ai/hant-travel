@@ -1,4 +1,3 @@
-
 import React from "react";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import QuantityCounter from "@/uitils/QuantityCounter";
@@ -9,8 +8,7 @@ import visa from "../../data/custom/visa.json";
 
 export const metadata = {
   title: "HANT TRAVEL",
-  description:
-    "Visa",
+  description: "Visa",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },
@@ -332,58 +330,60 @@ const page = () => {
               </div>
               <div className="list-grid-product-wrap mb-70">
                 <div className="row gy-4">
-
-                  <div className="col-md-12 item">
-                    <div className="package-card4 four">
-                      <Link
-                        href="/visas/visas-details"
-                        className="package-card-img"
-                      >
-                        <img
-                          src="/assets/img/home4/package-card4-img1.jpg"
-                          alt=""
-                        />
-                      </Link>
-                      <div className="package-card-content">
-                        <div className="card-content-top">
-                          <h5>
-                            Electronic Visa Adult with Fan with Insurance.
-                          </h5>
-                          <ul>
-                            <li>
-                              <span>Country :</span> New York
-                            </li>
-                            <li>
-                              <span>Visa Type :</span> Tourist
-                            </li>
-                            <li>
-                              <span>Visa Mode :</span> Electronic
-                            </li>
-                            <li>
-                              <span>Validity :</span> 60 Days
-                            </li>
-                            <li>
-                              <span>Processing Time :</span> 7-10 Working Day
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="card-content-bottom">
-                          <div className="price-area">
-                            <span>Starting Form:</span>
-                            <h6>
-                              <strong>$</strong>3860 <span>Per Person</span>
-                            </h6>
+                  {visa.map((item, index) => (
+                    <div className="col-md-12 item">
+                      <div className="package-card4 four">
+                        <Link
+                          href={`/visas/${item.id}`}
+                          className="package-card-img"
+                        >
+                          <img src={item.img} alt="" />
+                        </Link>
+                        <div className="package-card-content">
+                          <div className="card-content-top">
+                            <h5>{item.name}</h5>
+                            <ul>
+                              <li>
+                                <span>Country :</span> {item.country}
+                              </li>
+                              <li>
+                                <span>Visa Type :</span> {item.visa}
+                              </li>
+                              <li>
+                                <span>Visa Mode :</span>
+                                {item.mode}
+                              </li>
+                              <li>
+                                <span>Validity :</span> {item.valid} Days
+                              </li>
+                              <li>
+                                <span>Processing Time :</span>
+                                {item.procces}Working Day
+                              </li>
+                            </ul>
                           </div>
-                          <Link href="/visas/visas-details" className="apply-btn">
-                            Apply Now
-                            <div className="arrow">
-                              <i className="bi bi-arrow-right" />
+                          <div className="card-content-bottom">
+                            <div className="price-area">
+                              <span>Starting Form:</span>
+                              <h6>
+                                <strong>$</strong>
+                                {item.price} <span>Per Person</span>
+                              </h6>
                             </div>
-                          </Link>
+                            <Link
+                              href={`/visas/${item.id}`}
+                              className="apply-btn"
+                            >
+                              Apply Now
+                              <div className="arrow">
+                                <i className="bi bi-arrow-right" />
+                              </div>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  ))}
                   {/* <div className="col-md-12 item">
                     <div className="package-card4 four">
                       <Link
@@ -636,7 +636,6 @@ const page = () => {
                       </div>
                     </div>
                   </div> */}
-
                 </div>
               </div>
               <div className="row">
