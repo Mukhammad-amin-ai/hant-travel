@@ -44,6 +44,12 @@
         "icon": false
     },
     {
+        "id": "2",
+        "label": "Visas",
+        "link": "/visas",
+        "icon": true
+    },
+    {
         "id": "3",
         "label": "Tours",
         "link": "/package",
