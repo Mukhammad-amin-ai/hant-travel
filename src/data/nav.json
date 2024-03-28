@@ -44,13 +44,19 @@
         "icon": false
     },
     {
-        "id": "2",
+        "id": "3",
         "label": "Visas",
         "link": "/visas",
         "icon": true
     },
     {
-        "id": "3",
+        "id": "4",
+        "label": "Guides",
+        "link": "/guide",
+        "icon": true
+    },
+    {
+        "id": "5",
         "label": "Tours",
         "link": "/package",
         "icon": true,
@@ -78,7 +84,7 @@
         ]
     },
     {
-        "id": "4",
+        "id": "6",
         "label": "Countries",
         "link": "/destination",
         "icon": true,
@@ -116,19 +122,19 @@
         ]
     },
     {
-        "id": "5",
+        "id": "7",
         "label": "Gallery",
         "link": "/gallery",
         "icon": false
     },
     {
-        "id": "6",
+        "id": "8",
         "label": "Contact",
         "link": "/contact",
         "icon": false
     },
     {
-        "id": "7",
+        "id": "9",
         "label": "FAQ",
         "link": "/faq",
         "icon": false

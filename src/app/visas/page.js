@@ -268,7 +268,9 @@ const page = () => {
           <div className="row g-lg-4 gy-5">
             <div className="col-lg-8">
               <div className="package-inner-title-section mb-40">
-                <p>Showing 1–12 of 101 results</p>
+                <p>
+                  Showing {visa.length} of {visa.length} results
+                </p>
                 <div className="selector-and-grid">
                   <ul className="grid-view">
                     <li className="grid">
@@ -384,297 +386,49 @@ const page = () => {
                       </div>
                     </div>
                   ))}
-                  {/* <div className="col-md-12 item">
-                    <div className="package-card4 four">
-                      <Link
-                        href="/visas/visas-details"
-                        className="package-card-img"
-                      >
-                        <img
-                          src="/assets/img/home4/package-card4-img2.jpg"
-                          alt=""
-                        />
-                      </Link>
-                      <div className="package-card-content">
-                        <div className="card-content-top">
-                          <h5>Grown-up E-visa with Cooling and Assurance.</h5>
-                          <ul>
-                            <li>
-                              <span>Country :</span> Egypt
-                            </li>
-                            <li>
-                              <span>Visa Type :</span> Tourist
-                            </li>
-                            <li>
-                              <span>Visa Mode :</span> Electronic
-                            </li>
-                            <li>
-                              <span>Validity :</span> 50 Days
-                            </li>
-                            <li>
-                              <span>Processing Time :</span> 7-10 Working Day
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="card-content-bottom">
-                          <div className="price-area">
-                            <span>Starting Form:</span>
-                            <h6>
-                              <strong>$</strong>3500 <span>Per Person</span>
-                            </h6>
-                          </div>
-                          <Link href="/visas/visas-details" className="apply-btn">
-                            Apply Now
-                            <div className="arrow">
-                              <i className="bi bi-arrow-right" />
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-12 item">
-                    <div className="package-card4 four">
-                      <Link
-                        href="/visas/visas-details"
-                        className="package-card-img"
-                      >
-                        <img
-                          src="/assets/img/innerpage/visa-package-img1.jpg"
-                          alt=""
-                        />
-                      </Link>
-                      <div className="package-card-content">
-                        <div className="card-content-top">
-                          <h5>
-                            Digital Visa for Adults with Admirer and Insurance
-                          </h5>
-                          <ul>
-                            <li>
-                              <span>Country :</span> Australia
-                            </li>
-                            <li>
-                              <span>Visa Type :</span> Tourist
-                            </li>
-                            <li>
-                              <span>Visa Mode :</span> Electronic
-                            </li>
-                            <li>
-                              <span>Validity :</span> 60 Days
-                            </li>
-                            <li>
-                              <span>Processing Time :</span> 7-10 Working Day
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="card-content-bottom">
-                          <div className="price-area">
-                            <span>Starting Form:</span>
-                            <h6>
-                              <strong>$</strong>4500 <span>Per Person</span>
-                            </h6>
-                          </div>
-                          <Link href="/visas/visas-details" className="apply-btn">
-                            Apply Now
-                            <div className="arrow">
-                              <i className="bi bi-arrow-right" />
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-12 item">
-                    <div className="package-card4 four">
-                      <Link
-                        href="/visas/visas-details"
-                        className="package-card-img"
-                      >
-                        <img
-                          src="/assets/img/innerpage/visa-package-img2.jpg"
-                          alt=""
-                        />
-                      </Link>
-                      <div className="package-card-content">
-                        <div className="card-content-top">
-                          <h5>Electronic Visa for Individuals with Follower</h5>
-                          <ul>
-                            <li>
-                              <span>Country :</span> Spain
-                            </li>
-                            <li>
-                              <span>Visa Type :</span> Tourist
-                            </li>
-                            <li>
-                              <span>Visa Mode :</span> Electronic
-                            </li>
-                            <li>
-                              <span>Validity :</span> 40 Days
-                            </li>
-                            <li>
-                              <span>Processing Time :</span> 7-10 Working Day
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="card-content-bottom">
-                          <div className="price-area">
-                            <span>Starting Form:</span>
-                            <h6>
-                              <strong>$</strong>2500 <span>Per Person</span>
-                            </h6>
-                          </div>
-                          <Link href="/visas/visas-details" className="apply-btn">
-                            Apply Now
-                            <div className="arrow">
-                              <i className="bi bi-arrow-right" />
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-12 item">
-                    <div className="package-card4 four">
-                      <Link
-                        href="/visas/visas-details"
-                        className="package-card-img"
-                      >
-                        <img
-                          src="/assets/img/innerpage/visa-package-img3.jpg"
-                          alt=""
-                        />
-                      </Link>
-                      <div className="package-card-content">
-                        <div className="card-content-top">
-                          <h5>
-                            E-Visa for Grown-Ups with Devotee and Assurance
-                          </h5>
-                          <ul>
-                            <li>
-                              <span>Country :</span> Turkey
-                            </li>
-                            <li>
-                              <span>Visa Type :</span> Tourist
-                            </li>
-                            <li>
-                              <span>Visa Mode :</span> Electronic
-                            </li>
-                            <li>
-                              <span>Validity :</span> 40 Days
-                            </li>
-                            <li>
-                              <span>Processing Time :</span> 7-10 Working Day
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="card-content-bottom">
-                          <div className="price-area">
-                            <span>Starting Form:</span>
-                            <h6>
-                              <strong>$</strong>4200 <span>Per Person</span>
-                            </h6>
-                          </div>
-                          <Link href="/visas/visas-details" className="apply-btn">
-                            Apply Now
-                            <div className="arrow">
-                              <i className="bi bi-arrow-right" />
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-12 item">
-                    <div className="package-card4 four">
-                      <Link
-                        href="/visas/visas-details"
-                        className="package-card-img"
-                      >
-                        <img
-                          src="/assets/img/innerpage/visa-package-img4.jpg"
-                          alt=""
-                        />
-                      </Link>
-                      <div className="package-card-content">
-                        <div className="card-content-top">
-                          <h5>
-                            Virtual Visa for Adults with Supporter and
-                            Protection
-                          </h5>
-                          <ul>
-                            <li>
-                              <span>Country :</span> India
-                            </li>
-                            <li>
-                              <span>Visa Type :</span> Tourist
-                            </li>
-                            <li>
-                              <span>Visa Mode :</span> Electronic
-                            </li>
-                            <li>
-                              <span>Validity :</span> 40 Days
-                            </li>
-                            <li>
-                              <span>Processing Time :</span> 7-10 Working Day
-                            </li>
-                          </ul>
-                        </div>
-                        <div className="card-content-bottom">
-                          <div className="price-area">
-                            <span>Starting Form:</span>
-                            <h6>
-                              <strong>$</strong>2500 <span>Per Person</span>
-                            </h6>
-                          </div>
-                          <Link href="/visas/visas-details" className="apply-btn">
-                            Apply Now
-                            <div className="arrow">
-                              <i className="bi bi-arrow-right" />
-                            </div>
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               </div>
-              <div className="row">
-                <div className="col-lg-12">
-                  <nav className="inner-pagination-area">
-                    <ul className="pagination-list">
-                      <li>
-                        <a href="#" className="shop-pagi-btn">
-                          <i className="bi bi-chevron-left" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">1</a>
-                      </li>
-                      <li>
-                        <a href="#" className="active">
-                          2
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">3</a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="bi bi-three-dots" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">6</a>
-                      </li>
-                      <li>
-                        <a href="#" className="shop-pagi-btn">
-                          <i className="bi bi-chevron-right" />
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
+              {visa.length >= 5 ? (
+                <div className="row">
+                  <div className="col-lg-12">
+                    <nav className="inner-pagination-area">
+                      <ul className="pagination-list">
+                        <li>
+                          <a href="#" className="shop-pagi-btn">
+                            <i className="bi bi-chevron-left" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">1</a>
+                        </li>
+                        <li>
+                          <a href="#" className="active">
+                            2
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">3</a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="bi bi-three-dots" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">6</a>
+                        </li>
+                        <li>
+                          <a href="#" className="shop-pagi-btn">
+                            <i className="bi bi-chevron-right" />
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                ""
+              )}
             </div>
             <div className="col-lg-4">
               <div className="sidebar-area">

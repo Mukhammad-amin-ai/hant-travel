@@ -5,8 +5,7 @@ import Link from "next/link";
 import React from "react";
 export const metadata = {
   title: "HANT TRAVEL",
-  description:
-    "Frequently asked question",
+  description: "Frequently asked question",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },
@@ -19,23 +18,6 @@ const page = () => {
       <div className="faq-section pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5">
-            {/* <div className="col-lg-4">
-              <div className="banner-and-inquiry-form">
-                <div className="banner2-card four">
-                  <img src="/assets/img/home1/banner2-card-img2.png" alt="" />
-                  <div className="banner2-content-wrap">
-                    <div className="banner2-content">
-                      <span>Savings worldwide</span>
-                      <h3>50% Off</h3>
-                      <p>For Your First Book</p>
-                    </div>
-                    <Link href="/package" className="primary-btn1">
-                      Book Now
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div> */}
             <div className="col-lg-8">
               <div className="faq-content-wrap mb-80">
                 <div className="faq-content-title mb-50">
@@ -71,7 +53,7 @@ const page = () => {
                       </h2>
                       <div
                         id="travelcollapseOne"
-                        className="accordion-collapse collapse show"
+                        className="accordion-collapse collapse "
                         aria-labelledby="travelheadingOne"
                         data-bs-parent="#accordionTravel"
                       >
@@ -237,7 +219,7 @@ const page = () => {
                       </h2>
                       <div
                         id="tripcollapseOne"
-                        className="accordion-collapse collapse show"
+                        className="accordion-collapse collapse "
                         aria-labelledby="tripheadingOne"
                         data-bs-parent="#accordionTravel2"
                       >

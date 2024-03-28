@@ -1,4 +1,4 @@
-// "use client";
+
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
@@ -24,7 +24,9 @@ const page = () => {
           <div className="row g-lg-4 gy-5">
             <div className="col-lg-8">
               <div className="package-inner-title-section mb-40">
-                <p>Showing 1–12 of 101 results</p>
+                <p>
+                  Showing {Tour.length} of {Tour.length} results
+                </p>
                 <div className="selector-and-grid">
                   <div className="selector">
                     <SelectComponent
@@ -173,43 +175,47 @@ const page = () => {
                   ))}
                 </div>
               </div>
-              <div className="row">
-                <div className="col-lg-12">
-                  <nav className="inner-pagination-area">
-                    <ul className="pagination-list">
-                      <li>
-                        <a href="#" className="shop-pagi-btn">
-                          <i className="bi bi-chevron-left" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">1</a>
-                      </li>
-                      <li>
-                        <a href="#" className="active">
-                          2
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">3</a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="bi bi-three-dots" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">6</a>
-                      </li>
-                      <li>
-                        <a href="#" className="shop-pagi-btn">
-                          <i className="bi bi-chevron-right" />
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
+              {Tour.length > 6 ? (
+                <div className="row">
+                  <div className="col-lg-12">
+                    <nav className="inner-pagination-area">
+                      <ul className="pagination-list">
+                        <li>
+                          <a href="#" className="shop-pagi-btn">
+                            <i className="bi bi-chevron-left" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">1</a>
+                        </li>
+                        <li>
+                          <a href="#" className="active">
+                            2
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">3</a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="bi bi-three-dots" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">6</a>
+                        </li>
+                        <li>
+                          <a href="#" className="shop-pagi-btn">
+                            <i className="bi bi-chevron-right" />
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                ""
+              )}
             </div>
             <div className="col-lg-4">
               <div className="sidebar-area">
