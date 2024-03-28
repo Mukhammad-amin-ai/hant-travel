@@ -123,7 +123,6 @@ const Home1Vise = () => {
               <Swiper {...settings} className="swiper package-card2-slider">
                 <div className="swiper-wrapper">
                   {visa.map((item, index) => (
-                    console.log(item.id),
                     <SwiperSlide className="swiper-slide">
                       <div className="package-card2">
                         <Link href={`/visas/${item.id}`}>
@@ -131,7 +130,9 @@ const Home1Vise = () => {
                         </Link>
                         <div className="eg-tag">
                           <h4>
-                            <Link href={`/visas/${item.id}`}>{item.name}</Link>
+                            <Link href={`/visas/${item.id}`}>
+                              {item.name}
+                            </Link>
                           </h4>
                         </div>
                         <div className="package-card2-content">

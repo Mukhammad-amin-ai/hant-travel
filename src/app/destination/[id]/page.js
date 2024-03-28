@@ -10,6 +10,7 @@ import DestinationDetails from "../../../data/custom/destinationDetails.json";
 
 const Page = ({ params }) => {
   const router = params.id;
+  
   const [isOpenimg, setOpenimg] = useState({
     openingState: false,
     openingIndex: 0,
