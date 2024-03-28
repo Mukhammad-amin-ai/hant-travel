@@ -1,14 +1,15 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import RecommendatedPackage from "@/components/tourPackage/RecommendatedPackage";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Link from "next/link";
-import DestinationActivitis from "@/components/destinationSlider/DestinationActivitis";
 import DestinationLocationGallery from "@/components/destinationSlider/DestinationLocationGallery";
+import DestinationDetails from "../../../data/custom/destinationDetails.json";
 
-const Page = () => {
+const Page = ({ params }) => {
+  const router = params.id;
   const [isOpenimg, setOpenimg] = useState({
     openingState: false,
     openingIndex: 0,
@@ -39,51 +40,43 @@ const Page = () => {
       imageBig: "/assets/img/innerpage/gallery-05.jpg",
     },
   ];
+
   return (
     <>
-      <Breadcrumb
-        pagename="Country Details"
-        pagetitle="Country Details"
-      />
+      <Breadcrumb pagename="Country Details" pagetitle="Country Details" />
       <div className="destination-details-wrap mb-120 pt-120">
         <div className="container">
           <div className="row g-lg-4 gy-5">
             <div className="col-lg-8">
-              <h2>Welcome To Egypt</h2>
-              <p>
-                Egypt has one of the longest histories of any country, tracing
-                its heritage along the Nile Delta back to the 6th–4th millennia
-                BCE. Considered a cradle of civilisation, Ancient Egypt saw some
-                of the earliest developments of writing, agriculture,
-                urbanisation, organised religion and central government.[15]
-                Egypt's long and rich cultural heritage is an integral part of
-                its national identity, which reflects its unique
-                transcontinental location being simultaneously Mediterranean,
-                Middle Eastern and North African.[16] Egypt was an early and
-                important centre of Christianity, but was largely Islamised in
-                the seventh century. Modern Egypt dates back to 1922, when it
-                gained independence from the British Empire as a monarchy.
-                Following the 1952 revolution, Egypt declared itself a republic,
-                and in 1958 it merged with Syria to form the United Arab
-                Republic, which dissolved in 1961.
-              </p>
+              <h2>{DestinationDetails[router].title}</h2>
+              <p>{DestinationDetails[router].description}</p>
               <div className="destination-gallery mb-40 mt-40">
                 <div className="row g-4">
-                  <div className="col-lg-4 col-sm-6">
-                    <div className="gallery-img-wrap">
-                      <img src="/assets/img/innerpage/gallery-06.jpg" alt="" />
-                      <a data-fancybox="gallery-01">
-                        <i
-                          onClick={() =>
-                            setOpenimg({ openingState: true, openingIndex: 0 })
-                          }
-                          className="bi bi-eye"
-                        />{" "}
-                        Discover Island
-                      </a>
+                  {DestinationDetails[router].galery.map((item, index) => (
+                    <div className={`${item.class} col-sm-6`} key={index}>
+                      <div className="gallery-img-wrap">
+                        <img
+                          src={item.img}
+                          style={{ height: "219px", width: "100%" }}
+                          alt=""
+                        />
+                        <a data-fancybox="gallery-01">
+                          <i
+                            onClick={() =>
+                              setOpenimg({
+                                openingState: true,
+                                openingIndex: 0,
+                              })
+                            }
+                            className="bi bi-eye"
+                          />{" "}
+                          Discover {DestinationDetails[router].name}
+                        </a>
+                      </div>
                     </div>
-                  </div>
-                  <div className="col-lg-5 col-sm-6">
+                  ))}
+
+                  {/* <div className="col-lg-5 col-sm-6">
                     <div className="gallery-img-wrap">
                       <img src="/assets/img/innerpage/gallery-01.jpg" alt="" />
                       <a
@@ -147,7 +140,7 @@ const Page = () => {
                         <i className="bi bi-eye" /> Discover Island
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <h2>Heaven On Earth</h2>
@@ -230,7 +223,6 @@ const Page = () => {
         </div>
       </div>
       <DestinationLocationGallery />
-      <DestinationActivitis />
       <RecommendatedPackage />
       <Lightbox
         className="img-fluid"

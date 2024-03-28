@@ -1,0 +1,965 @@
+[
+  {
+    "id": 1,
+    "name": "Tadjikistan",
+    "title": "Welcome To Tadjikistan",
+    "galery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "description": "Tajikistan, a country nestled in the heart of Central Asia, offers a unique blend of history, culture, and stunning natural beauty.  Tours to Tajikistan can cater to a variety of interests, from exploring the ancient Silk Road city of Penjikent to trekking through the majestic Pamir Mountains.",
+    "tourism": [
+      "Exploring ancient ruins, historical landmar.",
+      "Immersive cultural experiences, local",
+      "Hiking, trekking, extreme sports, and out."
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "title": "Dushanbe"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "title": "Penjikent"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "title": "Khujand"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "title": "Istaravshan"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "title": "Pamir Mountain"
+      }
+    ],
+    "locationGalery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "destionation": "Tajikistan",
+    "population": 10.28,
+    "capital": "Dushanbe",
+    "language": "Tadjik",
+    "currency": "Somoni"
+  },
+  {
+    "id": 2,
+    "name": "Tadjikistan",
+    "title": "Welcome To Tadjikistan",
+    "galery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "description": "Tajikistan, a country nestled in the heart of Central Asia, offers a unique blend of history, culture, and stunning natural beauty.  Tours to Tajikistan can cater to a variety of interests, from exploring the ancient Silk Road city of Penjikent to trekking through the majestic Pamir Mountains.",
+    "tourism": [
+      "Exploring ancient ruins, historical landmar.",
+      "Immersive cultural experiences, local",
+      "Hiking, trekking, extreme sports, and out."
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "title": "Dushanbe"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "title": "Penjikent"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "title": "Khujand"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "title": "Istaravshan"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "title": "Pamir Mountain"
+      }
+    ],
+    "locationGalery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "destionation": "Tajikistan",
+    "population": 10.28,
+    "capital": "Dushanbe",
+    "language": "Tadjik",
+    "currency": "Somoni"
+  },
+  {
+    "id": 3,
+    "name": "Tadjikistan",
+    "title": "Welcome To Tadjikistan",
+    "galery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "description": "Tajikistan, a country nestled in the heart of Central Asia, offers a unique blend of history, culture, and stunning natural beauty.  Tours to Tajikistan can cater to a variety of interests, from exploring the ancient Silk Road city of Penjikent to trekking through the majestic Pamir Mountains.",
+    "tourism": [
+      "Exploring ancient ruins, historical landmar.",
+      "Immersive cultural experiences, local",
+      "Hiking, trekking, extreme sports, and out."
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "title": "Dushanbe"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "title": "Penjikent"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "title": "Khujand"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "title": "Istaravshan"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "title": "Pamir Mountain"
+      }
+    ],
+    "locationGalery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "destionation": "Tajikistan",
+    "population": 10.28,
+    "capital": "Dushanbe",
+    "language": "Tadjik",
+    "currency": "Somoni"
+  },
+  {
+    "id": 4,
+    "name": "Tadjikistan",
+    "title": "Welcome To Tadjikistan",
+    "galery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "description": "Tajikistan, a country nestled in the heart of Central Asia, offers a unique blend of history, culture, and stunning natural beauty.  Tours to Tajikistan can cater to a variety of interests, from exploring the ancient Silk Road city of Penjikent to trekking through the majestic Pamir Mountains.",
+    "tourism": [
+      "Exploring ancient ruins, historical landmar.",
+      "Immersive cultural experiences, local",
+      "Hiking, trekking, extreme sports, and out."
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "title": "Dushanbe"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "title": "Penjikent"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "title": "Khujand"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "title": "Istaravshan"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "title": "Pamir Mountain"
+      }
+    ],
+    "locationGalery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "destionation": "Tajikistan",
+    "population": 10.28,
+    "capital": "Dushanbe",
+    "language": "Tadjik",
+    "currency": "Somoni"
+  },
+  {
+    "id": 5,
+    "name": "Tadjikistan",
+    "title": "Welcome To Tadjikistan",
+    "galery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "description": "Tajikistan, a country nestled in the heart of Central Asia, offers a unique blend of history, culture, and stunning natural beauty.  Tours to Tajikistan can cater to a variety of interests, from exploring the ancient Silk Road city of Penjikent to trekking through the majestic Pamir Mountains.",
+    "tourism": [
+      "Exploring ancient ruins, historical landmar.",
+      "Immersive cultural experiences, local",
+      "Hiking, trekking, extreme sports, and out."
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "title": "Dushanbe"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "title": "Penjikent"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "title": "Khujand"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "title": "Istaravshan"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "title": "Pamir Mountain"
+      }
+    ],
+    "locationGalery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "destionation": "Tajikistan",
+    "population": 10.28,
+    "capital": "Dushanbe",
+    "language": "Tadjik",
+    "currency": "Somoni"
+  },
+  {
+    "id": 6,
+    "name": "Tadjikistan",
+    "title": "Welcome To Tadjikistan",
+    "galery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "description": "Tajikistan, a country nestled in the heart of Central Asia, offers a unique blend of history, culture, and stunning natural beauty.  Tours to Tajikistan can cater to a variety of interests, from exploring the ancient Silk Road city of Penjikent to trekking through the majestic Pamir Mountains.",
+    "tourism": [
+      "Exploring ancient ruins, historical landmar.",
+      "Immersive cultural experiences, local",
+      "Hiking, trekking, extreme sports, and out."
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "title": "Dushanbe"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "title": "Penjikent"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "title": "Khujand"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "title": "Istaravshan"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "title": "Pamir Mountain"
+      }
+    ],
+    "locationGalery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "destionation": "Tajikistan",
+    "population": 10.28,
+    "capital": "Dushanbe",
+    "language": "Tadjik",
+    "currency": "Somoni"
+  },
+  {
+    "id": 7,
+    "name": "Tadjikistan",
+    "title": "Welcome To Tadjikistan",
+    "galery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "description": "Tajikistan, a country nestled in the heart of Central Asia, offers a unique blend of history, culture, and stunning natural beauty.  Tours to Tajikistan can cater to a variety of interests, from exploring the ancient Silk Road city of Penjikent to trekking through the majestic Pamir Mountains.",
+    "tourism": [
+      "Exploring ancient ruins, historical landmar.",
+      "Immersive cultural experiences, local",
+      "Hiking, trekking, extreme sports, and out."
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "title": "Dushanbe"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "title": "Penjikent"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "title": "Khujand"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "title": "Istaravshan"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "title": "Pamir Mountain"
+      }
+    ],
+    "locationGalery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "destionation": "Tajikistan",
+    "population": 10.28,
+    "capital": "Dushanbe",
+    "language": "Tadjik",
+    "currency": "Somoni"
+  },
+  {
+    "id": 8,
+    "name": "Tadjikistan",
+    "title": "Welcome To Tadjikistan",
+    "galery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "description": "Tajikistan, a country nestled in the heart of Central Asia, offers a unique blend of history, culture, and stunning natural beauty.  Tours to Tajikistan can cater to a variety of interests, from exploring the ancient Silk Road city of Penjikent to trekking through the majestic Pamir Mountains.",
+    "tourism": [
+      "Exploring ancient ruins, historical landmar.",
+      "Immersive cultural experiences, local",
+      "Hiking, trekking, extreme sports, and out."
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "title": "Dushanbe"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "title": "Penjikent"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "title": "Khujand"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "title": "Istaravshan"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "title": "Pamir Mountain"
+      }
+    ],
+    "locationGalery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "destionation": "Tajikistan",
+    "population": 10.28,
+    "capital": "Dushanbe",
+    "language": "Tadjik",
+    "currency": "Somoni"
+  },
+  {
+    "id": 9,
+    "name": "Tadjikistan",
+    "title": "Welcome To Tadjikistan",
+    "galery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "description": "Tajikistan, a country nestled in the heart of Central Asia, offers a unique blend of history, culture, and stunning natural beauty.  Tours to Tajikistan can cater to a variety of interests, from exploring the ancient Silk Road city of Penjikent to trekking through the majestic Pamir Mountains.",
+    "tourism": [
+      "Exploring ancient ruins, historical landmar.",
+      "Immersive cultural experiences, local",
+      "Hiking, trekking, extreme sports, and out."
+    ],
+    "locations": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "title": "Dushanbe"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "title": "Penjikent"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "title": "Khujand"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "title": "Istaravshan"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "title": "Pamir Mountain"
+      }
+    ],
+    "locationGalery": [
+      {
+        "id": 1,
+        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "class": "col-lg-5"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/destination/khujand1.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "class": "col-lg-3"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-4"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "class": "col-lg-5"
+      }
+    ],
+    "destionation": "Tajikistan",
+    "population": 10.28,
+    "capital": "Dushanbe",
+    "language": "Tadjik",
+    "currency": "Somoni"
+  }
+]
