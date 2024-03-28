@@ -10,6 +10,8 @@ import SwiperCore, {
 import Link from "next/link";
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
+import visa from "../../data/custom/visa.json";
+
 const Home1Vise = () => {
   const settings = useMemo(() => {
     return {
@@ -120,106 +122,31 @@ const Home1Vise = () => {
             <div className="col-lg-12">
               <Swiper {...settings} className="swiper package-card2-slider">
                 <div className="swiper-wrapper">
-                  <SwiperSlide className="swiper-slide">
-                    <div className="package-card2">
-                      <Link href="/visas/visas-details">
-                        <img
-                          style={{ height: "415px !important" }}
-                          src="/assets/images/destination/egypt.jpg"
-                          alt=""
-                        />
-                      </Link>
-                      <div className="eg-tag">
-                        <h4>
-                          <Link href="/visas/visas-details">EGYPT</Link>
-                        </h4>
-                      </div>
-                      <div className="package-card2-content">
-                        <div className="title">
-                          <h6>E-Visa - Only Processing</h6>
+                  {visa.map((item, index) => (
+                    console.log(item.id),
+                    <SwiperSlide className="swiper-slide">
+                      <div className="package-card2">
+                        <Link href={`/visas/${item.id}`}>
+                          <img src={item.img} alt="visa" />
+                        </Link>
+                        <div className="eg-tag">
+                          <h4>
+                            <Link href={`/visas/${item.id}`}>{item.name}</Link>
+                          </h4>
                         </div>
-                        <div className="price-area">
-                          <span>$1,000</span>
-                          <p>TAXES INCL/PERS</p>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <div className="package-card2 style-2">
-                      <Link href="/visas/visas-details">
-                        <img
-                          style={{ height: "415px !important" }}
-                          src="/assets/images/destination/saudi.jpg"
-                          alt=""
-                        />
-                      </Link>
-                      <div className="eg-tag">
-                        <h4>
-                          <Link href="/visas/visas-details">Saudi Arabia</Link>
-                        </h4>
-                      </div>
-                      <div className="package-card2-content">
-                        <div className="title">
-                          <h6>E-Visa - Only Processing</h6>
-                        </div>
-                        <div className="price-area">
-                          <span>$1,000</span>
-                          <p>TAXES INCL/PERS</p>
+                        <div className="package-card2-content">
+                          <div className="title">
+                            <h6>E-Visa - Only Processing</h6>
+                          </div>
+                          <div className="price-area">
+                            <span>$ {item.price}</span>
+                            <p>TAXES INCL/PERS</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <div className="package-card2">
-                      <Link href="/visas/visas-details">
-                        <img
-                          style={{ height: "415px !important" }}
-                          src="/assets/images/destination/uaa.jpg"
-                          alt=""
-                        />
-                      </Link>
-                      <div className="eg-tag">
-                        <h4>
-                          <Link href="/visas/visas-details">UAA</Link>
-                        </h4>
-                      </div>
-                      <div className="package-card2-content">
-                        <div className="title">
-                          <h6>E-Visa - Only Processing</h6>
-                        </div>
-                        <div className="price-area">
-                          <span>$1,000</span>
-                          <p>TAXES INCL/PERS</p>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                  <SwiperSlide className="swiper-slide">
-                    <div className="package-card2 style-2">
-                      <Link href="/visas/visas-details">
-                        <img
-                          style={{ height: "415px !important" }}
-                          src="/assets/images/visa/india.jpg"
-                          alt=""
-                        />
-                      </Link>
-                      <div className="eg-tag">
-                        <h4>
-                          <Link href="/visas/visas-details">India</Link>
-                        </h4>
-                      </div>
-                      <div className="package-card2-content">
-                        <div className="title">
-                          <h6>E-Visa - Only Processing</h6>
-                        </div>
-                        <div className="price-area">
-                          <span>$1,000</span>
-                          <p>TAXES INCL/PERS</p>
-                        </div>
-                      </div>
-                    </div>
-                  </SwiperSlide>
+                      {/* style-2 */}
+                    </SwiperSlide>
+                  ))}
                 </div>
               </Swiper>
             </div>

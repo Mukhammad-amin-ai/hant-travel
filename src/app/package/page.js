@@ -130,7 +130,7 @@ const page = () => {
                         <div className="package-card-content">
                           <div className="card-content-top">
                             <h5>
-                              <Link href="/package/package-details">
+                              <Link href={`/package/${item.id}`}>
                                 {item.title}
                               </Link>
                             </h5>

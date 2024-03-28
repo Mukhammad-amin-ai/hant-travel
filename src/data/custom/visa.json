@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Egypt",
+    "price": "1,000",
+    "img":"/assets/images/visa/egypt.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Saudi Arabia",
+    "price": "1,000",
+    "img":"/assets/images/visa/saudi.jpg"
+  },
+  {
+    "id": 3,
+    "name": "UAE",
+    "price": "1,000",
+    "img":"/assets/images/visa/uaa.jpg"
+  },
+  {
+    "id": 4,
+    "name": "India",
+    "price": "1,000",
+    "img":"/assets/images/visa/india_1.jpg"
+  }
+]

@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import QuantityCounter from "@/uitils/QuantityCounter";
 import Link from "next/link";
 import Header from "@/components/header/Header";
-import Newslatter from "@/components/common/Newslatter";
+// import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
 export const metadata = {
   title: "HANT TRAVEL",
@@ -941,7 +941,7 @@ const page = () => {
           </div>
         </div>
       </div>
-      <Newslatter />
+      {/* <Newslatter /> */}
       <Footer />
     </>
   );

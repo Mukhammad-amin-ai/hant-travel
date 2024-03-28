@@ -56,7 +56,7 @@ const Home1TourPackage = () => {
               <div className="col-lg-4 col-md-6">
                 <div className="package-card">
                   <div className="package-card-img-wrap">
-                    <Link href="/package/package-details" className="card-img">
+                    <Link href={`/package/${item.id}`} className="card-img">
                       <img
                         style={{ height: "177px", width: "100%" }}
                         src={item.img}
@@ -87,7 +87,7 @@ const Home1TourPackage = () => {
                   <div className="package-card-content">
                     <div className="card-content-top">
                       <h5>
-                        <Link href="/package/package-details">
+                        <Link href={`/package/${item.id}`}>
                           {item.title}
                         </Link>
                       </h5>
@@ -108,7 +108,7 @@ const Home1TourPackage = () => {
                         <p>TAXES INCL/PERS</p>
                       </div>
                       <Link
-                        href="/package/package-details"
+                        href={`/package/${item.id}`}
                         className="primary-btn2"
                       >
                         Book a Trip
