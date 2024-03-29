@@ -23,7 +23,11 @@ const page = ({ params }) => {
           <div className="row g-lg-4 gy-5">
             <div className="col-lg-8">
               <div className="visa-thumb">
-                <img style={{width:"100%",height:"423px"}} src={visaDetails[router - 1].img} alt="" />
+                <img
+                  style={{ width: "100%", height: "423px" }}
+                  src={visaDetails[router - 1].img}
+                  alt=""
+                />
               </div>
               <div className="visa-title">
                 <h3>{visaDetails[router - 1].title}</h3>
@@ -59,7 +63,7 @@ const page = ({ params }) => {
                   </h6>
                   <ul>
                     {visaDetails[router - 1].documents.map((item, index) => (
-                      <li>
+                      <li key={index}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width={18}

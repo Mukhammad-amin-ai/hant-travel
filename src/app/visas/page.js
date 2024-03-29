@@ -333,7 +333,7 @@ const page = () => {
               <div className="list-grid-product-wrap mb-70">
                 <div className="row gy-4">
                   {visa.map((item, index) => (
-                    <div className="col-md-12 item">
+                    <div className="col-md-12 item" key={index}>
                       <div className="package-card4 four">
                         <Link
                           href={`/visas/${item.id}`}

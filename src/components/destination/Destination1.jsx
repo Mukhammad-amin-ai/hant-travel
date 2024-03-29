@@ -41,7 +41,7 @@ const Destination1 = () => {
                     />
                   </svg>
                 </span>
-                <h2>Desired Vacation Spots</h2>
+                <h2>Top Countries</h2>
               </div>
             </div>
           </div>
@@ -152,17 +152,6 @@ const Destination1 = () => {
               </div>
             </div>
             <div className="col-lg-4 col-sm-6">
-              {/* <div className="destination-banner">
-                <div className="destination-banner-content">
-                  <div className="batch">
-                    <span>Get 10% Off</span>
-                  </div>
-                  <h2>Of Our All Destination</h2>
-                  <Link href="/destination" className="primary-btn1">
-                    View All Destination
-                  </Link>
-                </div>
-              </div> */}
               <div className="destination-card">
                 <img
                   style={{ height: "302px" }}

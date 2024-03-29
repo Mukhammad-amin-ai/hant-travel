@@ -123,7 +123,7 @@ const Home1Vise = () => {
               <Swiper {...settings} className="swiper package-card2-slider">
                 <div className="swiper-wrapper">
                   {visa.map((item, index) => (
-                    <SwiperSlide className="swiper-slide">
+                    <SwiperSlide className="swiper-slide" key={index}>
                       <div className="package-card2">
                         <Link href={`/visas/${item.id}`}>
                           <img src={item.img} alt="visa" />

@@ -11,11 +11,11 @@ import Home1Testimonail from "@/components/testimonial/Home1Testimonail";
 import Home1TourPackage from "@/components/tourPackage/Home1TourPackage";
 import Home1Vise from "@/components/visaComponents/Home1Vise";
 import Home1WhyChoose from "@/components/whyChoose/Home1WhyChoose";
+import VideoSection from "@/components/videoSection/Home2VideoSection";
 
 export const metadata = {
   title: "HANT TRAVEL",
-  description:
-    "Hant travel tour agency official webpage",
+  description: "Hant travel tour agency official webpage",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },
@@ -29,6 +29,7 @@ export default function Home() {
       <About1 />
       <Destination1 />
       <Home1Fecilities2 />
+      <VideoSection />
       <Home1TourPackage />
       <Home1WhyChoose />
       <Home1FacilitySlide />
