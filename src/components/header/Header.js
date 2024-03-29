@@ -100,7 +100,7 @@ const Header = () => {
       spaceBetween: 25,
       loop: true,
       autoplay: {
-        delay: 2500, // Autoplay duration in milliseconds
+        delay: 2500,
         disableOnInteraction: false,
       },
       navigation: {
@@ -171,92 +171,14 @@ const Header = () => {
               const { id, label, link, icon, subMenu } = data;
               return (
                 <li key={id}>
-                  {/* className={`${icon === true ? "menu-item-has-children" : ""}`} */}
                   <Link href={link} className="drop-down">
                     {label}
                   </Link>
-                  {/* {icon && (
-                    <i
-                      onClick={() => toggleMenu(label)}
-                      className={`bi bi-${
-                        state.activeMenu === label ? "dash" : "plus"
-                      } dropdown-icon`}
-                    />
-                  )} */}
-
-                  {/* {subMenu && (
-                    <ul
-                      className={`sub-menu ${
-                        state.activeMenu === label ? "d-block" : ""
-                      }`}
-                    >
-                      {subMenu.map((subItem, subIndex) => (
-                        <li key={subIndex}>
-                          <Link legacyBehavior href={subItem.link}>
-                            <a>{subItem.label}</a>
-                          </Link>
-                          {subItem.icon && subItem.icon ? (
-                            <>
-                              <i className="d-lg-flex d-none bi bi-chevron-right dropdown-icon" />
-                              <i
-                                onClick={() => toggleSubMenu(subItem.label)}
-                                className={`d-lg-none d-flex bi bi-${
-                                  state.activeSubMenu === subItem.label
-                                    ? "dash"
-                                    : "plus"
-                                } dropdown-icon `}
-                              />
-                            </>
-                          ) : (
-                            ""
-                          )}
-                          {subItem.subMenu && (
-                            <ul
-                              className={`sub-menu ${
-                                state.activeSubMenu === subItem.label
-                                  ? "d-block"
-                                  : ""
-                              }`}
-                            >
-                              {subItem.subMenu.map((subItem, subIndex) => (
-                                <li key={subItem.id}>
-                                  <Link legacyBehavior href={subItem.link}>
-                                    <a>{subItem.label}</a>
-                                  </Link>
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                        </li>
-                      ))}
-                    </ul>
-                  )} */}
                 </li>
               );
             })}
           </ul>
-          {/* <div className="topbar-right d-lg-none d-block">
-            <button
-              type="button"
-              className="modal-btn header-cart-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#user-login"
-            >
-              <svg
-                width={16}
-                height={16}
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  clipRule="evenodd"
-                  d="M14.4311 12.759C15.417 11.4291 16 9.78265 16 8C16 3.58169 12.4182 0 8 0C3.58169 0 0 3.58169 0 8C0 12.4182 3.58169 16 8 16C10.3181 16 12.4058 15.0141 13.867 13.4387C14.0673 13.2226 14.2556 12.9957 14.4311 12.759ZM13.9875 12C14.7533 10.8559 15.1999 9.48009 15.1999 8C15.1999 4.02355 11.9764 0.799983 7.99991 0.799983C4.02355 0.799983 0.799983 4.02355 0.799983 8C0.799983 9.48017 1.24658 10.8559 2.01245 12C2.97866 10.5566 4.45301 9.48194 6.17961 9.03214C5.34594 8.45444 4.79998 7.49102 4.79998 6.39995C4.79998 4.63266 6.23271 3.19993 8 3.19993C9.76729 3.19993 11.2 4.63266 11.2 6.39995C11.2 7.49093 10.654 8.45444 9.82039 9.03206C11.5469 9.48194 13.0213 10.5565 13.9875 12ZM13.4722 12.6793C12.3495 10.8331 10.3188 9.59997 8.00008 9.59997C5.68126 9.59997 3.65049 10.8331 2.52776 12.6794C3.84829 14.2222 5.80992 15.2 8 15.2C10.1901 15.2 12.1517 14.2222 13.4722 12.6793ZM8 8.79998C9.32551 8.79998 10.4 7.72554 10.4 6.39995C10.4 5.07444 9.32559 3.99992 8 3.99992C6.6744 3.99992 5.59997 5.07452 5.59997 6.40003C5.59997 7.72554 6.67449 8.79998 8 8.79998Z"
-                ></path>
-              </svg>
-              REGISTER/ LOGIN
-            </button>
-          </div> */}
+
           <div className="hotline-area d-lg-none d-flex">
             <div className="icon">
               <svg
@@ -270,12 +192,6 @@ const Header = () => {
                 <path d="M15.865 10.267C17.1528 10.2686 18.1964 11.3122 18.198 12.6C18.198 12.7238 18.2472 12.8424 18.3347 12.9299C18.4222 13.0174 18.5409 13.0666 18.6646 13.0666C18.7883 13.0666 18.907 13.0174 18.9945 12.9299C19.082 12.8424 19.1312 12.7238 19.1312 12.6C19.1291 10.797 17.668 9.33589 15.865 9.33386C15.6073 9.33386 15.3984 9.54274 15.3984 9.80044C15.3984 10.0581 15.6073 10.267 15.865 10.267Z" />
               </svg>
             </div>
-            {/* <div className="content">
-              <span>To More Inquiry</span>
-              <h6>
-                <a href="tel:+990737621432">+990-737 621 432</a>
-              </h6>
-            </div> */}
           </div>
         </div>
         <div className="nav-right d-flex jsutify-content-end align-items-center">
@@ -293,44 +209,8 @@ const Header = () => {
                 />
               </svg>
             </div>
-            {/* <div className="content">
-              <span>To More Inquiry</span>
-              <h6>
-                <a href="tel:+990737621432">+990-737 621 432</a>
-              </h6>
-            </div> */}
           </div>
           <ul className="icon-list">
-            {/* <li className="d-lg-flex d-none">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#user-login">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={27}
-                  height={27}
-                  viewBox="0 0 27 27"
-                  fill="none"
-                >
-                  <path
-                    d="M26 13.5C26 20.4036 20.4035 26 13.5 26C6.59632 26 1 20.4036 1 13.5C1 6.59632 6.59632 1 13.5 1C20.4035 1 26 6.59632 26 13.5Z"
-                    strokeMiterlimit={10}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M18.5001 11.8333C18.5001 14.5947 16.2616 16.8333 13.5001 16.8333C10.7384 16.8333 8.5 14.5947 8.5 11.8333C8.5 9.07189 10.7384 6.8333 13.5001 6.8333C16.2616 6.8333 18.5001 9.07189 18.5001 11.8333Z"
-                    strokeMiterlimit={10}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M6.04297 23.5324C6.44287 19.7667 9.62917 16.8333 13.5008 16.8333C17.3725 16.8333 20.5588 19.7669 20.9585 23.5325"
-                    strokeMiterlimit={10}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </a>
-            </li> */}
             <li className="right-sidebar-button" onClick={toggleRightSidebar}>
               <svg
                 className="sidebar-toggle-button"
@@ -544,9 +424,8 @@ const Header = () => {
                               <span>{item.tours} Tour</span>
                             </div>
                             <div className="destination-card2-content">
-                              {/* <span>{item.tour_type}</span> */}
                               <h4>
-                                <Link href="/destination/destination-details">
+                                <Link href={`/destination/${item.id}`}>
                                   {item.name}
                                 </Link>
                               </h4>
