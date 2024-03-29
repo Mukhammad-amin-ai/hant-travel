@@ -129,19 +129,6 @@ const Page = ({ params }) => {
                     <h5>{DestinationDetails[router].currency}</h5>
                   </div>
                 </div>
-                {/* <div className="banner2-card four">
-                  <img src="/assets/img/home1/banner2-card-img2.png" alt="" />
-                  <div className="banner2-content-wrap">
-                    <div className="banner2-content">
-                      <span>Savings worldwide</span>
-                      <h3>50% Off</h3>
-                      <p>For Your First Book</p>
-                    </div>
-                    <Link href="/package" className="primary-btn1">
-                      Book Now
-                    </Link>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>

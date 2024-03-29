@@ -15,6 +15,7 @@ const page = () => {
       <div className="guide-section pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5">
+
             <div className="col-xl-3 col-lg-4 col-sm-6">
               <div className="teams-card">
                 <img src="/assets/img/home2/teams-card-bg.png" alt="" />
@@ -58,7 +59,8 @@ const page = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-sm-6">
+
+            {/* <div className="col-xl-3 col-lg-4 col-sm-6">
               <div className="teams-card">
                 <img src="/assets/img/home2/teams-card-bg.png" alt="" />
                 <div className="teams-img">
@@ -444,7 +446,7 @@ const page = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
