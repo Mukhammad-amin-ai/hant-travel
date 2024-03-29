@@ -15,32 +15,7 @@ const Page = ({ params }) => {
     openingState: false,
     openingIndex: 0,
   });
-  const images = [
-    {
-      id: 6,
-      imageBig: "/assets/img/innerpage/gallery-06.jpg",
-    },
-    {
-      id: 1,
-      imageBig: "/assets/img/innerpage/gallery-01.jpg",
-    },
-    {
-      id: 2,
-      imageBig: "/assets/img/innerpage/gallery-02.jpg",
-    },
-    {
-      id: 3,
-      imageBig: "/assets/img/innerpage/gallery-03.jpg",
-    },
-    {
-      id: 4,
-      imageBig: "/assets/img/innerpage/gallery-04.jpg",
-    },
-    {
-      id: 5,
-      imageBig: "/assets/img/innerpage/gallery-05.jpg",
-    },
-  ];
+
 
   return (
     <>
@@ -135,6 +110,7 @@ const Page = ({ params }) => {
         </div>
       </div>
       <DestinationLocationGallery
+        name={DestinationDetails[router].name}
         data={DestinationDetails[router].locations}
         galery={DestinationDetails[router].locationGalery}
       />

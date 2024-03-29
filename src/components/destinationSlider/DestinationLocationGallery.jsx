@@ -40,7 +40,7 @@ const DestinationLocationGallery = (props) => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h3>Egypt City Location.</h3>
+              <h3>{props.name} City Location.</h3>
             </div>
             <div className="col-lg-12 mb-60">
               <ul className="nav nav-pills" id="pills-tab" role="tablist">
