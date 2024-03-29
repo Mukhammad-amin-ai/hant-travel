@@ -233,7 +233,7 @@ const Home1Fecilities2 = () => {
                         <div className="package-card">
                           <div className="package-card-img-wrap">
                             <Link
-                              href="/package/package-details"
+                              href={`/package/${item.id}`}
                               className="card-img"
                             >
                               <img
@@ -255,9 +255,7 @@ const Home1Fecilities2 = () => {
                                 </svg>
                                 <ul className="location-list">
                                   {item.location_list.map((item, index) => (
-                                    <li key={index}>
-                                      <Link href="/package">{item}</Link>
-                                    </li>
+                                    <li key={index}>{item}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -266,16 +264,14 @@ const Home1Fecilities2 = () => {
                           <div className="package-card-content">
                             <div className="card-content-top">
                               <h5>
-                                <Link href="/package/package-details">
+                                <Link href={`/package/${item.id}`}>
                                   {item.title}
                                 </Link>
                               </h5>
                               <div className="location-area">
                                 <ul className="location-list scrollTextAni">
                                   {item.place_list.map((item, index) => (
-                                    <li key={index}>
-                                      <Link href="/package">{item}</Link>
-                                    </li>
+                                    <li key={index}>{item}</li>
                                   ))}
                                 </ul>
                               </div>
@@ -287,7 +283,7 @@ const Home1Fecilities2 = () => {
                                 <p>TAXES INCL/PERS</p>
                               </div>
                               <Link
-                                href="/package/package-details"
+                                href={`/package/${item.id}`}
                                 className="primary-btn2"
                               >
                                 Book a Trip
