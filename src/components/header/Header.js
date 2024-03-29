@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import navData from "../../data/nav.json";
-import destinaiton_sidebar_data from "../../data/destination-_idebar.json";
+import destinaiton_sidebar_data from "../../data/custom/destination.json";
 import { useEffect, useMemo, useReducer, useRef } from "react";
 import LoginModal from "../common/LoginModal";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -280,7 +280,7 @@ const Header = () => {
         </div>
         <div className="nav-right d-flex jsutify-content-end align-items-center">
           <div className="hotline-area d-xl-flex d-none">
-            <div role='button' className="icon pointer">
+            <div role="button" className="icon pointer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -346,7 +346,6 @@ const Header = () => {
               </svg>
             </li>
           </ul>
-
           <div
             className="sidebar-button mobile-menu-btn"
             onClick={toggleSidebar}
@@ -527,25 +526,28 @@ const Header = () => {
                   className="swiper destination-sidebar-slider mb-35"
                 >
                   <div className="swiper-wrapper">
-                    {destinaiton_sidebar_data.map((data) => {
-                      const { id, img, tour_palce, tour_type, place } = data;
+                    {destinaiton_sidebar_data.map((item, index) => {
                       return (
-                        <SwiperSlide key={id} className="swiper-slide">
+                        <SwiperSlide key={index} className="swiper-slide">
                           <div className="destination-card2">
                             <Link
-                              href="/destination/destination-details"
+                              href={`/destination/${item.id}`}
                               className="destination-card-img"
                             >
-                              <img src={img} alt="" />
+                              <img
+                                style={{ height: "236px", width: "100%" }}
+                                src={item.img}
+                                alt=""
+                              />
                             </Link>
                             <div className="batch">
-                              <span>{tour_palce} Tour</span>
+                              <span>{item.tours} Tour</span>
                             </div>
                             <div className="destination-card2-content">
-                              <span>{tour_type}</span>
+                              {/* <span>{item.tour_type}</span> */}
                               <h4>
                                 <Link href="/destination/destination-details">
-                                  {place}
+                                  {item.name}
                                 </Link>
                               </h4>
                             </div>
@@ -566,7 +568,7 @@ const Header = () => {
                       <path d="M53 6.5L1 6.5M1 6.5L7 12M1 6.5L7 0.999996" />
                     </svg>
                   </div>
-                  <Link href="destination/style2" className="secondary-btn2">
+                  <Link href="/destination" className="secondary-btn2">
                     View All
                   </Link>
                   <div className="destination-sidebar-next">
