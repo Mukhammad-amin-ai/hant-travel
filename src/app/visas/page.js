@@ -25,8 +25,8 @@ const page = () => {
             <form>
               <div className="filter-area">
                 <div className="row g-xl-4 gy-4">
-                  <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">
-                    <div className="single-search-box">
+                  <div className="col-xl-6 col-md-6 d-flex justify-content-center divider">
+                    <div className="single-search-box ">
                       <div className="icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -152,8 +152,8 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">
-                    <div className="single-search-box">
+                  <div className="col-xl-6 col-md-6 d-flex justify-content-center divider">
+                    <div className="single-search-box ">
                       <div className="icon">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -170,9 +170,9 @@ const page = () => {
                       </div>
                       <div className="searchbox-input">
                         <label>Visa Type</label>
-                        <div className="custom-select-dropdown">
+                        <div className="custom-select-dropdown" >
                           <div className="select-input">
-                            <input type="text" placeholder="Tourist" />
+                            <input type="text" placeholder="Tourist"  />
                             <i className="bi bi-chevron-down" />
                           </div>
                           <div className="custom-select-wrap two no-scroll">
@@ -192,7 +192,7 @@ const page = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">
+                  {/* <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">
                     <div className="single-search-box">
                       <div className="icon">
                         <svg
@@ -255,7 +255,7 @@ const page = () => {
                         <QuantityCounter />
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <button type="submit">Search</button>
@@ -271,9 +271,9 @@ const page = () => {
                 <p>
                   Showing {visa.length} of {visa.length} results
                 </p>
-                <div className="selector-and-grid">
+                {/* <div className="selector-and-grid">
                   <ul className="grid-view">
-                    <li className="grid">
+                    <li className="grid ">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width={14}
@@ -328,7 +328,7 @@ const page = () => {
                       </svg>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
               <div className="list-grid-product-wrap mb-70">
                 <div className="row gy-4">
