@@ -1,21 +1,62 @@
+"use client";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import SelectComponent from "@/uitils/SelectComponent";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Tour from "../../data/custom/tour.json";
 import destination from "../../data/custom/destination.json";
 
-export const metadata = {
-  title: "HANT TRAVEL",
-  description: "Hant travel our best tour packages",
-  icons: {
-    icon: "/assets/img/sm-logo.svg",
+const days = [
+  {
+    id: 1,
+    day: "1-2",
   },
-};
+  {
+    id: 2,
+    day: "3-4",
+  },
+  {
+    id: 3,
+    day: "5-6",
+  },
+  {
+    id: 4,
+    day: "7-8",
+  },
+  {
+    id: 5,
+    day: "9-10",
+  },
+  {
+    id: 6,
+    day: "11-12",
+  },
+  {
+    id: 7,
+    day: "13-14",
+  },
+];
 
 const page = () => {
+  const [checkedIndex, setCheckedIndex] = useState(-1);
+  const [tour, setTour] = useState(Tour);
+  const [nameTour, setNameTour] = useState("");
+
+  const handleCheckboxChange = (index, name) => {
+    setCheckedIndex((prevIndex) => (prevIndex === index ? -1 : index));
+    setNameTour(name)
+  };
+
+  const Filter = () => {
+    setTour(Tour.filter((item) => item.country === nameTour));
+  };
+
+  const clear = () => {
+    setTour(Tour);
+  };
+
   return (
     <>
       <Breadcrumb pagename="Tour Packages" pagetitle="Tour" />
@@ -38,7 +79,7 @@ const page = () => {
               </div>
               <div className="list-grid-product-wrap mb-70">
                 <div className="row gy-4">
-                  {Tour.map((item, index) => (
+                  {tour.map((item, index) => (
                     <div className="col-md-6 item" key={index}>
                       <div className="package-card">
                         <div className="package-card-img-wrap">
@@ -166,42 +207,62 @@ const page = () => {
                 <div className="single-widget mb-30">
                   <h5 className="widget-title">Durations</h5>
                   <ul className="category-list">
-                    <li>
-                      <Link href="/blog">1 - 2 Days Tour</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">2 - 3 Days Tour</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">4 - 5 Days Tour</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">6 - 7 Days Tour</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">8 - 9 Days Tour</Link>
-                    </li>
-                    <li>
-                      <Link href="/blog">10 - 13 Days Tour</Link>
-                    </li>
+                    {days.map((item, index) => (
+                      <li key={index}>
+                        <div className="form-check form-check-inline">
+                          <input
+                            className="form-check-input mt-2"
+                            type="checkbox"
+                            id="inlineCheckbox1"
+                            value="option1"
+                          />
+                          <label
+                            className="form-check-label "
+                            htmlFor="inlineCheckbox1"
+                          >
+                            {item.day} Days Tour
+                          </label>
+                        </div>
+                      </li>
+                    ))}
                   </ul>
                 </div>
                 <div className="single-widget mb-30">
                   <h5 className="widget-title">Destination</h5>
                   <ul className="category-list two">
                     {destination.map((item, index) => (
-                      <li>
-                        <Link href="#">
+                      <li
+                        key={index}
+                        className="cursor-pointer"
+                        role="button"
+                        onClick={() => handleCheckboxChange(index, item.name)}
+                      >
+                        <div className="form-check form-check-inline">
+                          <input
+                            className="form-check-input"
+                            type="checkbox"
+                            id="inlineCheckbox1"
+                            value="option1"
+                            checked={checkedIndex === index}
+                            onChange={(event) =>
+                              handleCheckboxChange(index, event.target.value)
+                            }
+                          />
+                        </div>
+                        <a>
                           {item.name}
                           <span>{item.tours}</span>
-                        </Link>
+                        </a>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div className="single-widget mb-30">
                   <div className="sidebar-area d-flex  justify-content-between">
-                    <div className="primary-btn2 d-flex">
+                    <div
+                      className="primary-btn2 d-flex"
+                      onClick={() => Filter()}
+                    >
                       Filter
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -212,14 +273,17 @@ const page = () => {
                         <path
                           fill="none"
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-miterlimit="10"
-                          stroke-width="1.5"
+                          strokeLinecap="round"
+                          strokeMiterlimit="10"
+                          strokeWidth="1.5"
                           d="M21.25 12H8.895m-4.361 0H2.75m18.5 6.607h-5.748m-4.361 0H2.75m18.5-13.214h-3.105m-4.361 0H2.75m13.214 2.18a2.18 2.18 0 1 0 0-4.36a2.18 2.18 0 0 0 0 4.36Zm-9.25 6.607a2.18 2.18 0 1 0 0-4.36a2.18 2.18 0 0 0 0 4.36Zm6.607 6.608a2.18 2.18 0 1 0 0-4.361a2.18 2.18 0 0 0 0 4.36Z"
                         />
                       </svg>
                     </div>
-                    <div className=" btn btn-danger d-flex align-items-center gap-2">
+                    <div
+                      className=" btn btn-danger d-flex align-items-center gap-2"
+                      onClick={() => clear()}
+                    >
                       Clear
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

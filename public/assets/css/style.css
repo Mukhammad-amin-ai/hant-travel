@@ -29443,7 +29443,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .sidebar-area .single-widget .category-list li {
   margin-bottom: 15px;
   position: relative;
-  padding-left: 25px;
+  /* padding-left: 25px; */
   display: flex;
   align-items: center;
   margin-bottom: 25px;
@@ -29471,7 +29471,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   font-size: 14px;
 }
 .sidebar-area .single-widget .category-list li::before {
-  content: "";
+  /* content: ""; */
   position: absolute;
   width: 15px;
   height: 15px;

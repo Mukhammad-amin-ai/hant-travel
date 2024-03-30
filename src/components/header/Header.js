@@ -196,8 +196,8 @@ const Header = () => {
         <div className="nav-right d-flex jsutify-content-end align-items-center">
           <div className="hotline-area d-xl-flex d-none">
             <div role="button" className="icon pointer">
-              <select class="form-select" aria-label="Default select example">
-                <option value="1" selected>
+              <select className="form-select" aria-label="Default select example">
+                <option value="1" defaultValue>
                   Eng
                 </option>
                 <option value="2">Ru</option>

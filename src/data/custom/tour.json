@@ -1,6 +1,9 @@
 [
   {
     "id": "1",
+    "day": 6,
+    "night": 5,
+    "country":"Uzbekistan",
     "batch": "6 Days / 5 Night",
     "img": "/assets/images/tour/uzbekistan.jpg",
     "location_list": ["Uzbekistan Tour"],
@@ -10,6 +13,9 @@
   },
   {
     "id": "2",
+    "day": 8,
+    "night": 7,
+    "country":"Uzbekistan",
     "batch": "8 Days / 7 Night",
     "img": "/assets/images/tour/Khiva.jpg",
     "location_list": ["Uzbekistan Tour"],
@@ -20,6 +26,9 @@
   {
     "id": "3",
     "batch": "4 Days",
+    "day": 4,
+    "night": null,
+    "country":"Uzbekistan",
     "img": "/assets/images/tour/buhara.jpg",
     "location_list": ["Uzbekistan Tour"],
     "title": "Two Legends",
@@ -29,8 +38,11 @@
   {
     "id": "4",
     "batch": "2 Weeks",
+    "day": 14,
+    "night": null,
     "img": "/assets/images/tour/central-asia.jpg",
     "location_list": ["Central Asia"],
+    "country":"Central Asia",
     "title": "Central Asia Tour in 2 weeks",
     "price": "530 ",
     "place_list": [
@@ -44,8 +56,11 @@
   {
     "id": "5",
     "batch": " 14 Day",
+    "day": 14,
+    "night": null,
     "img": "/assets/images/tour/Urganch.jpg",
     "location_list": ["Uzbekistan Tour"],
+    "country":"Uzbekistan",
     "title": "Creative Tour in Uzbekistan",
     "price": "2250",
     "place_list": [
@@ -80,4 +95,3 @@
     ]
   }
 ]
-
