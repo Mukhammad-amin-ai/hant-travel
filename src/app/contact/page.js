@@ -2,8 +2,7 @@ import React from "react";
 
 export const metadata = {
   title: "HANT TRAVEL",
-  description:
-    "Contact us",
+  description: "Contact us",
   icons: {
     icon: "/assets/img/sm-logo.svg",
   },
@@ -18,7 +17,7 @@ const page = () => {
             <div className="col-lg-5">
               <div className="single-contact mb-40">
                 <div className="title">
-                  <h6>Phone</h6>
+                  <h6>Whatsapp</h6>
                 </div>
                 <div className="icon">
                   <svg
@@ -34,10 +33,10 @@ const page = () => {
                 </div>
                 <div className="content">
                   <h6>
-                    <a href="tel:">+990-737 621 432</a>
+                    <a href="tel:">+998-91-123-45-67</a>
                   </h6>
                   <h6>
-                    <a href="tel:">+990-737 621 432</a>
+                    <a href="tel:">+998-91-123-45-67</a>
                   </h6>
                 </div>
               </div>
@@ -82,8 +81,7 @@ const page = () => {
                 <div className="content">
                   <h6>
                     <a href="#">
-                      168/170, Avenue 01, Old York Drive Rich Mirpur DOHS,
-                      Bangladesh
+                      Registan street, Samarkand, Samarkand region, Uzbekistan
                     </a>
                   </h6>
                 </div>
@@ -183,52 +181,18 @@ const page = () => {
       </div>
 
       <div className="contact-map">
-        <iframe
+        {/* <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.5647631857846!2d90.36311167605992!3d23.83407118555764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c14c8682a473%3A0xa6c74743d52adb88!2sEgens%20Lab!5e0!3m2!1sen!2sbd!4v1700138349574!5m2!1sen!2sbd"
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
-        />
-        {/* <div className="banner3-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="banner3-content">
-                  <h2>Join The Newsletter</h2>
-                  <p>To receive our best monthly deals</p>
-                  <form>
-                    <div className="from-inner">
-                      <input type="email" placeholder="Enter Your Gmail..." />
-                      <button type="submit" className="from-arrow">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width={18}
-                          height={17}
-                          viewBox="0 0 18 17"
-                        >
-                          <path
-                            d="M7 1L16 8.5M16 8.5L7 16M16 8.5H0.5"
-                            strokeWidth="1.5"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                  </form>
-                  <img
-                    src="/assets/img/home1/banner3-vector1.png"
-                    alt=""
-                    className="vector1"
-                  />
-                  <img
-                    src="/assets/img/home1/banner3-vector2.png"
-                    alt=""
-                    className="vector2"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
+        /> */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d767.9468943039406!2d66.97553847711794!3d39.65449495312973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1711760698688!5m2!1sen!2s"
+          allowFullScreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </>
   );

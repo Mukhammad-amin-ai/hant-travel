@@ -5862,7 +5862,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 @media (max-width: 576px) {
   .home1-banner-bottom .filter-wrapper .filter-group {
     padding: 20px 15px;
-    border-radius:0 !important;
+    border-radius: 0 !important;
   }
 }
 .home1-banner-bottom .filter-wrapper .filter-group form {
@@ -23949,20 +23949,19 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   margin-bottom: 10px;
   line-height: 1.2;
 }
-@media (max-width: 1250px){
-  .breadcrumb-section{
+@media (max-width: 1250px) {
+  .breadcrumb-section {
     background-position: center -200px;
   }
-} 
-@media (max-width: 900px){
-  .breadcrumb-section{
+}
+@media (max-width: 900px) {
+  .breadcrumb-section {
     background-position: center -100px;
   }
 }
 
-
 @media (max-width: 767px) {
-  .breadcrumb-section{
+  .breadcrumb-section {
     background-position: center;
   }
   .breadcrumb-section .banner-content h1 {
@@ -30224,6 +30223,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   fill: var(--primary-color1);
 }
 .package-search-filter-wrapper .filter-group form .filter-area .single-search-box .searchbox-input {
+  width: 100%;
   line-height: 1;
 }
 @media (max-width: 1199px) {

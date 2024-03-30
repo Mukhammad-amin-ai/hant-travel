@@ -51,12 +51,6 @@
     },
     {
         "id": "4",
-        "label": "Guides",
-        "link": "/guide",
-        "icon": true
-    },
-    {
-        "id": "5",
         "label": "Tours",
         "link": "/package",
         "icon": true,
@@ -84,7 +78,7 @@
         ]
     },
     {
-        "id": "6",
+        "id": "5",
         "label": "Countries",
         "link": "/destination",
         "icon": true,
@@ -122,19 +116,19 @@
         ]
     },
     {
-        "id": "7",
+        "id": "6",
         "label": "Gallery",
         "link": "/gallery",
         "icon": false
     },
     {
-        "id": "8",
+        "id": "7",
         "label": "Contact",
         "link": "/contact",
         "icon": false
     },
     {
-        "id": "9",
+        "id": "8",
         "label": "FAQ",
         "link": "/faq",
         "icon": false
