@@ -41,12 +41,20 @@ const days = [
 
 const page = () => {
   const [checkedIndex, setCheckedIndex] = useState(-1);
+  const [day, setDayCheck] = useState(-1);
   const [tour, setTour] = useState(Tour);
   const [nameTour, setNameTour] = useState("");
+  const [exactDay, setExactDay] = useState("");
 
   const handleCheckboxChange = (index, name) => {
     setCheckedIndex((prevIndex) => (prevIndex === index ? -1 : index));
-    setNameTour(name)
+    setNameTour(name);
+  };
+
+  const dayCheck = (index, day) => {
+    setDayCheck((prevIndex) => (prevIndex === index ? -1 : index));
+    // setExactDay(day)
+    console.log(index + 1);
   };
 
   const Filter = () => {
@@ -55,6 +63,8 @@ const page = () => {
 
   const clear = () => {
     setTour(Tour);
+    setCheckedIndex(-1);
+    setDayCheck(-1);
   };
 
   return (
@@ -208,21 +218,21 @@ const page = () => {
                   <h5 className="widget-title">Durations</h5>
                   <ul className="category-list">
                     {days.map((item, index) => (
-                      <li key={index}>
+                      <li
+                        key={index}
+                        role="button"
+                        onClick={() => dayCheck(index)}
+                      >
                         <div className="form-check form-check-inline">
                           <input
                             className="form-check-input mt-2"
                             type="checkbox"
                             id="inlineCheckbox1"
                             value="option1"
+                            checked={day === index}
                           />
-                          <label
-                            className="form-check-label "
-                            htmlFor="inlineCheckbox1"
-                          >
-                            {item.day} Days Tour
-                          </label>
                         </div>
+                        {item.day} Days Tour
                       </li>
                     ))}
                   </ul>
@@ -233,7 +243,6 @@ const page = () => {
                     {destination.map((item, index) => (
                       <li
                         key={index}
-                        className="cursor-pointer"
                         role="button"
                         onClick={() => handleCheckboxChange(index, item.name)}
                       >
