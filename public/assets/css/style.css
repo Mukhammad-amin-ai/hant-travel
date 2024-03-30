@@ -5524,6 +5524,10 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   .home1-banner-area {
     padding: 0;
   }
+  .home1-banner-area .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 .home1-banner-area .swiper-slide-active .eg-tag {
   animation: zoomIn 2s;
@@ -5564,6 +5568,9 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   }
 }
 @media (max-width: 576px) {
+  .home1-banner-area .home1-banner-wrapper {
+    border-radius: 0 !important;
+  }
   .home1-banner-area .home1-banner-wrapper .home1-banner-content {
     padding: 90px 0;
   }
@@ -5768,9 +5775,15 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   border-bottom: 1px solid #dbe1cd;
 }
 @media (max-width: 576px) {
+  .home1-banner-bottom .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   .home1-banner-bottom .filter-wrapper .nav-buttons .nav-pills {
-    border-radius: unset;
+    border-radius: 15px 15px 0 0;
     justify-content: center;
+    overflow: hidden;
   }
 }
 .home1-banner-bottom .filter-wrapper .nav-buttons .nav-pills .nav-item:first-child .nav-link {
@@ -5849,6 +5862,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 @media (max-width: 576px) {
   .home1-banner-bottom .filter-wrapper .filter-group {
     padding: 20px 15px;
+    border-radius:0 !important;
   }
 }
 .home1-banner-bottom .filter-wrapper .filter-group form {
@@ -23935,7 +23949,22 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
   margin-bottom: 10px;
   line-height: 1.2;
 }
+@media (max-width: 1250px){
+  .breadcrumb-section{
+    background-position: center -200px;
+  }
+} 
+@media (max-width: 900px){
+  .breadcrumb-section{
+    background-position: center -100px;
+  }
+}
+
+
 @media (max-width: 767px) {
+  .breadcrumb-section{
+    background-position: center;
+  }
   .breadcrumb-section .banner-content h1 {
     font-size: 50px;
   }
