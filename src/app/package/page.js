@@ -54,17 +54,20 @@ const page = () => {
   const dayCheck = (index, day) => {
     setDayCheck((prevIndex) => (prevIndex === index ? -1 : index));
     // setExactDay(day)
-    console.log(index + 1);
+    // console.log(index + 1);
   };
 
   const Filter = () => {
     setTour(Tour.filter((item) => item.country === nameTour));
+    window.scrollTo(0,200);
+
   };
 
   const clear = () => {
     setTour(Tour);
     setCheckedIndex(-1);
     setDayCheck(-1);
+    window.scrollTo(0,200);
   };
 
   return (
@@ -238,7 +241,7 @@ const page = () => {
                   </ul>
                 </div>
                 <div className="single-widget mb-30">
-                  <h5 className="widget-title">Destination</h5>
+                  <h5 className="widget-title">Country</h5>
                   <ul className="category-list two">
                     {destination.map((item, index) => (
                       <li
@@ -253,12 +256,9 @@ const page = () => {
                             id="inlineCheckbox1"
                             value="option1"
                             checked={checkedIndex === index}
-                            onChange={(event) =>
-                              handleCheckboxChange(index, event.target.value)
-                            }
                           />
                         </div>
-                        <a>
+                        <a style={{ userSelect: "none" }}>
                           {item.name}
                           <span>{item.tours}</span>
                         </a>
