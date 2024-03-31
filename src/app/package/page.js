@@ -116,6 +116,9 @@ const page = () => {
     window.scrollTo(0, 200);
   };
 
+  
+
+
   return (
     <>
       <Breadcrumb pagename="Tour Packages" pagetitle="Tour" />

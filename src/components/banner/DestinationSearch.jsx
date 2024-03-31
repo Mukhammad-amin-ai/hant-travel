@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import destinations from "../../data/destinationData";
-const DestinationSearch = ({ destination, style, data }) => {
+const DestinationSearch = ({ destination, style, data,contryCatcher }) => {
   const [isActive, setIsActive] = useState(false);
   const [filteredDestination, setFilteredDestination] = useState("");
   const [selectedDestination, setSelectedDestination] = useState(
@@ -19,8 +19,10 @@ const DestinationSearch = ({ destination, style, data }) => {
 
   const handleSelectDestination = (destination) => {
     setSelectedDestination(destination);
-    setFilteredDestination("");
-    setIsActive(false);
+    contryCatcher(destination)
+    // setFilteredDestination("");
+    // setIsActive(false);
+
   };
 
   const stopPropagation = (event) => {

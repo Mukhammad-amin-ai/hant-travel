@@ -1,6 +1,6 @@
 "use client";
 import QuantityCounter from "@/uitils/QuantityCounter";
-import React from "react";
+import React, { useState } from "react";
 import DestinationSearch from "./DestinationSearch";
 import TourTypeDropdown from "./TourTypeDropdown";
 import WhenDropdown from "./WhenDropdown";
@@ -13,6 +13,15 @@ import destination from "../../data/custom/destination.json";
 import typeTour from "../../data/custom/type.json";
 
 const Banner1Bottom = () => {
+  const [country, setCoutry] = useState("");
+  let tour = () => {
+    contryCatcher();
+  };
+
+  let contryCatcher = (country) => {
+    console.log(country);
+  };
+
   return (
     <div className="home1-banner-bottom mb-120">
       <div className="container-fluid">
@@ -95,6 +104,7 @@ const Banner1Bottom = () => {
                           <DestinationSearch
                             destination="Destination"
                             data={destination}
+                            contryCatcher={contryCatcher}
                           />
                         </div>
                       </div>
@@ -159,7 +169,9 @@ const Banner1Bottom = () => {
                       </div>
                     </div>
                   </div>
-                  <button type="submit">Search</button>
+                  <button type="submit" onClick={() => tour()}>
+                    Search
+                  </button>
                 </form>
               </div>
               <div className="tab-pane fade" id="visa" role="tabpanel">
