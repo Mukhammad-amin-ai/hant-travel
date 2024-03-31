@@ -4,43 +4,43 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import SelectComponent from "@/uitils/SelectComponent";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Tour from "../../data/custom/tour.json";
 import destination from "../../data/custom/destination.json";
 import Type from "../../data/custom/type.json";
 
 import { useSearchParams } from "next/navigation";
 
-const days = [
-  {
-    id: 1,
-    day: "1-2",
-  },
-  {
-    id: 2,
-    day: "3-4",
-  },
-  {
-    id: 3,
-    day: "5-6",
-  },
-  {
-    id: 4,
-    day: "7-8",
-  },
-  {
-    id: 5,
-    day: "9-10",
-  },
-  {
-    id: 6,
-    day: "11-12",
-  },
-  {
-    id: 7,
-    day: "13-14",
-  },
-];
+// const days = [
+//   {
+//     id: 1,
+//     day: "1-2",
+//   },
+//   {
+//     id: 2,
+//     day: "3-4",
+//   },
+//   {
+//     id: 3,
+//     day: "5-6",
+//   },
+//   {
+//     id: 4,
+//     day: "7-8",
+//   },
+//   {
+//     id: 5,
+//     day: "9-10",
+//   },
+//   {
+//     id: 6,
+//     day: "11-12",
+//   },
+//   {
+//     id: 7,
+//     day: "13-14",
+//   },
+// ];
 
 const page = () => {
   const searchParams = useSearchParams();
@@ -53,24 +53,54 @@ const page = () => {
   const [nameTour, setNameTour] = useState("");
   const [tourType, setTourType] = useState("");
 
+  const fromDay = useRef(null);
+  const toDay = useRef(null);
+  const selectPrice = useRef(null);
+
   let handleCheckboxChange = (index, name) => {
     setCheckedIndex(index);
     setNameTour(name);
-    // setCheckedIndex((prevIndex) => (prevIndex === index ? -1 : index));
-    // console.log((prevIndex) => (prevIndex === index ? -1 : index));
   };
 
   const tourCheckFunc = (index, type) => {
     setTourCheck(index);
     setTourType(type);
-    // console.log(index + 1);
+  };
+
+  const sorterDays = () => {
+    let start = fromDay.current.value;
+    let end = toDay.current.value;
+    let filteredItems = Tour.filter(
+      (item) => item.day >= start && item.day <= end
+    );
+    filteredItems.sort((a, b) => {
+      let distA = Math.min(Math.abs(a.day - start), Math.abs(a.day - end));
+      let distB = Math.min(Math.abs(b.day - start), Math.abs(b.day - end));
+      return distA - distB;
+    });
+    setTour(filteredItems);
+  };
+
+  const priceSorter = () => {
+    let sorter = selectPrice.current.value;
+    if (sorter === "Hight") {
+      let tourS = tour.sort((a, b) => a.price - b.price)
+      setTour([...tour])
+    } else if (sorter === "Low") {
+      let tourS = tour.sort((a, b) => a.price - b.price)
+      let low = tourS.toReversed()
+      setTour([...low])
+    }
   };
 
   const Filter = () => {
-    if (nameTour) {
+    if (fromDay.current.value !== null) {
+      sorterDays();
+    }
+    if (nameTour !== "") {
       setTour(Tour.filter((item) => item.country === nameTour));
     }
-    if(tourType){
+    if (tourType !== "") {
       setTour(Tour.filter((item) => item.type === tourType));
     }
     window.scrollTo(0, 200);
@@ -78,16 +108,14 @@ const page = () => {
 
   const clear = () => {
     setTour(Tour);
+    selectPrice.current.value = "Default Sorting"
+    fromDay.current.value = 0;
+    toDay.current.value = 0;
     setCheckedIndex(-1);
-    setDayCheck(-1);
+    setTourCheck(-1);
     window.scrollTo(0, 200);
   };
 
-  // const checker = () => {
-  //   handleCheckboxChange(8, "Uzbekistan");
-  // };
-  // useEffect(() => {
-  // }, []);
   return (
     <>
       <Breadcrumb pagename="Tour Packages" pagetitle="Tour" />
@@ -101,10 +129,22 @@ const page = () => {
                 </p>
                 <div className="selector-and-grid">
                   <div className="selector">
-                    <SelectComponent
+                    {/* <SelectComponent
                       options={["Price Low to Hig", "Price High to Low"]}
                       placeholder="Default Sorting"
-                    />
+                    /> */}
+                    <select
+                      className="form-select"
+                      aria-label="Default select example"
+                      ref={selectPrice}
+                      onChange={() => priceSorter()}
+                    >
+                      <option selected disabled>
+                        Default Sorting
+                      </option>
+                      <option value="Low">Price Low to Higt</option>
+                      <option value="Hight">Price Hight to Low</option>
+                    </select>
                   </div>
                 </div>
               </div>
@@ -115,7 +155,7 @@ const page = () => {
                       <div className="package-card">
                         <div className="package-card-img-wrap">
                           <Link
-                            href="/package/package-details"
+                            href={`/package/${item.id}`}
                             className="card-img"
                           >
                             <img
@@ -237,26 +277,39 @@ const page = () => {
               <div className="sidebar-area">
                 <div className="single-widget mb-30">
                   <h5 className="widget-title">Durations</h5>
-                  <ul className="category-list">
-                    {/* {days.map((item, index) => (
-                      <li
-                        key={index}
-                        role="button"
-                        onClick={() => dayCheck(index)}
-                      >
-                        <div className="form-check form-check-inline">
-                          <input
-                            className="form-check-input mt-2"
-                            type="checkbox"
-                            id="inlineCheckbox1"
-                            value="option1"
-                            checked={day === index}
-                          />
-                        </div>
-                        {item.day} Days Tour
-                      </li>
-                    ))} */}
-                  </ul>
+                  <div className="row g-3">
+                    <div className="col">
+                      <input
+                        ref={fromDay}
+                        type="number"
+                        className="form-control"
+                        placeholder="From"
+                        aria-label="From"
+                        min="0"
+                        onChange={(e) => {
+                          if (e.target.value < 0) {
+                            e.target.value = 0;
+                          }
+                        }}
+                      />
+                    </div>
+                    <div className="col">
+                      <input
+                        ref={toDay}
+                        type="number"
+                        className="form-control"
+                        placeholder="to"
+                        aria-label="to"
+                        min="0"
+                        max="50"
+                        onChange={(e) => {
+                          if (e.target.value > 50) {
+                            e.target.value = 50;
+                          }
+                        }}
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div className="single-widget mb-30">
                   <h5 className="widget-title">Tour Types</h5>
