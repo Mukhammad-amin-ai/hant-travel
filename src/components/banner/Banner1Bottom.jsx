@@ -1,6 +1,7 @@
 "use client";
 import QuantityCounter from "@/uitils/QuantityCounter";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import DestinationSearch from "./DestinationSearch";
 import TourTypeDropdown from "./TourTypeDropdown";
 import WhenDropdown from "./WhenDropdown";
@@ -11,23 +12,28 @@ import DateRange from "./DateRange";
 import Link from "next/link";
 import destination from "../../data/custom/destination.json";
 import typeTour from "../../data/custom/type.json";
-
 const Banner1Bottom = () => {
+  const router = useRouter();
   const [country, setCoutry] = useState("");
+  const [type, setType] = useState("");
+  const [day, setDay] = useState("");
   let tour = () => {
-    contryCatcher();
+    // router.push("/package", {
+    //   query: { search: country, day: day, type: type },
+    // });
+    // router.push(`/package`);
   };
 
   let contryCatcher = (country) => {
-    console.log(country);
+    setCoutry(country);
   };
 
   let typeCatcher = (type) => {
-    console.log(type);
+    setType(type);
   };
 
   let dayCatcher = (day) => {
-    console.log(day);
+    setDay(day);
   };
 
   return (
@@ -177,8 +183,10 @@ const Banner1Bottom = () => {
                       </div>
                     </div>
                   </div>
-                  <button type="submit" onClick={() => tour()}>
+                  <button type="submit" >
+                    <Link href={`/package?search=${country}&day=${day}&type=${type}`}>
                     Search
+                    </Link>
                   </button>
                 </form>
               </div>
