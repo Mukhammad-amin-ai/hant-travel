@@ -7,10 +7,9 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import Tour from "../../data/custom/tour.json";
 import destination from "../../data/custom/destination.json";
-import Type from '../../data/custom/type.json'
+import Type from "../../data/custom/type.json";
 
 import { useSearchParams } from "next/navigation";
-
 
 const days = [
   {
@@ -52,23 +51,28 @@ const page = () => {
   const [tourCheck, setTourCheck] = useState(-1);
   const [tour, setTour] = useState(Tour);
   const [nameTour, setNameTour] = useState("");
-  const [exactDay, setExactDay] = useState("");
+  const [tourType, setTourType] = useState("");
 
   let handleCheckboxChange = (index, name) => {
     setCheckedIndex(index);
+    setNameTour(name);
     // setCheckedIndex((prevIndex) => (prevIndex === index ? -1 : index));
     // console.log((prevIndex) => (prevIndex === index ? -1 : index));
-    setNameTour(name);
   };
 
-  const tourCheckFunc = (index, day) => {
+  const tourCheckFunc = (index, type) => {
     setTourCheck(index);
-    // setExactDay(day)
+    setTourType(type);
     // console.log(index + 1);
   };
 
   const Filter = () => {
-    setTour(Tour.filter((item) => item.country === nameTour));
+    if (nameTour) {
+      setTour(Tour.filter((item) => item.country === nameTour));
+    }
+    if(tourType){
+      setTour(Tour.filter((item) => item.type === tourType));
+    }
     window.scrollTo(0, 200);
   };
 
@@ -257,11 +261,11 @@ const page = () => {
                 <div className="single-widget mb-30">
                   <h5 className="widget-title">Tour Types</h5>
                   <ul className="category-list two">
-                   {Type.map((item, index) => (
+                    {Type.map((item, index) => (
                       <li
                         key={index}
                         role="button"
-                        onClick={() => tourCheckFunc(index)}
+                        onClick={() => tourCheckFunc(index, item.type)}
                       >
                         <div className="form-check form-check-inline">
                           <input
@@ -272,7 +276,7 @@ const page = () => {
                             checked={tourCheck === index}
                           />
                         </div>
-                        {item.type} 
+                        {item.type}
                       </li>
                     ))}
                   </ul>
