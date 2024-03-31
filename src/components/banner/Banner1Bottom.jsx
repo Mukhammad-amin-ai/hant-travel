@@ -22,6 +22,15 @@ const Banner1Bottom = () => {
     console.log(country);
   };
 
+  let typeCatcher = (type)=>{
+    console.log(type);
+  }
+
+  let dayCatcher = ()=>{
+    console.log(day);
+  }
+
+
   return (
     <div className="home1-banner-bottom mb-120">
       <div className="container-fluid">
@@ -124,7 +133,7 @@ const Banner1Bottom = () => {
                               </g>
                             </svg>
                           </div>
-                          <TourTypeDropdown data={typeTour} />
+                          <TourTypeDropdown data={typeTour} typeCatcher={typeCatcher} />
                         </div>
                       </div>
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center divider">
@@ -142,7 +151,7 @@ const Banner1Bottom = () => {
                               </g>
                             </svg>
                           </div>
-                          <DateRange />
+                          <DateRange dayCatcher={dayCatcher} />
                         </div>
                       </div>
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
