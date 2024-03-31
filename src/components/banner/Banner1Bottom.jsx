@@ -22,14 +22,13 @@ const Banner1Bottom = () => {
     console.log(country);
   };
 
-  let typeCatcher = (type)=>{
+  let typeCatcher = (type) => {
     console.log(type);
-  }
+  };
 
-  let dayCatcher = ()=>{
+  let dayCatcher = (day) => {
     console.log(day);
-  }
-
+  };
 
   return (
     <div className="home1-banner-bottom mb-120">
@@ -133,7 +132,7 @@ const Banner1Bottom = () => {
                               </g>
                             </svg>
                           </div>
-                          <TourTypeDropdown data={typeTour} typeCatcher={typeCatcher} />
+                          <TourTypeDropdown typeCatcher={typeCatcher} />
                         </div>
                       </div>
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center divider">
@@ -222,7 +221,7 @@ const Banner1Bottom = () => {
                               </g>
                             </svg>
                           </div>
-                          <TourTypeDropdown data={typeTour} />
+                          <TourTypeDropdown typeCatcher={typeCatcher} />
                         </div>
                       </div>
                       <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">

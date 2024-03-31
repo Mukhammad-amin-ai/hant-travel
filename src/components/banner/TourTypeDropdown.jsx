@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
+import typeTour from "../../data/custom/type.json";
 
-const TourTypeDropdown = ({data}) => {
+const TourTypeDropdown = ({ typeCatcher }) => {
   const [isActive, setIsActive] = useState(false);
   const [selectedTourType, setSelectedTourType] = useState("Family Tour");
   const dropdownRef = useRef(null);
@@ -11,7 +12,8 @@ const TourTypeDropdown = ({data}) => {
 
   const handleSelectTourType = (tourType) => {
     setSelectedTourType(tourType);
-    setIsActive(false);
+    typeCatcher(tourType);
+    // setIsActive(false);
   };
 
   const handleClickOutside = (event) => {
@@ -45,11 +47,11 @@ const TourTypeDropdown = ({data}) => {
         </div>
         <div className={`${isActive ? "active" : ""} custom-select-wrap two`}>
           <ul className="option-list">
-            {data.map((tourType, index) => (
+            {typeTour.map((tourType, index) => (
               <li
                 key={index}
                 className="single-item"
-                onClick={() => handleSelectTourType(tourType)}
+                onClick={() => handleSelectTourType(tourType.type)}
               >
                 <h6>{tourType.type}</h6>
               </li>
