@@ -9,6 +9,8 @@ import LocationDropdown from "./LocationDropdown";
 import GuestDropdown from "./GuestDropdown";
 import DateRange from "./DateRange";
 import Link from "next/link";
+import destination from "../../data/custom/destination.json";
+import typeTour from "../../data/custom/type.json";
 
 const Banner1Bottom = () => {
   return (
@@ -150,7 +152,10 @@ const Banner1Bottom = () => {
                               <path d="M13.5 4.79883C11.3192 4.79883 9.54492 6.57308 9.54492 8.75391C9.54492 10.9347 11.3192 12.709 13.5 12.709C15.6808 12.709 17.4551 10.9347 17.4551 8.75391C17.4551 6.57308 15.6808 4.79883 13.5 4.79883ZM13.5 11.127C12.1915 11.127 11.127 10.0624 11.127 8.75391C11.127 7.44541 12.1915 6.38086 13.5 6.38086C14.8085 6.38086 15.873 7.44541 15.873 8.75391C15.873 10.0624 14.8085 11.127 13.5 11.127Z" />
                             </svg>
                           </div>
-                          <DestinationSearch destination="Destination" />
+                          <DestinationSearch
+                            destination="Destination"
+                            data={destination}
+                          />
                         </div>
                       </div>
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center divider">
@@ -169,7 +174,7 @@ const Banner1Bottom = () => {
                               </g>
                             </svg>
                           </div>
-                          <TourTypeDropdown />
+                          <TourTypeDropdown data={typeTour} />
                         </div>
                       </div>
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center divider">

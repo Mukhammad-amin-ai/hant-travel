@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-const TourTypeDropdown = () => {
+const TourTypeDropdown = ({data}) => {
   const [isActive, setIsActive] = useState(false);
   const [selectedTourType, setSelectedTourType] = useState("Family Tour");
   const dropdownRef = useRef(null);
@@ -28,7 +28,7 @@ const TourTypeDropdown = () => {
   }, []);
 
   const tourTypes = [
-    "Family Tour",
+    "Adventure",
     "Honeymoon Tour",
     "Group Tour",
     "Adventure Tour",
@@ -45,13 +45,13 @@ const TourTypeDropdown = () => {
         </div>
         <div className={`${isActive ? "active" : ""} custom-select-wrap two`}>
           <ul className="option-list">
-            {tourTypes.map((tourType, index) => (
+            {data.map((tourType, index) => (
               <li
                 key={index}
                 className="single-item"
                 onClick={() => handleSelectTourType(tourType)}
               >
-                <h6>{tourType}</h6>
+                <h6>{tourType.type}</h6>
               </li>
             ))}
           </ul>

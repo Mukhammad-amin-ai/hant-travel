@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import destinations from "../../data/destinationData";
-const DestinationSearch = ({ destination, style, }) => {
+const DestinationSearch = ({ destination, style, data }) => {
   const [isActive, setIsActive] = useState(false);
   const [filteredDestination, setFilteredDestination] = useState("");
   const [selectedDestination, setSelectedDestination] = useState(
@@ -73,7 +73,7 @@ const DestinationSearch = ({ destination, style, }) => {
             />
           </div> */}
           <ul className="option-list">
-            {filteredDestinations.length > 0 ? (
+            {/* {filteredDestinations.length > 0 ? (
               filteredDestinations.map((destination, index) => (
                 <li
                   key={index}
@@ -96,7 +96,22 @@ const DestinationSearch = ({ destination, style, }) => {
                   <h6>Not Found</h6>
                 </div>
               </li>
-            )}
+            )} */}
+            {data?.map((destination, index) => (
+              <li
+                key={index}
+                onClick={() => handleSelectDestination(destination.name)}
+              >
+                <div className="destination">
+                  <h6>{destination.name}</h6>
+                </div>
+                <div className="tour">
+                  <span>
+                      {destination.tours} <br /> Tour
+                    </span>
+                </div>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
