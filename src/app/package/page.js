@@ -7,7 +7,11 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import Tour from "../../data/custom/tour.json";
 import destination from "../../data/custom/destination.json";
+import Type from '../../data/custom/type.json'
+
 import { useSearchParams } from "next/navigation";
+
+
 const days = [
   {
     id: 1,
@@ -45,7 +49,7 @@ const page = () => {
   const search = searchParams.get("search");
 
   const [checkedIndex, setCheckedIndex] = useState(-1);
-  const [day, setDayCheck] = useState(-1);
+  const [tourCheck, setTourCheck] = useState(-1);
   const [tour, setTour] = useState(Tour);
   const [nameTour, setNameTour] = useState("");
   const [exactDay, setExactDay] = useState("");
@@ -57,8 +61,8 @@ const page = () => {
     setNameTour(name);
   };
 
-  const dayCheck = (index, day) => {
-    setDayCheck((prevIndex) => (prevIndex === index ? -1 : index));
+  const tourCheckFunc = (index, day) => {
+    setTourCheck(index);
     // setExactDay(day)
     // console.log(index + 1);
   };
@@ -230,7 +234,7 @@ const page = () => {
                 <div className="single-widget mb-30">
                   <h5 className="widget-title">Durations</h5>
                   <ul className="category-list">
-                    {days.map((item, index) => (
+                    {/* {days.map((item, index) => (
                       <li
                         key={index}
                         role="button"
@@ -247,9 +251,33 @@ const page = () => {
                         </div>
                         {item.day} Days Tour
                       </li>
+                    ))} */}
+                  </ul>
+                </div>
+                <div className="single-widget mb-30">
+                  <h5 className="widget-title">Tour Types</h5>
+                  <ul className="category-list two">
+                   {Type.map((item, index) => (
+                      <li
+                        key={index}
+                        role="button"
+                        onClick={() => tourCheckFunc(index)}
+                      >
+                        <div className="form-check form-check-inline">
+                          <input
+                            className="form-check-input"
+                            type="checkbox"
+                            id="inlineCheckbox1"
+                            value="option1"
+                            checked={tourCheck === index}
+                          />
+                        </div>
+                        {item.type} 
+                      </li>
                     ))}
                   </ul>
                 </div>
+
                 <div className="single-widget mb-30">
                   <h5 className="widget-title">Country</h5>
                   <ul className="category-list two">
