@@ -73,7 +73,7 @@ const page = () => {
     window.scrollTo(0, 200);
   };
 
-  // console.log(search);
+  console.log(search);
 
   return (
     <>

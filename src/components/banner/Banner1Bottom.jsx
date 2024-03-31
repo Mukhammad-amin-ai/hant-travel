@@ -8,6 +8,7 @@ import TourCategoryDropdown from "./TourCategoryDropdown";
 import LocationDropdown from "./LocationDropdown";
 import GuestDropdown from "./GuestDropdown";
 import DateRange from "./DateRange";
+import Link from "next/link";
 
 const Banner1Bottom = () => {
   return (
@@ -213,7 +214,9 @@ const Banner1Bottom = () => {
                       </div>
                     </div>
                   </div>
-                  <button type="submit">Search</button>
+                  <button type="submit">
+                    <Link href="/package?search=uzb">Search</Link>
+                  </button>
                 </form>
               </div>
               <div className="tab-pane fade" id="hotel" role="tabpanel">
