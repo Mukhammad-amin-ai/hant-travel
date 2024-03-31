@@ -62,7 +62,7 @@ const DestinationSearch = ({ destination, style, }) => {
           <i className="bi bi-chevron-down" />
         </div>
         <div className={`${isActive ? "active" : ""} custom-select-wrap `}>
-          <div className="custom-select-search-area">
+          {/* <div className="custom-select-search-area">
             <i className="bx bx-search" />
             <input
               type="text"
@@ -71,7 +71,7 @@ const DestinationSearch = ({ destination, style, }) => {
               onChange={handleFilterDestination}
               onClick={stopPropagation}
             />
-          </div>
+          </div> */}
           <ul className="option-list">
             {filteredDestinations.length > 0 ? (
               filteredDestinations.map((destination, index) => (

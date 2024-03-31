@@ -75,7 +75,7 @@ const Banner1Bottom = () => {
                   Visa
                 </button>
               </li>
-              <li className="nav-item" role="presentation">
+              {/* <li className="nav-item" role="presentation">
                 <button
                   className="nav-link"
                   id="activities-tab"
@@ -102,7 +102,7 @@ const Banner1Bottom = () => {
                   </svg>
                   Piligrimage
                 </button>
-              </li>
+              </li> */}
               {/* <li className="nav-item" role="presentation">
               <button className="nav-link" id="transport-tab" data-bs-toggle="pill" data-bs-target="#transport" type="button" role="tab" aria-controls="transport" aria-selected="false">
                 <svg xmlns="http://www.w3.org/2000/svg" width={23} height={23} viewBox="0 0 51 51">
@@ -187,7 +187,7 @@ const Banner1Bottom = () => {
                               </g>
                             </svg>
                           </div>
-                          <WhenDropdown />
+                          <DateRange />
                         </div>
                       </div>
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
@@ -214,12 +214,10 @@ const Banner1Bottom = () => {
                       </div>
                     </div>
                   </div>
-                  <button type="submit">
-                    <Link href="/package?search=uzb">Search</Link>
-                  </button>
+                  <button type="submit">Search</button>
                 </form>
               </div>
-              <div className="tab-pane fade" id="hotel" role="tabpanel">
+              {/* <div className="tab-pane fade" id="hotel" role="tabpanel">
                 <form>
                   <div className="filter-area">
                     <div className="row g-xl-4 gy-4">
@@ -301,7 +299,7 @@ const Banner1Bottom = () => {
                   </div>
                   <button type="submit">Search</button>
                 </form>
-              </div>
+              </div> */}
               <div className="tab-pane fade" id="visa" role="tabpanel">
                 <form>
                   <div className="filter-area">
@@ -397,7 +395,7 @@ const Banner1Bottom = () => {
                   <button type="submit">Search</button>
                 </form>
               </div>
-              <div className="tab-pane fade" id="activities" role="tabpanel">
+              {/* <div className="tab-pane fade" id="activities" role="tabpanel">
                 <form>
                   <div className="filter-area">
                     <div className="row g-xl-4 gy-4">
@@ -567,7 +565,7 @@ const Banner1Bottom = () => {
                   </div>
                   <button type="submit">Search</button>
                 </form>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
