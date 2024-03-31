@@ -7,7 +7,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Tour from "../../data/custom/tour.json";
 import destination from "../../data/custom/destination.json";
-
+import { useSearchParams } from "next/navigation";
 const days = [
   {
     id: 1,
@@ -40,6 +40,10 @@ const days = [
 ];
 
 const page = () => {
+  const searchParams = useSearchParams();
+
+  const search = searchParams.get("search");
+
   const [checkedIndex, setCheckedIndex] = useState(-1);
   const [day, setDayCheck] = useState(-1);
   const [tour, setTour] = useState(Tour);
@@ -59,16 +63,17 @@ const page = () => {
 
   const Filter = () => {
     setTour(Tour.filter((item) => item.country === nameTour));
-    window.scrollTo(0,200);
-
+    window.scrollTo(0, 200);
   };
 
   const clear = () => {
     setTour(Tour);
     setCheckedIndex(-1);
     setDayCheck(-1);
-    window.scrollTo(0,200);
+    window.scrollTo(0, 200);
   };
+
+  // console.log(search);
 
   return (
     <>
