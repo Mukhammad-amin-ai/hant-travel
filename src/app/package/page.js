@@ -4,7 +4,7 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import SelectComponent from "@/uitils/SelectComponent";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Tour from "../../data/custom/tour.json";
 import destination from "../../data/custom/destination.json";
 import { useSearchParams } from "next/navigation";
@@ -50,8 +50,10 @@ const page = () => {
   const [nameTour, setNameTour] = useState("");
   const [exactDay, setExactDay] = useState("");
 
-  const handleCheckboxChange = (index, name) => {
-    setCheckedIndex((prevIndex) => (prevIndex === index ? -1 : index));
+  let handleCheckboxChange = (index, name) => {
+    setCheckedIndex(index);
+    // setCheckedIndex((prevIndex) => (prevIndex === index ? -1 : index));
+    // console.log((prevIndex) => (prevIndex === index ? -1 : index));
     setNameTour(name);
   };
 
@@ -73,8 +75,11 @@ const page = () => {
     window.scrollTo(0, 200);
   };
 
-  console.log(search);
-
+  // const checker = () => {
+  //   handleCheckboxChange(8, "Uzbekistan");
+  // };
+  // useEffect(() => {
+  // }, []);
   return (
     <>
       <Breadcrumb pagename="Tour Packages" pagetitle="Tour" />
