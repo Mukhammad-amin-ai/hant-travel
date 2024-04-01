@@ -84,12 +84,12 @@ const page = () => {
   const priceSorter = () => {
     let sorter = selectPrice.current.value;
     if (sorter === "Hight") {
-      let tourS = tour.sort((a, b) => a.price - b.price)
-      setTour([...tour])
+      let tourS = tour.sort((a, b) => a.price - b.price);
+      setTour([...tour]);
     } else if (sorter === "Low") {
-      let tourS = tour.sort((a, b) => a.price - b.price)
-      let low = tourS.toReversed()
-      setTour([...low])
+      let tourS = tour.sort((a, b) => a.price - b.price);
+      let low = tourS.toReversed();
+      setTour([...low]);
     }
   };
 
@@ -108,16 +108,13 @@ const page = () => {
 
   const clear = () => {
     setTour(Tour);
-    selectPrice.current.value = "Default Sorting"
+    selectPrice.current.value = "Default Sorting";
     fromDay.current.value = 0;
     toDay.current.value = 0;
     setCheckedIndex(-1);
     setTourCheck(-1);
     window.scrollTo(0, 200);
   };
-
-  
-
 
   return (
     <>
@@ -142,7 +139,7 @@ const page = () => {
                       ref={selectPrice}
                       onChange={() => priceSorter()}
                     >
-                      <option selected disabled>
+                      <option value="Default Sorting" >
                         Default Sorting
                       </option>
                       <option value="Low">Price Low to Higt</option>
@@ -289,6 +286,7 @@ const page = () => {
                         placeholder="From"
                         aria-label="From"
                         min="0"
+                        max="50"
                         onChange={(e) => {
                           if (e.target.value < 0) {
                             e.target.value = 0;
@@ -328,8 +326,8 @@ const page = () => {
                             className="form-check-input"
                             type="checkbox"
                             id="inlineCheckbox1"
-                            value="option1"
                             checked={tourCheck === index}
+                            readOnly
                           />
                         </div>
                         {item.type}
@@ -352,8 +350,8 @@ const page = () => {
                             className="form-check-input"
                             type="checkbox"
                             id="inlineCheckbox1"
-                            value="option1"
                             checked={checkedIndex === index}
+                            readOnly
                           />
                         </div>
                         <a style={{ userSelect: "none" }}>
