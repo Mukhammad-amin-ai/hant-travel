@@ -3,7 +3,7 @@ import Link from "next/link";
 import navData from "../../data/nav.json";
 import destinaiton_sidebar_data from "../../data/custom/destination.json";
 import { useEffect, useMemo, useReducer, useRef } from "react";
-import LoginModal from "../common/LoginModal";
+// import LoginModal from "../common/LoginModal";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
   Autoplay,
@@ -140,7 +140,7 @@ const Header = () => {
 
   return (
     <>
-      <LoginModal />
+      {/* <LoginModal /> */}
       <header
         ref={headerRef}
         className={`header-area style-1 ${state.scrollY > 10 ? "sticky" : ""}`}
@@ -196,7 +196,7 @@ const Header = () => {
         <div className="nav-right d-flex jsutify-content-end align-items-center">
           <div className="hotline-area d-xl-flex d-none">
             <div role="button" className="icon pointer">
-              <select className="form-select" aria-label="Default select example">
+              <select className="form-select" id="language" aria-label="Default select example">
                 <option value="1" defaultValue>
                   Eng
                 </option>

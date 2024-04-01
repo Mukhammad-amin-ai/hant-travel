@@ -137,11 +137,10 @@ const page = () => {
                       className="form-select"
                       aria-label="Default select example"
                       ref={selectPrice}
+                      id="price_sorting"
                       onChange={() => priceSorter()}
                     >
-                      <option value="Default Sorting" >
-                        Default Sorting
-                      </option>
+                      <option value="Default Sorting">Default Sorting</option>
                       <option value="Low">Price Low to Higt</option>
                       <option value="Hight">Price Hight to Low</option>
                     </select>
@@ -285,6 +284,7 @@ const page = () => {
                         className="form-control"
                         placeholder="From"
                         aria-label="From"
+                        id="from_input"
                         min="0"
                         max="50"
                         onChange={(e) => {
@@ -301,6 +301,7 @@ const page = () => {
                         className="form-control"
                         placeholder="to"
                         aria-label="to"
+                        id="to_input"
                         min="0"
                         max="50"
                         onChange={(e) => {
@@ -325,7 +326,7 @@ const page = () => {
                           <input
                             className="form-check-input"
                             type="checkbox"
-                            id="inlineCheckbox1"
+                            id={`checkbox_${item.id}`}
                             checked={tourCheck === index}
                             readOnly
                           />
@@ -349,7 +350,7 @@ const page = () => {
                           <input
                             className="form-check-input"
                             type="checkbox"
-                            id="inlineCheckbox1"
+                            id={index}
                             checked={checkedIndex === index}
                             readOnly
                           />
