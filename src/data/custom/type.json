@@ -11,7 +11,7 @@
     },
     {
         "id":3,
-        "type":"Cultural Tours",
+        "type":"Cultural",
         "icon":""
     },
     {
@@ -21,7 +21,7 @@
     },
     {
         "id":5,
-        "type":"Private Tour",
+        "type":"Private",
         "icon":""
     }
 ]
