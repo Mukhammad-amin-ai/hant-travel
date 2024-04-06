@@ -141,8 +141,9 @@ const page = () => {
       dayInput.value = days; 
     }
     
+    // console.log(dayInput.value);
   }, []);
-
+  
   return (
     <>
       <Breadcrumb pagename="Tour Packages" pagetitle="Tour" />
