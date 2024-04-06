@@ -497,7 +497,7 @@ const Page = ({ params }) => {
                       <form>
                         <div className="tour-date-wrap mb-50">
                           <h6>Select Your Booking Date:</h6>
-                          <div className="form-check mb-25">
+                          {/* <div className="form-check mb-25">
                             <input
                               className="form-check-input"
                               type="radio"
@@ -547,7 +547,7 @@ const Page = ({ params }) => {
                                 </span>
                               </span>
                             </label>
-                          </div>
+                          </div> */}
                           <div className="form-check customdate">
                             <input
                               className="form-check-input"
@@ -607,7 +607,7 @@ const Page = ({ params }) => {
                             />
                           </div>
                         </div>
-                        <div className="booking-form-item-type">
+                        {/* <div className="booking-form-item-type">
                           <h5>Other Extra Services</h5>
                           <div className="checkbox-container">
                             <label className="check-container">
@@ -644,7 +644,7 @@ const Page = ({ params }) => {
                               <span className="price">$20 </span>
                             </label>
                           </div>
-                        </div>
+                        </div> */}
                         <div className="booking-form-item-type">
                           <div className="single-total mb-30">
                             <span>Adult</span>

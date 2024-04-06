@@ -120,14 +120,18 @@ const page = () => {
 
   let countryIdFinder = () => {
     let country = destination;
-    let id = country.filter((item) => item.name === search);
-    return id[0].id;
+    if (search !== null) {
+      let id = country.filter((item) => item.name === search);
+      return id[0].id;
+    }
   };
 
   let typeFinder = () => {
     let typeTour = Type;
-    let id = typeTour.filter((item) => item.type === typeOdtour);
-    return id[0].id;
+    if (typeOdtour !== null) {
+      let id = typeTour.filter((item) => item.type === typeOdtour);
+      return id[0].id;
+    }
   };
 
   useEffect(() => {
@@ -135,15 +139,16 @@ const page = () => {
     let tourType = typeFinder() - 1;
     handleCheckboxChange(countryId, search);
     tourCheckFunc(tourType, typeOdtour);
-    
+
     let dayInput = document.getElementById("from_input");
     if (dayInput && days) {
-      dayInput.value = days; 
+      dayInput.value = days;
     }
-    
+
+    // console.log(da);
     // console.log(dayInput.value);
   }, []);
-  
+
   return (
     <>
       <Breadcrumb pagename="Tour Packages" pagetitle="Tour" />
