@@ -46,6 +46,8 @@ const page = () => {
   const searchParams = useSearchParams();
 
   const search = searchParams.get("search");
+  const typeOdtour = searchParams.get("type");
+  const days = searchParams.get("day");
 
   const [checkedIndex, setCheckedIndex] = useState(-1);
   const [tourCheck, setTourCheck] = useState(-1);
@@ -115,6 +117,31 @@ const page = () => {
     setTourCheck(-1);
     window.scrollTo(0, 200);
   };
+
+  let countryIdFinder = () => {
+    let country = destination;
+    let id = country.filter((item) => item.name === search);
+    return id[0].id;
+  };
+
+  let typeFinder = () => {
+    let typeTour = Type;
+    let id = typeTour.filter((item) => item.type === typeOdtour);
+    return id[0].id;
+  };
+
+  useEffect(() => {
+    let countryId = countryIdFinder() - 1;
+    let tourType = typeFinder() - 1;
+    handleCheckboxChange(countryId, search);
+    tourCheckFunc(tourType, typeOdtour);
+    
+    let dayInput = document.getElementById("from_input");
+    if (dayInput && days) {
+      dayInput.value = days; 
+    }
+    
+  }, []);
 
   return (
     <>
@@ -282,7 +309,7 @@ const page = () => {
                         ref={fromDay}
                         type="number"
                         className="form-control"
-                        placeholder="From"
+                        placeholder="Days"
                         aria-label="From"
                         id="from_input"
                         min="0"
@@ -294,7 +321,7 @@ const page = () => {
                         }}
                       />
                     </div>
-                    <div className="col">
+                    {/* <div className="col">
                       <input
                         ref={toDay}
                         type="number"
@@ -310,7 +337,7 @@ const page = () => {
                           }
                         }}
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="single-widget mb-30">

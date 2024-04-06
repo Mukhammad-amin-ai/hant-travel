@@ -261,7 +261,7 @@ const Header = () => {
             <h4>Tour Type</h4>
             <ul className="category-list">
               {typeTour.map((item, index) => (
-                <li>
+                <li key={index}>
                   <Link
                     href={`/package?type=${item.type}`}
                     className="single-category"
