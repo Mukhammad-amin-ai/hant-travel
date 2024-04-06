@@ -716,10 +716,8 @@ const Page = ({ params }) => {
                         <div className="total-price">
                           <span>Total Price:</span> $470
                         </div>
-                        <button type="submit" className="primary-btn1 two">
-                          Book Now
-                        </button>
                       </form>
+                      <button className="primary-btn1 two">Book Now</button>
                     </div>
                   </div>
                   <div
