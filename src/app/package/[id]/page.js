@@ -10,6 +10,8 @@ import DatePicker from "react-datepicker";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import packageShow from "../../../data/custom/packageShow.json";
+// import nodemailer from "nodemailer"
+// const nodemailer = require("nodemailer");
 
 const Page = ({ params }) => {
   const router = params.id - 1;
@@ -38,6 +40,44 @@ const Page = ({ params }) => {
     if (count) {
       setPax(count);
       setPrice(packageShow[router].price * count);
+    }
+  };
+
+  const [emailData, setEmailData] = useState({
+    user_name: "Muhammadamin",
+    user_location: "Samarkand",
+    user_city: "Samarkand",
+    user_email: "magavozdux123@gmail.com",
+    user_phone: "+998978947323",
+  });
+  const handleSendEmail = async (e) => {
+    // e.preventDefault();
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(emailData),
+      });
+
+      const data = await response.json();
+      console.log(emailData);
+      console.log(data);
+      if (data?.success) {
+        // toast.success(data?.message);
+        setEmailData({
+          user_name: "",
+          user_location: "",
+          user_city: "",
+          user_email: "",
+        });
+      }
+      // else if (data?.success == false) {
+      //   toast.error(data?.message);
+      // }
+    } catch (error) {
+      console.error("Error sending email:", error);
     }
   };
 
@@ -523,9 +563,10 @@ const Page = ({ params }) => {
                             <div className="custom-select-dropdown">
                               <div
                                 type="button"
-                                className="select-input w-25 p-2 bg-white rounded "
+                                className="p-2 d-flex justify-content-between bg-white rounded "
                               >
                                 <DatePicker
+                                  style={{ cursor: "pointer !important" }}
                                   selected={startDate}
                                   dateFormat="MMM d Y"
                                   onChange={(date) => setStartDate(date)}
@@ -746,7 +787,13 @@ const Page = ({ params }) => {
                         </div>
                       </form>
                       <div className="form-inner">
-                        <button className="primary-btn1 two">Submit Now</button>
+                        <button
+                          type="Submit"
+                          onClick={() => handleSendEmail()}
+                          className="primary-btn1 two"
+                        >
+                          Submit Now
+                        </button>
                       </div>
                     </div>
                   </div>

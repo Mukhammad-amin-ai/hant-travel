@@ -9,8 +9,11 @@ function QuantityCounter({
 }) {
   const { quantity, increment, decrement, handleInputChange } =
     useQuantityCounter(1);
+
   useEffect(() => {
-    personsCount(quantity);
+    if (personsCount) {
+      personsCount(quantity);
+    }
   });
   return (
     <div className="quantity-counter">
