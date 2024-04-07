@@ -38,6 +38,7 @@ const Page = ({ params }) => {
   let personsCount = (count) => {
     if (count) {
       setPax(count);
+      setPrice(packageShow[router].price * count);
     }
   };
 
