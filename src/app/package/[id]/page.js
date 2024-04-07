@@ -744,12 +744,10 @@ const Page = ({ params }) => {
                             defaultValue={""}
                           />
                         </div>
-                        <div className="form-inner">
-                          <button type="submit" className="primary-btn1 two">
-                            Submit Now
-                          </button>
-                        </div>
                       </form>
+                      <div className="form-inner">
+                        <button className="primary-btn1 two">Submit Now</button>
+                      </div>
                     </div>
                   </div>
                 </div>

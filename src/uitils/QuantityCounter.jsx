@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import useQuantityCounter from "@/hooks/useQuantityCounter";
 
 function QuantityCounter({
@@ -9,7 +9,9 @@ function QuantityCounter({
 }) {
   const { quantity, increment, decrement, handleInputChange } =
     useQuantityCounter(1);
-  personsCount(quantity);
+  useEffect(() => {
+    personsCount(quantity);
+  });
   return (
     <div className="quantity-counter">
       <a
