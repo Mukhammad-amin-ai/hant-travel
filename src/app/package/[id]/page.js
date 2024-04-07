@@ -27,7 +27,6 @@ const Page = ({ params }) => {
 
   let handleDateChange = () => {
     console.log(startDate);
-    console.log(endDate);
   };
 
   let Gotoform = () => {
@@ -641,7 +640,7 @@ const Page = ({ params }) => {
                           </div> */}
                           {/* DON'T DELETE================================ */}
                           <div className="single-total mb-30">
-                            <span>Adult</span>
+                            <span>Person</span>
                             <ul>
                               <li>
                                 <strong>${packageShow[router].price}</strong>{" "}
