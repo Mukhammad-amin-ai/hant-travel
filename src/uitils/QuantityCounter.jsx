@@ -2,10 +2,14 @@
 import React from "react";
 import useQuantityCounter from "@/hooks/useQuantityCounter";
 
-function QuantityCounter({dcrIcon="bi bi-chevron-down", incIcon="bi bi-chevron-up"}) {
+function QuantityCounter({
+  dcrIcon = "bi bi-chevron-down",
+  incIcon = "bi bi-chevron-up",
+  personsCount,
+}) {
   const { quantity, increment, decrement, handleInputChange } =
     useQuantityCounter(1);
-
+  personsCount(quantity);
   return (
     <div className="quantity-counter">
       <a

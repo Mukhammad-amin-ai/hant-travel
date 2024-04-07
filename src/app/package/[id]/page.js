@@ -20,9 +20,11 @@ const Page = ({ params }) => {
     openingIndex: 0,
   });
   const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
   const [booking, setBooking] = useState("active show");
+  const [pax, setPax] = useState(0);
   const [form, setForm] = useState("");
+  const [price, setPrice] = useState(0);
+
   let handleDateChange = () => {
     console.log(startDate);
     console.log(endDate);
@@ -31,6 +33,12 @@ const Page = ({ params }) => {
   let Gotoform = () => {
     setBooking("");
     setForm("active show");
+  };
+
+  let personsCount = (count) => {
+    if (count) {
+      setPax(count);
+    }
   };
 
   return (
@@ -518,12 +526,9 @@ const Page = ({ params }) => {
                                 className="select-input w-25 p-2 bg-white rounded "
                               >
                                 <DatePicker
-                                  selectsRange
-                                  startDate={startDate}
-                                  endDate={endDate}
-                                  onChange={handleDateChange}
-                                  dateFormat="MMM d"
-                                  placeholderText="Select date range"
+                                  selected={startDate}
+                                  dateFormat="MMM d Y"
+                                  onChange={(date) => setStartDate(date)}
                                 />
                                 <i className="bi bi-chevron-down" />
                               </div>
@@ -561,6 +566,7 @@ const Page = ({ params }) => {
                             <QuantityCounter
                               incIcon="bx bx-plus"
                               dcrIcon="bx bx-minus"
+                              personsCount={personsCount}
                             />
                           </div>
                         </div>
@@ -643,15 +649,29 @@ const Page = ({ params }) => {
                               <li>
                                 <i className="bi bi-x-lg" />
                               </li>
-                              <li>
-                                <strong>02</strong> QTY
-                              </li>
+                              {pax < 10 ? (
+                                <li>
+                                  <strong>0{pax}</strong> QTY
+                                </li>
+                              ) : (
+                                <li>
+                                  <strong>{pax}</strong> QTY
+                                </li>
+                              )}
                               <li>
                                 <i className="bi bi-x-lg" />
                               </li>
-                              <li>
-                                <strong>04</strong> DAYS
-                              </li>
+                              {packageShow[router].days < 10 ? (
+                                <li>
+                                  <strong> 0{packageShow[router].days} </strong>{" "}
+                                  DAYS
+                                </li>
+                              ) : (
+                                <li>
+                                  <strong> {packageShow[router].days} </strong>{" "}
+                                  DAYS
+                                </li>
+                              )}
                             </ul>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -665,11 +685,11 @@ const Page = ({ params }) => {
                                 d="M23.999 5.44668L25.6991 7.4978L23.9991 9.54878H0V10.5743H23.1491L20.0135 14.3575L20.7834 14.9956L26.7334 7.81687L26.9979 7.4978L26.7334 7.17873L20.7834 0L20.0135 0.638141L23.149 4.42114H0V5.44668H23.999Z"
                               />
                             </svg>
-                            <div className="total">$390</div>
+                            <div className="total">$ {price}</div>
                           </div>
                         </div>
                         <div className="total-price">
-                          <span>Total Price:</span> $470
+                          <span>Total Price:</span> $ {price}
                         </div>
                       </form>
                       <button
