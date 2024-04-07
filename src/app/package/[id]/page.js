@@ -21,10 +21,16 @@ const Page = ({ params }) => {
   });
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-
+  const [booking, setBooking] = useState("active show");
+  const [form, setForm] = useState("");
   let handleDateChange = () => {
     console.log(startDate);
     console.log(endDate);
+  };
+
+  let Gotoform = () => {
+    setBooking("");
+    setForm("active show");
   };
 
   return (
@@ -470,7 +476,7 @@ const Page = ({ params }) => {
                 </p>
                 <div className="nav nav-pills mb-40" role="tablist">
                   <button
-                    className="nav-link show active"
+                    className={`nav-link ${booking}`}
                     id="v-pills-booking-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#v-pills-booking"
@@ -482,7 +488,7 @@ const Page = ({ params }) => {
                     Online Booking
                   </button>
                   <button
-                    className="nav-link"
+                    className={`nav-link ${form}`}
                     id="v-pills-contact-tab"
                     data-bs-toggle="pill"
                     data-bs-target="#v-pills-contact"
@@ -496,7 +502,7 @@ const Page = ({ params }) => {
                 </div>
                 <div className="tab-content" id="v-pills-tabContent2">
                   <div
-                    className="tab-pane fade active show"
+                    className={`tab-pane fade ${booking} `}
                     id="v-pills-booking"
                     role="tabpanel"
                     aria-labelledby="v-pills-booking-tab"
@@ -525,13 +531,11 @@ const Page = ({ params }) => {
                           </div>
                         </div>
                         <div className="booking-form-item-type mb-45">
-                          <div className="number-input-item adults">
+                          {/* DON'T DELETE================================ */}
+                          {/* <div className="number-input-item adults">
                             <label className="number-input-lable">
                               Adult:<span></span>
-                              <span>
-                                {" "}
-                                $60 <del>$80</del>
-                              </span>
+                              <span> $ {packageShow[router].price}</span>
                             </label>
                             <QuantityCounter
                               incIcon="bx bx-plus"
@@ -547,10 +551,22 @@ const Page = ({ params }) => {
                               incIcon="bx bx-plus"
                               dcrIcon="bx bx-minus"
                             />
+                          </div> */}
+                          {/* DON'T DELETE================================ */}
+                          <div className="number-input-item children">
+                            <label className="number-input-lable">
+                              Person:<span></span>
+                              <span>$ {packageShow[router].price}</span>
+                            </label>
+                            <QuantityCounter
+                              incIcon="bx bx-plus"
+                              dcrIcon="bx bx-minus"
+                            />
                           </div>
                         </div>
                         <div className="booking-form-item-type">
-                          <div className="single-total mb-30">
+                          {/* DON'T DELETE================================ */}
+                          {/* <div className="single-total mb-30">
                             <span>Adult</span>
                             <ul>
                               <li>
@@ -615,17 +631,57 @@ const Page = ({ params }) => {
                               />
                             </svg>
                             <div className="total">$390</div>
+                          </div> */}
+                          {/* DON'T DELETE================================ */}
+                          <div className="single-total mb-30">
+                            <span>Adult</span>
+                            <ul>
+                              <li>
+                                <strong>${packageShow[router].price}</strong>{" "}
+                                PRICE
+                              </li>
+                              <li>
+                                <i className="bi bi-x-lg" />
+                              </li>
+                              <li>
+                                <strong>02</strong> QTY
+                              </li>
+                              <li>
+                                <i className="bi bi-x-lg" />
+                              </li>
+                              <li>
+                                <strong>04</strong> DAYS
+                              </li>
+                            </ul>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width={27}
+                              height={15}
+                              viewBox="0 0 27 15"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                clipRule="evenodd"
+                                d="M23.999 5.44668L25.6991 7.4978L23.9991 9.54878H0V10.5743H23.1491L20.0135 14.3575L20.7834 14.9956L26.7334 7.81687L26.9979 7.4978L26.7334 7.17873L20.7834 0L20.0135 0.638141L23.149 4.42114H0V5.44668H23.999Z"
+                              />
+                            </svg>
+                            <div className="total">$390</div>
                           </div>
                         </div>
                         <div className="total-price">
                           <span>Total Price:</span> $470
                         </div>
                       </form>
-                      <button className="primary-btn1 two">Book Now</button>
+                      <button
+                        onClick={() => Gotoform()}
+                        className="primary-btn1 two"
+                      >
+                        Book Now
+                      </button>
                     </div>
                   </div>
                   <div
-                    className="tab-pane fade"
+                    className={`tab-pane fade ${form} `}
                     id="v-pills-contact"
                     role="tabpanel"
                     aria-labelledby="v-pills-contact-tab"
