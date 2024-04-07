@@ -51,7 +51,6 @@ const Page = ({ params }) => {
     user_phone: "+998978947323",
   });
   const handleSendEmail = async (e) => {
-    // e.preventDefault();
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -62,10 +61,7 @@ const Page = ({ params }) => {
       });
 
       const data = await response.json();
-      console.log(emailData);
-      console.log(data);
       if (data?.success) {
-        // toast.success(data?.message);
         setEmailData({
           user_name: "",
           user_location: "",
@@ -73,9 +69,6 @@ const Page = ({ params }) => {
           user_email: "",
         });
       }
-      // else if (data?.success == false) {
-      //   toast.error(data?.message);
-      // }
     } catch (error) {
       console.error("Error sending email:", error);
     }

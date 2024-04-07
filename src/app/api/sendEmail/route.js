@@ -17,8 +17,8 @@ export async function POST(req, res) {
       },
     });
     const mailOptions = {
-      from: "aminahmadov123@gmail.com",
-      to: "magavozdux123@gmail.com",
+      from: user_email,
+      to: "aminahmadov123@gmail.com",
       subject: "Sending email through SMTP",
       text: `
             User Name:${user_name}
