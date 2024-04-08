@@ -311,12 +311,12 @@ const page = () => {
                                             <h2 className="accordion-header">
                                                 <button className="accordion-button  collapsed" type="button"
                                                         data-bs-toggle="collapse"
-                                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                                        data-bs-target="#collapseTwo" aria-expanded="true"
                                                         aria-controls="collapseOne">
                                                     <h5 className="widget-title mb-0">Tour Types</h5>
                                                 </button>
                                             </h2>
-                                            <div id="collapseOne" className="accordion-collapse collapse "
+                                            <div id="collapseTwo" className="accordion-collapse collapse "
                                                  data-bs-parent="#accordionExample">
                                                 <div className="accordion-body">
                                                     <div className="row g-3">
@@ -352,12 +352,12 @@ const page = () => {
                                             <h2 className="accordion-header">
                                                 <button className="accordion-button  collapsed" type="button"
                                                         data-bs-toggle="collapse"
-                                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                                        data-bs-target="#collapseThree" aria-expanded="true"
                                                         aria-controls="collapseOne">
                                                     <h5 className="widget-title mb-0">Country</h5>
                                                 </button>
                                             </h2>
-                                            <div id="collapseOne" className="accordion-collapse collapse "
+                                            <div id="collapseThree" className="accordion-collapse collapse "
                                                  data-bs-parent="#accordionExample">
                                                 <div className="accordion-body">
                                                     <div className="row g-3">
