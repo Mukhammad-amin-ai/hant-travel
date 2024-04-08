@@ -44,13 +44,6 @@
   },
   {
     "id": 7,
-    "img": "/assets/images/destination/iran.jpg",
-    "name": "Iran",
-    "tours": "0",
-    "class": "col-lg-3"
-  },
-  {
-    "id": 8,
     "img": "/assets/images/destination/turkmenistan.jpg",
     "name": "Turkmenistan",
     "tours": "0",

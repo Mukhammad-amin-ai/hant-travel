@@ -1,6 +1,6 @@
 "use client";
 import "react-datepicker/dist/react-datepicker.css";
-import React, {useState} from "react";
+import React, {useRef, useState} from "react";
 import ModalVideo from "react-modal-video";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import QuantityCounter from "@/uitils/QuantityCounter";
@@ -15,25 +15,28 @@ import {log} from "next/dist/server/typescript/utils";
 const Page = ({params}) => {
     const router = params.id - 1;
     const [isOpen, setOpen] = useState(false);
+    const [startDate, setStartDate] = useState(new Date());
+    const [pax, setPax] = useState(0);
+    const [form, setForm] = useState("");
+    const [price, setPrice] = useState(0);
+    const [booking, setBooking] = useState("active show");
+    const [colapseBtn, setCollapseBtn] = useState('collapsed')
+    const name = useRef("")
+    const email = useRef("")
+    const message = useRef("")
+    const adress = useRef("")
+    const [startingData, setStartingData] = useState(new Date())
     const [isOpenimg, setOpenimg] = useState({
         openingState: false,
         openingIndex: 0,
     });
-    const [startDate, setStartDate] = useState(new Date());
-    const [booking, setBooking] = useState("active show");
-    const [pax, setPax] = useState(0);
-    const [form, setForm] = useState("");
-    const [price, setPrice] = useState(0);
-    const [emailData, setEmailData] = useState({
-        user_name: "Muhammadamin",
-        user_location: "Samarkand",
-        user_city: "Samarkand",
-        user_email: "magavozdux123@gmail.com",
-        user_phone: "+998978947323",
-    });
-    const [colapseBtn, setCollapseBtn] = useState('collapsed')
-    let handleDateChange = () => {
-        console.log(startDate);
+
+    let handleDateChange = (data) => {
+        setStartingData(data)
+        const date = new Date(data);
+        const options = {month: 'short', day: '2-digit', year: 'numeric'};
+        const formattedDate = date.toLocaleDateString('en-US', options);
+
     };
 
     let Gotoform = () => {
@@ -48,7 +51,27 @@ const Page = ({params}) => {
         }
     };
 
+    let handleTaest = () => {
+        console.log(adress.current.value)
+        console.log(pax)
+        console.log(price)
+        console.log(startingData)
+        console.log(name.current.value)
+        console.log(email.current.value)
+        console.log(message.current.value)
+    }
+
     const handleSendEmail = async (e) => {
+
+        let emailData = {
+            user_name: name.current.value,
+            user_email: email.current.value,
+            user_adress: adress.current.value,
+            tour_date: startingData,
+            pax: pax,
+            user_message: message.current.value
+        }
+        console.log(emailData)
         try {
             const response = await fetch("/api/sendEmail", {
                 method: "POST",
@@ -59,12 +82,7 @@ const Page = ({params}) => {
             });
             const data = await response.json();
             if (data?.success) {
-                setEmailData({
-                    user_name: "",
-                    user_location: "",
-                    user_city: "",
-                    user_email: "",
-                });
+                window.location.reload()
             }
         } catch (error) {
             console.error("Error sending email:", error);
@@ -146,14 +164,14 @@ const Page = ({params}) => {
                                                         src={packageShow[0].galley[3].img}
                                                         alt=""
                                                     />
-                                                    <a>  <i className="bi bi-eye"
-                                                            onClick={() =>
-                                                                setOpenimg({
-                                                                    openingState: true,
-                                                                    openingIndex: 3,
-                                                                })
-                                                            }
-                                                        />
+                                                    <a> <i className="bi bi-eye"
+                                                           onClick={() =>
+                                                               setOpenimg({
+                                                                   openingState: true,
+                                                                   openingIndex: 3,
+                                                               })
+                                                           }
+                                                    />
                                                     </a>
                                                 </div>
                                             </div>
@@ -329,7 +347,6 @@ const Page = ({params}) => {
                                     </div>
                                 ))}
                             </div>
-
                             <div className="tour-location">
                                 <h4>Location Map</h4>
                                 <div className="map-area mb-30">
@@ -549,10 +566,9 @@ const Page = ({params}) => {
                                                                 className="p-2 d-flex justify-content-between bg-white rounded "
                                                             >
                                                                 <DatePicker
-                                                                    style={{cursor: "pointer !important"}}
-                                                                    selected={startDate}
+                                                                    selected={startingData}
                                                                     dateFormat="MMM d Y"
-                                                                    onChange={(date) => setStartDate(date)}
+                                                                    onChange={(date) => handleDateChange(date)}
                                                                 />
                                                                 <i className="bi bi-chevron-down"/>
                                                             </div>
@@ -562,25 +578,24 @@ const Page = ({params}) => {
                                                 <div className="booking-form-item-type mb-45">
                                                     {/* DON'T DELETE================================ */}
                                                     {/* <div className="number-input-item adults">
-                            <label className="number-input-lable">
-                              Adult:<span></span>
-                              <span> $ {packageShow[router].price}</span>
-                            </label>
-                            <QuantityCounter
-                              incIcon="bx bx-plus"
-                              dcrIcon="bx bx-minus"
-                            />
-                          </div>
-                          <div className="number-input-item children">
-                            <label className="number-input-lable">
-                              Children:<span></span>
-                              <span>$15</span>
-                            </label>
-                            <QuantityCounter
-                              incIcon="bx bx-plus"
-                              dcrIcon="bx bx-minus"
-                            />
-                          </div> */}
+                                                    <label className="number-input-lable">
+                                                      Adult:<span></span>
+                                                      <span> $ {packageShow[router].price}</span>
+                                                      </label>
+                                                        <QuantityCounter
+                                                          incIcon="bx bx-plus"
+                                                          dcrIcon="bx bx-minus"/>
+                                                         </div>
+                                                          <div className="number-input-item children">
+                                                           <label className="number-input-lable">
+                                                             Children:<span></span>
+                                                             <span>$15</span>
+                                                              </label>
+                                                              <QuantityCounter
+                                                                 incIcon="bx bx-plus"
+                                                                 dcrIcon="bx bx-minus"
+                                                                       />
+                                                              </div> */}
                                                     {/* DON'T DELETE================================ */}
                                                     <div className="number-input-item children">
                                                         <label className="number-input-lable">
@@ -737,8 +752,19 @@ const Page = ({params}) => {
                                                         Full Name <span>*</span>
                                                     </label>
                                                     <input
+                                                        ref={name}
                                                         type="text"
                                                         placeholder="Enter your full name"
+                                                    />
+                                                </div>
+                                                <div className="form-inner mb-20">
+                                                    <label>
+                                                        Where are you from <span>*</span>
+                                                    </label>
+                                                    <input
+                                                        ref={adress}
+                                                        type="text"
+                                                        placeholder="Enter your address"
                                                     />
                                                 </div>
                                                 <div className="form-inner mb-20">
@@ -746,24 +772,26 @@ const Page = ({params}) => {
                                                         Email Address <span>*</span>
                                                     </label>
                                                     <input
+                                                        ref={email}
                                                         type="email"
                                                         placeholder="Enter your email address"
                                                     />
                                                 </div>
-                                                <div className="form-inner mb-20">
-                                                    <label>
-                                                        Phone Number <span>*</span>
-                                                    </label>
-                                                    <input
-                                                        type="text"
-                                                        placeholder="Enter your phone number"
-                                                    />
-                                                </div>
+                                                {/*<div className="form-inner mb-20">*/}
+                                                {/*    <label>*/}
+                                                {/*        Phone Number <span>*</span>*/}
+                                                {/*    </label>*/}
+                                                {/*    <input*/}
+                                                {/*        type="text"*/}
+                                                {/*        placeholder="Enter your phone number"*/}
+                                                {/*    />*/}
+                                                {/*</div>*/}
                                                 <div className="form-inner mb-30">
                                                     <label>
                                                         Write Your Massage <span>*</span>
                                                     </label>
                                                     <textarea
+                                                        ref={message}
                                                         placeholder="Write your quiry"
                                                         defaultValue={""}
                                                     />

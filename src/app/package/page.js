@@ -274,7 +274,7 @@ const page = () => {
                         <div className="col-lg-4">
                             <div className="sidebar-area">
                                 <div className="single-widget mb-30">
-                                    <div class="accordion" id="accordionExample">
+                                    <div className="accordion" id="accordionExample">
                                         <div className="accordion-item">
                                             <h2 className="accordion-header">
                                                 <button
