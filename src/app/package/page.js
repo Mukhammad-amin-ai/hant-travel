@@ -13,26 +13,21 @@ import {useSearchParams} from "next/navigation";
 
 const page = () => {
     const searchParams = useSearchParams();
-
     const search = searchParams.get("search");
     const typeOdtour = searchParams.get("type");
     const days = searchParams.get("day");
-
     const [checkedIndex, setCheckedIndex] = useState(-1);
     const [tourCheck, setTourCheck] = useState(-1);
-    const [tour, setTour] = useState(Tour);
     const [nameTour, setNameTour] = useState("");
     const [tourType, setTourType] = useState("");
+    const [tour, setTour] = useState(Tour);
 
     const fromDay = useRef(null);
-    const toDay = useRef(null);
     const selectPrice = useRef(null);
-
     let handleCheckboxChange = (index, name) => {
         setCheckedIndex(index);
         setNameTour(name);
     };
-
     const tourCheckFunc = (index, type) => {
         setTourCheck(index);
         setTourType(type);
@@ -133,11 +128,11 @@ const page = () => {
                                             options={["Price Low to Hig", "Price High to Low"]}
                                            placeholder="Default Sorting"
                                         /> */}
-                                        <select  className="form-select"
-                                            aria-label="Default select example"
-                                            ref={selectPrice}
-                                            id="price_sorting"
-                                            onChange={() => priceSorter()}  >
+                                        <select className="form-select"
+                                                aria-label="Default select example"
+                                                ref={selectPrice}
+                                                id="price_sorting"
+                                                onChange={() => priceSorter()}>
                                             <option value="Default Sorting">Default Sorting</option>
                                             <option value="Low">Price Low to Higt</option>
                                             <option value="Hight">Price Hight to Low</option>
@@ -151,12 +146,12 @@ const page = () => {
                                         <div className="col-md-6 item" key={index}>
                                             <div className="package-card">
                                                 <div className="package-card-img-wrap">
-                                                    <Link  href={`/package/${item.id}`}
-                                                        className="card-img"    >
+                                                    <Link href={`/package/${item.id}`}
+                                                          className="card-img">
                                                         <img
                                                             style={{height: "177px", width: "100%"}}
                                                             src={item.img}
-                                                            alt=""    />
+                                                            alt=""/>
                                                     </Link>
                                                     <div className="batch">
                                                         <span className="date">{item.batch}</span>
@@ -273,97 +268,136 @@ const page = () => {
                         <div className="col-lg-4">
                             <div className="sidebar-area">
                                 <div className="single-widget mb-30">
-                                    <h5 className="widget-title">Durations</h5>
-                                    <div className="row g-3">
-                                        <div className="col">
-                                            <input ref={fromDay}
-                                                type="number"
-                                                className="form-control"
-                                                placeholder="Days"
-                                                aria-label="From"
-                                                id="from_input"
-                                                min="0"
-                                                max="50"
-                                                onChange={(e) => {
-                                                    if (e.target.value < 0) {
-                                                        e.target.value = 0;
-                                                    }
-                                                }}
-                                                onWheel={(e) =>  e.target.blur()}
-                                            />
+                                    <div class="accordion" id="accordionExample">
+                                        <div className="accordion-item">
+                                            <h2 className="accordion-header">
+                                                <button className="accordion-button  collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                                        aria-controls="collapseOne">
+                                                    <h5 className="widget-title mb-0">Durations</h5>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" className="accordion-collapse collapse "
+                                                 data-bs-parent="#accordionExample">
+                                                <div className="accordion-body">
+                                                    <div className="row g-3">
+                                                        <div className="col">
+                                                            <input ref={fromDay}
+                                                                   type="number"
+                                                                   className="form-control"
+                                                                   placeholder="Days"
+                                                                   aria-label="From"
+                                                                   id="from_input"
+                                                                   min="0"
+                                                                   max="50"
+                                                                   onChange={(e) => {
+                                                                       if (e.target.value < 0) {
+                                                                           e.target.value = 0;
+                                                                       }
+                                                                   }}
+                                                                   onWheel={(e) => e.target.blur()}
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        {/* <div className="col">
-                      <input
-                        ref={toDay}
-                        type="number"
-                        className="form-control"
-                        placeholder="to"
-                        aria-label="to"
-                        id="to_input"
-                        min="0"
-                        max="50"
-                        onChange={(e) => {
-                          if (e.target.value > 50) {
-                            e.target.value = 50;
-                          }
-                        }}
-                      />
-                    </div> */}
                                     </div>
                                 </div>
                                 <div className="single-widget mb-30">
-                                    <h5 className="widget-title">Tour Types</h5>
-                                    <ul className="category-list two">
-                                        {Type.map((item, index) => (
-                                            <li key={index}
-                                                role="button"
-                                                onClick={() => tourCheckFunc(index, item.type)}   >
-                                                <div className="form-check form-check-inline">
-                                                    <input
-                                                        className="form-check-input"
-                                                        type="checkbox"
-                                                        id={`checkbox_${item.id}`}
-                                                        checked={tourCheck === index}
-                                                        readOnly
-                                                    />
+                                    <div className="accordion" id="accordionExample">
+                                        <div className="accordion-item">
+                                            <h2 className="accordion-header">
+                                                <button className="accordion-button  collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                                        aria-controls="collapseOne">
+                                                    <h5 className="widget-title mb-0">Tour Types</h5>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" className="accordion-collapse collapse "
+                                                 data-bs-parent="#accordionExample">
+                                                <div className="accordion-body">
+                                                    <div className="row g-3">
+                                                        <div className="col">
+                                                            <ul className="category-list two">
+                                                                {Type.map((item, index) => (
+                                                                    <li key={index}
+                                                                        role="button"
+                                                                        onClick={() => tourCheckFunc(index, item.type)}>
+                                                                        <div className="form-check form-check-inline">
+                                                                            <input
+                                                                                className="form-check-input"
+                                                                                type="checkbox"
+                                                                                id={`checkbox_${item.id}`}
+                                                                                checked={tourCheck === index}
+                                                                                readOnly
+                                                                            />
+                                                                        </div>
+                                                                        {item.type}
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                {item.type}
-                                            </li>
-                                        ))}
-                                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="single-widget mb-30">
-                                    <h5 className="widget-title">Country</h5>
-                                    <ul className="category-list two">
-                                        {destination.map((item, index) => (
-                                            <li key={index}
-                                                role="button"
-                                                onClick={() => handleCheckboxChange(index, item.name)} >
-                                                <div className="form-check form-check-inline">
-                                                    <input
-                                                        className="form-check-input"
-                                                        type="checkbox"
-                                                        id={index}
-                                                        checked={checkedIndex === index}
-                                                        readOnly
-                                                    />
+                                    <div className="accordion" id="accordionExample">
+                                        <div className="accordion-item">
+                                            <h2 className="accordion-header">
+                                                <button className="accordion-button  collapsed" type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                                        aria-controls="collapseOne">
+                                                    <h5 className="widget-title mb-0">Country</h5>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" className="accordion-collapse collapse "
+                                                 data-bs-parent="#accordionExample">
+                                                <div className="accordion-body">
+                                                    <div className="row g-3">
+                                                        <div className="col">
+                                                            <ul className="category-list two">
+                                                                {destination.map((item, index) => (
+                                                                    <li key={index}
+                                                                        role="button"
+                                                                        onClick={() => handleCheckboxChange(index, item.name)}>
+                                                                        <div className="form-check form-check-inline">
+                                                                            <input
+                                                                                className="form-check-input"
+                                                                                type="checkbox"
+                                                                                id={index}
+                                                                                checked={checkedIndex === index}
+                                                                                readOnly
+                                                                            />
+                                                                        </div>
+                                                                        <a style={{userSelect: "none"}}>
+                                                                            {item.name}
+                                                                            <span>{item.tours}</span>
+                                                                        </a>
+                                                                    </li>
+                                                                ))}
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <a style={{userSelect: "none"}}>
-                                                    {item.name}
-                                                    <span>{item.tours}</span>
-                                                </a>
-                                            </li>
-                                        ))}
-                                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="single-widget mb-30">
                                     <div className="sidebar-area d-flex  justify-content-between">
-                                        <div  className="primary-btn2 d-flex" onClick={() => Filter()}  >
+                                        <div className="primary-btn2 d-flex" onClick={() => Filter()}>
                                             Filter
-                                            <svg  xmlns="http://www.w3.org/2000/svg"
-                                                width="18"
-                                                height="18"
-                                                viewBox="0 0 24 24"   >
+                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                 width="18"
+                                                 height="18"
+                                                 viewBox="0 0 24 24">
                                                 <path
                                                     fill="none"
                                                     stroke="currentColor"
@@ -375,7 +409,7 @@ const page = () => {
                                             </svg>
                                         </div>
                                         <div className=" btn btn-danger d-flex align-items-center gap-2"
-                                            onClick={() => clear()}  >
+                                             onClick={() => clear()}>
                                             Clear
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
