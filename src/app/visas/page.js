@@ -3,27 +3,22 @@
 import React from "react";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Link from "next/link";
-import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+
 import visa from "../../data/custom/visa.json";
 import destination from "@/data/custom/destination.json";
 import DestinationSearch from "@/components/banner/DestinationSearch";
-import tourTypeDropdown from "@/components/banner/TourTypeDropdown";
 import TourTypeDropdown from "@/components/banner/TourTypeDropdown";
-import typeTour from "../../data/custom/type.json";
 
-// export const metadata = {
-//   title: "HANT TRAVEL",
-//   description: "Visa",
-//   icons: {
-//     icon: "/assets/img/sm-logo.svg",
-//   },
-// };
 
 const page = () => {
+
+    let visaType = (type) => {
+        console.log(type)
+    }
+
+
     return (
         <>
-            <Header/>
             <Breadcrumb pagename="Visa" pagetitle="Visa"/>
             <div className="package-search-filter-wrapper">
                 <div className="container">
@@ -72,7 +67,8 @@ const page = () => {
                                                     </g>
                                                 </svg>
                                             </div>
-                                            <TourTypeDropdown typeTour={typeTour} />
+                                            <TourTypeDropdown typeCatcher={visaType} description={'Visa type'}
+                                                              typeTour={visa}/>
                                         </div>
                                     </div>
                                 </div>
@@ -114,7 +110,7 @@ const page = () => {
                                                                 <span>Country :</span> {item.country}
                                                             </li>
                                                             <li>
-                                                                <span>Visa Type :</span> {item.visa}
+                                                                <span>Visa Type :</span> {item.type}
                                                             </li>
                                                             <li>
                                                                 <span>Visa Mode :</span>
@@ -125,7 +121,7 @@ const page = () => {
                                                             </li>
                                                             <li>
                                                                 <span>Processing Time :</span>
-                                                                {item.procces}Working Day
+                                                                {item.process}Working Day
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -180,7 +176,7 @@ const page = () => {
                                                     </a>
                                                 </li>
                                                 <li>
-                                                <a href="#">6</a>
+                                                    <a href="#">6</a>
                                                 </li>
                                                 <li>
                                                     <a href="#" className="shop-pagi-btn">
@@ -436,7 +432,6 @@ const page = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </>
     );
 };

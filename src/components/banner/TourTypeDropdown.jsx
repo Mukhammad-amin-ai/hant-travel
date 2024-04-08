@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 
 
-const TourTypeDropdown = ({ typeCatcher,typeTour }) => {
+const TourTypeDropdown = ({ typeCatcher,typeTour,description }) => {
   const [isActive, setIsActive] = useState(false);
-  const [selectedTourType, setSelectedTourType] = useState("Family Tour");
+  const [selectedTourType, setSelectedTourType] = useState(typeTour?  typeTour[0].type : "");
   const dropdownRef = useRef(null);
 
   const handleToggleActive = () => {
@@ -23,6 +23,7 @@ const TourTypeDropdown = ({ typeCatcher,typeTour }) => {
   };
 
   useEffect(() => {
+    // setSelectedTourType()
     document.addEventListener("click", handleClickOutside);
     return () => {
       document.removeEventListener("click", handleClickOutside);
@@ -39,7 +40,7 @@ const TourTypeDropdown = ({ typeCatcher,typeTour }) => {
 
   return (
     <div className={`searchbox-input`}>
-      <label>Tour Type</label>
+      <label>{description}</label>
       <div className="custom-select-dropdown" ref={dropdownRef}>
         <div className="select-input" onClick={handleToggleActive}>
           <input type="text" readOnly value={selectedTourType} />
