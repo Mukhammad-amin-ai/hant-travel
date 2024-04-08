@@ -21,16 +21,20 @@ const page = () => {
     const [nameTour, setNameTour] = useState("");
     const [tourType, setTourType] = useState("");
     const [tour, setTour] = useState(Tour);
+    const [countryCheck, setCountryCheck] = useState(false)
+    const [typeCheck, setTypeCheck] = useState(false)
 
     const fromDay = useRef(null);
     const selectPrice = useRef(null);
     let handleCheckboxChange = (index, name) => {
         setCheckedIndex(index);
         setNameTour(name);
+        setCountryCheck(true)
     };
     const tourCheckFunc = (index, type) => {
         setTourCheck(index);
         setTourType(type);
+        setTypeCheck(true)
     };
 
     const sorterDays = () => {
@@ -57,12 +61,12 @@ const page = () => {
         if (fromDay.current.value !== null) {
             sorterDays();
         }
-        // if (nameTour !== "") {
-        //     setTour(Tour.filter((item) => item.country === nameTour));
-        // }
-        // if (tourType !== "") {
-        //     setTour(Tour.filter((item) => item.type === tourType));
-        // }
+        if (countryCheck === true) {
+            setTour(tour.filter((item) => item.country === nameTour));
+        }
+        if (typeCheck === true) {
+            setTour(tour.filter((item) => item.type === tourType));
+        }
         window.scrollTo(0, 200);
     };
 
@@ -70,7 +74,6 @@ const page = () => {
         setTour(Tour);
         selectPrice.current.value = "Default Sorting";
         fromDay.current.value = 0;
-        toDay.current.value = 0;
         setCheckedIndex(-1);
         setTourCheck(-1);
         window.scrollTo(0, 200);
@@ -93,15 +96,25 @@ const page = () => {
     };
 
     useEffect(() => {
+
         let countryId = countryIdFinder() - 1;
         let tourType = typeFinder() - 1;
-        handleCheckboxChange(countryId, search);
-        tourCheckFunc(tourType, typeOdtour);
 
-        let dayInput = document.getElementById("from_input");
-        if (dayInput && days) {
-            dayInput.value = days;
+        if (search !== null) {
+            handleCheckboxChange(countryId, search);
         }
+        if (typeOdtour !== null) {
+            tourCheckFunc(tourType, typeOdtour);
+        }
+        if (days !== null) {
+            let dayInput = document.getElementById("from_input");
+            if (dayInput && days) {
+                dayInput.value = days;
+            }
+
+        }
+
+
     }, []);
 
     return (
@@ -127,8 +140,8 @@ const page = () => {
                                                 id="price_sorting"
                                                 onChange={() => priceSorter()}>
                                             <option value="Default Sorting">Default Sorting</option>
-                                            <option value="Low">Price Low to Higt</option>
-                                            <option value="Hight">Price Hight to Low</option>
+                                            <option value="Low">Price Hight to Low</option>
+                                            <option value="Hight">Price Low to Hight</option>
                                         </select>
                                     </div>
                                 </div>

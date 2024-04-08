@@ -146,9 +146,7 @@ const Page = ({params}) => {
                                                         src={packageShow[0].galley[3].img}
                                                         alt=""
                                                     />
-                                                    <a>
-                                                        <i
-                                                            className="bi bi-eye"
+                                                    <a>  <i className="bi bi-eye"
                                                             onClick={() =>
                                                                 setOpenimg({
                                                                     openingState: true,
@@ -164,17 +162,15 @@ const Page = ({params}) => {
                                                     <img
                                                         style={{height: "234px"}}
                                                         src={packageShow[0].galley[3].img}
-                                                        alt=""
-                                                    />
+                                                        alt=""/>
                                                     <a>
-                                                        <i
-                                                            className="bi bi-eye"
-                                                            onClick={() =>
-                                                                setOpenimg({
-                                                                    openingState: true,
-                                                                    openingIndex: 4,
-                                                                })
-                                                            }
+                                                        <i className="bi bi-eye"
+                                                           onClick={() =>
+                                                               setOpenimg({
+                                                                   openingState: true,
+                                                                   openingIndex: 4,
+                                                               })
+                                                           }
                                                         />
                                                     </a>
                                                 </div>
@@ -185,7 +181,6 @@ const Page = ({params}) => {
                             </div>
                         </div>
                     </div>
-
                     {/*<div className="others-image-wrap d-none">*/}
                     {/*    <a*/}
                     {/*        href="assets/img/innerpage/package-01.jpg"*/}
