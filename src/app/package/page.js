@@ -277,14 +277,17 @@ const page = () => {
                                     <div class="accordion" id="accordionExample">
                                         <div className="accordion-item">
                                             <h2 className="accordion-header">
-                                                <button className="accordion-button  collapsed" type="button"
-                                                        data-bs-toggle="collapse"
-                                                        data-bs-target="#collapseOne" aria-expanded="true"
-                                                        aria-controls="collapseOne">
+                                                <button
+                                                    className={`accordion-button ${days !== null ? "" : "collapsed"} `}
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
                                                     <h5 className="widget-title mb-0">Durations</h5>
                                                 </button>
                                             </h2>
-                                            <div id="collapseOne" className="accordion-collapse collapse "
+                                            <div id="collapseOne"
+                                                 className={`accordion-collapse ${days !== null ? "show" : "collapse"} `}
                                                  data-bs-parent="#accordionExample">
                                                 <div className="accordion-body">
                                                     <div className="row g-3">
@@ -315,14 +318,17 @@ const page = () => {
                                     <div className="accordion" id="accordionExample">
                                         <div className="accordion-item">
                                             <h2 className="accordion-header">
-                                                <button className="accordion-button  collapsed" type="button"
-                                                        data-bs-toggle="collapse"
-                                                        data-bs-target="#collapseTwo" aria-expanded="true"
-                                                        aria-controls="collapseOne">
+                                                <button
+                                                    className={`accordion-button  ${typeOdtour !== null ? "" : "collapsed"} collapsed`}
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo" aria-expanded="true"
+                                                    aria-controls="collapseOne">
                                                     <h5 className="widget-title mb-0">Tour Types</h5>
                                                 </button>
                                             </h2>
-                                            <div id="collapseTwo" className="accordion-collapse collapse "
+                                            <div id="collapseTwo"
+                                                 className={`accordion-collapse  ${typeOdtour !== null ? "show" : "collapse"}`}
                                                  data-bs-parent="#accordionExample">
                                                 <div className="accordion-body">
                                                     <div className="row g-3">
@@ -356,14 +362,16 @@ const page = () => {
                                     <div className="accordion" id="accordionExample">
                                         <div className="accordion-item">
                                             <h2 className="accordion-header">
-                                                <button className="accordion-button  collapsed" type="button"
-                                                        data-bs-toggle="collapse"
-                                                        data-bs-target="#collapseThree" aria-expanded="true"
-                                                        aria-controls="collapseOne">
+                                                <button
+                                                    className={`accordion-button ${search !== null ? "" : "collapsed"} `}
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree" aria-expanded="true"
+                                                    aria-controls="collapseOne">
                                                     <h5 className="widget-title mb-0">Country</h5>
                                                 </button>
                                             </h2>
-                                            <div id="collapseThree" className="accordion-collapse collapse "
+                                            <div id="collapseThree" className={`accordion-collapse ${search !== null ? "show" : "collapsed"} `}
                                                  data-bs-parent="#accordionExample">
                                                 <div className="accordion-body">
                                                     <div className="row g-3">
