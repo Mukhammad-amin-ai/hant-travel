@@ -47,7 +47,7 @@ const TourTypeDropdown = ({ typeCatcher,typeTour }) => {
         </div>
         <div className={`${isActive ? "active" : ""} custom-select-wrap two`}>
           <ul className="option-list">
-            {typeTour.map((tourType, index) => (
+            {typeTour?.map((tourType, index) => (
               <li
                 key={index}
                 className="single-item"
