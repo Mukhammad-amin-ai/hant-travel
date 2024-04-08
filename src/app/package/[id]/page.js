@@ -15,7 +15,7 @@ import {log} from "next/dist/server/typescript/utils";
 const Page = ({params}) => {
     const router = params.id - 1;
     const [isOpen, setOpen] = useState(false);
-    const [startDate, setStartDate] = useState(new Date());
+    const [startDate, setStartDate] = useState('');
     const [pax, setPax] = useState(0);
     const [form, setForm] = useState("");
     const [price, setPrice] = useState(0);
@@ -36,7 +36,7 @@ const Page = ({params}) => {
         const date = new Date(data);
         const options = {month: 'short', day: '2-digit', year: 'numeric'};
         const formattedDate = date.toLocaleDateString('en-US', options);
-
+        setStartDate(formattedDate)
     };
 
     let Gotoform = () => {
@@ -51,27 +51,17 @@ const Page = ({params}) => {
         }
     };
 
-    let handleTaest = () => {
-        console.log(adress.current.value)
-        console.log(pax)
-        console.log(price)
-        console.log(startingData)
-        console.log(name.current.value)
-        console.log(email.current.value)
-        console.log(message.current.value)
-    }
-
     const handleSendEmail = async (e) => {
 
         let emailData = {
             user_name: name.current.value,
             user_email: email.current.value,
             user_adress: adress.current.value,
-            tour_date: startingData,
+            tour_date: startDate,
+            tour_name:packageShow[router].title,
             pax: pax,
             user_message: message.current.value
         }
-        console.log(emailData)
         try {
             const response = await fetch("/api/sendEmail", {
                 method: "POST",

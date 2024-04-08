@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 
 export async function POST(req, res) {
     try {
-        const {user_name,  user_email,user_adress,user_message, tour_date, pax} = await req.json();
+        const {user_name,  user_email,user_adress,user_message, tour_date,tour_name, pax} = await req.json();
         const transporter = nodemailer.createTransport({
             host: "smtp-relay.brevo.com",
             port: 587,
@@ -24,6 +24,7 @@ export async function POST(req, res) {
             Client Name:${user_name}
             Client Email: ${user_email}
             Client From: ${user_adress}
+            Tour Name : ${tour_name}
             Tour Data Choused by Client : ${tour_date}
             Pax : ${pax}
             ==========================================
