@@ -138,7 +138,7 @@ const Banner1Bottom = () => {
                               </g>
                             </svg>
                           </div>
-                          <TourTypeDropdown typeCatcher={typeCatcher} />
+                          <TourTypeDropdown typeCatcher={typeCatcher} typeTour={typeTour} />
                         </div>
                       </div>
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center divider">

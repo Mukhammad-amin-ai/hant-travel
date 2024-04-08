@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
-import typeTour from "../../data/custom/type.json";
 
-const TourTypeDropdown = ({ typeCatcher }) => {
+
+const TourTypeDropdown = ({ typeCatcher,typeTour }) => {
   const [isActive, setIsActive] = useState(false);
   const [selectedTourType, setSelectedTourType] = useState("Family Tour");
   const dropdownRef = useRef(null);
