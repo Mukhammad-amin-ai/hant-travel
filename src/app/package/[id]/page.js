@@ -9,7 +9,8 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import DatePicker from "react-datepicker";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import packageShow from "../../../data/custom/packageShow.json";
+import packageShow from "@/data/custom/packageShow.json"
+import {log} from "next/dist/server/typescript/utils";
 
 const Page = ({params}) => {
     const router = params.id - 1;
@@ -23,7 +24,14 @@ const Page = ({params}) => {
     const [pax, setPax] = useState(0);
     const [form, setForm] = useState("");
     const [price, setPrice] = useState(0);
-
+    const [emailData, setEmailData] = useState({
+        user_name: "Muhammadamin",
+        user_location: "Samarkand",
+        user_city: "Samarkand",
+        user_email: "magavozdux123@gmail.com",
+        user_phone: "+998978947323",
+    });
+    const [colapseBtn,setCollapseBtn]=useState('collapsed')
     let handleDateChange = () => {
         console.log(startDate);
     };
@@ -40,13 +48,6 @@ const Page = ({params}) => {
         }
     };
 
-    const [emailData, setEmailData] = useState({
-        user_name: "Muhammadamin",
-        user_location: "Samarkand",
-        user_city: "Samarkand",
-        user_email: "magavozdux123@gmail.com",
-        user_phone: "+998978947323",
-    });
     const handleSendEmail = async (e) => {
         try {
             const response = await fetch("/api/sendEmail", {
@@ -56,7 +57,6 @@ const Page = ({params}) => {
                 },
                 body: JSON.stringify(emailData),
             });
-
             const data = await response.json();
             if (data?.success) {
                 setEmailData({
@@ -70,6 +70,8 @@ const Page = ({params}) => {
             console.error("Error sending email:", error);
         }
     };
+
+
 
     return (
         <>
@@ -295,9 +297,8 @@ const Page = ({params}) => {
                                 {packageShow[router].plan.map((item, index) => (
                                     <div className="accordion-item" key={index}>
                                         <h2 className="accordion-header"
-                                            id={`heading${item.heading}`}  >
-                                            <button
-                                                className="accordion-button"
+                                            id={`heading_${item.heading}`}  >
+                                            <button className={`accordion-button`}
                                                 type="button"
                                                 data-bs-toggle="collapse"
                                                 data-bs-target={`#collapse${item.heading}`}
@@ -307,7 +308,7 @@ const Page = ({params}) => {
                                             </button>
                                         </h2>
                                         <div  id={`collapse${item.heading}`}
-                                            className="accordion-collapse collapse "
+                                            className={`accordion-collapse collapse `}
                                             aria-labelledby={`heading${item.heading}`}
                                             data-bs-parent="#tourPlan"  >
                                             <div className="accordion-body">
@@ -334,6 +335,7 @@ const Page = ({params}) => {
                                     </div>
                                 ))}
                             </div>
+
                             <div className="tour-location">
                                 <h4>Location Map</h4>
                                 <div className="map-area mb-30">
