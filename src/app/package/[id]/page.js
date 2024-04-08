@@ -31,7 +31,7 @@ const Page = ({params}) => {
         user_email: "magavozdux123@gmail.com",
         user_phone: "+998978947323",
     });
-    const [colapseBtn,setCollapseBtn]=useState('collapsed')
+    const [colapseBtn, setCollapseBtn] = useState('collapsed')
     let handleDateChange = () => {
         console.log(startDate);
     };
@@ -70,7 +70,6 @@ const Page = ({params}) => {
             console.error("Error sending email:", error);
         }
     };
-
 
 
     return (
@@ -297,20 +296,20 @@ const Page = ({params}) => {
                                 {packageShow[router].plan.map((item, index) => (
                                     <div className="accordion-item" key={index}>
                                         <h2 className="accordion-header"
-                                            id={`heading_${item.heading}`}  >
+                                            id={`heading_${item.heading}`}>
                                             <button className={`accordion-button`}
-                                                type="button"
-                                                data-bs-toggle="collapse"
-                                                data-bs-target={`#collapse${item.heading}`}
-                                                aria-expanded="true"
-                                                aria-controls={`collapse${item.heading}`}  >
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target={`#collapse${item.heading}`}
+                                                    aria-expanded="true"
+                                                    aria-controls={`collapse${item.heading}`}>
                                                 <span>Day 0{item.id} :</span> {item.name}
                                             </button>
                                         </h2>
-                                        <div  id={`collapse${item.heading}`}
-                                            className={`accordion-collapse collapse `}
-                                            aria-labelledby={`heading${item.heading}`}
-                                            data-bs-parent="#tourPlan"  >
+                                        <div id={`collapse${item.heading}`}
+                                             className={`accordion-collapse collapse `}
+                                             aria-labelledby={`heading${item.heading}`}
+                                             data-bs-parent="#tourPlan">
                                             <div className="accordion-body">
                                                 <p>{item.description}</p>
                                                 <ul>

@@ -36,16 +36,9 @@ const page = () => {
     const sorterDays = () => {
         let days = fromDay.current.value;
         let filteredItems = Tour.filter(
-            (item) => item.day >= days,
+            (item) => item.day <= days,
         );
-        console.log(filteredItems)
-        // console.log(filteredItems)
-        // filteredItems.sort((a, b) => {
-        //     let distA = Math.min(Math.abs(a.day - start));
-        //     // let distB = Math.min(Math.abs(b.day - start));
-        //     return distA ;
-        // });
-        // setTour(filteredItems);
+        setTour(filteredItems);
     };
 
     const priceSorter = () => {
