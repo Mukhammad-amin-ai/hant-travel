@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Egypt",
+    "name": "Tourist",
     "price": "1,000",
     "img": "/assets/images/visa/egypt.jpg",
     "country": "Egypt",
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "name": "Saudi Arab",
+    "name": "Health",
     "price": "1,000",
     "img": "/assets/images/visa/saudi.jpg",
     "country": "Saudi Arab",
@@ -23,7 +23,7 @@
   },
   {
     "id": 3,
-    "name": "UAE",
+    "name": "Tourist",
     "price": "1,000",
     "img": "/assets/images/visa/uaa.jpg",
     "country": "UAE",
@@ -34,7 +34,7 @@
   },
   {
     "id": 4,
-    "name": "India",
+    "name": "Tourist",
     "price": "1,000",
     "img": "/assets/images/visa/india_1.jpg",
     "country": "India",

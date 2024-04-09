@@ -1,7 +1,8 @@
 "use client"
 import useCustomSelect from "@/hooks/useCustomSelect";
-import React, { useEffect, useRef } from "react";
-const SelectComponent = ({ options, placeholder, open, customClass }) => {
+import React, {useEffect, useRef} from "react";
+
+const SelectComponent = ({options, data, placeholder, open, customClass}) => {
   const {
     isOpen,
     selectedOption,
@@ -37,27 +38,24 @@ const SelectComponent = ({ options, placeholder, open, customClass }) => {
   }`;
 
   return (
-    <div
-      className={dropdownClassName}
-      tabIndex="0"
-      onClick={toggleDropdown}
-      ref={dropdownRef}
-    >
+    <div className={dropdownClassName}
+         tabIndex="0"
+         onClick={toggleDropdown}
+         ref={dropdownRef}>
       <span className="current">{selectedOption || placeholder}</span>
       <ul className="list">
-        {options.map((option, index) => (
-          <li
-            key={index}
-            className={`option${
-              selectedOption === option ? " selected focus" : ""
-            }`}
-            data-value={index}
-            onClick={() => {
-              selectOption(option);
-              openDropdown(); // Open the next dropdown
-            }}
-          >
-            {option}
+        {data?.map((option, index) => (
+          <li key={index}
+              className={`option${
+                selectedOption === option ? " selected focus" : ""
+              }`}
+              data-value={index}
+              onClick={() => {
+                selectOption(option);
+                openDropdown(); // Open the next dropdown
+              }}>
+
+            {option.name ? option.name : option.type}
           </li>
         ))}
       </ul>

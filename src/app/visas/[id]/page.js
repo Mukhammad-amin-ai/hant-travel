@@ -1,22 +1,31 @@
+"use client"
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
 import SelectComponent from "@/uitils/SelectComponent";
 import visaDetails from "../../../data/custom/visaDetails.json";
+import destination from "@/data/custom/destination.json";
+import visa from "@/data/custom/visa.json";
+import {useRef, useState} from "react";
 
-export const metadata = {
-  title: "HANT TRAVEL",
-  description: "Visa Deatils",
-  icons: {
-    icon: "/assets/img/sm-logo.svg",
-  },
-};
 const page = ({ params }) => {
   let router = params.id;
+  let fullName = useRef("");
+  let emailAdress = useRef("");
+  let counTryFrom =useRef("");
+  let message = useRef("");
+  const [country,setCountry] = useState("");
+  const [visaType, setVisaType] = useState("");
+
+
+  let visaTypeCatch = (data)=>{
+    console.log(data)
+  }
+
+  let countryCatch = (data)=>{
+    console.log(data)
+  }
 
   return (
     <>
-      <Header />
       <Breadcrumb pagename="Visa Details" pagetitle="Visa Details" />
       <div className="visa-details-pages pt-120 mb-120">
         <div className="container">
@@ -361,6 +370,7 @@ const page = ({ params }) => {
                       </label>
                       <SelectComponent
                         options={["Tourist", "Business visa", "Student visa"]}
+                        data={visa}
                         placeholder={["Select Visa"]}
                       />
                     </div>
@@ -370,6 +380,7 @@ const page = ({ params }) => {
                       </label>
                       <SelectComponent
                         options={["Australia", "Brazil", "Bangladesh"]}
+                        data={destination}
                         placeholder={["Select Country"]}
                       />
                     </div>
@@ -394,7 +405,6 @@ const page = ({ params }) => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
