@@ -2,7 +2,7 @@
 import useCustomSelect from "@/hooks/useCustomSelect";
 import React, {useEffect, useRef} from "react";
 
-const SelectComponent = ({options, data, placeholder, open, customClass}) => {
+const SelectComponent = ({options, data, placeholder, open, customClass, selectedFunc}) => {
   const {
     isOpen,
     selectedOption,
@@ -51,7 +51,8 @@ const SelectComponent = ({options, data, placeholder, open, customClass}) => {
               }`}
               data-value={index}
               onClick={() => {
-                selectOption(option);
+                selectOption(option.name ? option.name : option.type);
+                selectedFunc(option.name ? option.name : option.type);
                 openDropdown(); // Open the next dropdown
               }}>
 

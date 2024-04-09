@@ -9,19 +9,50 @@ import {useRef, useState} from "react";
 const page = ({ params }) => {
   let router = params.id;
   let fullName = useRef("");
-  let emailAdress = useRef("");
-  let counTryFrom =useRef("");
-  let message = useRef("");
+  let emailAddress = useRef("");
+  let countryFrom =useRef("");
+  let messageInp = useRef("");
   const [country,setCountry] = useState("");
   const [visaType, setVisaType] = useState("");
 
 
   let visaTypeCatch = (data)=>{
-    console.log(data)
+    setVisaType(data)
   }
 
   let countryCatch = (data)=>{
-    console.log(data)
+    setCountry(data)
+  }
+
+
+  let bookVisa = async (e)=>{
+    e.preventDefault()
+    let documentsObj = {
+      user_name : fullName.current.value,
+      user_email : emailAddress.current.value,
+      user_country : countryFrom.current.value,
+      choose_country:country,
+      visa_type : visaType,
+      user_message:messageInp.current.value
+    }
+
+    try {
+      const response = await fetch("/api/sendVisa", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(documentsObj),
+      })
+      const data = await response.json();
+      if (data?.success) {
+        console.log("Message send")
+        window.location.reload()
+      }
+
+    }catch (e) {
+      console.error("Error sending visa document:", e);
+    }
   }
 
   return (
@@ -339,29 +370,31 @@ const page = ({ params }) => {
                       prompt response via phone/email.
                     </p>
                   </div>
-                  <form>
+                  <form onSubmit={bookVisa}>
                     <div className="form-inner mb-20">
                       <label>
                         Full Name <span>*</span>
                       </label>
-                      <input type="text" placeholder="Enter your full name" />
+                      <input ref={fullName} type="text" placeholder="Enter your full name" />
                     </div>
                     <div className="form-inner mb-20">
                       <label>
                         Email Address <span>*</span>
                       </label>
                       <input
+                        ref={emailAddress}
                         type="email"
                         placeholder="Enter your email address"
                       />
                     </div>
                     <div className="form-inner mb-20">
                       <label>
-                        Phone Number <span>*</span>
+                       Where are you from ? <span>*</span>
                       </label>
                       <input
+                        ref={countryFrom}
                         type="text"
-                        placeholder="Enter your phone number"
+                        placeholder="Enter your Country "
                       />
                     </div>
                     <div className="form-inner mb-70">
@@ -371,6 +404,7 @@ const page = ({ params }) => {
                       <SelectComponent
                         options={["Tourist", "Business visa", "Student visa"]}
                         data={visa}
+                        selectedFunc={visaTypeCatch}
                         placeholder={["Select Visa"]}
                       />
                     </div>
@@ -381,6 +415,7 @@ const page = ({ params }) => {
                       <SelectComponent
                         options={["Australia", "Brazil", "Bangladesh"]}
                         data={destination}
+                        selectedFunc={countryCatch}
                         placeholder={["Select Country"]}
                       />
                     </div>
@@ -389,6 +424,7 @@ const page = ({ params }) => {
                         Write Your Massage <span>*</span>
                       </label>
                       <textarea
+                        ref={messageInp}
                         placeholder="Write your quiry"
                         defaultValue={""}
                       />
