@@ -1,31 +1,33 @@
 "use client";
-import QuantityCounter from "@/uitils/QuantityCounter";
 import React, { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import QuantityCounter from "@/uitils/QuantityCounter";
 import DestinationSearch from "./DestinationSearch";
 import TourTypeDropdown from "./TourTypeDropdown";
-import WhenDropdown from "./WhenDropdown";
 import TourCategoryDropdown from "./TourCategoryDropdown";
+import DateRange from "./DateRange";
+import typeTour from "../../data/custom/type.json";
+import destination from "../../data/custom/destination.json";
+import visa from '@/data/custom/visa.json'
+import WhenDropdown from "./WhenDropdown";
 import LocationDropdown from "./LocationDropdown";
 import GuestDropdown from "./GuestDropdown";
-import DateRange from "./DateRange";
-import Link from "next/link";
-import destination from "../../data/custom/destination.json";
-import typeTour from "../../data/custom/type.json";
+
 const Banner1Bottom = () => {
   const router = useRouter();
-  const [country, setCoutry] = useState("");
+  const [country, setCountry] = useState("");
   const [type, setType] = useState("");
   const [day, setDay] = useState("");
-  let tour = () => {
-    // router.push("/package", {
-    //   query: { search: country, day: day, type: type },
-    // });
-    // router.push(`/package`);
-  };
+  // let tour = () => {
+  //   // router.push("/package", {
+  //   //   query: { search: country, day: day, type: type },
+  //   // });
+  //   // router.push(`/package`);
+  // };
 
-  let contryCatcher = (country) => {
-    setCoutry(country);
+  let countryCatcher = (country) => {
+    setCountry(country);
   };
 
   let typeCatcher = (type) => {
@@ -118,7 +120,7 @@ const Banner1Bottom = () => {
                           <DestinationSearch
                             destination="Destination"
                             data={destination}
-                            contryCatcher={contryCatcher}
+                            contryCatcher={countryCatcher}
                           />
                         </div>
                       </div>
@@ -184,7 +186,7 @@ const Banner1Bottom = () => {
                     </div>
                   </div>
                   <button type="submit" >
-                    <Link href={`/package?search=${country}&day=${day}&type=${type}`}>
+                    <Link href={`/package?search=${country}&day=${day}&type=${type}`} style={{color:"#fff !important"}}>
                     Search
                     </Link>
                   </button>
@@ -229,7 +231,7 @@ const Banner1Bottom = () => {
                               </g>
                             </svg>
                           </div>
-                          <TourTypeDropdown typeCatcher={typeCatcher} />
+                          <TourTypeDropdown typeCatcher={typeCatcher} description={'Visa type'} typeTour={visa}  />
                         </div>
                       </div>
                       <div className="col-xl-3 col-md-6 d-flex justify-content-center divider">

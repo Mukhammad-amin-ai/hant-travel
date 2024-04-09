@@ -12,11 +12,11 @@
   },
   {
     "id": 2,
-    "name": "Saudi Arabia",
+    "name": "Saudi Arab",
     "price": "1,000",
     "img": "/assets/images/visa/saudi.jpg",
-    "country": "Saudi Arabia",
-    "type": "Tourist",
+    "country": "Saudi Arab",
+    "type": "Health",
     "mode": "Electronic",
     "valid": 60,
     "process": "7-10"
