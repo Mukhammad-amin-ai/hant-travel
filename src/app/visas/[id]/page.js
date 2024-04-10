@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import SelectComponent from "@/uitils/SelectComponent";
 import visaDetails from "../../../data/custom/visaDetails.json";
 import destination from "@/data/custom/destination.json";
+import Modal from "@/components/common/Modal";
 import visa from "@/data/custom/visa.json";
 import {useRef, useState} from "react";
 
@@ -14,7 +15,7 @@ const page = ({ params }) => {
   let messageInp = useRef("");
   const [country,setCountry] = useState("");
   const [visaType, setVisaType] = useState("");
-
+  const [modalOpen,setModalOpen]=useState("")
 
   let visaTypeCatch = (data)=>{
     setVisaType(data)
@@ -46,8 +47,9 @@ const page = ({ params }) => {
       })
       const data = await response.json();
       if (data?.success) {
-        console.log("Message send")
-        window.location.reload()
+        // console.log("Message send")
+        // window.location.reload()\
+        setModalOpen('exampleModal')
       }
 
     }catch (e) {
@@ -58,6 +60,7 @@ const page = ({ params }) => {
   return (
     <>
       <Breadcrumb pagename="Visa Details" pagetitle="Visa Details" />
+      <Modal/>
       <div className="visa-details-pages pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5">
@@ -430,7 +433,7 @@ const page = ({ params }) => {
                       />
                     </div>
                     <div className="form-inner">
-                      <button type="submit" className="primary-btn1 two">
+                      <button type="submit" className="primary-btn1 two " data-bs-toggle="modal" data-bs-target={`#${modalOpen}`}>
                         Submit Now
                       </button>
                     </div>

@@ -11,6 +11,7 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import packageShow from "@/data/custom/packageShow.json"
 import {log} from "next/dist/server/typescript/utils";
+import Modal from "@/components/common/Modal";
 
 const Page = ({params}) => {
     const router = params.id - 1;
@@ -189,39 +190,6 @@ const Page = ({params}) => {
                             </div>
                         </div>
                     </div>
-                    {/*<div className="others-image-wrap d-none">*/}
-                    {/*    <a*/}
-                    {/*        href="assets/img/innerpage/package-01.jpg"*/}
-                    {/*        data-fancybox="images"*/}
-                    {/*    >*/}
-                    {/*        <img src="/assets/img/innerpage/blog-grid-img3.jpg" alt=""/>*/}
-                    {/*    </a>*/}
-                    {/*    <a*/}
-                    {/*        href="assets/img/innerpage/package-02.jpg"*/}
-                    {/*        data-fancybox="images"*/}
-                    {/*    >*/}
-                    {/*        <img src="/assets/img/innerpage/blog-grid-img3.jpg" alt=""/>*/}
-                    {/*    </a>*/}
-                    {/*    <a*/}
-                    {/*        href="assets/img/innerpage/package-03.jpg"*/}
-                    {/*        data-fancybox="images"*/}
-                    {/*    >*/}
-                    {/*        <img src="/assets/img/innerpage/blog-grid-img3.jpg" alt=""/>*/}
-                    {/*    </a>*/}
-                    {/*    <a*/}
-                    {/*        href="assets/img/innerpage/package-04.jpg"*/}
-                    {/*        data-fancybox="images"*/}
-                    {/*    >*/}
-                    {/*        <img src="/assets/img/innerpage/blog-grid-img3.jpg" alt=""/>*/}
-                    {/*    </a>*/}
-                    {/*    <a*/}
-                    {/*        href="assets/img/innerpage/package-05.jpg"*/}
-                    {/*        data-fancybox="images"*/}
-                    {/*    >*/}
-                    {/*        <img src="/assets/img/innerpage/blog-grid-img3.jpg" alt=""/>*/}
-                    {/*    </a>*/}
-                    {/*</div>*/}
-
                     <div className="row g-xl-4 gy-5">
                         <div className="col-xl-8">
                             <h2>{packageShow[router].title}</h2>

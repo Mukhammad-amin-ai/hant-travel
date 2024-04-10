@@ -8,7 +8,6 @@ import TourTypeDropdown from "@/components/banner/TourTypeDropdown";
 import destination from "@/data/custom/destination.json";
 import visa from "../../data/custom/visa.json";
 
-
 const page = () => {
 
     const [country, setCountry] = useState("")
@@ -43,6 +42,7 @@ const page = () => {
     return (
       <>
         <Breadcrumb pagename="Visa" pagetitle="Visa"/>
+
         <div className="package-search-filter-wrapper">
           <div className="container">
             <div className="filter-group">
