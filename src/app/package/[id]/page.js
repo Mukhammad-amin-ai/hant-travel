@@ -26,6 +26,7 @@ const Page = ({params}) => {
     const email = useRef("")
     const message = useRef("")
     const adress = useRef("")
+    const [modalOpen,setModalOpen]=useState("")
     const [startingData, setStartingData] = useState(new Date())
     const [isOpenimg, setOpenimg] = useState({
         openingState: false,
@@ -73,7 +74,8 @@ const Page = ({params}) => {
             });
             const data = await response.json();
             if (data?.success) {
-                window.location.reload()
+                setModalOpen('exampleModal')
+                // window.location.reload()
             }
         } catch (error) {
             console.error("Error sending email:", error);
@@ -760,6 +762,7 @@ const Page = ({params}) => {
                                                     type="Submit"
                                                     onClick={() => handleSendEmail()}
                                                     className="primary-btn1 two"
+                                                    data-bs-toggle="modal" data-bs-target={`#${modalOpen}`}
                                                 >
                                                     Submit Now
                                                 </button>
