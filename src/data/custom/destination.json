@@ -2,63 +2,63 @@
   
   {
     "id": 1,
-    "img": "/assets/images/destination/tadjikistan.jpg",
+    "img": "/assets/images/destination/tadjikistan.webp",
     "name": "Tadjikistan",
     "tours": "0",
     "class": "col-lg-3"
   },
   {
     "id": 2,
-    "img": "/assets/images/destination/kazakstan.jpg",
+    "img": "/assets/images/destination/kazakstan.webp",
     "name": "Kazakhstan",
     "tours": "0",
     "class": "col-lg-5"
   },
   {
     "id": 3,
-    "img": "/assets/images/destination/kyrgyzstan.jpg",
+    "img": "/assets/images/destination/kyrgyzstan.webp",
     "name": "Kyrgyzstan",
     "tours": "0",
     "class": "col-lg-4"
   },
   {
     "id": 4,
-    "img": "/assets/images/destination/saudi.jpg",
+    "img": "/assets/images/destination/saudi.webp",
     "name": "Saudi Arab",
     "tours": "0",
     "class": "col-lg-4"
   },
   {
     "id": 5,
-    "img": "/assets/images/destination/uaa.jpg",
+    "img": "/assets/images/destination/uaa.webp",
     "name": "UAE",
     "tours": "0",
     "class": "col-lg-3"
   },
   {
     "id": 6,
-    "img": "/assets/images/destination/egypt.jpg",
+    "img": "/assets/images/destination/egypt.webp",
     "name": "Egypt",
     "tours": "0",
     "class": "col-lg-5"
   },
   {
     "id": 7,
-    "img": "/assets/images/destination/turkmenistan.jpg",
+    "img": "/assets/images/destination/turkmenistan.webp",
     "name": "Turkmenistan",
     "tours": "0",
     "class": "col-lg-5"
   },
   {
     "id": 8,
-    "img": "/assets/images/destination/georgia.jpg",
+    "img": "/assets/images/destination/georgia.webp",
     "name": "Georgia",
     "tours": "0",
     "class": "col-lg-4"
   },
   {
     "id": 9,
-    "img": "/assets/images/destination/tadjikistan.jpg",
+    "img": "/assets/images/destination/tadjikistan.webp",
     "name": "Uzbekistan",
     "tours": "0",
     "class": "col-lg-3"

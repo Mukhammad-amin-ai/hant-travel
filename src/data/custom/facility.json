@@ -2,7 +2,7 @@
   {
     "id": "1",
     "batch": "6 Days / 5 Night",
-    "img": "/assets/images/tour/uzbekistan.jpg",
+    "img": "/assets/images/tour/uzbekistan.webp",
     "location_list": ["Uzbekistan Tour"],
     "title": "Three capitals of Uzbekistan",
     "price": "980",
@@ -11,7 +11,7 @@
   {
     "id": "2",
     "batch": "8 Days / 7 Night",
-    "img": "/assets/images/tour/Khiva.jpg",
+    "img": "/assets/images/tour/Khiva.webp",
     "location_list": ["Uzbekistan Tour"],
     "title": "Four pearls of Uzbekistan",
     "price": "2728 ",
@@ -20,7 +20,7 @@
   {
     "id": "3",
     "batch": "4 Days",
-    "img": "/assets/images/tour/buhara.jpg",
+    "img": "/assets/images/tour/buhara.webp",
     "location_list": ["Uzbekistan Tour"],
     "title": "Two Legends",
     "price": "2728 ",
@@ -29,7 +29,7 @@
   {
     "id": "4",
     "batch": "2 Weeks",
-    "img": "/assets/images/tour/central-asia.jpg",
+    "img": "/assets/images/tour/central-asia.webp",
     "location_list": ["Central Asia"],
     "title": "Central Asia Tour in 2 weeks",
     "price": "530 ",
@@ -44,7 +44,7 @@
   {
     "id": "5",
     "batch": " 14 Day",
-    "img": "/assets/images/tour/Urganch.jpg",
+    "img": "/assets/images/tour/Urganch.webp",
     "location_list": ["Uzbekistan Tour"],
     "title": "Creative Tour in Uzbekistan",
     "price": "2250",
@@ -60,7 +60,7 @@
   {
     "id": "6",
     "batch": " 14 Day",
-    "img": "/assets/images/tour/Bishkek.jpg",
+    "img": "/assets/images/tour/Bishkek.webp",
     "location_list": ["Central Asia Tourr"],
     "title": "Central Asia Tour",
     "price": "3215",

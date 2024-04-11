@@ -6,32 +6,32 @@
     "galery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -44,27 +44,27 @@
     "locations": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "title": "Dushanbe"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "title": "Penjikent"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "title": "Khujand"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "title": "Istaravshan"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "title": "Pamir Mountain"
       }
     ],
@@ -113,32 +113,32 @@
     "galery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -151,59 +151,59 @@
     "locations": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "title": "Dushanbe"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "title": "Penjikent"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "title": "Khujand"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "title": "Istaravshan"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "title": "Pamir Mountain"
       }
     ],
     "locationGalery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -220,32 +220,32 @@
     "galery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -258,59 +258,59 @@
     "locations": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "title": "Dushanbe"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "title": "Penjikent"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "title": "Khujand"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "title": "Istaravshan"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "title": "Pamir Mountain"
       }
     ],
     "locationGalery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -327,32 +327,32 @@
     "galery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -365,59 +365,59 @@
     "locations": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "title": "Dushanbe"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "title": "Penjikent"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "title": "Khujand"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "title": "Istaravshan"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "title": "Pamir Mountain"
       }
     ],
     "locationGalery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -434,32 +434,32 @@
     "galery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -472,59 +472,59 @@
     "locations": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "title": "Dushanbe"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "title": "Penjikent"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "title": "Khujand"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "title": "Istaravshan"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "title": "Pamir Mountain"
       }
     ],
     "locationGalery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -541,32 +541,32 @@
     "galery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -579,59 +579,59 @@
     "locations": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "title": "Dushanbe"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "title": "Penjikent"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "title": "Khujand"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "title": "Istaravshan"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "title": "Pamir Mountain"
       }
     ],
     "locationGalery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -648,32 +648,32 @@
     "galery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -686,59 +686,59 @@
     "locations": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "title": "Dushanbe"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "title": "Penjikent"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "title": "Khujand"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "title": "Istaravshan"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "title": "Pamir Mountain"
       }
     ],
     "locationGalery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -755,32 +755,32 @@
     "galery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -793,59 +793,59 @@
     "locations": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "title": "Dushanbe"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "title": "Penjikent"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "title": "Khujand"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "title": "Istaravshan"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "title": "Pamir Mountain"
       }
     ],
     "locationGalery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -862,32 +862,32 @@
     "galery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
@@ -900,59 +900,59 @@
     "locations": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "title": "Dushanbe"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "title": "Penjikent"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "title": "Khujand"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "title": "Istaravshan"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "title": "Pamir Mountain"
       }
     ],
     "locationGalery": [
       {
         "id": 1,
-        "img": "/assets/images/destination/tadjikistan1.jpg",
+        "img": "/assets/images/destination/tadjikistan1.webp",
         "class": "col-lg-4"
       },
       {
         "id": 2,
-        "img": "/assets/images/destination/Panjakent-Tajikistan.jpg",
+        "img": "/assets/images/destination/Panjakent-Tajikistan.webp",
         "class": "col-lg-5"
       },
       {
         "id": 3,
-        "img": "/assets/images/destination/khujand1.jpg",
+        "img": "/assets/images/destination/khujand1.webp",
         "class": "col-lg-3"
       },
       {
         "id": 4,
-        "img": "/assets/images/destination/Isataravshan-Tajikistan.jpg",
+        "img": "/assets/images/destination/Isataravshan-Tajikistan.webp",
         "class": "col-lg-3"
       },
       {
         "id": 5,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-4"
       },
       {
         "id": 6,
-        "img": "/assets/images/destination/tadjikistan5.jpg",
+        "img": "/assets/images/destination/tadjikistan5.webp",
         "class": "col-lg-5"
       }
     ],
