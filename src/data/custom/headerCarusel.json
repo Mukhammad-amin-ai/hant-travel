@@ -8,7 +8,7 @@
     "country": "Uzbekistan",
     "description": "We are all used to the fact that in every country there is one special city, which is called the capital. But the centuries-old history and unique traditions of Uzbekistan do not allow us to single out just one region. And although the official capital of the Uzbek Republic is kind and hospitable Tashkent, we suggest you visit two other equally charming towns of the eastern state – Bukhara and Samarkand. Long live Uzbek adventures!",
     "batch": "6 Days / 5 Night",
-    "img": "assets/images/tour/uzbekistan.jpg",
+    "img": "assets/images/tour/uzbekistan.webp",
     "location_list": [
       "Uzbekistan Tour"
     ],
@@ -30,7 +30,7 @@
     "type": "Adventure",
     "country": "Uzbekistan",
     "batch": "8 Days / 7 Night",
-    "img": "/assets/images/tour/Khiva.jpg",
+    "img": "/assets/images/tour/Khiva.webp",
     "location_list": [
       "Uzbekistan Tour"
     ],
@@ -52,7 +52,7 @@
     "night": null,
     "type": "Adventure",
     "country": "Uzbekistan",
-    "img": "/assets/images/tour/bukhara_1.png",
+    "img": "/assets/images/tour/bukhara_1.webp",
     "location_list": [
       "Uzbekistan Tour"
     ],
