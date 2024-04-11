@@ -1,5 +1,6 @@
 "use client";
 import React, {useMemo} from "react";
+import Image from "next/image";
 import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {
   Autoplay,
@@ -41,11 +42,19 @@ const Banner1 = () => {
               {
                 headerCarusel.map((item, index) => (
                   <SwiperSlide key={index} className="swiper-slide">
-                    <div className="home1-banner-wrapper"
-                         style={{
-                           backgroundImage: `linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(${item.img})`
-                         }}>
-                      <div className="container">
+                    <div className="home1-banner-wrapper">
+                      {/*// style={{*/}
+                      {/*//   backgroundImage: `linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(${item.img})`*/}
+                      {/*// }}*/}
+                      <Image
+                        src={item.img}
+                        alt={'img'} // Provide meaningful alt text
+                        layout="fill"
+                        priority // Or preload for LCP optimization
+                        className="background-image " // Add a class for styling
+                      />
+
+                      <div className="container" style={{backgroundImage: `linear-gradient(180deg, rgba(16, 12, 8, 0.7) 0%, rgba(16, 12, 8, 0.7) 100%) !important`}} >
                         <div className="row">
                           <div className="col-lg-12">
                             <div className="home1-banner-content">
