@@ -48,13 +48,12 @@ const Banner1 = () => {
                       {/*// }}*/}
                       <Image
                         src={item.img}
-                        alt={'img'} // Provide meaningful alt text
+                        alt={'img'}
                         layout="fill"
-                        priority // Or preload for LCP optimization
-                        className="background-image " // Add a class for styling
+                        priority
+                        className="background-image "
                       />
-
-                      <div className="container" style={{backgroundImage: `linear-gradient(180deg, rgba(16, 12, 8, 0.7) 0%, rgba(16, 12, 8, 0.7) 100%) !important`}} >
+                      <div className="container">
                         <div className="row">
                           <div className="col-lg-12">
                             <div className="home1-banner-content">

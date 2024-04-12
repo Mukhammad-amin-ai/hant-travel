@@ -5,6 +5,8 @@ import Header from "@/components/header/Header";
 import Home2Team from "@/components/team/Home2Team";
 import Home2WhyChoose from "@/components/whyChoose/Home2WhyChoose";
 import Home2About from "@/components/about/Home2About";
+import Home1Testimonail from "@/components/testimonial/Home1Testimonail";
+
 export const metadata = {
   title: "HANT TRAVEL",
   description:
@@ -21,6 +23,7 @@ const page = () => {
       <Home2About />
       <Home2WhyChoose />
       <Home2Team />
+      <Home1Testimonail />
       <Footer />
     </>
   );
