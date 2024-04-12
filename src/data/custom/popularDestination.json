@@ -1,5 +1,4 @@
 [
-  
   {
     "id": 1,
     "img": "/assets/images/destination/tadjikistan.webp",
@@ -26,7 +25,7 @@
     "img": "/assets/images/destination/saudi.webp",
     "name": "Saudi Arab",
     "tours": "0",
-    "class": "col-lg-4"
+    "class": "col-lg-5"
   },
   {
     "id": 5,
@@ -40,27 +39,6 @@
     "img": "/assets/images/destination/egypt.webp",
     "name": "Egypt",
     "tours": "0",
-    "class": "col-lg-5"
-  },
-  {
-    "id": 7,
-    "img": "/assets/images/destination/turkmenistan.webp",
-    "name": "Turkmenistan",
-    "tours": "0",
-    "class": "col-lg-5"
-  },
-  {
-    "id": 8,
-    "img": "/assets/images/destination/georgia.webp",
-    "name": "Georgia",
-    "tours": "0",
     "class": "col-lg-4"
-  },
-  {
-    "id": 9,
-    "img": "/assets/images/tourShow/Tashkent-Spread.webp",
-    "name": "Uzbekistan",
-    "tours": "0",
-    "class": "col-lg-3"
   }
 ]

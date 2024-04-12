@@ -104,12 +104,37 @@
     "population": 10.28,
     "capital": "Dushanbe",
     "language": "Tadjik",
-    "currency": "Somoni"
+    "currency": "Somoni",
+    "tours": [
+      {
+        "id": "1",
+        "batch": "9 Days / 8 Nights",
+        "day": 9,
+        "night": null,
+        "type": null,
+        "img": "/assets/images/tour/central-asia.webp",
+        "link": 7,
+        "location_list": [
+          "Central Asia"
+        ],
+        "country": "Tadjikistan",
+        "title": "Tour to Pamir Mountains",
+        "price": "1650",
+        "place_list": [
+          "Dushanbe",
+          "Norak ",
+          "Kalai Khum",
+          "Yashil Kul Lake",
+          "Bulunkul Lake",
+          "Khoburubot"
+        ]
+      }
+    ]
   },
   {
     "id": 2,
-    "name": "Tadjikistan",
-    "title": "Welcome To Tadjikistan",
+    "name": "Kazakhstan",
+    "title": "Welcome To Kazakhstan",
     "galery": [
       {
         "id": 1,
@@ -142,7 +167,7 @@
         "class": "col-lg-5"
       }
     ],
-    "description": "Tajikistan, a country nestled in the heart of Central Asia, offers a unique blend of history, culture, and stunning natural beauty.  Tours to Tajikistan can cater to a variety of interests, from exploring the ancient Silk Road city of Penjikent to trekking through the majestic Pamir Mountains.",
+    "description": "Kazakhstan, a country nestled in the heart of Central Asia, offers a unique blend of history, culture, and stunning natural beauty.  Tours to Tajikistan can cater to a variety of interests, from exploring the ancient Silk Road city of Penjikent to trekking through the majestic Pamir Mountains.",
     "tourism": [
       "Exploring ancient ruins, historical landmar.",
       "Immersive cultural experiences, local",
@@ -211,6 +236,31 @@
     "population": 10.28,
     "capital": "Dushanbe",
     "language": "Tadjik",
+    "tours": [
+      {
+        "id": "1",
+        "batch": "9 Days / 8 Nights",
+        "day": 9,
+        "night": null,
+        "type": null,
+        "link": 7,
+        "img": "/assets/images/tour/central-asia.webp",
+        "location_list": [
+          "Central Asia"
+        ],
+        "country": "Kazakhstan",
+        "title": "Tour to Pamir Mountains",
+        "price": "1650",
+        "place_list": [
+          "Dushanbe",
+          "Norak ",
+          "Kalai Khum",
+          "Yashil Kul Lake",
+          "Bulunkul Lake",
+          "Khoburubot"
+        ]
+      }
+    ],
     "currency": "Somoni"
   },
   {
@@ -318,6 +368,31 @@
     "population": 10.28,
     "capital": "Dushanbe",
     "language": "Tadjik",
+    "tours": [
+      {
+        "id": "1",
+        "batch": "9 Days / 8 Nights",
+        "day": 9,
+        "night": null,
+        "type": null,
+        "img": "/assets/images/tour/central-asia.webp",
+        "link": 7,
+        "location_list": [
+          "Central Asia"
+        ],
+        "country": "Kazakhstan",
+        "title": "Tour to Pamir Mountains",
+        "price": "1650",
+        "place_list": [
+          "Dushanbe",
+          "Norak ",
+          "Kalai Khum",
+          "Yashil Kul Lake",
+          "Bulunkul Lake",
+          "Khoburubot"
+        ]
+      }
+    ],
     "currency": "Somoni"
   },
   {
@@ -424,6 +499,31 @@
     "destionation": "Tajikistan",
     "population": 10.28,
     "capital": "Dushanbe",
+    "tours": [
+      {
+        "id": "1",
+        "batch": "9 Days / 8 Nights",
+        "day": 9,
+        "night": null,
+        "type": null,
+        "link": 7,
+        "img": "/assets/images/tour/central-asia.webp",
+        "location_list": [
+          "Central Asia"
+        ],
+        "country": "Kazakhstan",
+        "title": "Tour to Pamir Mountains",
+        "price": "1650",
+        "place_list": [
+          "Dushanbe",
+          "Norak ",
+          "Kalai Khum",
+          "Yashil Kul Lake",
+          "Bulunkul Lake",
+          "Khoburubot"
+        ]
+      }
+    ],
     "language": "Tadjik",
     "currency": "Somoni"
   },
@@ -532,6 +632,31 @@
     "population": 10.28,
     "capital": "Dushanbe",
     "language": "Tadjik",
+    "tours": [
+      {
+        "id": "1",
+        "batch": "9 Days / 8 Nights",
+        "day": 9,
+        "night": null,
+        "type": null,
+        "link": 7,
+        "img": "/assets/images/tour/central-asia.webp",
+        "location_list": [
+          "Central Asia"
+        ],
+        "country": "Kazakhstan",
+        "title": "Tour to Pamir Mountains",
+        "price": "1650",
+        "place_list": [
+          "Dushanbe",
+          "Norak ",
+          "Kalai Khum",
+          "Yashil Kul Lake",
+          "Bulunkul Lake",
+          "Khoburubot"
+        ]
+      }
+    ],
     "currency": "Somoni"
   },
   {
@@ -639,6 +764,31 @@
     "population": 10.28,
     "capital": "Dushanbe",
     "language": "Tadjik",
+    "tours": [
+      {
+        "id": "1",
+        "batch": "9 Days / 8 Nights",
+        "day": 9,
+        "night": null,
+        "type": null,
+        "img": "/assets/images/tour/central-asia.webp",
+        "link": 7,
+        "location_list": [
+          "Central Asia"
+        ],
+        "country": "Kazakhstan",
+        "title": "Tour to Pamir Mountains",
+        "price": "1650",
+        "place_list": [
+          "Dushanbe",
+          "Norak ",
+          "Kalai Khum",
+          "Yashil Kul Lake",
+          "Bulunkul Lake",
+          "Khoburubot"
+        ]
+      }
+    ],
     "currency": "Somoni"
   },
   {
@@ -746,6 +896,31 @@
     "population": 10.28,
     "capital": "Dushanbe",
     "language": "Tadjik",
+    "tours": [
+      {
+        "id": "1",
+        "batch": "9 Days / 8 Nights",
+        "day": 9,
+        "night": null,
+        "type": null,
+        "link": 7,
+        "img": "/assets/images/tour/central-asia.webp",
+        "location_list": [
+          "Central Asia"
+        ],
+        "country": "Kazakhstan",
+        "title": "Tour to Pamir Mountains",
+        "price": "1650",
+        "place_list": [
+          "Dushanbe",
+          "Norak ",
+          "Kalai Khum",
+          "Yashil Kul Lake",
+          "Bulunkul Lake",
+          "Khoburubot"
+        ]
+      }
+    ],
     "currency": "Somoni"
   },
   {
@@ -853,6 +1028,31 @@
     "population": 10.28,
     "capital": "Dushanbe",
     "language": "Tadjik",
+    "tours": [
+      {
+        "id": "1",
+        "batch": "9 Days / 8 Nights",
+        "day": 9,
+        "night": null,
+        "type": null,
+        "link": 7,
+        "img": "/assets/images/tour/central-asia.webp",
+        "location_list": [
+          "Central Asia"
+        ],
+        "country": "Kazakhstan",
+        "title": "Tour to Pamir Mountains",
+        "price": "1650",
+        "place_list": [
+          "Dushanbe",
+          "Norak ",
+          "Kalai Khum",
+          "Yashil Kul Lake",
+          "Bulunkul Lake",
+          "Khoburubot"
+        ]
+      }
+    ],
     "currency": "Somoni"
   },
   {
@@ -960,6 +1160,31 @@
     "population": 10.28,
     "capital": "Dushanbe",
     "language": "Tadjik",
+    "tours": [
+      {
+        "id": "1",
+        "batch": "9 Days / 8 Nights",
+        "day": 9,
+        "link": 7,
+        "night": null,
+        "type": null,
+        "img": "/assets/images/tour/central-asia.webp",
+        "location_list": [
+          "Central Asia"
+        ],
+        "country": "Kazakhstan",
+        "title": "Tour to Pamir Mountains",
+        "price": "1650",
+        "place_list": [
+          "Dushanbe",
+          "Norak ",
+          "Kalai Khum",
+          "Yashil Kul Lake",
+          "Bulunkul Lake",
+          "Khoburubot"
+        ]
+      }
+    ],
     "currency": "Somoni"
   }
 ]

@@ -7,6 +7,7 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Link from "next/link";
 import DestinationLocationGallery from "@/components/destinationSlider/DestinationLocationGallery";
 import DestinationDetails from "../../../data/custom/destinationDetails.json";
+import {log} from "next/dist/server/typescript/utils";
 
 const Page = ({ params }) => {
   const router = params.id;
@@ -114,7 +115,7 @@ const Page = ({ params }) => {
         data={DestinationDetails[router].locations}
         galery={DestinationDetails[router].locationGalery}
       />
-      <RecommendatedPackage />
+      <RecommendatedPackage data={DestinationDetails[router].tours} destination={DestinationDetails[router].name}/>
       <Lightbox
         className="img-fluid"
         open={isOpenimg.openingState}

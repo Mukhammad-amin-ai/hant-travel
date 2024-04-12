@@ -39,7 +39,7 @@
     "place_list": ["Bukhara", "Samarkand"]
   },
   {
-    "id": "4",
+    "id": 4,
     "batch": "2 Weeks",
     "day": 14,
     "night": null,
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "id": "5",
+    "id": 5,
     "batch": " 12 Day / 11 Night",
     "day": 12,
     "night": null,
@@ -77,7 +77,7 @@
     ]
   },
   {
-    "id": "6",
+    "id": 6,
     "batch": "11 Day",
     "day": 11,
     "night": null,
@@ -99,6 +99,26 @@
       "Bukhara",
       "Samarkand",
       "Tashkent"
+    ]
+  },
+  {
+    "id": 7,
+    "batch": "9 Days / 8 Nights",
+    "day": 9,
+    "night": null,
+    "type":null ,
+    "img": "/assets/images/tour/central-asia.webp",
+    "location_list": ["Central Asia"],
+    "country":"Tadjikistan",
+    "title": "Tour to Pamir Mountains",
+    "price": "1650",
+    "place_list": [
+      "Dushanbe",
+      "Norak ",
+      "Kalai Khum",
+      "Yashil Kul Lake",
+      "Bulunkul Lake",
+      "Khoburubot"
     ]
   }
 ]

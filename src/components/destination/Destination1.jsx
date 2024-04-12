@@ -1,15 +1,14 @@
 import Link from "next/link";
 import React from "react";
+import PopularDestination from "@/data/custom/popularDestination";
 
 const Destination1 = () => {
   return (
     <>
       <div className="home1-destination-section mb-120">
-        <img
-          src="/assets/img/home1/section-vector2.png"
-          alt=""
-          className="section-vector2"
-        />
+        <img src="/assets/img/home1/section-vector2.png"
+             alt=""
+             className="section-vector2"/>
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -46,132 +45,31 @@ const Destination1 = () => {
             </div>
           </div>
           <div className="row g-4">
-            <div className="col-lg-3 col-sm-6">
-              <div className="destination-card">
-                <img
-                  style={{ height: "350px" }}
-                  src="/assets/images/destination/tadjikistanс.jpg"
-                  alt=""
-                />
-                <div className="overlay" />
-                <div className="card-title">
-                  <h4>Tadjikistan</h4>
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link href="/destination/destination-details">
-                      Tadjikistan
-                    </Link>
-                  </h4>
-                  <div className="eg-tag">
-                    <span>0 Tour</span>
+            {
+              PopularDestination.map((item, index) => (
+                <div className={`${item.class} col-sm-6`}>
+                  <div className="destination-card">
+                    <img style={{height: "350px"}}
+                         src={item.img}
+                         alt="destination"/>
+                    <div className="overlay"/>
+                    <div className="card-title">
+                      <h4>{item.name}</h4>
+                    </div>
+                    <div className="content">
+                      <h4>
+                        <Link href={`/destination/${item.id}`}>
+                          item.name
+                        </Link>
+                      </h4>
+                      <div className="eg-tag">
+                        <span>{item.tours} Tour</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-5 col-sm-6">
-              <div className="destination-card">
-                <img src="/assets/images/destination/kazakstan.jpg" alt="" />
-                <div className="overlay" />
-                <div className="card-title">
-                  <h4>Kazakhstan</h4>
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link href="/destination/destination-details">
-                      Kazakhstan
-                    </Link>
-                  </h4>
-                  <div className="eg-tag">
-                    <span>0 Tour</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="destination-card">
-                <img
-                  style={{ height: "350px" }}
-                  src="/assets/images/destination/kyrgyzstan.jpg"
-                  alt=""
-                />
-                <div className="overlay" />
-                <div className="card-title">
-                  <h4>Kyrgyzstan</h4>
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link href="/destination/destination-details">
-                      Kyrgyzstan
-                    </Link>
-                  </h4>
-                  <div className="eg-tag">
-                    <span>0 Tour</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5 col-sm-6">
-              <div className="destination-card">
-                <img src="/assets/images/destination/saudi.jpg" alt="" />
-                <div className="overlay" />
-                <div className="card-title">
-                  <h4>Saudi Arab</h4>
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link href="/destination/destination-details">
-                      Saudi Arab
-                    </Link>
-                  </h4>
-                  <div className="eg-tag">
-                    <span>30 Tour</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6">
-              <div className="destination-card">
-                <img
-                  style={{ height: "302px" }}
-                  src="/assets/images/destination/uaa.jpg"
-                  alt=""
-                />
-                <div className="overlay" />
-                <div className="card-title">
-                  <h4>UAA</h4>
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link href="/destination/destination-details">UAA</Link>
-                  </h4>
-                  <div className="eg-tag">
-                    <span>50 Tour</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-sm-6">
-              <div className="destination-card">
-                <img
-                  style={{ height: "302px" }}
-                  src="/assets/images/destination/egypt.jpg"
-                  alt=""
-                />
-                <div className="overlay" />
-                <div className="card-title">
-                  <h4>Egypt</h4>
-                </div>
-                <div className="content">
-                  <h4>
-                    <Link href="/destination/destination-details">Egypt</Link>
-                  </h4>
-                  <div className="eg-tag">
-                    <span>0 Tour</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+              ))
+            }
           </div>
         </div>
       </div>

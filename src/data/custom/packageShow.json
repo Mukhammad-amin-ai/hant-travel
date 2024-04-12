@@ -941,5 +941,162 @@
         ]
       }
     ]
+  },
+  {
+    "id": 7,
+    "days": 14,
+    "galley": [
+      {
+        "id": 1,
+        "img": "/assets/images/tourShow/Registan-Square.webp"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/tourShow/kazakh.webp"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/tourShow/kyrgyzisatan.webp"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/tourShow/tadjikistan.webp"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/tourShow/turkmenistan.webp"
+      }
+    ],
+    "title": "Central Asia Tour",
+    "description": "Though Central Asia is off the beaten track today, this wasn’t always the case. In fact, the Silk Road passed through many of the region’s main cities (including Samarkand, Bukhara, Merv, Khujand and Osh). As merchants stopped in these cities on their way from China to Europe, they traded not only goods, but also knowledge, with locals. This made Central Asia a lively region with master-craftsmen, world-class scholars, and a diverse population. Between the cities, the Silk Road passed through remote and evocative landscapes – including the Tajikistan’s towering Pamir Mountains, Turkmenistan’s and Uzbekistan’s vast deserts, and Kyrgyzstan’s secluded alpine lakes.",
+    "price": 3215,
+    "maxPeople": 10,
+    "location": "Uzbekistan",
+    "length": "11 Days / 10 Night",
+    "iclueded": [
+      "All transfers: 1-2 pax in sedan type car, 3-8 pax in minivan/van",
+      "Accommodation based on double/twin room sharing, breakfasts included",
+      "Entrance tickets to museums, to visit attractions, monuments",
+      "Meeting and seeing off at the airport",
+      "Sightseeing tour programme with local, English speaking guides in each country",
+      "Economy class train tickets",
+      "Entrance fees to sights as per itinerary"
+    ],
+    "excluded": [
+      "International flights to and from Uzbekistan",
+      "Tips for the guide and drivers",
+      "Additional leisure"
+    ],
+    "plan": [
+      {
+        "id": 1,
+        "heading": "One",
+        "location": "Tashkent",
+        "name": "Arrival in the capital Tashkent, a free day for rest.",
+        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs. <br/>At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan. <br/> Transfer to the hotel, registration, rest <br/>Free day in Tashkent <br/> Overnight at a hotel in Tashkent. <br/> Power supply: not included. <br/> The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "places": [],
+        "departure": [],
+        "duration": ""
+      },
+      {
+        "id": 2,
+        "heading": "Two",
+        "location": "Samarkand",
+        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
+        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "places": [
+          "Museum of Applied Arts of Uzbekistan",
+          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
+          "Visit the old city of Tashkent,",
+          "Chor-su bazaar, the famous market of the capital.",
+          "Monument of Courage",
+          "Visit to Independence Square",
+          "Amir Timur Square, Timurid Museum",
+          "Tashkent metro stations (optional)"
+        ],
+        "duration": "5-6",
+        "departure": [
+          "17:45 Transfer to Tashkent railway station",
+          "18:45 Departure of the high-speed comfort class train from Tashkent",
+          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+        ]
+      },
+      {
+        "id": 3,
+        "heading": "Three",
+        "location": "Samarkand",
+        "name": "Famous historical places of Samarkand - city tour",
+        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "places": [
+          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
+          "Legendary Registan Square with three madrassas",
+          "Bibi Khanum Mosque.",
+          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+        ],
+        "duration": "5-6",
+        "departure": []
+      },
+      {
+        "id": 4,
+        "heading": "Four",
+        "location": "Bukhara",
+        "name": "Samarkand city tour and transfer to Bukhara by train",
+        "description": "Breakfast at the hotel <br/> Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "places": [
+          "Necropolis of Shahi Zinda from Timurid times",
+          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
+          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
+          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+        ],
+        "duration": "4-5",
+        "departure": [
+          "20:00 Transfer to the railway station of the city of Samarkand",
+          "21:03 Departure of the high-speed comfort class train from Samarkand",
+          "21:58 Arrival in Bukhara - the pearl of the East"
+        ]
+      },
+      {
+        "id": 5,
+        "heading": "Five",
+        "location": "Bukhara",
+        "name": "Pearl of the East - excursion history of Bukhara",
+        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "places": [
+          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
+          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
+          "Bolo Hauz Mosque (18th-20th century)",
+          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
+          "Kalon Mosque",
+          "Famous Kalyan Minaret",
+          "Madrasah Mir-Arab",
+          "Ulugbek Madrasah",
+          "Abdulazizkhan Madrasah with traditional majolica",
+          "Ancient trading domes of Bukhara ",
+          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
+          "Lyabi House"
+        ],
+        "duration": "5-6",
+        "departure": []
+      },
+      {
+        "id": 6,
+        "heading": "Six",
+        "location": "Bukhara",
+        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
+        "description": "Breakfast at the hotel <br/> Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "places": [
+          "The unique monument \"Chor Minor\" 1807 -1809.",
+          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
+          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+        ],
+        "duration": "4",
+        "departure": [
+          "International flight tickets before and after the tou",
+          "Tips for the guide and drivers",
+          "Visa support ",
+          "Additional leisure"
+        ]
+      }
+    ]
   }
 ]
