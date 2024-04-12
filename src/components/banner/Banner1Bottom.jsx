@@ -196,9 +196,8 @@ const Banner1Bottom = () => {
                       </div>
                     </div>
                   </div>
-                  <button type="submit">
-                    <Link href={`/package?search=${country}&day=${day}&type=${type}`}
-                          style={{color: "#fff !important"}}>
+                  <button type="submit" style={{color: "#fff !important"}}>
+                    <Link href={`/package?search=${country}&day=${day}&type=${type}`}>
                       Search
                     </Link>
                   </button>
@@ -254,8 +253,8 @@ const Banner1Bottom = () => {
                       </div>
                     </div>
                   </div>
-                  <button type="submit">
-                    <Link href={`/visa?search=${country}&type=${visaType}`}>
+                  <button type="submit" style={{color: "#fff !important"}}>
+                    <Link href={`/visa?search=${country}&type=${type}`}>
                       Search
                     </Link>
                   </button>

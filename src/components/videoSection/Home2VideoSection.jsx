@@ -25,7 +25,7 @@ const Home2VideoSection = () => {
           loop
           muted
           playsInline
-          src="assets/video/production_.mp4"
+          src="assets/video/pilligrimage.mp4"
         ></video>
       </div>
       <div className="banner5-section mb-120">
@@ -45,7 +45,7 @@ const Home2VideoSection = () => {
                     <h1>Piligrimage</h1>
                   </div>
                   <Link
-                    href="/package/package-details"
+                    href="/package?type=Piligrimage"
                     className="primary-btn2"
                   >
                     Book a Trip

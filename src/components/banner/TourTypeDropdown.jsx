@@ -13,7 +13,7 @@ const TourTypeDropdown = ({ typeCatcher,typeTour,description }) => {
   const handleSelectTourType = (tourType) => {
     setSelectedTourType(tourType);
     typeCatcher(tourType);
-    // setIsActive(false);
+    setIsActive(false);
   };
 
   const handleClickOutside = (event) => {
