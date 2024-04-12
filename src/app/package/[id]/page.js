@@ -96,7 +96,7 @@ const Page = ({params}) => {
                                         <div className="gallery-img-wrap">
                                             <img
                                                 style={{height: "500px"}}
-                                                src={packageShow[0].galley[0].img}
+                                                src={packageShow[router].galley[0].img}
                                                 alt=""
                                             />
                                             <a>
@@ -115,7 +115,7 @@ const Page = ({params}) => {
                                                 <div className="gallery-img-wrap">
                                                     <img
                                                         style={{height: "234px"}}
-                                                        src={packageShow[0].galley[1].img}
+                                                        src={packageShow[router].galley[1].img}
                                                         alt=""
                                                     />
                                                     <a>
@@ -134,7 +134,7 @@ const Page = ({params}) => {
                                                 <div className="gallery-img-wrap">
                                                     <img
                                                         style={{height: "234px"}}
-                                                        src={packageShow[0].galley[2].img}
+                                                        src={packageShow[router].galley[2].img}
                                                         alt=""
                                                     />
                                                     <a>
@@ -154,7 +154,7 @@ const Page = ({params}) => {
                                                 <div className="gallery-img-wrap">
                                                     <img
                                                         style={{height: "234px"}}
-                                                        src={packageShow[0].galley[3].img}
+                                                        src={packageShow[router].galley[3].img}
                                                         alt=""
                                                     />
                                                     <a> <i className="bi bi-eye"
@@ -172,7 +172,7 @@ const Page = ({params}) => {
                                                 <div className="gallery-img-wrap ">
                                                     <img
                                                         style={{height: "234px"}}
-                                                        src={packageShow[0].galley[3].img}
+                                                        src={packageShow[router].galley[4].img}
                                                         alt=""/>
                                                     <a>
                                                         <i className="bi bi-eye"

@@ -17,10 +17,10 @@
       },
       {
         "id": 4,
-        "img": "/assets/images/tourShow/bukhara.webp"
+        "img": "/assets/images/tourShow/timur-statue.webp"
       },
       {
-        "id": 4,
+        "id": 5,
         "img": "/assets/images/tourShow/bukhara.webp"
       }
     ],
@@ -161,11 +161,11 @@
     "galley": [
       {
         "id": 1,
-        "img": "/assets/images/tourShow/tashkent.webp"
+        "img": "/assets/images/tourShow/bukhara.webp"
       },
       {
         "id": 2,
-        "img": "/assets/images/tourShow/Tashkent-Spread.webp"
+        "img": "/assets/images/tourShow/Khiva.webp"
       },
       {
         "id": 3,
@@ -173,20 +173,26 @@
       },
       {
         "id": 4,
-        "img": "/assets/images/tourShow/bukhara.webp"
+        "img": "/assets/images/tourShow/timur-statue.webp"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/tourShow/tashkent.webp"
       }
     ],
     "title": "Four pearls of Uzbekistan",
-    "description": "We are all used to the fact that in every country there is one special city, which is called the capital. But the centuries-old history and unique traditions of Uzbekistan do not allow us to single out just one region. And although the official capital of the Uzbek Republic is kind and hospitable Tashkent, we suggest you visit two other equally charming towns of the eastern state – Bukhara and Samarkand. Long live Uzbek adventures!",
-    "price": 980,
+    "description": "You've probably heard more than once that Uzbekistan is one of the most ancient civilizations, keeping thousands of secrets of history and culture. Then where do you start exploring such an amazing country? From the \"Four Pearls of Uzbekistan\" tour!",
+    "price": 2728,
     "maxPeople": 10,
     "location": "Uzbekistan",
-    "length": "6 Days / 5 Night",
+    "length": "8 Days / 7 Night",
     "iclueded": [
       "Entrance tickets to museums, to visit attractions, monuments",
       "Tour Guide (Certified)",
       "Transportation during excursions",
       "Economy class train tickets",
+      "Lunch boxes according to the program (Lunch Box)",
+      "A master class on cooking Pilaf in the national house",
       "Accommodation in 3* hotels (according to the program)+ Breakfast",
       "Meeting and seeing off at the airport",
       "Tour Collection at the hotel"
@@ -194,7 +200,9 @@
     "excluded": [
       "International flights to and from Uzbekistan",
       "Tips for the guide and drivers",
-      "Additional leisure"
+      "Payment for photo and video shooting in museums and monuments",
+      "Additional leisure",
+      "Additional services in hotels"
     ],
     "plan": [
       {
@@ -313,11 +321,11 @@
     "galley": [
       {
         "id": 1,
-        "img": "/assets/images/tourShow/tashkent.webp"
+        "img": "/assets/images/tourShow/bukhara.webp"
       },
       {
         "id": 2,
-        "img": "/assets/images/tourShow/Tashkent-Spread.webp"
+        "img": "/assets/images/tourShow/timur-statue.webp"
       },
       {
         "id": 3,
@@ -325,15 +333,19 @@
       },
       {
         "id": 4,
-        "img": "/assets/images/tourShow/bukhara.webp"
+        "img": "/assets/images/tourShow/bukhara_2.webp"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/tourShow/Ark_Bukhara.webp"
       }
     ],
     "title": "Two Legends",
-    "description": "We are all used to the fact that in every country there is one special city, which is called the capital. But the centuries-old history and unique traditions of Uzbekistan do not allow us to single out just one region. And although the official capital of the Uzbek Republic is kind and hospitable Tashkent, we suggest you visit two other equally charming towns of the eastern state – Bukhara and Samarkand. Long live Uzbek adventures!",
-    "price": 980,
+    "description": "A four-day cultural tour to sunny Uzbekistan will take you from a modern metropolis to the peaceful silence of Bukhara and Samarkand, to the fabulous world of cities considered the \"eden\" of the ancient East. You will get acquainted with the history of the emergence of these cities, which were the concentration of ancient science and culture in Central Asia.",
+    "price": 2728,
     "maxPeople": 10,
     "location": "Uzbekistan",
-    "length": "6 Days / 5 Night",
+    "length": "4 Days",
     "iclueded": [
       "Entrance tickets to museums, to visit attractions, monuments",
       "Tour Guide (Certified)",
@@ -465,39 +477,44 @@
     "galley": [
       {
         "id": 1,
-        "img": "/assets/images/tourShow/tashkent.webp"
-      },
-      {
-        "id": 2,
-        "img": "/assets/images/tourShow/Tashkent-Spread.webp"
-      },
-      {
-        "id": 3,
         "img": "/assets/images/tourShow/Registan-Square.webp"
       },
       {
+        "id": 2,
+        "img": "/assets/images/tourShow/kazakh.webp"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/tourShow/kyrgyzisatan.webp"
+      },
+      {
         "id": 4,
-        "img": "/assets/images/tourShow/bukhara.webp"
+        "img": "/assets/images/tourShow/tadjikistan.webp"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/tourShow/turkmenistan.webp"
       }
     ],
     "title": "Central Asia Tour in 2 weeks",
-    "description": "We are all used to the fact that in every country there is one special city, which is called the capital. But the centuries-old history and unique traditions of Uzbekistan do not allow us to single out just one region. And although the official capital of the Uzbek Republic is kind and hospitable Tashkent, we suggest you visit two other equally charming towns of the eastern state – Bukhara and Samarkand. Long live Uzbek adventures!",
-    "price": 980,
+    "description": "Discover the historical, cultural, and scenic highlights of the five Stans as you journey from Kazakhstan’s cosmopolitan city of Almaty, to Kyrgyzstan’s fascinating nomadic culture, Tajikistan’s sparkling Seven Lakes, Uzbekistan’s stunning turquoise mausoleums, and the fiery deserts of Turkmenistan. Following our bestselling 2-week Central Asia itinerary, this private tour showcases the region’s major sights while giving you more flexibility and the ability to take things at your own pace",
+    "price": 530,
     "maxPeople": 10,
-    "location": "Uzbekistan",
-    "length": "6 Days / 5 Night",
+    "location": "Central Asia",
+    "length": "2 Weeks",
     "iclueded": [
+      "All transfers: 1-2 pax in sedan type car, 3-8 pax in minivan/van",
+      "Accommodation based on double/twin room sharing, breakfasts included",
       "Entrance tickets to museums, to visit attractions, monuments",
-      "Tour Guide (Certified)",
-      "Transportation during excursions",
-      "Economy class train tickets",
-      "Accommodation in 3* hotels (according to the program)+ Breakfast",
       "Meeting and seeing off at the airport",
-      "Tour Collection at the hotel"
+      "Sightseeing tour programme with local, English speaking guides in each country",
+      "Economy class train tickets",
+      "Entrance fees to sights as per itinerary"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
+      "International flight tickets before and after the tou",
       "Tips for the guide and drivers",
+      "Visa support ",
       "Additional leisure"
     ],
     "plan": [
@@ -617,39 +634,44 @@
     "galley": [
       {
         "id": 1,
-        "img": "/assets/images/tourShow/tashkent.webp"
+        "img": "/assets/images/tourShow/nukus.webp"
       },
       {
         "id": 2,
-        "img": "/assets/images/tourShow/Tashkent-Spread.webp"
+        "img": "/assets/images/tourShow/Khiva.webp"
       },
       {
         "id": 3,
+        "img": "/assets/images/tourShow/Bukhara_2.webp"
+      },
+      {
+        "id": 4,
         "img": "/assets/images/tourShow/Registan-Square.webp"
       },
       {
         "id": 4,
-        "img": "/assets/images/tourShow/bukhara.webp"
+        "img": "/assets/images/tourShow/Tashkent-Spread.webp"
       }
     ],
-    "title": "Creative Tour in Uzbekistan",
-    "description": "We are all used to the fact that in every country there is one special city, which is called the capital. But the centuries-old history and unique traditions of Uzbekistan do not allow us to single out just one region. And although the official capital of the Uzbek Republic is kind and hospitable Tashkent, we suggest you visit two other equally charming towns of the eastern state – Bukhara and Samarkand. Long live Uzbek adventures!",
-    "price": 980,
+    "title": "Tour To Bright and Sunny Uzbekistan",
+    "description": "This twelve-day eventful tour will introduce you to the history and culture of the peoples living on the territory of Uzbekistan. \nOur tour will start from Nukus, a city that, according to The Telegraph's rating, has entered the top ten most unusual places to travel in the world. The unique Igor Savitsky Museum is located here, where a collection of works by Russian avant-garde artists is collected. Further along the route of the twelve-day tour of Uzbekistan, we will have a trip to the famous \"Cemetery of Ships\", located on the shallow bottom of the Aral Sea.\n\nDuring our tour you will get acquainted with the sights and architectural masterpieces of Khiva, Bukhara, Shakhrisabz, Samarkand and Tashkent. Many of them are listed by UNESCO as a World Heritage Site. They rightfully stand on a par with the famous architectural monuments of Egypt, India, Iran, ancient Greece and ancient Rome.\n\nYou will not be able to resist the abundance of colors and aromas of oriental bazaars. And having learned the hospitality of our people, known to the whole world, you will take with you not only bright and interesting memories, but also a ray of the Uzbek sun and a piece of our warmth.\n\nSpend unforgettable days traveling through the ancient cities of Uzbekistan - the cradle of culture and enlightenment in the East.",
+    "price": 2250,
     "maxPeople": 10,
     "location": "Uzbekistan",
-    "length": "6 Days / 5 Night",
+    "length": "12 Days / 11 Night",
     "iclueded": [
       "Entrance tickets to museums, to visit attractions, monuments",
       "Tour Guide (Certified)",
       "Transportation during excursions",
       "Economy class train tickets",
-      "Accommodation in 3* hotels (according to the program)+ Breakfast",
+      "Accommodation in 4*/ 5* hotels (according to the program)+ Breakfast",
       "Meeting and seeing off at the airport",
       "Tour Collection at the hotel"
     ],
     "excluded": [
       "International flights to and from Uzbekistan",
       "Tips for the guide and drivers",
+      "Full board(Breakfast + Lunch + Dinner)",
       "Additional leisure"
     ],
     "plan": [
@@ -769,35 +791,39 @@
     "galley": [
       {
         "id": 1,
-        "img": "/assets/images/tourShow/tashkent.webp"
-      },
-      {
-        "id": 2,
-        "img": "/assets/images/tourShow/Tashkent-Spread.webp"
-      },
-      {
-        "id": 3,
         "img": "/assets/images/tourShow/Registan-Square.webp"
       },
       {
+        "id": 2,
+        "img": "/assets/images/tourShow/kazakh.webp"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/tourShow/kyrgyzisatan.webp"
+      },
+      {
         "id": 4,
-        "img": "/assets/images/tourShow/bukhara.webp"
+        "img": "/assets/images/tourShow/tadjikistan.webp"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/tourShow/turkmenistan.webp"
       }
     ],
     "title": "Central Asia Tour",
-    "description": "We are all used to the fact that in every country there is one special city, which is called the capital. But the centuries-old history and unique traditions of Uzbekistan do not allow us to single out just one region. And although the official capital of the Uzbek Republic is kind and hospitable Tashkent, we suggest you visit two other equally charming towns of the eastern state – Bukhara and Samarkand. Long live Uzbek adventures!",
-    "price": 980,
+    "description": "Though Central Asia is off the beaten track today, this wasn’t always the case. In fact, the Silk Road passed through many of the region’s main cities (including Samarkand, Bukhara, Merv, Khujand and Osh). As merchants stopped in these cities on their way from China to Europe, they traded not only goods, but also knowledge, with locals. This made Central Asia a lively region with master-craftsmen, world-class scholars, and a diverse population. Between the cities, the Silk Road passed through remote and evocative landscapes – including the Tajikistan’s towering Pamir Mountains, Turkmenistan’s and Uzbekistan’s vast deserts, and Kyrgyzstan’s secluded alpine lakes.",
+    "price": 3215,
     "maxPeople": 10,
     "location": "Uzbekistan",
-    "length": "6 Days / 5 Night",
+    "length": "11 Days / 10 Night",
     "iclueded": [
+      "All transfers: 1-2 pax in sedan type car, 3-8 pax in minivan/van",
+      "Accommodation based on double/twin room sharing, breakfasts included",
       "Entrance tickets to museums, to visit attractions, monuments",
-      "Tour Guide (Certified)",
-      "Transportation during excursions",
-      "Economy class train tickets",
-      "Accommodation in 3* hotels (according to the program)+ Breakfast",
       "Meeting and seeing off at the airport",
-      "Tour Collection at the hotel"
+      "Sightseeing tour programme with local, English speaking guides in each country",
+      "Economy class train tickets",
+      "Entrance fees to sights as per itinerary"
     ],
     "excluded": [
       "International flights to and from Uzbekistan",
@@ -908,9 +934,10 @@
         ],
         "duration": "4",
         "departure": [
-          "15:00 Transfer to the Bukhara railway station (Attention: departure and arrival times may be changed according to the train schedule)",
-          "15:50 Train departure from Bukhara",
-          "19:44 Arrival in Tashkent"
+          "International flight tickets before and after the tou",
+          "Tips for the guide and drivers",
+          "Visa support ",
+          "Additional leisure"
         ]
       }
     ]
