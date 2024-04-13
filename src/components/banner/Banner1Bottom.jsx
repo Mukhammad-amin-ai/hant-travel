@@ -34,6 +34,20 @@ const Banner1Bottom = () => {
     setDay(day);
   };
 
+  const searchTour = (e)=>{
+    e.preventDefault();
+    if(country !== ''){
+      router.push(`/package?search=${country}`);
+    }
+
+  }
+  const searchVisa = (e)=>{
+    e.preventDefault();
+    if(country !== ''){
+      router.push(`/visa?search=${country}`);
+    }
+  }
+
 
   return (
     <div className="home1-banner-bottom mb-120">
@@ -102,7 +116,7 @@ const Banner1Bottom = () => {
                 id="tour"
                 role="tabpanel"
               >
-                <form>
+                <form onSubmit={searchTour}>
                   <div className="filter-area">
                     <div className="row g-xl-4 gy-4">
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center divider">
@@ -196,15 +210,15 @@ const Banner1Bottom = () => {
                       </div>
                     </div>
                   </div>
-                  <button type="submit" style={{color: "#fff !important"}}>
-                    <Link href={`/package?search=${country}&day=${day}&type=${type}`}>
+                  <button type="submit" color="#fff">
+                    {/*<Link href={`/package?search=${country}&day=${day}&type=${type}`}>*/}
                       Search
-                    </Link>
+                    {/*</Link>*/}
                   </button>
                 </form>
               </div>
               <div className="tab-pane fade" id="visa" role="tabpanel">
-                <form>
+                <form onSubmit={searchVisa}>
                   <div className="filter-area" style={{padding: "0 20px !important"}}>
                     <div className="row g-xl-5 gy-4 ">
                       <div className="col-xl-6 col-md-6 d-flex justify-content-center divider">
@@ -254,9 +268,9 @@ const Banner1Bottom = () => {
                     </div>
                   </div>
                   <button type="submit" style={{color: "#fff !important"}}>
-                    <Link href={`/visa?search=${country}&type=${type}`}>
+                    {/*<Link href={`/visa?search=${country}&type=${type}`}>*/}
                       Search
-                    </Link>
+                    {/*</Link>*/}
                   </button>
                 </form>
               </div>

@@ -42,7 +42,7 @@ const Home2VideoSection = () => {
                     <Link href="/package">Discover Great Deal</Link>
                   </div>
                   <div className="banner5-timer">
-                    <h1>Piligrimage</h1>
+                    <h1>Hadjj / Umrah</h1>
                   </div>
                   <Link
                     href="/package?type=Piligrimage"
