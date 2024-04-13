@@ -194,7 +194,7 @@ const page = () => {
                         <div className="package-card-content">
                           <div className="card-content-top">
                             <h5>
-                              <Link href={`/package/${item.id}`}>
+                              <Link href={`/package/${item.id}`}  style={{whiteSpace: "nowrap", textOverflow: "ellipsis", overflow: "hidden",width:"300px",display:"block"}}>
                                 {item.title}
                               </Link>
                             </h5>
@@ -239,7 +239,7 @@ const page = () => {
                   ))}
                 </div>
               </div>
-              {Tour.length > 6 ? (
+              {tour.length > 6 ? (
                 <div className="row">
                   <div className="col-lg-12">
                     <nav className="inner-pagination-area">

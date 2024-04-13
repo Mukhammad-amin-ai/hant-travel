@@ -4,10 +4,7 @@ import Breadcrumb from "@/components/common/Breadcrumb";
 import RecommendatedPackage from "@/components/tourPackage/RecommendatedPackage";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Link from "next/link";
-import DestinationLocationGallery from "@/components/destinationSlider/DestinationLocationGallery";
 import DestinationDetails from "../../../data/custom/destinationDetails.json";
-import {log} from "next/dist/server/typescript/utils";
 
 const Page = ({ params }) => {
   const router = params.id;
@@ -110,11 +107,6 @@ const Page = ({ params }) => {
           </div>
         </div>
       </div>
-      <DestinationLocationGallery
-        name={DestinationDetails[router].name}
-        data={DestinationDetails[router].locations}
-        galery={DestinationDetails[router].locationGalery}
-      />
       <RecommendatedPackage data={DestinationDetails[router].tours} destination={DestinationDetails[router].name}/>
       <Lightbox
         className="img-fluid"
