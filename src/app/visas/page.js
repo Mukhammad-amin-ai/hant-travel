@@ -7,6 +7,7 @@ import DestinationSearch from "@/components/banner/DestinationSearch";
 import TourTypeDropdown from "@/components/banner/TourTypeDropdown";
 import destination from "@/data/custom/destination.json";
 import visa from "../../data/custom/visa.json";
+import Tour from "@/data/custom/tour.json";
 
 const page = () => {
 
@@ -37,7 +38,37 @@ const page = () => {
         }
       }
     }
+  //   PAGINATION ============================
+  const [currentPage, setCurrentPage] = useState(1)
+  let itemsPerPage = 6
+  const totalPages = Math.ceil(Tour.length / itemsPerPage)
 
+  const pageNumbers = Array.from({length: totalPages}, (_, index) => index + 1);
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const sliceFunc = () => {
+    return setTour(Tour.slice(startIndex, endIndex))
+  }
+
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+      console.log(currentPage)
+    }
+  };
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+
+  };
 
     return (
       <>
@@ -166,33 +197,21 @@ const page = () => {
                       <nav className="inner-pagination-area">
                         <ul className="pagination-list">
                           <li>
-                            <a href="#" className="shop-pagi-btn">
+                            <div onClick={() => handlePrevPage()} className="shop-pagi-btn">
                               <i className="bi bi-chevron-left"/>
-                            </a>
+                            </div>
                           </li>
+                          {
+                            pageNumbers.map((pageNumber, index) => (
+                              <li key={index} type="button" onClick={() => handlePageChange(pageNumber)}>
+                                {pageNumber}
+                              </li>
+                            ))
+                          }
                           <li>
-                            <a href="#">1</a>
-                          </li>
-                          <li>
-                            <a href="#" className="active">
-                              2
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">3</a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="bi bi-three-dots"/>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">6</a>
-                          </li>
-                          <li>
-                            <a href="#" className="shop-pagi-btn">
+                            <div onClick={() => handleNextPage()} className="shop-pagi-btn">
                               <i className="bi bi-chevron-right"/>
-                            </a>
+                            </div>
                           </li>
                         </ul>
                       </nav>
