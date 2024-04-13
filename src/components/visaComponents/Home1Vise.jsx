@@ -1,6 +1,6 @@
 "use client";
-import React, { useMemo } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, {useMemo} from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {
   Autoplay,
   EffectFade,
@@ -8,9 +8,11 @@ import SwiperCore, {
   Pagination,
 } from "swiper";
 import Link from "next/link";
-SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
-
 import visa from "../../data/custom/visa.json";
+import Image from "next/image";
+
+
+SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
 const Home1Vise = () => {
   const settings = useMemo(() => {
@@ -101,7 +103,8 @@ const Home1Vise = () => {
                     height={17}
                     viewBox="0 0 9 17"
                   >
-                    <path d="M8.83399 0.281832L8.72217 0.16683L0.500652 8.50016L8.72217 16.8335L8.83398 16.7185L8.83398 13.0602L4.33681 8.50016L8.83399 3.94016L8.83399 0.281832Z" />
+                    <path
+                      d="M8.83399 0.281832L8.72217 0.16683L0.500652 8.50016L8.72217 16.8335L8.83398 16.7185L8.83398 13.0602L4.33681 8.50016L8.83399 3.94016L8.83399 0.281832Z"/>
                   </svg>
                 </div>
                 <div className="slider-btn package-card2-next">
@@ -112,7 +115,8 @@ const Home1Vise = () => {
                     viewBox="0 0 9 17"
                     fill="none"
                   >
-                    <path d="M0.166016 16.7182L0.277828 16.8332L8.49935 8.49984L0.277828 0.166504L0.166016 0.281504V3.93984L4.66319 8.49984L0.166016 13.0598V16.7182Z" />
+                    <path
+                      d="M0.166016 16.7182L0.277828 16.8332L8.49935 8.49984L0.277828 0.166504L0.166016 0.281504V3.93984L4.66319 8.49984L0.166016 13.0598V16.7182Z"/>
                   </svg>
                 </div>
               </div>
@@ -125,8 +129,8 @@ const Home1Vise = () => {
                   {visa.map((item, index) => (
                     <SwiperSlide className="swiper-slide" key={index}>
                       <div className="package-card2">
-                        <Link href={`/visas/${item.id}`}>
-                          <img src={item.img} alt="visa" />
+                        <Link href={`/visas/${item.id}`} >
+                          <Image width={422} height={422} priority layout="responsive" src={item.img} alt="visa"/>
                         </Link>
                         <div className="eg-tag">
                           <h4>
