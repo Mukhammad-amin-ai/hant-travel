@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import PopularDestination from "@/data/custom/popularDestination";
+import Image from "next/image";
+
 
 const Destination1 = () => {
   return (
@@ -48,10 +50,11 @@ const Destination1 = () => {
             {
               PopularDestination.map((item, index) => (
                 <div className={`${item.class} col-sm-6`}>
-                  <div className="destination-card">
-                    <img style={{height: "350px"}}
-                         src={item.img}
-                         alt="destination"/>
+                  <div className="destination-card" style={{width:'100%',height:'350px'}}>
+                    {/*<img style={{height: "350px"}}*/}
+                    {/*     src={item.img}*/}
+                    {/*     alt="destination"/>*/}
+                    <Image layout="fill" src={item.img} alt="destination" />
                     <div className="overlay"/>
                     <div className="card-title">
                       <h4>{item.name}</h4>
@@ -59,7 +62,7 @@ const Destination1 = () => {
                     <div className="content">
                       <h4>
                         <Link href={`/destination/${item.id}`}>
-                          item.name
+                          {item.name}
                         </Link>
                       </h4>
                       <div className="eg-tag">
