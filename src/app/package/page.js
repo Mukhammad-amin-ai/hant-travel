@@ -106,7 +106,7 @@ const page = () => {
   };
 
   useEffect(() => {
-    setTour(Tour.slice(0, -1))
+    setTour(Tour.slice(0, 6))
     let countryId = countryIdFinder() - 1;
     let tourType =  typeFinder() - 1;
 
