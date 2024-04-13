@@ -25,7 +25,7 @@ const Home2VideoSection = () => {
           loop
           muted
           playsInline
-          src="assets/video/pilligrimage.mp4"
+          src="https://www.shutterstock.com/shutterstock/videos/1054751255/preview/stock-footage-tilt-shift-time-lapse-sunrise-of-muslim-pilgrims-circling-around-the-holy-kaaba-at-dawn-and-praying.webm"
         ></video>
       </div>
       <div className="banner5-section mb-120">
