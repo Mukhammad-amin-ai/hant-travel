@@ -1,8 +1,5 @@
 "use client";
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
-import SelectComponent from "@/uitils/SelectComponent";
 import Link from "next/link";
 import React, {useState, useEffect, useRef} from "react";
 import Tour from "../../data/custom/tour.json";
