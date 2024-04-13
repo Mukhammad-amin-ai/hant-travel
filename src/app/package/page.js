@@ -73,7 +73,7 @@ const page = () => {
   };
 
   const clear = () => {
-    setTour(Tour);
+    sliceFunc()
     selectPrice.current.value = "Default Sorting";
     fromDay.current.value = 0;
     setCheckedIndex(-1);
