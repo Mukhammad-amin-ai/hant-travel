@@ -149,7 +149,7 @@ const page = () => {
                           </Link>
                           <div className="package-card-content">
                             <div className="card-content-top">
-                              <h5>{item.name}</h5>
+                              <h5>{item.country}</h5>
                               <ul>
                                 <li>
                                   <span>Country :</span> {item.country}
