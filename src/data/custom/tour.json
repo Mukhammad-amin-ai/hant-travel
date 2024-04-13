@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "day": 6,
     "night": 5,
     "type":"Piligrimage",
@@ -13,7 +13,7 @@
     "place_list": ["Tashkent", "Samarkand", "Bukhara", "Tashkent"]
   },
   {
-    "id": "2",
+    "id": 2,
     "day": 8,
     "night": 7,
     "type":"Adventure" ,
@@ -26,7 +26,7 @@
     "place_list": ["Khiva", "Bukhara", "Samarkand", "Tashkent"]
   },
   {
-    "id": "3",
+    "id": 3,
     "batch": "4 Days",
     "day": 4,
     "night": null,
