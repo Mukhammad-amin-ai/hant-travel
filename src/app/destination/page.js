@@ -1,6 +1,8 @@
+"use client"
+
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Link from "next/link";
-import React ,{useState} from "react";
+import React, {useState} from "react";
 import destination from "../../data/custom/destination.json";
 import Tour from "@/data/custom/tour.json";
 
