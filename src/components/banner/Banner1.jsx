@@ -42,16 +42,17 @@ const Banner1 = () => {
               {
                 headerCarusel.map((item, index) => (
                   <SwiperSlide key={index} className="swiper-slide">
-                    <div className="home1-banner-wrapper" >
+                    <div className="home1-banner-wrapper image-responsiveness"  >
                       {/*// style={{*/}
                       {/*//   backgroundImage: `linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(${item.img})`*/}
                       {/*// }}*/}
+                      <div className="gradiant-color"></div>
                       <Image
                         src={item.img}
                         alt={'img'}
                         layout="fill"
                         priority
-                        className="background-image"
+                        className="backgroundImage"
                       />
                       <div className="container">
                         <div className="row">
