@@ -5,6 +5,7 @@ import destinaiton_sidebar_data from "@/data/custom/destination.json";
 import {useEffect, useMemo, useReducer, useRef} from "react";
 import typeTour from "@/data/custom/type.json";
 import {Swiper, SwiperSlide} from "swiper/react";
+import {useRouter} from "next/navigation";
 import SwiperCore, {
   Autoplay,
   EffectFade,
@@ -65,8 +66,9 @@ function reducer(state, action) {
       return state;
   }
 }
-const Header = () => {
 
+const Header = () => {
+  const routerPush = useRouter()
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
 
@@ -142,6 +144,22 @@ const Header = () => {
     };
   });
 
+  const language = useRef("")
+
+  const toggleLanguage = (e) => {
+    let route = e.target.value
+    if (route === 'eng') {
+      routerPush.push("/en")
+    }
+    if (route === 'ru') {
+      routerPush.push("/ru")
+    }
+    if (route === 'uz') {
+      routerPush.push("/uz")
+    }
+  }
+
+
   return (
     <>
       <header ref={headerRef} className={`header-area style-1 ${state.scrollY > 10 ? "sticky" : ""}`}>
@@ -199,12 +217,17 @@ const Header = () => {
             <div role="button" className="icon pointer">
               <select className="form-select"
                       id="language"
-                      aria-label="Default select example">
-                <option value="1" defaultValue>
+                      aria-label="Default select example"
+                      onChange={toggleLanguage}>
+                <option value="eng">
                   Eng
                 </option>
-                <option value="2">Ru</option>
-                <option value="3">Uzb</option>
+                <option value="ru">
+                  Ru
+                </option>
+                <option value="uz">
+                  Uzb
+                </option>
               </select>
             </div>
           </div>
@@ -212,12 +235,17 @@ const Header = () => {
             className="form-select mobile-menu-btn "
             id="language"
             aria-label="Default select example"
+            ref={language} onChange={toggleLanguage}
           >
-            <option value="1" defaultValue>
+            <option value="eng" defaultValue>
               Eng
             </option>
-            <option value="2">Ru</option>
-            <option value="3">Uzb</option>
+            <option value="ru">
+              Ru
+            </option>
+            <option value="uz">
+              Uzb
+            </option>
           </select>
           <ul className="icon-list">
             <li className="right-sidebar-button" onClick={toggleRightSidebar}>

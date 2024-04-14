@@ -1,8 +1,6 @@
 "use client";
 import React, {useState, useEffect} from "react";
 
-
-
 const Preloader = ({onClose}) => {
   const [isPreloaderVisible, setIsPreloaderVisible] = useState(true);
   const [isPreloaderClosed, setIsPreloaderClosed] = useState(false);

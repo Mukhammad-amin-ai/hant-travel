@@ -15,7 +15,7 @@ import "yet-another-react-lightbox/styles.css";
 import "../../../public/assets/css/style.css";
 import "../../../public/assets/css/dashboard.css";
 import {useEffect, useState} from "react";
-import loading from "../loading";
+import Loading from "@/components/common/loading";
 
 export default function RootLayout({children, params: {locale}}) {
   const [isClient, setIsClient] = useState(false)
@@ -31,7 +31,7 @@ export default function RootLayout({children, params: {locale}}) {
       <body>{children}</body>
       </html>
     ) : (
-      <loading/> // Use a more descriptive message or component
+      <Loading/> // Use a more descriptive message or component
     )
   );
 }
