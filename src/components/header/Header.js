@@ -2,10 +2,11 @@
 import Link from "next/link";
 import navData from "@/data/nav.json";
 import destinaiton_sidebar_data from "@/data/custom/destination.json";
-import {useEffect, useMemo, useReducer, useRef} from "react";
+import {useEffect, useMemo, useReducer, useRef, useState} from "react";
 import typeTour from "@/data/custom/type.json";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {useRouter} from "next/navigation";
+import {useRouter, usePathname} from "next/navigation";
+
 import SwiperCore, {
   Autoplay,
   EffectFade,
@@ -67,8 +68,11 @@ function reducer(state, action) {
   }
 }
 
-const Header = () => {
+const Header = (context) => {
   const routerPush = useRouter()
+  const req = context;
+  // const acceptLanguage = req.headers.get('accept-language');
+  const pathName = usePathname()
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
 
@@ -76,13 +80,32 @@ const Header = () => {
     const {scrollY} = window;
     dispatch({type: "setScrollY", payload: scrollY});
   };
+  const [cookie, setCookie] = useState("")
+  let cookieCatch = () => {
+    const cookieString = document.cookie;
+
+    let cookiePairs = cookieString.split(';');
+
+    let nextLocaleValue = null;
+    for (let i = 0; i < cookiePairs.length; i++) {
+      let pair = cookiePairs[i].trim();
+      if (pair.indexOf('NEXT_LOCALE=') === 0) {
+        nextLocaleValue = pair.substring('NEXT_LOCALE='.length);
+        break;
+      }
+    }
+    setCookie(nextLocaleValue)
+  }
+
 
   useEffect(() => {
+    cookieCatch()
+    // console.log(pathName === 'en')
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [cookie]);
 
   const toggleMenu = (menu) => {
     dispatch({type: "TOGGLE_MENU", menu});
@@ -148,14 +171,20 @@ const Header = () => {
 
   const toggleLanguage = (e) => {
     let route = e.target.value
-    if (route === 'eng') {
+    if (route === 'en') {
+      console.log(route)
       routerPush.push("/en")
+      language.current.value = "Eng"
     }
     if (route === 'ru') {
+      console.log(route)
       routerPush.push("/ru")
+      language.current.value = "Ru"
     }
     if (route === 'uz') {
+      console.log(route)
       routerPush.push("/uz")
+      language.current.value = "Uz"
     }
   }
 
@@ -189,7 +218,7 @@ const Header = () => {
               const {id, label, link, icon, subMenu} = data;
               return (
                 <li key={id}>
-                  <Link href={link} className="drop-down">
+                  <Link href={`/${cookie}${link}`} className="drop-down">
                     {label}
                   </Link>
                 </li>
@@ -218,8 +247,9 @@ const Header = () => {
               <select className="form-select"
                       id="language"
                       aria-label="Default select example"
+                      ref={language}
                       onChange={toggleLanguage}>
-                <option value="eng">
+                <option value="en">
                   Eng
                 </option>
                 <option value="ru">
