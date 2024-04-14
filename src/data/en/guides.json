@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Landry Palmer",
+    "img": "/assets/images/guid/teams-card-img1.png",
+    "instagram": "#",
+    "whatsup": "#",
+    "telegram": "#"
+  },
+  {
+    "id": 2,
+    "name": "Jackson Mason",
+    "img": "/assets/images/guid/teams-card-img2.png",
+    "instagram": "#",
+    "whatsup": "#",
+    "telegram": "#"
+  },
+  {
+    "id": 3,
+    "name": "Joseph David",
+    "img": "/assets/images/guid/teams-card-img3.png",
+    "instagram": "#",
+    "whatsup": "#",
+    "telegram": "#"
+  },
+  {
+    "id": 4,
+    "name": "Josiah Caleb",
+    "img": "/assets/images/guid/teams-card-img4.png",
+    "instagram": "#",
+    "whatsup": "#",
+    "telegram": "#"
+  },
+  {
+    "id": 5,
+    "name": "David Luis",
+    "img": "/assets/images/guid/teams-card-img5.png",
+    "instagram": "#",
+    "whatsup": "#",
+    "telegram": "#"
+  }
+]

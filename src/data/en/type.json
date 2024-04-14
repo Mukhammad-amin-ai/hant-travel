@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "type":"Adventure",
+        "icon":""
+    },
+    {
+        "id":2,
+        "type":"Historical",
+        "icon":""
+    },
+    {
+        "id":3,
+        "type":"Cultural",
+        "icon":""
+    },
+    {
+        "id":4,
+        "type":"Piligrimage",
+        "icon":""
+    },
+    {
+        "id":5,
+        "type":"Private",
+        "icon":""
+    }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "title": "Egypt",
+    "price": "1,000",
+    "img": "/assets/images/visa/egypt.webp",
+    "country": "Egypt",
+    "visaType": "Tourist",
+    "time": "7-10",
+    "length": 60,
+    "max": 30,
+    "model": "Electronic",
+    "documents": [
+      "Passport Scan Copy: Clearly scanned Passport copy required. Minimum of 6 months validity required from the arrival date.",
+      "Photo Specification: Passport Size Photo with White Background (clear scanned Copy required)",
+      "Previous Visa copy: If traveler has previous travel history on countries like Thailand, Malaysia, Singapore, USA, UK and so on, need those clear VISA scanned copy.",
+      "Flight and hotel reservations booking with dates clearly stated (DO NOT purchase until visa approval)",
+      "Processing time 7 working days."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Saudi Arabia",
+    "price": "1,000",
+    "img": "/assets/images/visa/saudi.webp",
+    "country": "Saudi Arabia",
+    "visaType": "Tourist",
+    "time": "7-10",
+    "length": 60,
+    "max": 30,
+    "model": "Electronic",
+    "documents": [
+      "Passport Scan Copy: Clearly scanned Passport copy required. Minimum of 6 months validity required from the arrival date.",
+      "Photo Specification: Passport Size Photo with White Background (clear scanned Copy required)",
+      "Previous Visa copy: If traveler has previous travel history on countries like Thailand, Malaysia, Singapore, USA, UK and so on, need those clear VISA scanned copy.",
+      "Flight and hotel reservations booking with dates clearly stated (DO NOT purchase until visa approval)",
+      "Processing time 7 working days."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "UAE",
+    "price": "1,000",
+    "img": "/assets/images/visa/uaa.webp",
+    "country": "UAE",
+    "visaType": "Tourist",
+    "time": "7-10",
+    "length": 60,
+    "max": 30,
+    "model": "Electronic",
+    "documents": [
+      "Passport Scan Copy: Clearly scanned Passport copy required. Minimum of 6 months validity required from the arrival date.",
+      "Photo Specification: Passport Size Photo with White Background (clear scanned Copy required)",
+      "Previous Visa copy: If traveler has previous travel history on countries like Thailand, Malaysia, Singapore, USA, UK and so on, need those clear VISA scanned copy.",
+      "Flight and hotel reservations booking with dates clearly stated (DO NOT purchase until visa approval)",
+      "Processing time 7 working days."
+    ]
+  },
+  {
+    "id": 4,
+    "title": "India",
+    "price": "1,000",
+    "img": "/assets/images/visa/india_1.webp",
+    "country": "India",
+    "visaType": "Tourist",
+    "time": "7-10",
+    "length": 60,
+    "max": 30,
+    "model": "Electronic",
+    "documents": [
+      "Passport Scan Copy: Clearly scanned Passport copy required. Minimum of 6 months validity required from the arrival date.",
+      "Photo Specification: Passport Size Photo with White Background (clear scanned Copy required)",
+      "Previous Visa copy: If traveler has previous travel history on countries like Thailand, Malaysia, Singapore, USA, UK and so on, need those clear VISA scanned copy.",
+      "Flight and hotel reservations booking with dates clearly stated (DO NOT purchase until visa approval)",
+      "Processing time 7 working days."
+    ]
+  }
+]

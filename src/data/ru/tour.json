@@ -1,0 +1,124 @@
+[
+  {
+    "id": 1,
+    "day": 6,
+    "night": 5,
+    "type":"Piligrimage",
+    "country":"Uzbekistan",
+    "batch": "6 Days / 5 Night",
+    "img": "/assets/images/tour/uzbekistan.webp",
+    "location_list": ["Uzbekistan Tour"],
+    "title": "Three capitals of Uzbekistan",
+    "price": "980",
+    "place_list": ["Tashkent", "Samarkand", "Bukhara", "Tashkent"]
+  },
+  {
+    "id": 2,
+    "day": 8,
+    "night": 7,
+    "type":"Adventure" ,
+    "country":"Uzbekistan",
+    "batch": "8 Days / 7 Night",
+    "img": "/assets/images/tour/Khiva.webp",
+    "location_list": ["Uzbekistan Tour"],
+    "title": "Four pearls of Uzbekistan",
+    "price": "2728 ",
+    "place_list": ["Khiva", "Bukhara", "Samarkand", "Tashkent"]
+  },
+  {
+    "id": 3,
+    "batch": "4 Days",
+    "day": 4,
+    "night": null,
+    "type":"Adventure" ,
+    "country":"Uzbekistan",
+    "img": "/assets/images/tour/bukhara_1.webp",
+    "location_list": ["Uzbekistan Tour"],
+    "title": "Two Legends",
+    "price": "2728 ",
+    "place_list": ["Bukhara", "Samarkand"]
+  },
+  {
+    "id": 4,
+    "batch": "2 Weeks",
+    "day": 14,
+    "night": null,
+    "type":null ,
+    "img": "/assets/images/tour/central-asia.webp",
+    "location_list": ["Central Asia"],
+    "country":"Central Asia",
+    "title": "Central Asia Tour in 2 weeks",
+    "price": "530 ",
+    "place_list": [
+      "Kazakhstan",
+      "Kyrgyzstan",
+      "Uzbekistan",
+      "Tadjikistan",
+      "Turkmenistan"
+    ]
+  },
+  {
+    "id": 5,
+    "batch": " 12 Day / 11 Night",
+    "day": 12,
+    "night": null,
+    "type":null ,
+    "img": "/assets/images/tour/Urganch.webp",
+    "location_list": ["Uzbekistan Tour"],
+    "country":"Uzbekistan",
+    "title": "Tour To Bright and Sunny Uzbekistan",
+    "price": "2250",
+    "place_list": [
+      "Nukus",
+      "Khiva",
+      "Bukhara",
+      "Samarkand",
+      "Tashkent"
+    ]
+  },
+  {
+    "id": 6,
+    "batch": "11 Day",
+    "day": 11,
+    "night": null,
+    "type":null ,
+    "img": "/assets/images/tour/Bishkek.webp",
+    "location_list": ["Central Asia Tourr"],
+    "title": "Central Asia Tour",
+    "price": "3215",
+    "place_list": [
+      "Bishkek",
+      "Burana",
+      "Issyk Kul",
+      "Osh",
+      "Fergana",
+      "Tashkent",
+      "Kokand",
+      "Urganch",
+      "Khiva",
+      "Bukhara",
+      "Samarkand",
+      "Tashkent"
+    ]
+  },
+  {
+    "id": 7,
+    "batch": "9 Days / 8 Nights",
+    "day": 9,
+    "night": null,
+    "type":null ,
+    "img": "/assets/images/tour/central-asia.webp",
+    "location_list": ["Central Asia"],
+    "country":"Tadjikistan",
+    "title": "Tour to Pamir Mountains",
+    "price": "1650",
+    "place_list": [
+      "Dushanbe",
+      "Norak ",
+      "Kalai Khum",
+      "Yashil Kul Lake",
+      "Bulunkul Lake",
+      "Khoburubot"
+    ]
+  }
+]

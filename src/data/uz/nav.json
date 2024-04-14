@@ -1,0 +1,136 @@
+[
+    {
+        "id": "1",
+        "label": "Home",
+        "link": "/",
+        "icon": true,
+        "subMenu": [
+            {
+                "id": "1",
+                "label": "Home 01",
+                "link": "/"
+            },
+            {
+                "id": "2",
+                "label": "Home 02",
+                "link": "/index2"
+            },
+            {
+                "id": "3",
+                "label": "Home 03",
+                "link": "/index3"
+            },
+            {
+                "id": "4",
+                "label": "Home 04",
+                "link": "/index4"
+            },
+            {
+                "id": "5",
+                "label": "Home 05",
+                "link": "/index5"
+            },
+            {
+                "id": "6",
+                "label": "Home 06",
+                "link": "/index6"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "label": "About",
+        "link": "/about",
+        "icon": false
+    },
+    {
+        "id": "3",
+        "label": "Visas",
+        "link": "/visas",
+        "icon": true
+    },
+    {
+        "id": "4",
+        "label": "Tours",
+        "link": "/package",
+        "icon": true,
+        "subMenu": [
+            {
+                "id": "1",
+                "label": "Package Grid",
+                "link": "/package"
+            },
+            {
+                "id": "2",
+                "label": "Package Sidebar",
+                "link": "/package/package-category"
+            },
+            {
+                "id": "3",
+                "label": "Package Top Search",
+                "link": "/package/package-top-search"
+            },
+            {
+                "id": "4",
+                "label": "Package Category",
+                "link": "/package/package-details"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "label": "Countries",
+        "link": "/destination",
+        "icon": true,
+        "subMenu": [
+            {
+                "id": "1",
+                "label": "Destination Style 01",
+                "link": "/destination"
+            },
+            {
+                "id": "2",
+                "label": "Destination Style 02",
+                "link": "/destination/style2"
+            },
+            {
+                "id": "3",
+                "label": "Destination Style 03",
+                "link": "/destination/style3"
+            },
+            {
+                "id": "4",
+                "label": "Destination Style 04",
+                "link": "/destination/style4"
+            },
+            {
+                "id": "5",
+                "label": "Destination Style 05",
+                "link": "/destination/style5"
+            },
+            {
+                "id": "6",
+                "label": "Destination Details",
+                "link": "/destination/destination-details"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "label": "Gallery",
+        "link": "/gallery",
+        "icon": false
+    },
+    {
+        "id": "7",
+        "label": "Contact",
+        "link": "/contact",
+        "icon": false
+    },
+    {
+        "id": "8",
+        "label": "FAQ",
+        "link": "/faq",
+        "icon": false
+    }
+]
