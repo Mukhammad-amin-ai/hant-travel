@@ -16,8 +16,10 @@ export const metadata = {
     icon: "/assets/img/sm-logo.svg",
   },
 };
-export default function Home() {
 
+
+export default function Home(props) {
+  console.log(props)
   return (
     <>
       <Header />

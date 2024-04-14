@@ -20,7 +20,7 @@ const Not_found = () => {
                   to address your turna unique requirements. We take the time to
                   understand.
                 </p>
-                <Link className="primary-btn1 hover-btn3" href="/">
+                <Link className="primary-btn1 hover-btn3" href="/public">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={14}

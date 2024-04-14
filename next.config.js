@@ -16,13 +16,11 @@
 // }
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ... other Next.js configuration options if needed
 
-  // i18n: {
-  //   // Internationalization configuration
-  //   locales: ['en', 'uz', 'ru'], // Supported locales
-  //   defaultLocale: 'en', // Default locale
-  // },
+  i18n: {
+    locales: ['en', 'uz', 'ru'],
+    defaultLocale: 'en',
+  },
 };
 
 module.exports = nextConfig
