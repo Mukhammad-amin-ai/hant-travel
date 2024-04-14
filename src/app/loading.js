@@ -1,7 +1,9 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 
-const Preloader = ({ onClose }) => {
+
+
+const Preloader = ({onClose}) => {
   const [isPreloaderVisible, setIsPreloaderVisible] = useState(true);
   const [isPreloaderClosed, setIsPreloaderClosed] = useState(false);
   const handleCloseClick = () => {
@@ -28,16 +30,16 @@ const Preloader = ({ onClose }) => {
       <div className={preloaderClassNames}>
         <div className="preloader-close-btn" onClick={handleCloseClick}>
           <span>
-            <i className="bi bi-x-lg" /> Close
+            <i className="bi bi-x-lg"/> Close
           </span>
         </div>
         <div className="container">
           <div className="row d-flex justify-content-center">
             <div className="col-6">
               <div className="circle-border">
-                <div className="moving-circle" />
-                <div className="moving-circle" />
-                <div className="moving-circle" />
+                <div className="moving-circle"/>
+                <div className="moving-circle"/>
+                <div className="moving-circle"/>
                 <svg
                   width="180px"
                   height="150px"

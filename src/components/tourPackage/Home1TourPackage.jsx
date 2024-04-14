@@ -53,7 +53,7 @@ const Home1TourPackage = () => {
           </div>
           <div className="row g-lg-4 gy-5 mb-70">
             {Tour.map((item, index) => (
-              <div className="col-lg-4 col-md-6">
+              <div key={index} className="col-lg-4 col-md-6">
                 <div className="package-card">
                   <div className="package-card-img-wrap">
                     <Link href={`/package/${item.id}`} className="card-img">
@@ -77,7 +77,7 @@ const Home1TourPackage = () => {
                         </svg>
                         <ul className="location-list">
                           {item.location_list.map((item, index) => (
-                            <li>
+                            <li key={index}>
                               <Link href="/package">{item}</Link>
                             </li>
                           ))}
@@ -96,7 +96,7 @@ const Home1TourPackage = () => {
                       <div className="location-area">
                         <ul className="location-list scrollTextAni">
                           {item.place_list.map((item, index) => (
-                            <li>
+                            <li key={index}>
                               <Link href="/package">{item}</Link>
                             </li>
                           ))}

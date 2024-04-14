@@ -8,7 +8,7 @@ const Destination1 = () => {
   return (
     <>
       <div className="home1-destination-section mb-120">
-        <img src="/assets/img/home1/section-vector2.png"  alt="background-img" className="section-vector2"/>
+        <img src="/assets/img/home1/section-vector2.png" alt="background-img" className="section-vector2"/>
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -47,9 +47,9 @@ const Destination1 = () => {
           <div className="row g-4">
             {
               PopularDestination.map((item, index) => (
-                <div className={`${item.class} col-sm-6`}>
-                  <div className="destination-card" style={{width:'100%',height:'350px'}}>
-                    <Image layout="fill" src={item.img} alt="destination" />
+                <div key={index} className={`${item.class} col-sm-6`}>
+                  <div className="destination-card" style={{width: '100%', height: '350px'}}>
+                    <Image layout="fill" src={item.img} alt="destination"/>
                     <div className="overlay"/>
                     <div className="card-title">
                       <h4>{item.name}</h4>
