@@ -17,7 +17,7 @@ export const metadata = {
   title: "HANT TRAVEL",
   description: "Hant travel tour agency official webpage",
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: "../../../assets/img/sm-logo.svg",
   },
 };
 
