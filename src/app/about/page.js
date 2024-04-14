@@ -1,5 +1,4 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
-import Newslatter from "@/components/common/Newslatter";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Home2Team from "@/components/team/Home2Team";
