@@ -50,7 +50,7 @@ const Banner1 = () => {
                       <Image
                         src={item.img}
                         alt={'img'}
-                        layout="fill"
+                        fill
                         priority
                         className="backgroundImage"
                       />

@@ -49,7 +49,7 @@ const Destination1 = () => {
               PopularDestination.map((item, index) => (
                 <div key={index} className={`${item.class} col-sm-6`}>
                   <div className="destination-card" style={{width: '100%', height: '350px'}}>
-                    <Image layout="fill" src={item.img} alt="destination"/>
+                    <Image fill src={item.img} sizes="(max-width: 350px) 414px, 100vw" alt="destination"/>
                     <div className="overlay"/>
                     <div className="card-title">
                       <h4>{item.name}</h4>
