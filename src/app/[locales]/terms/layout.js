@@ -1,13 +1,18 @@
-import Breadcrumb from "@/components/common/Breadcrumb";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import React from "react";
+
+export const metadata = {
+  title: "HANT TRAVEL",
+  description: "Visa",
+  icons: {
+    icon: "/assets/img/sm-logo.svg",
+  },
+};
 
 const layout = ({ children }) => {
   return (
     <>
       <Header />
-      <Breadcrumb pagename="Contact Us" pagetitle="Contact Us" />
       {children}
       <Footer />
     </>

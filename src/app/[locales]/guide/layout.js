@@ -1,0 +1,24 @@
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
+
+
+export const metadata = {
+  title: "Hant Travel - Tour & Travel Agency  NextJs Template",
+  description:
+    "Hant Travel is a NextJs Template for Tour and Travel Agency purpose",
+  icons: {
+    icon: "/assets/img/sm-logo.svg",
+  },
+};
+
+const layout = ({ children }) => {
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
+};
+
+export default layout;
