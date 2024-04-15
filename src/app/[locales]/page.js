@@ -23,7 +23,15 @@ export const metadata = {
 export default function Home() {
   const t = useTranslations("banner")
   const d = useTranslations("countries")
-
+  const f = useTranslations("facility")
+  let facility = [
+    {
+      title: f("title"),
+    },
+    {
+      title: f("subTitle"),
+    }
+  ]
   return (
     <>
       <Header/>
@@ -31,7 +39,7 @@ export default function Home() {
       <BannerBottom Destination={t("destination")} Type={t('type')} Day={t('day')} Category={t('category')}
                     Visa={t("visa")}/>
       <Destination tour={d("country")} explore={d("explore")} top={d("top")}/>
-      <HomeFacilities/>
+      <HomeFacilities title={facility}/>
       <VideoSection/>
       <HomeTourPackage/>
       <HomeWhyChoose/>

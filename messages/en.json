@@ -5,12 +5,15 @@
     "type": "Tour Type",
     "day": "From / To",
     "category": "Tour Category",
-    "visa":"Visa Category"
+    "visa": "Visa Category"
   },
   "countries": {
     "country": "Tour",
     "explore": "Explore",
     "top": "Top Countries"
+  },
+  "facility": {
+    "title": "Unveiled Adventures",
+    "subTitle": "Immerse Yourself in Top Tours"
   }
-
 }
