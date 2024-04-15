@@ -6,13 +6,13 @@
     "type": "Piligrimage",
     "link": "/package/1",
     "country": "Uzbekistan",
-    "description": "We are all used to the fact that in every country there is one special city, which is called the capital. But the centuries-old history and unique traditions of Uzbekistan do not allow us to single out just one region. And although the official capital of the Uzbek Republic is kind and hospitable Tashkent, we suggest you visit two other equally charming towns of the eastern state – Bukhara and Samarkand. Long live Uzbek adventures!",
+    "description": "Мы все привыкли к тому, что в каждой стране есть один особенный город, который называется столицей. Но многовековая история и уникальные традиции Узбекистана не позволяют нам выделить только один регион. И хотя официальной столицей Республики Узбекистан является добрый и гостеприимный Ташкент, мы предлагаем вам посетить два других не менее очаровательных города восточного государства – Бухару и Самарканд. Да здравствуют узбекские приключения!",
     "batch": "6 Days / 5 Night",
     "img": "/assets/images/tour/uzbekistan.webp",
     "location_list": [
       "Uzbekistan Tour"
     ],
-    "title": "Three Capitals Of Uzbekistan",
+    "title": "Три Столицы Узбекистана",
     "price": "980",
     "place_list": [
       "Tashkent",
@@ -26,7 +26,7 @@
     "day": 8,
     "night": 7,
     "link": "/package/2",
-    "description": "You've probably heard more than once that Uzbekistan is one of the most ancient civilizations, keeping thousands of secrets of history and culture. Then where do you start exploring such an amazing country? From the \"Four Pearls of Uzbekistan\" tour!",
+    "description": "Вы, наверное, не раз слышали, что Узбекистан - одна из древнейших цивилизаций, хранящая тысячи тайн истории и культуры. Тогда с чего же вы начнете знакомство со столь удивительной страной? С тура \"Четыре жемчужины Узбекистана!\"",
     "type": "Adventure",
     "country": "Uzbekistan",
     "batch": "8 Days / 7 Night",
@@ -34,7 +34,7 @@
     "location_list": [
       "Uzbekistan Tour"
     ],
-    "title": "Four Pearls Of Uzbekistan",
+    "title": "Четыре Жемчужины Узбекистана",
     "price": "2728 ",
     "place_list": [
       "Khiva",
@@ -47,7 +47,7 @@
     "id": "3",
     "batch": "4 Days",
     "link": "/package/3",
-    "description": "A four-day cultural tour to sunny Uzbekistan will take you from a modern metropolis to the peaceful silence of Bukhara and Samarkand, to the fabulous world of cities considered the \"eden\" of the ancient East. You will get acquainted with the history of the emergence of these cities, which were the concentration of ancient science and culture in Central Asia.",
+    "description": "Четырехдневный культурный тур по солнечному Узбекистану перенесет вас из современного мегаполиса в умиротворяющую тишину Бухары и Самарканда, в сказочный мир городов, считающихся \"Эдемом\" Древнего Востока. Вы познакомитесь с историей возникновения этих городов, которые были средоточием древней науки и культуры в Центральной Азии.",
     "day": 4,
     "night": null,
     "type": "Adventure",
@@ -56,7 +56,7 @@
     "location_list": [
       "Uzbekistan Tour"
     ],
-    "title": "Two Legends Of Uzbekistan",
+    "title": "Две Легенды Узбекистана",
     "price": "2728 ",
     "place_list": [
       "Bukhara",

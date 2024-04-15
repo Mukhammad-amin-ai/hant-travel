@@ -1,5 +1,5 @@
 "use client";
-import React, {useMemo} from "react";
+import React, {useEffect, useMemo, useState} from "react";
 import Image from "next/image";
 import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {
@@ -10,6 +10,10 @@ import SwiperCore, {
 } from "swiper";
 import Link from "next/link";
 import headerCarusel from '@/data/custom/headerCarusel.json'
+import headerRuCarusel from '@/data/ru/headerCarusel.json'
+import headerUzCarusel from '@/data/uz/headerCarusel.json'
+import navRu from "@/data/ru/nav.json";
+import navUz from "@/data/uz/nav.json";
 
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
@@ -33,6 +37,41 @@ const Banner1 = () => {
       },
     };
   }, []);
+  const [language, setLanguage] = useState(headerCarusel);
+  const [cookie, setCookie] = useState("")
+  let cookieCatch = () => {
+    const cookieString = document.cookie;
+
+    let cookiePairs = cookieString.split(';');
+
+    let nextLocaleValue = null;
+    for (let i = 0; i < cookiePairs.length; i++) {
+      let pair = cookiePairs[i].trim();
+      if (pair.indexOf('NEXT_LOCALE=') === 0) {
+        nextLocaleValue = pair.substring('NEXT_LOCALE='.length);
+        break;
+      }
+    }
+    setCookie(nextLocaleValue)
+  }
+  let languageFinder = () => {
+    if (cookie === 'en') {
+      setLanguage(headerCarusel)
+    }
+    if (cookie === 'ru') {
+      setLanguage(headerRuCarusel)
+    }
+    if (cookie === 'uz') {
+      setLanguage(headerUzCarusel)
+    }
+  }
+
+
+  useEffect(() => {
+    cookieCatch()
+    languageFinder()
+  }, [cookie]);
+
   return (
     <>
       <div className="home1-banner-area">
@@ -40,9 +79,9 @@ const Banner1 = () => {
           <Swiper {...settings} className="swiper home1-banner-slider">
             <div className="swiper-wrapper">
               {
-                headerCarusel.map((item, index) => (
+                language.map((item, index) => (
                   <SwiperSlide key={index} className="swiper-slide">
-                    <div className="home1-banner-wrapper image-responsiveness"  >
+                    <div className="home1-banner-wrapper image-responsiveness">
                       {/*// style={{*/}
                       {/*//   backgroundImage: `linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(${item.img})`*/}
                       {/*// }}*/}

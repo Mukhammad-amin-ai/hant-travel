@@ -9,7 +9,6 @@ import HomeTourPackage from "@/components/tourPackage/Home1TourPackage";
 import HomeVise from "@/components/visaComponents/Home1Vise";
 import HomeWhyChoose from "@/components/whyChoose/Home1WhyChoose";
 import VideoSection from "@/components/videoSection/Home2VideoSection";
-import Alert from '@/components/common/alert'
 
 export const metadata = {
   title: "HANT TRAVEL",
@@ -21,9 +20,11 @@ export const metadata = {
 
 
 export default function Home() {
+
+
   return (
     <>
-      <Header/>
+      <Header />
       <Banner/>
       <BannerBottom/>
       <Destination/>

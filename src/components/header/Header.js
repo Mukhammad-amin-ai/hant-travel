@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import navData from "@/data/nav.json";
-
+import navRu from "@/data/ru/nav.json"
+import navUz from '@/data/uz/nav.json'
 import destinaiton_sidebar_data from "@/data/custom/destination.json";
 import {useEffect, useMemo, useReducer, useRef, useState} from "react";
 import typeTour from "@/data/custom/type.json";
@@ -74,7 +75,7 @@ const Header = () => {
   const pathName = usePathname()
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
-
+  const [ navigation,setNavigation]=useState(navData)
   const handleScroll = () => {
     const {scrollY} = window;
     dispatch({type: "setScrollY", payload: scrollY});
@@ -100,13 +101,16 @@ const Header = () => {
   let [lang,setLang] = useState("")
   let languageFinder = () => {
     if (cookie === 'en') {
+      console.log(cookie)
       setLang("Eng")
     }
     if (cookie === 'ru') {
       setLang("Ru")
+      setNavigation(navRu)
     }
     if (cookie === 'uz') {
       setLang("Uz")
+      setNavigation(navUz)
     }
   }
 
@@ -170,7 +174,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [cookie,lang]);
+  }, [cookie,lang,navigation]);
   return (
     <>
       <header ref={headerRef} className={`header-area style-1 ${state.scrollY > 10 ? "sticky" : ""}`}>
@@ -196,7 +200,7 @@ const Header = () => {
             </div>
           </div>
           <ul className="menu-list">
-            {navData.map((data) => {
+            {navigation.map((data) => {
               const {id, label, link, icon, subMenu} = data;
               return (
                 <li key={id}>
