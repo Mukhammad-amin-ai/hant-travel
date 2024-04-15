@@ -9,6 +9,7 @@ import HomeTourPackage from "@/components/tourPackage/Home1TourPackage";
 import HomeVise from "@/components/visaComponents/Home1Vise";
 import HomeWhyChoose from "@/components/whyChoose/Home1WhyChoose";
 import VideoSection from "@/components/videoSection/Home2VideoSection";
+import {useTranslations} from 'next-intl';
 
 export const metadata = {
   title: "HANT TRAVEL",
@@ -20,14 +21,16 @@ export const metadata = {
 
 
 export default function Home() {
-
+  const t = useTranslations("banner")
+  const d = useTranslations("countries")
 
   return (
     <>
-      <Header />
-      <Banner/>
-      <BannerBottom/>
-      <Destination/>
+      <Header/>
+      <Banner banner={t("book")}/>
+      <BannerBottom Destination={t("destination")} Type={t('type')} Day={t('day')} Category={t('category')}
+                    Visa={t("visa")}/>
+      <Destination tour={d("country")} explore={d("explore")} top={d("top")}/>
       <HomeFacilities/>
       <VideoSection/>
       <HomeTourPackage/>

@@ -9,15 +9,13 @@ import SwiperCore, {
   Pagination,
 } from "swiper";
 import Link from "next/link";
-import headerCarusel from '@/data/custom/headerCarusel.json'
-import headerRuCarusel from '@/data/ru/headerCarusel.json'
-import headerUzCarusel from '@/data/uz/headerCarusel.json'
-import navRu from "@/data/ru/nav.json";
-import navUz from "@/data/uz/nav.json";
+import headerCarousel from '@/data/custom/headerCarusel.json'
+import headerRuCarousel from '@/data/ru/headerCarusel.json'
+import headerUzCarousel from '@/data/uz/headerCarusel.json'
 
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
-const Banner1 = () => {
+const Banner1 = ({banner}) => {
   const settings = useMemo(() => {
     return {
       slidesPerView: "auto",
@@ -37,7 +35,7 @@ const Banner1 = () => {
       },
     };
   }, []);
-  const [language, setLanguage] = useState(headerCarusel);
+  const [language, setLanguage] = useState(headerCarousel);
   const [cookie, setCookie] = useState("")
   let cookieCatch = () => {
     const cookieString = document.cookie;
@@ -56,13 +54,13 @@ const Banner1 = () => {
   }
   let languageFinder = () => {
     if (cookie === 'en') {
-      setLanguage(headerCarusel)
+      setLanguage(headerCarousel)
     }
     if (cookie === 'ru') {
-      setLanguage(headerRuCarusel)
+      setLanguage(headerRuCarousel)
     }
     if (cookie === 'uz') {
-      setLanguage(headerUzCarusel)
+      setLanguage(headerUzCarousel)
     }
   }
 
@@ -117,8 +115,8 @@ const Banner1 = () => {
                                 {item.description}
                               </p>
                               <div className="banner-content-bottom">
-                                <Link href={item.link} className="primary-btn1">
-                                  Book A Trip
+                                <Link href={`/${cookie}` + item.link} className="primary-btn1">
+                                  {banner}
                                 </Link>
                                 <div className="rating-area">
                                   <div className="icon">

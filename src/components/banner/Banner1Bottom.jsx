@@ -11,7 +11,7 @@ import visa from '@/data/custom/visa.json'
 import Alert from '@/components/common/alert'
 
 
-const Banner1Bottom = () => {
+const Banner1Bottom = ({Destination,Type,Day,Category,Visa}) => {
   const router = useRouter();
   const [country, setCountry] = useState("");
   const [type, setType] = useState("");
@@ -137,8 +137,9 @@ const Banner1Bottom = () => {
                                 d="M13.5 4.79883C11.3192 4.79883 9.54492 6.57308 9.54492 8.75391C9.54492 10.9347 11.3192 12.709 13.5 12.709C15.6808 12.709 17.4551 10.9347 17.4551 8.75391C17.4551 6.57308 15.6808 4.79883 13.5 4.79883ZM13.5 11.127C12.1915 11.127 11.127 10.0624 11.127 8.75391C11.127 7.44541 12.1915 6.38086 13.5 6.38086C14.8085 6.38086 15.873 7.44541 15.873 8.75391C15.873 10.0624 14.8085 11.127 13.5 11.127Z"/>
                             </svg>
                           </div>
+
                           <DestinationSearch
-                            destination="Destination"
+                            destination={Destination}
                             data={destination}
                             contryCatcher={countryCatcher}
                           />
@@ -163,7 +164,7 @@ const Banner1Bottom = () => {
                               </g>
                             </svg>
                           </div>
-                          <TourTypeDropdown typeCatcher={typeCatcher} typeTour={typeTour} description={'Tour type'}/>
+                          <TourTypeDropdown typeCatcher={typeCatcher} typeTour={typeTour} description={Type}/>
                         </div>
                       </div>
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center divider">
@@ -183,7 +184,7 @@ const Banner1Bottom = () => {
                               </g>
                             </svg>
                           </div>
-                          <DateRange dayCatcher={dayCatcher}/>
+                          <DateRange dayCatcher={dayCatcher} Day={Day}/>
                         </div>
                       </div>
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
@@ -207,7 +208,7 @@ const Banner1Bottom = () => {
                           </div>
                           <TourCategoryDropdown
                             data={["Economy", "Luxury", "Delux"]}
-                            labelType="Tour Category"
+                            labelType={Category}
                           />
                         </div>
                       </div>
@@ -238,7 +239,7 @@ const Banner1Bottom = () => {
                             </svg>
                           </div>
                           <DestinationSearch
-                            destination="Destination"
+                            destination={Destination}
                             data={destination}
                             contryCatcher={countryCatcher}
                           />
@@ -263,7 +264,7 @@ const Banner1Bottom = () => {
                               </g>
                             </svg>
                           </div>
-                          <TourTypeDropdown typeCatcher={typeCatcher} description={'Visa type'} typeTour={visa}/>
+                          <TourTypeDropdown typeCatcher={typeCatcher} description={Visa} typeTour={visa}/>
                         </div>
                       </div>
                     </div>

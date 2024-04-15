@@ -1,5 +1,15 @@
 {
-  "navbar": {
-    "home": "Uy"
+  "banner": {
+    "book": "Sayohatni Bron Qiling",
+    "destination": "Manzillar",
+    "type": "Tur Turi",
+    "day": "Dan / Gacha ",
+    "category": "Tur Categoriyalari",
+    "visa": "Visa Categoriyalari"
+  },
+  "countries": {
+    "country": "Sayohat",
+    "explore": "Explore",
+    "top": "Top Countries"
   }
 }

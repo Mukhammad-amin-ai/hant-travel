@@ -1,5 +1,16 @@
 {
-  "navbar": {
-    "home": "Home"
+  "banner": {
+    "book": "Book A Trip",
+    "destination": "Destination",
+    "type": "Tour Type",
+    "day": "From / To",
+    "category": "Tour Category",
+    "visa":"Visa Category"
+  },
+  "countries": {
+    "country": "Tour",
+    "explore": "Explore",
+    "top": "Top Countries"
   }
+
 }

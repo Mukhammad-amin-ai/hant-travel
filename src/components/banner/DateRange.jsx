@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const DateRange = ({ label = "From / To", style = "",dayCatcher }) => {
+const DateRange = ({ label = "From / To", style = "",dayCatcher,Day }) => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
@@ -43,7 +43,7 @@ const DateRange = ({ label = "From / To", style = "",dayCatcher }) => {
 
   return (
     <div className="searchbox-input">
-      <label>{label}</label>
+      <label>{Day}</label>
       <div className={`custom-select-dropdown ${style}`}>
         <div className="select-input">
           <DatePicker
