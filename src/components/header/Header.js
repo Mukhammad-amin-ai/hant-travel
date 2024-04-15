@@ -97,15 +97,25 @@ const Header = (context) => {
     setCookie(nextLocaleValue)
   }
 
+  let [lang,setLang] = useState("")
+  let languageFinder = () => {
+    if (cookie === 'en') {
+      setLang("Eng")
+      console.log(lang)
+    }
+    if (cookie === 'ru') {
+      setLang("Ru")
+      console.log(lang)
 
-  useEffect(() => {
-    cookieCatch()
-    // console.log(pathName === 'en')
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [cookie]);
+    }
+    if (cookie === 'uz') {
+      setLang("Uz")
+      console.log(lang)
+
+    }
+
+  }
+
 
   const toggleMenu = (menu) => {
     dispatch({type: "TOGGLE_MENU", menu});
@@ -167,26 +177,14 @@ const Header = (context) => {
     };
   });
 
-  const language = useRef("")
-
-  const toggleLanguage = (e) => {
-    let route = e.target.value
-    if (route === 'en') {
-      console.log(route)
-      routerPush.push("/en")
-      language.current.value = "Eng"
-    }
-    if (route === 'ru') {
-      console.log(route)
-      routerPush.push("/ru")
-      language.current.value = "Ru"
-    }
-    if (route === 'uz') {
-      console.log(route)
-      routerPush.push("/uz")
-      language.current.value = "Uz"
-    }
-  }
+  useEffect(() => {
+    languageFinder()
+    cookieCatch()
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [cookie,lang]);
 
 
   return (
@@ -244,39 +242,32 @@ const Header = (context) => {
         <div className="nav-right d-flex jsutify-content-end align-items-center">
           <div className="hotline-area d-xl-flex d-none">
             <div role="button" className="icon pointer">
-              <select className="form-select"
-                      id="language"
-                      aria-label="Default select example"
-                      ref={language}
-                      onChange={toggleLanguage}>
-                <option value="en">
-                  Eng
-                </option>
-                <option value="ru">
-                  Ru
-                </option>
-                <option value="uz">
-                  Uzb
-                </option>
-              </select>
+              <div className="dropdown">
+                <button className="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                  {lang}
+                </button>
+                <ul className="dropdown-menu">
+                  <li><Link className="dropdown-item" href="/en">Eng</Link></li>
+                  <li><Link className="dropdown-item" href="/ru">Ru</Link></li>
+                  <li><Link className="dropdown-item" href="/uz">Uz</Link></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <select
-            className="form-select mobile-menu-btn "
-            id="language"
-            aria-label="Default select example"
-            ref={language} onChange={toggleLanguage}
-          >
-            <option value="eng" defaultValue>
-              Eng
-            </option>
-            <option value="ru">
-              Ru
-            </option>
-            <option value="uz">
-              Uzb
-            </option>
-          </select>
+          <div role="button" className="icon pointer mobile-menu-btn">
+            <div className="dropdown">
+              <button className="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                Language
+              </button>
+              <ul className="dropdown-menu">
+                <li><Link className="dropdown-item" href="/en">Eng</Link></li>
+                <li><Link className="dropdown-item" href="/ru">Ru</Link></li>
+                <li><Link className="dropdown-item" href="/uz">Uz</Link></li>
+              </ul>
+            </div>
+          </div>
           <ul className="icon-list">
             <li className="right-sidebar-button" onClick={toggleRightSidebar}>
               <svg
