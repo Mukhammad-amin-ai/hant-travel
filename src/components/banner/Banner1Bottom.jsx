@@ -1,8 +1,6 @@
 "use client";
 import React, {useState} from "react";
-import Link from "next/link";
 import {useRouter} from "next/navigation";
-import QuantityCounter from "@/uitils/QuantityCounter";
 import DestinationSearch from "./DestinationSearch";
 import TourTypeDropdown from "./TourTypeDropdown";
 import TourCategoryDropdown from "./TourCategoryDropdown";
@@ -10,9 +8,8 @@ import DateRange from "./DateRange";
 import typeTour from "../../data/custom/type.json";
 import destination from "../../data/custom/destination.json";
 import visa from '@/data/custom/visa.json'
-import WhenDropdown from "./WhenDropdown";
-import LocationDropdown from "./LocationDropdown";
-import GuestDropdown from "./GuestDropdown";
+import Alert from '@/components/common/alert'
+
 
 const Banner1Bottom = () => {
   const router = useRouter();
@@ -20,7 +17,7 @@ const Banner1Bottom = () => {
   const [type, setType] = useState("");
   const [day, setDay] = useState("");
   const [visaType, setVisaType] = useState("")
-
+  const [alert, setAlert] = useState(false)
 
   let countryCatcher = (country) => {
     setCountry(country);
@@ -34,23 +31,36 @@ const Banner1Bottom = () => {
     setDay(day);
   };
 
-  const searchTour = (e)=>{
+  const searchTour = (e) => {
     e.preventDefault();
-    if(country !== ''){
-      router.push(`/package?search=${country}`);
+    if (country !== '' && type !== "" && day !== "") {
+      router.push(`/package?search=${country}&day=${day}&type=${type}`);
+    } else {
+      setAlert(true)
     }
 
+
   }
-  const searchVisa = (e)=>{
+  const searchVisa = (e) => {
     e.preventDefault();
-    if(country !== ''){
-      router.push(`/visa?search=${country}`);
+    if (country !== '' && type !== "") {
+      router.push(`/visa?search=${country}&type=${type}`);
+    } else {
+      setAlert(true)
     }
   }
 
 
   return (
     <div className="home1-banner-bottom mb-120">
+      {
+        alert ?
+          (
+            <Alert/>
+          ) : (
+            ""
+          )
+      }
       <div className="container-fluid">
         <div className="filter-wrapper">
           <div className="nav-buttons">
@@ -212,7 +222,7 @@ const Banner1Bottom = () => {
                   </div>
                   <button type="submit" color="#fff">
                     {/*<Link href={`/package?search=${country}&day=${day}&type=${type}`}>*/}
-                      Search
+                    Search
                     {/*</Link>*/}
                   </button>
                 </form>
@@ -269,7 +279,7 @@ const Banner1Bottom = () => {
                   </div>
                   <button type="submit" style={{color: "#fff !important"}}>
                     {/*<Link href={`/visa?search=${country}&type=${type}`}>*/}
-                      Search
+                    Search
                     {/*</Link>*/}
                   </button>
                 </form>

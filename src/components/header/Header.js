@@ -259,7 +259,7 @@ const Header = (context) => {
             <div className="dropdown">
               <button className="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
                       aria-expanded="false">
-                Language
+                {lang}
               </button>
               <ul className="dropdown-menu">
                 <li><Link className="dropdown-item" href="/en">Eng</Link></li>
