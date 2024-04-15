@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import navData from "@/data/nav.json";
+
 import destinaiton_sidebar_data from "@/data/custom/destination.json";
 import {useEffect, useMemo, useReducer, useRef, useState} from "react";
 import typeTour from "@/data/custom/type.json";
@@ -68,10 +69,8 @@ function reducer(state, action) {
   }
 }
 
-const Header = (context) => {
+const Header = () => {
   const routerPush = useRouter()
-  const req = context;
-  // const acceptLanguage = req.headers.get('accept-language');
   const pathName = usePathname()
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
@@ -80,6 +79,7 @@ const Header = (context) => {
     const {scrollY} = window;
     dispatch({type: "setScrollY", payload: scrollY});
   };
+  // ========COOKIE LANGUAGE CATCHER=============
   const [cookie, setCookie] = useState("")
   let cookieCatch = () => {
     const cookieString = document.cookie;
@@ -96,36 +96,22 @@ const Header = (context) => {
     }
     setCookie(nextLocaleValue)
   }
-
+  // ========COOKIE LANGUAGE CATCHER=============
   let [lang,setLang] = useState("")
   let languageFinder = () => {
     if (cookie === 'en') {
       setLang("Eng")
-      console.log(lang)
     }
     if (cookie === 'ru') {
       setLang("Ru")
-      console.log(lang)
-
     }
     if (cookie === 'uz') {
       setLang("Uz")
-      console.log(lang)
-
     }
-
   }
-
-
-  const toggleMenu = (menu) => {
-    dispatch({type: "TOGGLE_MENU", menu});
-  };
 
   const toggleRightSidebar = () => {
     dispatch({type: "TOGGLE_RIGHTSIDEBAR"});
-  };
-  const toggleSubMenu = (subMenu) => {
-    dispatch({type: "TOGGLE_SUB_MENU", subMenu});
   };
   const toggleSidebar = () => {
     dispatch({type: "TOGGLE_MENU", menu: ""});
@@ -185,8 +171,6 @@ const Header = (context) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [cookie,lang]);
-
-
   return (
     <>
       <header ref={headerRef} className={`header-area style-1 ${state.scrollY > 10 ? "sticky" : ""}`}>

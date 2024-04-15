@@ -5,8 +5,8 @@ import DestinationSearch from "./DestinationSearch";
 import TourTypeDropdown from "./TourTypeDropdown";
 import TourCategoryDropdown from "./TourCategoryDropdown";
 import DateRange from "./DateRange";
-import typeTour from "../../data/custom/type.json";
-import destination from "../../data/custom/destination.json";
+import typeTour from "@/data/custom/type.json";
+import destination from "@/data/custom/destination.json";
 import visa from '@/data/custom/visa.json'
 import Alert from '@/components/common/alert'
 
@@ -16,7 +16,6 @@ const Banner1Bottom = () => {
   const [country, setCountry] = useState("");
   const [type, setType] = useState("");
   const [day, setDay] = useState("");
-  const [visaType, setVisaType] = useState("")
   const [alert, setAlert] = useState(false)
 
   let countryCatcher = (country) => {
@@ -38,19 +37,15 @@ const Banner1Bottom = () => {
     } else {
       setAlert(true)
     }
-
-
   }
   const searchVisa = (e) => {
     e.preventDefault();
     if (country !== '' && type !== "") {
-      router.push(`/visa?search=${country}&type=${type}`);
+      router.push(`/visas?search=${country}&type=${type}`);
     } else {
       setAlert(true)
     }
   }
-
-
   return (
     <div className="home1-banner-bottom mb-120">
       {
@@ -121,11 +116,9 @@ const Banner1Bottom = () => {
           </div>
           <div className="filter-group">
             <div className="tab-content" id="pills-tab2Content">
-              <div
-                className="tab-pane fade show active"
-                id="tour"
-                role="tabpanel"
-              >
+              <div className="tab-pane fade show active"
+                   id="tour"
+                   role="tabpanel">
                 <form onSubmit={searchTour}>
                   <div className="filter-area">
                     <div className="row g-xl-4 gy-4">
@@ -221,9 +214,7 @@ const Banner1Bottom = () => {
                     </div>
                   </div>
                   <button type="submit" color="#fff">
-                    {/*<Link href={`/package?search=${country}&day=${day}&type=${type}`}>*/}
                     Search
-                    {/*</Link>*/}
                   </button>
                 </form>
               </div>
@@ -278,9 +269,7 @@ const Banner1Bottom = () => {
                     </div>
                   </div>
                   <button type="submit" style={{color: "#fff !important"}}>
-                    {/*<Link href={`/visa?search=${country}&type=${type}`}>*/}
                     Search
-                    {/*</Link>*/}
                   </button>
                 </form>
               </div>
