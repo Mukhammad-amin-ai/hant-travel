@@ -56,7 +56,7 @@ export default function Home() {
       <BannerBottom data={bannerBottom} />
       <Destination tour={d("country")} explore={d("explore")} top={d("top")}/>
       <HomeFacilities title={facility}/>
-      <VideoSection title={video}/ />
+      <VideoSection title={video} />
       <HomeTourPackage/>
       <HomeWhyChoose/>
       <HomeFacilitySlide/>
