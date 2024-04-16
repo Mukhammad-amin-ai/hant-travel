@@ -15,5 +15,58 @@
   "facility": {
     "title": "Unveiled Adventures",
     "subTitle": "Immerse Yourself in Top Tours"
+  },
+  "affordable": {
+    "title": "Memories Made Easy",
+    "subtitle": "Affordable Vacation Planning",
+    "view": "View All Package"
+  },
+  "video": {
+    "save": "Savings worldwide",
+    "hadjj": "Hadjj / Umrah",
+    "title": "Discover Great Deal"
+  },
+  "why": {
+    "title": "Your Trusted Travel Partner",
+    "subtitle": "Hant Travel",
+    "why1": "Worldwide Coverage",
+    "whyT1": "The World Awaits: Explore Limitlessly with Worldwide Coverage",
+    "why2": "Competitive Pricing",
+    "whyT2": "Dream Big, Travel Smart: Competitive Prices for Every Adventure",
+    "why3": "Fast Booking",
+    "whyT3": "Lock in Your Adventure in Seconds: Fast Booking, Seamless Travel",
+    "why4": "Guided Tours",
+    "whyT4": "Explore with Confidence: Expertly Curated Guided Tours",
+    "why5": "Best Support 24/7",
+    "whyT5": "Travel with Confidence: 24/7 Best Support, Always by Your Side.",
+    "why6": "Ultimate Flexibility",
+    "whyT6": "Craft Your Dream Trip: Ultimate Flexibility in Travel Planning"
+  },
+  "our": {
+    "title": "Our Facility",
+    "subtitle": "Finest Safety Systems",
+    "description": "Rest Easy, We've Got You Covered: Our Finest Safety Systems Include Proactive Security Measures and On-Site, Trained Security Personnel.",
+    "list1": "Secure accommodations",
+    "list2": "On-site amenities (restaurants, pools, gyms)",
+    "list3": "Travel Documentation",
+    "list4": "Transportation Security",
+    "list5": "Money and Payment",
+    "list6": "Local Knowledge Guide"
+  },
+  "visa": {
+    "title": "Visa Services",
+    "subtitle": "Visa Processing",
+    "tax": "TAXES INCL/PERS"
+  },
+  "footer": {
+    "title": "Wantto Take\nTour Packages?",
+    "link": "Quick Link",
+    "whatsapp": "Whatsup",
+    "email": "Send Mail\n",
+    "address": "Address\n",
+    "we": "We Are Here\n",
+    "payment": "Payment Methods",
+    "policy": "Privacy Policy",
+    "terms": "Terms & Condition"
   }
 }

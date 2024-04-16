@@ -36731,8 +36731,8 @@ form
 
 /*=============================*/
 @media screen and (max-width: 1200px) {
-    .home1-banner-area{
-        height:60vh;
+    .home1-banner-area {
+        height: 60vh;
     }
 
     .backgroundImage {
@@ -36740,6 +36740,7 @@ form
         border-radius: 30px 30px 0 0 !important;
 
     }
+
     .gradiant-color {
         border-radius: 30px 30px 0 0 !important;
     }
@@ -36748,30 +36749,35 @@ form
         margin-bottom: 150px;
     }
 }
+
 @media screen and (max-width: 950px) {
-    .home1-banner-area{
-        height:54vh;
+    .home1-banner-area {
+        height: 54vh;
     }
 }
 
-@media screen and (max-width: 768px){
-    .home1-banner-area{
-        height:55vh;
+@media screen and (max-width: 768px) {
+    .home1-banner-area {
+        height: 55vh;
     }
+
     .backgroundImage {
         border-radius: 0 !important;
     }
+
     .gradiant-color {
         border-radius: 0 !important;
     }
+
     .home1-banner-bottom .container-fluid {
-        padding-right:0 !important;
-        padding-left:0 !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
 
     }
 }
-@media screen and (max-width: 500px){
-    .home1-banner-area{
-        height:48vh;
+
+@media screen and (max-width: 500px) {
+    .home1-banner-area {
+        height: 48vh;
     }
 }

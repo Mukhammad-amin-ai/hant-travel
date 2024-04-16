@@ -13,7 +13,60 @@
     "top": "Top Countries"
   },
   "facility": {
-    "title": "Unveiled Adventures",
-    "subTitle": "Immerse Yourself in Top Tours"
+    "title": "Sarguzashtlar",
+    "subTitle": "Top turlar"
+  },
+  "affordable": {
+    "title": "Xotiralar Osonlashdi",
+    "subtitle":"Ta'tilni Arzon Rejalashtirish",
+    "view": "Barcha Paketlarni Ko'rish"
+  },
+  "video": {
+    "save": "Dunyo bo'ylab tejash",
+    "hadjj": "Hadj / Umra",
+    "title": "Katta Narsani Kashf Eting"
+  },
+  "why": {
+    "title": "Sizning ishonchli sayohat sherigingiz",
+    "subtitle": "Hant Travel",
+    "why1": "Dunyo Bo'ylab Qamrov",
+    "whyT1": "Dunyo Kutmoqda: Dunyo bo'ylab qamrov bilan cheksiz o'rganing",
+    "why2": "Raqobat Narxlash",
+    "whyT2" : "Katta orzu, sayohat aqlli: Har bir sarguzasht uchun raqobatbardosh narxlar",
+    "why3": "Tez bron qilish",
+    "whyT3": "Bir necha soniya ichida sarguzashtingizni qulflang: tezkor bron qilish, muammosiz sayohat",
+    "why4": "Boshqariladigan sayohatlar",
+    "whyT4": "Ishonch bilan o'rganing: mohirona boshqariladigan Ekskursiyalar",
+    "why5": "Eng yaxshi qo'llab-quvvatlash 24/7",
+    "whyT5": "Ishonch bilan sayohat: 24/7 eng yaxshi qo'llab-quvvatlash, har doim yoningizda.",
+    "why6": "Yakuniy moslashuvchanlik",
+    "whyT6": "Sizning tush Safari Craft: Sayohat rejalashtirish yakuniy moslashuvchan"
+  },
+  "our": {
+    "title": "Bizning muassasamiz",
+    "subtitle": "Eng yaxshi xavfsizlik tizimlari",
+    "description": "Oson dam, biz sizga qoplangan bor: bizning eng yaxshi xavfsizlik tizimlari faol xavfsizlik choralarini va on-sayt o'z ichiga oladi, ta'lim xavfsizlik xodimlari.",
+    "list1": "Xavfsiz turar joy",
+    "list2": "Saytdagi qulayliklar (restoranlar, basseynlar, sport zallari)",
+    "list3": "Sayohat hujjatlari",
+    "list4": "Transport xavfsizligi",
+    "list5": "Pul va to'lov",
+    "list6": "Mahalliy bilimlar bo'yicha qo'llanma"
+  },
+  "visa": {
+    "title": "Viza xizmatlari",
+    "subtitle": "Viza paketlari",
+    "tax": "Soliq"
+  },
+  "footer": {
+    "title": "Tur paketlarini olishni xohlaysizmi ?",
+    "link": "Tezkor havola",
+    "whatsapp": "Whatsapp",
+    "email": "Email yuborish",
+    "address": "Manzil",
+    "we": "Biz shu yerdamiz",
+    "payment": "To'lov usullari",
+    "policy": "Maxfiylik siyosati",
+    "terms": "foydalanish shartlari"
   }
 }

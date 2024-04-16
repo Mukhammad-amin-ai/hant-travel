@@ -35,12 +35,12 @@ const Home2VideoSection = ({book,title}) => {
               <div className="swiper-wrapper">
                 <div className="banner5-card">
                   <div className="banner5-content">
-                    <span>Savings worldwide</span>
+                    <span>{title ? title?.[0].title : ""}</span>
                     <h3>20% Off</h3>
-                    <Link href="/package">Discover Great Deal</Link>
+                    <Link href="/package">{title ? title?.[2].title : ""}</Link>
                   </div>
                   <div className="banner5-timer">
-                    <h1>Hadjj / Umrah</h1>
+                    <h1>{title ? title?.[1].title : ""}</h1>
                   </div>
                   <Link
                     href="/package?type=Piligrimage"

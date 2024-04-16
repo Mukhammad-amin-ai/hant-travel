@@ -13,7 +13,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import "../../public/assets/css/bootstrap.min.css";
 import "yet-another-react-lightbox/styles.css";
 import "../../public/assets/css/style.css";
-import "../../public/assets/css/dashboard.css";
+// import "../../public/assets/css/dashboard.css";
 import { useEffect } from "react";
 
 
