@@ -6,7 +6,7 @@
     "type": "Piligrimage",
     "link": "/package/1",
     "country": "Uzbekistan",
-    "description": "Мы все привыкли к тому, что в каждой стране есть один особенный город, который называется столицей. Но многовековая история и уникальные традиции Узбекистана не позволяют нам выделить только один регион. И хотя официальной столицей Республики Узбекистан является добрый и гостеприимный Ташкент, мы предлагаем вам посетить два других не менее очаровательных города восточного государства – Бухару и Самарканд. Да здравствуют узбекские приключения!",
+    "description": "Богатая история Узбекистана выходит за рамки его столицы Ташкента. Исследуйте Бухару и Самарканд, чтобы познакомиться с их уникальной культурой",
     "batch": "6 Days / 5 Night",
     "img": "/assets/images/tour/uzbekistan.webp",
     "location_list": [
@@ -30,7 +30,7 @@
     "type": "Adventure",
     "country": "Uzbekistan",
     "batch": "8 Days / 7 Night",
-    "img": "/assets/images/tour/Khiva.webp",
+    "img": "/assets/images/tour/frame_KH.jpg",
     "location_list": [
       "Uzbekistan Tour"
     ],
@@ -52,7 +52,7 @@
     "night": null,
     "type": "Adventure",
     "country": "Uzbekistan",
-    "img": "/assets/images/tour/bukhara_1.webp",
+    "img": "/assets/images/tour/frame_Bukh.jpg",
     "location_list": [
       "Uzbekistan Tour"
     ],

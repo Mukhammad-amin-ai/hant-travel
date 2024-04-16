@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "Rubik";
     src: url(./fonts/Rubik-Black.ttf) format("truetype");
@@ -6426,7 +6424,7 @@ svg {
     width: 100%;
     margin: 0 auto;
     position: relative;
-    z-index:99;
+    z-index: 99;
 }
 
 @media (max-width: 991px) {
@@ -36717,11 +36715,63 @@ form
 
 /*# sourceMappingURL=style.css.map */
 
-.gradiant-color{
+.gradiant-color {
     width: 100%;
-    height:100%;
-    position:absolute;
-    z-index:10;
+    border-radius: 30px 30px !important;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
     background-image: linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%);
 }
 
+.backgroundImage {
+    position: absolute;
+    border-radius: 30px 30px !important;
+}
+
+/*=============================*/
+@media screen and (max-width: 1200px) {
+    .home1-banner-area{
+        height:60vh;
+    }
+
+    .backgroundImage {
+        height: 100%;
+        border-radius: 30px 30px 0 0 !important;
+
+    }
+    .gradiant-color {
+        border-radius: 30px 30px 0 0 !important;
+    }
+
+    .home1-banner-bottom {
+        margin-bottom: 150px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .home1-banner-area{
+        height:54vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home1-banner-area{
+        height:55vh;
+    }
+    .backgroundImage {
+        border-radius: 0 !important;
+    }
+    .gradiant-color {
+        border-radius: 0 !important;
+    }
+    .home1-banner-bottom .container-fluid {
+        padding-right:0 !important;
+        padding-left:0 !important;
+
+    }
+}
+@media screen and (max-width: 500px){
+    .home1-banner-area{
+        height:48vh;
+    }
+}

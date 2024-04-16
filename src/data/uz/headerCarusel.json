@@ -6,7 +6,7 @@
     "type": "Piligrimage",
     "link": "/package/1",
     "country": "Uzbekistan",
-    "description": "Biz hammamiz har bir mamlakatda poytaxt deb ataladigan bitta maxsus shahar borligiga o'rganib qolganmiz. Ammo O'zbekistonning ko'p asrlik tarixi va betakror an'analari bizga faqat bitta mintaqani ajratib ko'rsatishga imkon bermaydi. O'zbekiston Respublikasining rasmiy poytaxti mehribon va mehmondo'st Toshkent bo'lsa – da, Sharqiy davlatning yana ikkita maftunkor shahri-Buxoro va Samarqandga tashrif buyurishingizni tavsiya qilamiz. Yashasin o'zbek sarguzashtlari!",
+    "description": "O'zbekistonning boy tarixi uning poytaxti Toshkentdan tashqariga chiqadi. Buxoro va Samarqandni o'ziga xos madaniyatini tatib ko'rish uchun o'rganing",
     "batch": "6 Kun / 5 Tun",
     "img": "/assets/images/tour/uzbekistan.webp",
     "location_list": [
@@ -29,7 +29,7 @@
     "description": "O'zbekiston tarix va madaniyatning minglab sirlarini saqlagan eng qadimiy tsivilizatsiyalardan biri ekanligini bir necha bor eshitgandirsiz. Unda bunday ajoyib mamlakatni qaerdan o'rganishni boshlaysiz? \"O'zbekistonning to'rt marvaridi\" turkumidan!",    "type": "Adventure",
     "country": "Uzbekistan",
     "batch": "8 Kun / 7 Tun",
-    "img": "/assets/images/tour/Khiva.webp",
+    "img": "/assets/images/tour/frame_KH.jpg",
     "location_list": [
       "Uzbekistan Tour"
     ],
@@ -51,7 +51,7 @@
     "night": null,
     "type": "Adventure",
     "country": "Uzbekistan",
-    "img": "/assets/images/tour/bukhara_1.webp",
+    "img": "/assets/images/tour/frame_Bukh.jpg",
     "location_list": [
       "Uzbekistan Tour"
     ],

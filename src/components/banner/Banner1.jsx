@@ -82,12 +82,15 @@ const Banner1 = ({banner}) => {
                     <div className="home1-banner-wrapper image-responsiveness">
                       {/*// style={{*/}
                       {/*//   backgroundImage: `linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(${item.img})`*/}
-                      {/*// }}*/}
+                      {/*// }}>*/}
                       <div className="gradiant-color"></div>
                       <Image
+                        // width={1780}
+                        // height={828}
                         src={item.img}
                         alt={'img'}
                         fill
+                        // responsive={true}
                         priority
                         className="backgroundImage"
                       />
