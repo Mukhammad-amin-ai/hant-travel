@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useCountdownTimer } from "@/hooks/useCountdownTimer";
 // SwiperCore.use([Autoplay, EffectFade, Pagination]);
 
-const Home2VideoSection = () => {
+const Home2VideoSection = ({book,title}) => {
   const endTime = "2024-03-24";
   const { days, hours, minutes, seconds } = useCountdownTimer(endTime);
   const settings = useMemo(() => {
@@ -32,9 +32,7 @@ const Home2VideoSection = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              {/* <Swiper {...settings} className="swiper banner5-slider"> */}
               <div className="swiper-wrapper">
-                {/* <SwiperSlide className="swiper-slide"> */}
                 <div className="banner5-card">
                   <div className="banner5-content">
                     <span>Savings worldwide</span>
@@ -48,7 +46,7 @@ const Home2VideoSection = () => {
                     href="/package?type=Piligrimage"
                     className="primary-btn2"
                   >
-                    Book a Trip
+                    {book}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={18}
@@ -61,34 +59,11 @@ const Home2VideoSection = () => {
                     </svg>
                   </Link>
                 </div>
-                {/* </SwiperSlide> */}
               </div>
-              {/* </Swiper> */}
             </div>
           </div>
         </div>
-        {/* <div className="slider-btn-grp2">
-          <div className="slider-btn banner5-slider-prev">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={10}
-              height={20}
-              viewBox="0 0 10 20"
-            >
-              <path d="M9.58985 0.608227L9.46322 0.476797L0.152848 10.0006L9.46322 19.5244L9.58984 19.393L9.58984 15.212L4.49707 10.0006L9.58985 4.78918L9.58985 0.608227Z" />
-            </svg>
-          </div>
-          <div className="slider-btn banner5-slider-next">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={10}
-              height={20}
-              viewBox="0 0 10 20"
-            >
-              <path d="M0.408203 19.3918L0.534824 19.5232L9.8452 9.99939L0.534824 0.475586L0.408203 0.607014L0.408203 4.78797L5.50098 9.99939L0.408203 15.2108L0.408203 19.3918Z" />
-            </svg>
-          </div>
-        </div> */}
+
       </div>
     </>
   );

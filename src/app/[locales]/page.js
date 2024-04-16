@@ -24,6 +24,18 @@ export default function Home() {
   const t = useTranslations("banner")
   const d = useTranslations("countries")
   const f = useTranslations("facility")
+  const tour = [
+    {
+      title:d("country")
+    },
+    {
+      title:d("explore")
+    },
+    {
+      title:d("top")
+    }
+  ]
+
   const bannerBottom = [
     {
       title:t("destination")
@@ -47,17 +59,28 @@ export default function Home() {
     }
   ]
   const video = [
-    {}
+    {
+      title:""
+    },
+    {
+      title:""
+    },
+    {
+      title:""
+    },
+    {
+      title:""
+    }
   ]
   return (
     <>
       <Header/>
       <Banner banner={t("book")}/>
       <BannerBottom data={bannerBottom} />
-      <Destination tour={d("country")} explore={d("explore")} top={d("top")}/>
-      <HomeFacilities title={facility}/>
-      <VideoSection title={video} />
-      <HomeTourPackage/>
+      <Destination data={tour}/>
+      <HomeFacilities title={facility} book={t("book")}/>
+      <VideoSection title={video} book={t("book")} />
+      <HomeTourPackage book={t("book")}/>
       <HomeWhyChoose/>
       <HomeFacilitySlide/>
       <HomeVise/>

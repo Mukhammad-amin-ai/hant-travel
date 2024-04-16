@@ -12,7 +12,7 @@ import Link from "next/link";
 
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
-const Home1Fecilities2 = ({title}) => {
+const Home1Fecilities2 = ({title,book}) => {
   const settings = useMemo(() => {
     return {
       slidesPerView: "auto",
@@ -143,7 +143,7 @@ const Home1Fecilities2 = ({title}) => {
                                 href={`/package/${item.id}`}
                                 className="primary-btn2"
                               >
-                                Book a Trip
+                                {book}
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width={18}

@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Tour from "../../data/custom/popularTour.json";
 
-const Home1TourPackage = () => {
+const Home1TourPackage = ({book}) => {
   return (
     <>
       <div className="package-card-section pt-120 mb-120">
@@ -113,7 +113,7 @@ const Home1TourPackage = () => {
                         href={`/package/${item.id}`}
                         className="primary-btn2"
                       >
-                        Book a Trip
+                        {book}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width={18}
