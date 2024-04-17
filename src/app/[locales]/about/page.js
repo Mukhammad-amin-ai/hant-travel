@@ -15,6 +15,7 @@ export const metadata = {
 };
 const page = () => {
   const w = useTranslations("why")
+  const t = useTranslations("banner")
   const whyChouse = [
     {
       text: w("title"),
@@ -59,6 +60,35 @@ const page = () => {
       text: w("whyT6"),
     }
   ]
+  const footer = [
+    {
+      text: fo("title")
+    },
+    {
+      text: fo("link")
+    },
+    {
+      text: fo("whatsapp")
+    },
+    {
+      text: fo("email")
+    },
+    {
+      text: fo("address")
+    },
+    {
+      text: fo("we")
+    },
+    {
+      text: fo("payment")
+    },
+    {
+      text: fo("policy")
+    },
+    {
+      text: fo("terms")
+    }
+  ]
   return (
     <>
       <Header />
@@ -66,7 +96,7 @@ const page = () => {
       <Home2About />
       <Home2WhyChoose data={whyChouse} />
       <Home1Testimonail />
-      <Footer />
+      <Footer data={footer} book={t("book")} />
     </>
   );
 };
