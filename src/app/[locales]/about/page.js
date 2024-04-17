@@ -16,6 +16,7 @@ export const metadata = {
 const page = () => {
   const w = useTranslations("why")
   const t = useTranslations("banner")
+  const fo = useTranslations("footer")
   const whyChouse = [
     {
       text: w("title"),
