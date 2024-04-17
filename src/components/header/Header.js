@@ -7,16 +7,17 @@ import destinaiton_sidebar_data from "@/data/custom/destination.json";
 import {useEffect, useMemo, useReducer, useRef, useState} from "react";
 import typeTour from "@/data/custom/type.json";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {useRouter, usePathname} from "next/navigation";
-
+import {useSelector, useDispatch} from 'react-redux'
+import {getLanguage} from '@/store/language'
 import SwiperCore, {
   Autoplay,
   EffectFade,
   Navigation,
   Pagination,
 } from "swiper";
-
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
+
+// import {useRouter, usePathname} from "next/navigation";
 
 const initialState = {
   activeMenu: "",
@@ -71,49 +72,52 @@ function reducer(state, action) {
 }
 
 const Header = () => {
-  const routerPush = useRouter()
-  const pathName = usePathname()
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
-  const [ navigation,setNavigation]=useState(navData)
+  const [navigation, setNavigation] = useState(navData)
   const handleScroll = () => {
     const {scrollY} = window;
     dispatch({type: "setScrollY", payload: scrollY});
   };
-  // ========COOKIE LANGUAGE CATCHER=============
-  const [cookie, setCookie] = useState("")
-  let cookieCatch = () => {
-    const cookieString = document.cookie;
+  // const routerPush = useRouter()
+  // const pathName = usePathname()
 
-    let cookiePairs = cookieString.split(';');
-
-    let nextLocaleValue = null;
-    for (let i = 0; i < cookiePairs.length; i++) {
-      let pair = cookiePairs[i].trim();
-      if (pair.indexOf('NEXT_LOCALE=') === 0) {
-        nextLocaleValue = pair.substring('NEXT_LOCALE='.length);
-        break;
-      }
-    }
-    setCookie(nextLocaleValue)
-  }
   // ========COOKIE LANGUAGE CATCHER=============
-  let [lang,setLang] = useState("")
+  // const [cookie, setCookie] = useState("")
+  // let cookieCatch = () => {
+  //   const cookieString = document.cookie;
+  //
+  //   let cookiePairs = cookieString.split(';');
+  //
+  //   let nextLocaleValue = null;
+  //   for (let i = 0; i < cookiePairs.length; i++) {
+  //     let pair = cookiePairs[i].trim();
+  //     if (pair.indexOf('NEXT_LOCALE=') === 0) {
+  //       nextLocaleValue = pair.substring('NEXT_LOCALE='.length);
+  //       break;
+  //     }
+  //   }
+  //   setCookie(nextLocaleValue)
+  // }
+  // ========COOKIE LANGUAGE CATCHER=============
+  let language = useSelector((state) => state.language.languageValue)
+  const dispatchFunc = useDispatch()
+  let [lang, setLang] = useState("")
   let languageFinder = () => {
-    if (cookie === 'en') {
-      console.log(cookie)
+    if (language === 'en') {
+      setNavigation(navData)
       setLang("Eng")
     }
-    if (cookie === 'ru') {
+    if (language === 'ru') {
       setLang("Ru")
       setNavigation(navRu)
     }
-    if (cookie === 'uz') {
+    if (language === 'uz') {
       setLang("Uz")
       setNavigation(navUz)
     }
   }
-
+  //============== un used maybe ==================
   const toggleRightSidebar = () => {
     dispatch({type: "TOGGLE_RIGHTSIDEBAR"});
   };
@@ -166,15 +170,17 @@ const Header = () => {
       },
     };
   });
+  //============== un used maybe ==================
 
   useEffect(() => {
+    dispatchFunc(getLanguage())
     languageFinder()
-    cookieCatch()
+    // cookieCatch()
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [cookie,lang,navigation]);
+  }, [lang, navigation,language]);
   return (
     <>
       <header ref={headerRef} className={`header-area style-1 ${state.scrollY > 10 ? "sticky" : ""}`}>
@@ -204,7 +210,7 @@ const Header = () => {
               const {id, label, link, icon, subMenu} = data;
               return (
                 <li key={id}>
-                  <Link href={`/${cookie}${link}`} className="drop-down">
+                  <Link href={`/${language}${link}`} className="drop-down">
                     {label}
                   </Link>
                 </li>

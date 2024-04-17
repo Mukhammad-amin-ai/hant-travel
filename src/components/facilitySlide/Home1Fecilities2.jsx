@@ -1,38 +1,34 @@
 "use client";
-import React, {useEffect, useMemo} from "react";
-import {Swiper, SwiperSlide} from "swiper/react";
-import facility from "../../data/custom/facility.json";
-import SwiperCore, {
-  Autoplay,
-  EffectFade,
-  Navigation,
-  Pagination,
-} from "swiper";
+import React, {useEffect, useState} from "react";
+import {useSelector} from 'react-redux'
 import Link from "next/link";
+import navEn from "@/data/en/facility.json";
+import navRu from "@/data/ru/facility.json";
+import navUz from "@/data/uz/facility.json";
 
-SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
-const Home1Fecilities2 = ({title,book}) => {
-  const settings = useMemo(() => {
-    return {
-      slidesPerView: "auto",
-      speed: 1500,
-      spaceBetween: 25,
-      effect: "fade",
-      loop: true,
-      fadeEffect: {
-        crossFade: true,
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination5",
-        clickable: true,
-      },
-    };
-  }, []);
+const Home1Fecilities2 = ({title, book}) => {
+  let language = useSelector((state) => state.language.languageValue)
+  let [facility, setFacility] = useState(navEn)
+  let [lang, setLang] = useState('')
+  let languageFinder = () => {
+    if (language === 'en') {
+      setFacility(navEn)
+      setLang("en")
+    }
+    if (language === 'ru') {
+      setFacility(navRu)
+      setLang("ru")
+    }
+    if (language === 'uz') {
+      setFacility(navUz)
+      setLang("uz")
+    }
+  }
+
+  useEffect(() => {
+    languageFinder()
+  }, [language, lang, facility]);
   return (
     <>
       <div className="tour-facilites-section mb-120">

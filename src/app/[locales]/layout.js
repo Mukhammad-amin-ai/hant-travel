@@ -13,7 +13,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import "../../../public/assets/css/bootstrap.min.css";
 import "yet-another-react-lightbox/styles.css";
 import "../../../public/assets/css/style.css";
-// import "../../../public/assets/css/dashboard.css";
+import StoreProvider from "@/store/StoreProvide";
 import {useEffect, useState} from "react";
 import Loading from "@/components/common/loading";
 
@@ -27,11 +27,13 @@ export default function RootLayout({children, params: {locale}}) {
   }, []);
   return (
     isClient ? (
-      <html lang={locale}>
-      <body>{children}</body>
-      </html>
+      <StoreProvider>
+        <html lang={locale}>
+        <body>{children}</body>
+        </html>
+      </StoreProvider>
     ) : (
-      <Loading/> // Use a more descriptive message or component
+      <Loading/>
     )
-  );
+  )
 }

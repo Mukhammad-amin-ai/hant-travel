@@ -2,6 +2,7 @@
 import React, {useEffect, useMemo, useState} from "react";
 import Image from "next/image";
 import {Swiper, SwiperSlide} from "swiper/react";
+import {useSelector} from 'react-redux'
 import SwiperCore, {
   Autoplay,
   EffectFade,
@@ -36,39 +37,36 @@ const Banner1 = ({banner}) => {
     };
   }, []);
   const [language, setLanguage] = useState(headerCarousel);
-  const [cookie, setCookie] = useState("")
-  let cookieCatch = () => {
-    const cookieString = document.cookie;
-
-    let cookiePairs = cookieString.split(';');
-
-    let nextLocaleValue = null;
-    for (let i = 0; i < cookiePairs.length; i++) {
-      let pair = cookiePairs[i].trim();
-      if (pair.indexOf('NEXT_LOCALE=') === 0) {
-        nextLocaleValue = pair.substring('NEXT_LOCALE='.length);
-        break;
-      }
-    }
-    setCookie(nextLocaleValue)
-  }
+  let lang = useSelector((state) => state.language.languageValue)
+  // const [cookie, setCookie] = useState("")
+  // let cookieCatch = () => {
+  //   const cookieString = document.cookie;
+  //   let cookiePairs = cookieString.split(';');
+  //   let nextLocaleValue = null;
+  //   for (let i = 0; i < cookiePairs.length; i++) {
+  //     let pair = cookiePairs[i].trim();
+  //     if (pair.indexOf('NEXT_LOCALE=') === 0) {
+  //       nextLocaleValue = pair.substring('NEXT_LOCALE='.length);
+  //       break;
+  //     }
+  //   }
+  //   setCookie(nextLocaleValue)
+  // }
   let languageFinder = () => {
-    if (cookie === 'en') {
+    if (lang === 'en') {
       setLanguage(headerCarousel)
     }
-    if (cookie === 'ru') {
+    if (lang === 'ru') {
       setLanguage(headerRuCarousel)
     }
-    if (cookie === 'uz') {
+    if (lang === 'uz') {
       setLanguage(headerUzCarousel)
     }
   }
 
-
   useEffect(() => {
-    cookieCatch()
     languageFinder()
-  }, [cookie]);
+  }, [lang]);
 
   return (
     <>
@@ -118,7 +116,7 @@ const Banner1 = ({banner}) => {
                                 {item.description}
                               </p>
                               <div className="banner-content-bottom">
-                                <Link href={`/${cookie}` + item.link} className="primary-btn1">
+                                <Link href={`/${lang}` + item.link} className="primary-btn1">
                                   {banner}
                                 </Link>
                                 <div className="rating-area">
