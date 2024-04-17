@@ -117,7 +117,13 @@ const Home1Fecilities2 = ({title, book}) => {
                           <div className="package-card-content">
                             <div className="card-content-top">
                               <h5>
-                                <Link href={`/package/${item.id}`}>
+                                <Link href={`/package/${item.id}`} style={{
+                                  whiteSpace: "nowrap",
+                                  textOverflow: "ellipsis",
+                                  overflow: "hidden",
+                                  width: "300px",
+                                  display: "block"
+                                }}>
                                   {item.title}
                                 </Link>
                               </h5>

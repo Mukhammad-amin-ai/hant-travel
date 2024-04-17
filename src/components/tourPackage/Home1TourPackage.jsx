@@ -1,8 +1,32 @@
+"use client";
 import Link from "next/link";
-import React from "react";
-import Tour from "../../data/custom/popularTour.json";
-
+import React, {useEffect,useState} from "react";
+import {useSelector} from 'react-redux'
+import En from "@/data/en/popularTour.json";
+import Ru from "@/data/ru/popularTour.json";
+import Uz from "@/data/uz/popularTour.json";
 const Home1TourPackage = ({book, data}) => {
+  let [language, setLanguage] = useState('')
+  let langTour = useSelector((state) => state.language.languageValue)
+  let [tour, setTour] = useState(En)
+  let languageFinder = () => {
+    if (langTour === 'en') {
+      setTour(En)
+      setLanguage("en")
+    }
+    if (langTour === 'ru') {
+      setTour(Ru)
+      setLanguage("ru")
+    }
+    if (langTour === 'uz') {
+      setTour(Uz)
+      setLanguage("uz")
+    }
+  }
+
+  useEffect(() => {
+    languageFinder()
+  }, [language, langTour, tour]);
   return (
     <>
       <div className="package-card-section pt-120 mb-120">
@@ -52,7 +76,7 @@ const Home1TourPackage = ({book, data}) => {
             </div>
           </div>
           <div className="row g-lg-4 gy-5 mb-70">
-            {Tour.map((item, index) => (
+            {tour.map((item, index) => (
               <div key={index} className="col-lg-4 col-md-6">
                 <div className="package-card">
                   <div className="package-card-img-wrap">
