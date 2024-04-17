@@ -130,7 +130,7 @@ const Home1Vise = ({data}) => {
                     <SwiperSlide className="swiper-slide" key={index}>
                       <div className="package-card2">
                         <Link href={`/visas/${item.id}`}>
-                          <Image width={422} height={422} priority responsive src={item.img} alt="visa"/>
+                          <Image width={422} height={422} priority responsive="true" src={item.img} alt="visa"/>
                         </Link>
                         <div className="eg-tag">
                           <h4>

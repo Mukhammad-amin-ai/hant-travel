@@ -72,7 +72,7 @@ const Footer = ({data, book}) => {
                 <ul className="widget-list">
                   {
                     nav.map((item, index) => (
-                      <li>
+                      <li key={index}>
                         <Link href={`/${lang}${item.link}`}>{item.label}</Link>
                       </li>
                     ))
