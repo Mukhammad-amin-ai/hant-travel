@@ -1,5 +1,5 @@
 "use client";
-import React, {useMemo} from "react";
+import React, {useMemo, useEffect, useState} from "react";
 import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {
   Autoplay,
@@ -8,12 +8,14 @@ import SwiperCore, {
   Pagination,
 } from "swiper";
 import Link from "next/link";
-import visa from "../../data/custom/visa.json";
 import Image from "next/image";
+import {useSelector} from "react-redux";
+import En from "@/data/en/visa.json";
+import Ru from "@/data/ru/visa.json";
+import Uz from "@/data/uz/visa.json";
 
 
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
-
 const Home1Vise = ({data}) => {
   const settings = useMemo(() => {
     return {
@@ -54,6 +56,28 @@ const Home1Vise = ({data}) => {
       },
     };
   }, []);
+  let language = useSelector((state) => state.language.languageValue)
+  let [visa, setVisa] = useState(En)
+  let [lang, setLang] = useState('')
+  let languageFinder = () => {
+    if (language === 'en') {
+      setVisa(En)
+      setLang("en")
+    }
+    if (language === 'ru') {
+      setVisa(Ru)
+      setLang("ru")
+    }
+    if (language === 'uz') {
+      setVisa(Uz)
+      setLang("uz")
+    }
+  }
+
+
+  useEffect(() => {
+    languageFinder()
+  }, [language, lang, visa]);
   return (
     <>
       <div className="visa-section mb-120 mt-120">
@@ -141,7 +165,7 @@ const Home1Vise = ({data}) => {
                         </div>
                         <div className="package-card2-content">
                           <div className="title">
-                            <h6>E-Visa - Only Processing</h6>
+                            <h6>{data ? data?.[3].text : ""}</h6>
                           </div>
                           <div className="price-area">
                             <span>$ {item.price}</span>

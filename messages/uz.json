@@ -56,7 +56,8 @@
   "visa": {
     "title": "Viza xizmatlari",
     "subtitle": "Viza paketlari",
-    "tax": "Soliq"
+    "tax": "Soliq",
+    "eVisa": "Faqat Elektron Vizaga Ishlov Berish"
   },
   "footer": {
     "title": "Tur paketlarini olishni xohlaysizmi ?",

@@ -4,45 +4,30 @@ import React, {useEffect, useState} from "react";
 import navRu from "@/data/ru/nav.json";
 import navUz from "@/data/uz/nav.json";
 import navEn from "@/data/en/nav.json";
+import {useSelector} from "react-redux";
 
 const Footer = ({data, book}) => {
-
-  const [cookie, setCookie] = useState("")
-  let cookieCatch = () => {
-    const cookieString = document.cookie;
-    let cookiePairs = cookieString.split("");
-    let nextLocaleValue = null;
-    for (let i = 0; i < cookiePairs.length; i++) {
-      let pair = cookiePairs[i].trim();
-      if (pair.indexOf('NEXT_LOCALE=') === 0) {
-        nextLocaleValue = pair.substring('NEXT_LOCALE='.length);
-        break;
-      }
-    }
-    setCookie(nextLocaleValue)
-  }
-
+  let language = useSelector((state) => state.language.languageValue)
   let [nav, setNav] = useState(navEn)
   let [lang, setLang] = useState('')
   let languageFinder = () => {
-    if (cookie === 'en') {
+    if (language === 'en') {
       setNav(navEn)
       setLang("en")
     }
-    if (cookie === 'ru') {
+    if (language === 'ru') {
       setNav(navRu)
       setLang("ru")
     }
-    if (cookie === 'uz') {
+    if (language === 'uz') {
       setNav(navUz)
       setLang("uz")
     }
   }
 
   useEffect(() => {
-    cookieCatch()
     languageFinder()
-  }, [cookie,lang,nav]);
+  }, [language,lang,nav]);
 
   return (
     <footer className={`footer-section `}>

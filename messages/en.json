@@ -56,7 +56,8 @@
   "visa": {
     "title": "Visa Services",
     "subtitle": "Visa Processing",
-    "tax": "TAXES INCL/PERS"
+    "tax": "TAXES INCL/PERS",
+    "eVisa": "E-Visa - Only Processing"
   },
   "footer": {
     "title": "Wantto Take\nTour Packages?",

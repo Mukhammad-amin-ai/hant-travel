@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "name": "Tourist",
+    "name": "Turist",
     "price": "1,000",
     "img": "/assets/images/visa/egypt.webp",
-    "country": "Egypt",
-    "type": "Tourist",
-    "mode": "Electronic",
+    "country": "Misr",
+    "type": "Turist",
+    "mode": "Elektron",
     "valid": 60,
     "process": "7-10"
   },
   {
     "id": 2,
-    "name": "Health",
+    "name": "Salomatlik",
     "price": "1,000",
     "img": "/assets/images/visa/saudi.webp",
-    "country": "Saudi Arab",
-    "type": "Health",
-    "mode": "Electronic",
+    "country": "Saudiya Arab",
+    "type": "Salomatlik",
+    "mode": "Elektron",
     "valid": 60,
     "process": "7-10"
   }

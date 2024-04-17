@@ -169,6 +169,9 @@ export default function Home() {
     },
     {
       text: vi("tax")
+    },
+    {
+      text:vi("eVisa")
     }
 
   ]

@@ -1,7 +1,6 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import Home2Team from "@/components/team/Home2Team";
 import Home2WhyChoose from "@/components/whyChoose/Home2WhyChoose";
 import Home2About from "@/components/about/Home2About";
 import Home1Testimonail from "@/components/testimonial/Home1Testimonail";
@@ -21,7 +20,7 @@ const page = () => {
       <Breadcrumb pagename="About Us" pagetitle="About Us" />
       <Home2About />
       <Home2WhyChoose />
-      <Home2Team />
+      {/*<Home2Team />*/}
       <Home1Testimonail />
       <Footer />
     </>
