@@ -3,7 +3,7 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Home2WhyChoose from "@/components/whyChoose/Home2WhyChoose";
 import Home2About from "@/components/about/Home2About";
-import Home1Testimonail from "@/components/testimonial/Home1Testimonail";
+import HomeTestAbout from "@/components/testimonial/Home1Testimonail";
 import {useTranslations} from 'next-intl';
 
 export const metadata = {
@@ -14,12 +14,14 @@ export const metadata = {
     icon: "/assets/img/sm-logo.svg",
   },
 };
+
 const page = () => {
+  const r = useTranslations("Reviews")
   const t = useTranslations("banner")
   const fo = useTranslations("footer")
   const a = useTranslations("about")
   const w2 = useTranslations("why2Component")
-  let about = [
+  const about = [
     {
       text: a("breadcrumb")
     },
@@ -116,6 +118,8 @@ const page = () => {
       text: w2("whyT6"),
     }
   ]
+  const reviewTitle = r("title")
+  const reviewSubtitle = r("subtitle")
   const footer = [
     {
       text: fo("title")
@@ -151,7 +155,7 @@ const page = () => {
       <Breadcrumb pagename={about ? about?.[0].text : " "} pagetitle={about ? about?.[2].text : " "}/>
       <Home2About data={about}/>
       <Home2WhyChoose data={whyChooseUs}/>
-      <Home1Testimonail/>
+      <HomeTestAbout title={reviewTitle} subtitle={reviewSubtitle}/>
       <Footer data={footer} book={t("book")}/>
     </>
   );

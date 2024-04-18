@@ -90,8 +90,8 @@
     "experience": "Yillik tajriba"
   },
   "why2Component": {
-    "title": "Who We Are",
-    "subtitle": "Why Hant Travel Is Best",
+    "title": "Biz Kimmiz",
+    "subtitle": "Nima Uchun Hant Travel Eng Yaxshisi",
     "why1": "Dunyo Bo'ylab Qamrov",
     "whyT1": "Dunyo Kutmoqda: Dunyo bo'ylab qamrov bilan cheksiz o'rganing",
     "why2": "Raqobat Narxlash",
@@ -104,6 +104,10 @@
     "whyT5": "Ishonch bilan sayohat: 24/7 eng yaxshi qo'llab-quvvatlash, har doim yoningizda.",
     "why6": "Yakuniy moslashuvchanlik",
     "whyT6": "Sizning tush Safari Craft: Sayohat rejalashtirish yakuniy moslashuvchan"
+  },
+  "Reviews": {
+    "title": "Sharhlar",
+    "subtitle": "Sayohatchilarning Sharhlari"
   }
 }
 
