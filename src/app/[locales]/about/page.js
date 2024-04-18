@@ -5,6 +5,7 @@ import Home2WhyChoose from "@/components/whyChoose/Home2WhyChoose";
 import Home2About from "@/components/about/Home2About";
 import Home1Testimonail from "@/components/testimonial/Home1Testimonail";
 import {useTranslations} from 'next-intl';
+
 export const metadata = {
   title: "HANT TRAVEL",
   description:
@@ -14,51 +15,105 @@ export const metadata = {
   },
 };
 const page = () => {
-  const w = useTranslations("why")
   const t = useTranslations("banner")
   const fo = useTranslations("footer")
-  const whyChouse = [
+  const a = useTranslations("about")
+  const w2 = useTranslations("why2Component")
+  let about = [
     {
-      text: w("title"),
+      text: a("breadcrumb")
     },
     {
-      text: w("subtitle"),
+      text: a("breadcrumbFirst")
     },
     {
-      text: w("why1"),
+      text: a("breadcrumbSecond")
     },
     {
-      text: w("whyT1"),
+      text: a("title")
     },
     {
-      text: w("why2"),
+      text: a("subtitle")
     },
     {
-      text: w("whyT2"),
+      text: a("description")
     },
     {
-      text: w("why3"),
+      text: a("item1")
     },
     {
-      text: w("whyT3"),
+      text: a("item2")
     },
     {
-      text: w("why4"),
+      text: a("item3")
     },
     {
-      text: w("whyT4"),
+      text: a("item4")
     },
     {
-      text: w("why5"),
+      text: a("button")
     },
     {
-      text: w("whyT5"),
+      text: a("watch")
     },
     {
-      text: w("why6"),
+      text: a("travelers")
     },
     {
-      text: w("whyT6"),
+      text: a("success")
+    },
+    {
+      text: a("review")
+    },
+    {
+      text: a("guide")
+    },
+    {
+      text: a("experience")
+    }
+  ]
+  const whyChooseUs = [
+    {
+      text: w2("title"),
+    },
+    {
+      text: w2("subtitle"),
+    },
+    {
+      text: w2("why1"),
+    },
+    {
+      text: w2("whyT1"),
+    },
+    {
+      text: w2("why2"),
+    },
+    {
+      text: w2("whyT2"),
+    },
+    {
+      text: w2("why3"),
+    },
+    {
+      text: w2("whyT3"),
+    },
+    {
+      text: w2("why4"),
+    },
+    {
+      text: w2("whyT4"),
+    },
+    {
+      text: w2("why5"),
+    },
+    {
+      text: w2("whyT5"),
+    },
+    {
+      text: w2("why6"),
+    },
+    {
+      text: w2("whyT6"),
     }
   ]
   const footer = [
@@ -92,12 +147,12 @@ const page = () => {
   ]
   return (
     <>
-      <Header />
-      <Breadcrumb pagename="About Us" pagetitle="About Us" />
-      <Home2About />
-      <Home2WhyChoose data={whyChouse} />
-      <Home1Testimonail />
-      <Footer data={footer} book={t("book")} />
+      <Header/>
+      <Breadcrumb pagename={about ? about?.[0].text : " "} pagetitle={about ? about?.[2].text : " "}/>
+      <Home2About data={about}/>
+      <Home2WhyChoose data={whyChooseUs}/>
+      <Home1Testimonail/>
+      <Footer data={footer} book={t("book")}/>
     </>
   );
 };

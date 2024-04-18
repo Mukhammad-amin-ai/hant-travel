@@ -10,7 +10,7 @@ import SwiperCore, {
 import Link from "next/link";
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
-const Home2WhyChoose = () => {
+const Home2WhyChoose = ({data}) => {
   const settings = useMemo(() => {
     return {
       spaceBetween: 10,
@@ -33,9 +33,9 @@ const Home2WhyChoose = () => {
             <div className="col-lg-12">
               <div className="section-title2 text-center">
                 <div className="eg-section-tag">
-                  <span>Who We Are</span>
+                  <span>{data ? data?.[0].text : ""}</span>
                 </div>
-                <h2>Why Hant Travel Is Best</h2>
+                <h2>{data ? data?.[1].text : ""}</h2>
               </div>
             </div>
           </div>
@@ -56,9 +56,9 @@ const Home2WhyChoose = () => {
                   </svg>
                 </div>
                 <div className="feature-card-content">
-                  <h6>Worldwide Coverage</h6>
+                  <h6>{data ? data?.[2].text : ""}</h6>
                   <p>
-                    The World Awaits: Explore Limitlessly with Worldwide Coverage
+                    {data ? data?.[3].text : ""}
                   </p>
                 </div>
               </div>
@@ -79,9 +79,9 @@ const Home2WhyChoose = () => {
                   </svg>
                 </div>
                 <div className="feature-card-content">
-                  <h6>Competitive Pricing</h6>
+                  <h6>{data ? data?.[4].text : ""}</h6>
                   <p>
-                    Dream Big, Travel Smart: Competitive Prices for Every Adventure
+                    {data ? data?.[5].text : ""}
                   </p>
                 </div>
               </div>
@@ -108,9 +108,9 @@ const Home2WhyChoose = () => {
                   </svg>
                 </div>
                 <div className="feature-card-content">
-                  <h6>Fast Booking</h6>
+                  <h6>{data ? data?.[6].text : ""}</h6>
                   <p>
-                    Lock in Your Adventure in Seconds: Fast Booking, Seamless Travel
+                    {data ? data?.[7].text : ""}
                   </p>
                 </div>
               </div>
@@ -131,9 +131,9 @@ const Home2WhyChoose = () => {
                   </svg>
                 </div>
                 <div className="feature-card-content">
-                  <h6>Guided Tours</h6>
+                  <h6>{data ? data?.[8].text : ""}</h6>
                   <p>
-                    Explore with Confidence: Expertly Curated Guided Tours
+                    {data ? data?.[9].text : ""}
                   </p>
                 </div>
               </div>
@@ -160,9 +160,9 @@ const Home2WhyChoose = () => {
                   </svg>
                 </div>
                 <div className="feature-card-content">
-                  <h6>Best Support 24/7</h6>
+                  <h6>{data ? data?.[10].text : ""}</h6>
                   <p>
-                    Travel with Confidence: 24/7 Best Support, Always by Your Side.
+                    {data ? data?.[11].text : ""}
                   </p>
                 </div>
               </div>
@@ -195,9 +195,9 @@ const Home2WhyChoose = () => {
                   </svg>
                 </div>
                 <div className="feature-card-content">
-                  <h6>Ultimate flexibility</h6>
+                  <h6>{data ? data?.[12].text : ""}</h6>
                   <p>
-                    Craft Your Dream Trip: Ultimate Flexibility in Travel Planning
+                    {data ? data?.[13].text : ""}
                   </p>
                 </div>
               </div>

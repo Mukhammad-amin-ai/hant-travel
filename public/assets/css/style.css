@@ -2479,7 +2479,7 @@ header.style-1 .nav-right .mobile-menu-btn {
         display: flex;
         margin-left: 20px;
         flex-direction: column;
-        align-items: end;
+        align-items: flex-end;
         visibility: visible;
         justify-content: center;
         position: relative;
@@ -3365,7 +3365,7 @@ header.style-2 .nav-right .mobile-menu-btn {
         display: flex;
         margin-left: 10px;
         flex-direction: column;
-        align-items: end;
+        align-items: flex-end;
         visibility: visible;
         justify-content: center;
         position: relative;
@@ -4243,7 +4243,7 @@ header.style-3 .nav-right .mobile-menu-btn {
         display: flex;
         margin-left: 15px;
         flex-direction: column;
-        align-items: end;
+        align-items: flex-end;
         visibility: visible;
         justify-content: center;
         position: relative;
@@ -18015,7 +18015,7 @@ h6 {
 ========================================*/
 .home3-about-section .about-content .facilities li {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     gap: 15px;
     margin-bottom: 30px;
 }
@@ -18405,7 +18405,7 @@ h6 {
 
 .destination-dropdown-card .destination-dropdown-content .title {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     align-self: end;
     padding-bottom: 15px;
 }
@@ -20934,8 +20934,8 @@ span {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    align-items: end;
-    justify-content: end;
+    align-items: flex-end;
+    justify-content: flex-end;
     position: absolute;
     right: -1px;
     bottom: -10px;
@@ -23557,7 +23557,7 @@ span {
     border-radius: 5px;
     padding: 15px;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .activity-card .activity-card-content-wrapper .activity-card-content {
@@ -25789,7 +25789,7 @@ span {
     height: 100%;
     background: rgba(34, 34, 34, 0.7);
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     transition: 0.75s;
     transform-origin: bottom;
     opacity: 0;
@@ -26426,7 +26426,7 @@ span {
 
 .home6-about-section .about-content .facilities li {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     gap: 15px;
     margin-bottom: 30px;
 }
@@ -31311,7 +31311,7 @@ label:hover
 .room-suits-card .room-content .content-bottom .price-and-book {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
 }
 
 @media (max-width: 576px) {
@@ -31546,7 +31546,7 @@ label:hover
 .room-details-area .location-and-review .review-area ul {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 5px;
 }
 
@@ -33538,7 +33538,7 @@ svg {
 .transport-card .transport-content .card-bottom .review-area .rating {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 5px;
     margin-bottom: 7px;
 }

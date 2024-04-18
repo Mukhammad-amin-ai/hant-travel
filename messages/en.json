@@ -69,5 +69,41 @@
     "payment": "Payment Methods",
     "policy": "Privacy Policy",
     "terms": "Terms & Condition"
+  },
+  "about": {
+    "breadcrumb": "About Us",
+    "breadcrumbFirst": "Home",
+    "breadcrumbSecond": "About Us",
+    "title": "About Us",
+    "subtitle": "Crafting Memories, One Tour at a Time",
+    "description":"Travel is more than just visiting places; it's about creating lasting memories. At Hant Travel, we understand that. With every tour meticulously crafted, we aim to be your partner in creating unforgettable experiences that will stay with you for a lifetime",
+    "item1": "\nSafety First\nAlways",
+    "item2": "\nTrusted Travel\nGuide",
+    "item3": "\nExpertise And\nExperience",
+    "item4": "Expertise And\nExperience",
+    "button": "Find Out More",
+    "watch": "Watch Tour",
+    "travelers": "Happy Traveler",
+    "success": "Tours Success",
+    "review": "Positives Review",
+    "guide": "Travel Guide",
+    "experience": "Years of experience"
+  },
+  "why2Component": {
+    "title": "Who We Are",
+    "subtitle": "Why Hant Travel Is Best",
+    "why1": "Worldwide Coverage",
+    "whyT1": "The World Awaits: Explore Limitlessly with Worldwide Coverage",
+    "why2": "Competitive Pricing",
+    "whyT2": "Dream Big, Travel Smart: Competitive Prices for Every Adventure",
+    "why3": "Fast Booking",
+    "whyT3": "Lock in Your Adventure in Seconds: Fast Booking, Seamless Travel",
+    "why4": "Guided Tours",
+    "whyT4": "Explore with Confidence: Expertly Curated Guided Tours",
+    "why5": "Best Support 24/7",
+    "whyT5": "Travel with Confidence: 24/7 Best Support, Always by Your Side.",
+    "why6": "Ultimate Flexibility",
+    "whyT6": "Craft Your Dream Trip: Ultimate Flexibility in Travel Planning"
   }
 }
+

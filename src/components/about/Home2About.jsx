@@ -4,7 +4,7 @@ import ModalVideo from "react-modal-video";
 import CountUp from "react-countup";
 import Link from "next/link";
 
-const Home2About = () => {
+const Home2About = ({data}) => {
   const [isOpen, setOpen] = useState(false);
   return (
     <>
@@ -15,13 +15,11 @@ const Home2About = () => {
               <div className="about-content">
                 <div className="section-title2 mb-30">
                   <div className="eg-section-tag">
-                    <span>About Us</span>
+                    <span>{data ? data?.[0].text : " "}</span>
                   </div>
-                  <h2>Crafting Memories, One Tour at a Time</h2>
+                  <h2>{data ? data?.[4].text : " "}</h2>
                   <p>
-                    Travel is more than just visiting places; it's about creating lasting memories. At Hant Travel, we
-                    understand that. With every tour meticulously crafted, we aim to be your partner in creating
-                    unforgettable experiences that will stay with you for a lifetime
+                    {data ? data?.[5].text : " "}
                   </p>
                 </div>
                 <div className="row g-4 mb-50">
@@ -35,8 +33,7 @@ const Home2About = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          Safety first <br/>
-                          always
+                          {data ? data?.[6].text : " "}
                         </h6>
                       </div>
                     </div>
@@ -51,8 +48,7 @@ const Home2About = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          Trusted travel <br/>
-                          guide
+                          {data ? data?.[7].text : " "}
                         </h6>
                       </div>
                     </div>
@@ -67,7 +63,7 @@ const Home2About = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          Expertise and <br/> Experience
+                          {data ? data?.[8].text : " "}
                         </h6>
                       </div>
                     </div>
@@ -82,7 +78,7 @@ const Home2About = () => {
                       </div>
                       <div className="content">
                         <h6>
-                          Expertise and <br/> Experience
+                          {data ? data?.[9].text : " "}
                         </h6>
                       </div>
                     </div>
@@ -90,7 +86,7 @@ const Home2About = () => {
                 </div>
                 <div className="content-bottom-area">
                   <Link href="/about" className="primary-btn3">
-                    Find Out More
+                    {data ? data?.[10].text : " "}
                   </Link>
                   <a
                     data-fancybox="popup-video"
@@ -132,7 +128,7 @@ const Home2About = () => {
                       </svg>
                       <i className="bi bi-play"/>
                     </div>
-                    <h6>Watch Tour</h6>
+                    <h6> {data ? data?.[11].text : " "}</h6>
                   </a>
                 </div>
               </div>
@@ -148,7 +144,7 @@ const Home2About = () => {
                 </div>
                 <div className="experience">
                   <h3>05</h3>
-                  <p>Years of experience</p>
+                  <p>{data ? data?.[16].text : " "}</p>
                 </div>
                 <img
                   src="/assets/img/home2/vector/plane-vector.svg"
@@ -184,7 +180,7 @@ const Home2About = () => {
                       </h5>
                       <span>K+</span>
                     </div>
-                    <p>Happy Traveler</p>
+                    <p>{data ? data?.[12].text : " "}</p>
                   </div>
                 </div>
               </div>
@@ -210,7 +206,7 @@ const Home2About = () => {
                       </h5>
                       <span>K+</span>
                     </div>
-                    <p>Tours Success</p>
+                    <p>{data ? data?.[13].text : " "}</p>
                   </div>
                 </div>
               </div>
@@ -250,7 +246,7 @@ const Home2About = () => {
                       </h5>
                       <span>%</span>
                     </div>
-                    <p>Positives Review</p>
+                    <p>{data ? data?.[14].text : " "}</p>
                   </div>
                 </div>
               </div>
@@ -276,7 +272,7 @@ const Home2About = () => {
                       </h5>
                       <span>+</span>
                     </div>
-                    <p>Travel Guide</p>
+                    <p>{data ? data?.[15].text : " "}</p>
                   </div>
                 </div>
               </div>
