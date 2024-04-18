@@ -3,9 +3,13 @@ import Link from "next/link";
 import navData from "@/data/nav.json";
 import navRu from "@/data/ru/nav.json"
 import navUz from '@/data/uz/nav.json'
-import destinaiton_sidebar_data from "@/data/custom/destination.json";
+import typeEn from '@/data/en/type.json'
+import typeRu from '@/data/ru/type.json'
+import typeUz from '@/data/uz/type.json'
+import desEn from "@/data/en/destination.json"
+import desRu from "@/data/ru/destination.json"
+import desUz from "@/data/uz/destination.json"
 import {useEffect, useMemo, useReducer, useRef, useState} from "react";
-import typeTour from "@/data/custom/type.json";
 import {Swiper, SwiperSlide} from "swiper/react";
 import {useSelector, useDispatch} from 'react-redux'
 import {getLanguage} from '@/store/language'
@@ -76,31 +80,20 @@ const Header = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
   const [navigation, setNavigation] = useState(navData)
+  const [type, setType] = useState(typeEn)
+  const [destination, setDestination] = useState(desEn)
+  const [additionalWords, setAddWords] = useState({
+    type: "Tour Type",
+    our: "Our Destinations",
+    tour: "Tour",
+    view: "View All",
+    email: "Email"
+  })
   const handleScroll = () => {
     const {scrollY} = window;
     dispatch({type: "setScrollY", payload: scrollY});
   };
-  // const routerPush = useRouter()
-  // const pathName = usePathname()
 
-  // ========COOKIE LANGUAGE CATCHER=============
-  // const [cookie, setCookie] = useState("")
-  // let cookieCatch = () => {
-  //   const cookieString = document.cookie;
-  //
-  //   let cookiePairs = cookieString.split(';');
-  //
-  //   let nextLocaleValue = null;
-  //   for (let i = 0; i < cookiePairs.length; i++) {
-  //     let pair = cookiePairs[i].trim();
-  //     if (pair.indexOf('NEXT_LOCALE=') === 0) {
-  //       nextLocaleValue = pair.substring('NEXT_LOCALE='.length);
-  //       break;
-  //     }
-  //   }
-  //   setCookie(nextLocaleValue)
-  // }
-  // ========COOKIE LANGUAGE CATCHER=============
   let language = useSelector((state) => state.language.languageValue)
   const dispatchFunc = useDispatch()
   let [lang, setLang] = useState("")
@@ -108,17 +101,44 @@ const Header = () => {
     if (language === 'en') {
       setNavigation(navData)
       setLang("Eng")
+      setType(typeEn)
+      setDestination(desEn)
+      setAddWords({
+        type: "Tour Type",
+        our: "Our Destinations",
+        tour: "Tour",
+        view: "View All",
+        email: "Email"
+      })
     }
     if (language === 'ru') {
       setLang("Ru")
       setNavigation(navRu)
+      setType(typeRu)
+      setDestination(desRu)
+      setAddWords({
+        type: "Тип тура",
+        our: "Наши пункты назначения",
+        tour: "Тур",
+        view: "Посмотреть все",
+        email: "Электронная почта"
+      })
     }
     if (language === 'uz') {
       setLang("Uz")
       setNavigation(navUz)
+      setType(typeUz)
+      setDestination(desUz)
+      setAddWords({
+        type: "Tur Turi",
+        our: "Bizning Manzillarimiz",
+        tour: "Sayohat",
+        view: "Hammasini Ko'rish",
+        email: "Elektron pochta"
+      })
     }
   }
-  //============== un used maybe ==================
+
   const toggleRightSidebar = () => {
     dispatch({type: "TOGGLE_RIGHTSIDEBAR"});
   };
@@ -171,17 +191,15 @@ const Header = () => {
       },
     };
   });
-  //============== un used maybe ==================
 
   useEffect(() => {
     dispatchFunc(getLanguage())
     languageFinder()
-    // cookieCatch()
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lang, navigation, language]);
+  }, [lang, navigation, language,additionalWords]);
   return (
     <>
       <header ref={headerRef} className={`header-area style-1 ${state.scrollY > 10 ? "sticky" : ""}`}>
@@ -316,9 +334,9 @@ const Header = () => {
         </div>
         <div className="sidebar-content-wrap">
           <div className="category-wrapper">
-            <h4>Tour Type</h4>
-            <ul className="category-list" >
-              {typeTour.map((item, index) => (
+            <h4>{additionalWords.type}</h4>
+            <ul className="category-list">
+              {type.map((item, index) => (
                 <li key={index}>
                   <Link
                     href={`/package?type=${item.type}`}
@@ -334,7 +352,7 @@ const Header = () => {
             </ul>
           </div>
           <div className="destination-wrapper">
-            <h4>Our Destinations</h4>
+            <h4>{additionalWords.our}</h4>
             <div className="row">
               <div className="col-lg-12">
                 <Swiper
@@ -342,7 +360,7 @@ const Header = () => {
                   className="swiper destination-sidebar-slider mb-35"
                 >
                   <div className="swiper-wrapper">
-                    {destinaiton_sidebar_data.map((item, index) => {
+                    {destination.map((item, index) => {
                       return (
                         <SwiperSlide key={index} className="swiper-slide">
                           <div className="destination-card2">
@@ -357,7 +375,7 @@ const Header = () => {
                               />
                             </Link>
                             <div className="batch">
-                              <span>{item.tours} Tour</span>
+                              <span>{item.tours} {additionalWords.tour}</span>
                             </div>
                             <div className="destination-card2-content">
                               <h4>
@@ -384,7 +402,7 @@ const Header = () => {
                     </svg>
                   </div>
                   <Link href="/destination" className="secondary-btn2">
-                    View All
+                    {additionalWords.view}
                   </Link>
                   <div className="destination-sidebar-next">
                     <svg
@@ -417,7 +435,7 @@ const Header = () => {
               </svg>
             </div>
             <div className="content">
-              <span>Email:</span>
+              <span>{additionalWords.email}:</span>
               <h6>
                 <a href="mailto:info@gmail.com">info@gmail.com</a>
               </h6>
