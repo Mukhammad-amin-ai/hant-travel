@@ -1,6 +1,6 @@
 "use client"
 
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Link from "next/link";
 import Breadcrumb from "@/components/common/Breadcrumb";
 import DestinationSearch from "@/components/banner/DestinationSearch";
@@ -9,11 +9,22 @@ import destination from "@/data/custom/destination.json";
 import visa from "@/data/custom/visa.json";
 import Tour from "@/data/custom/tour.json";
 
-const page = () => {
+import destEn from '@/data/en/destination.json'
+import destRu from '@/data/ru/destination.json'
+import destUz from '@/data/uz/destination.json'
+import visaEn from '@/data/en/visa.json'
+import visaRu from '@/data/ru/visa.json'
+import visaUz from '@/data/uz/visa.json'
+import {useSelector} from "react-redux";
 
+
+const page = () => {
+    let language = useSelector((state) => state.language.languageValue)
     const [country, setCountry] = useState("")
     const [visaT, setVisaType] = useState("")
     const [visaJson, setVisaJson] = useState(visa)
+    const [dest, setDest] = useState(destination)
+    const [chooseV, setChoose] = useState(visaEn)
     let visaType = (type) => {
       setVisaType(type)
       setVisaJson(visa)
@@ -22,11 +33,9 @@ const page = () => {
     let countryCatcher = (data) => {
       setCountry(data)
       setVisaJson(visa);
-
     }
 
     let filter = (e) => {
-      // console.log(country)
       e.preventDefault();
       if (visaJson !== null) {
         if (visaJson.length === 0) {
@@ -34,7 +43,6 @@ const page = () => {
         } else {
           setVisaJson(visaJson.filter((item) => item.country === country));
           setVisaJson(visaJson.filter((item) => item.type === visaT))
-
         }
       }
     }
@@ -51,11 +59,12 @@ const page = () => {
       setCurrentPage(pageNumber);
     };
 
+
+    // Tour was need to show working pagination
     const sliceFunc = () => {
       return setTour(Tour.slice(startIndex, endIndex))
     }
-
-
+    // ========================================
     const handlePrevPage = () => {
       if (currentPage > 1) {
         setCurrentPage(currentPage - 1);
@@ -67,13 +76,30 @@ const page = () => {
       if (currentPage < totalPages) {
         setCurrentPage(currentPage + 1);
       }
-
     };
+    //   PAGINATION - END ============================
+    const languageChecker = () => {
+      if (language === 'en') {
+        setDest(destEn)
+        setChoose(visaEn)
+      }
+      if (language === 'ru') {
+        setDest(destRu)
+        setChoose(visaRu)
+      }
+      if (language === 'uz') {
+        setDest(destUz)
+        setChoose(visaUz)
+      }
+    }
 
+
+    useEffect(() => {
+      languageChecker()
+    }, [language])
     return (
       <>
         <Breadcrumb pagename="Visa" pagetitle="Visa"/>
-
         <div className="package-search-filter-wrapper">
           <div className="container">
             <div className="filter-group">
@@ -95,7 +121,7 @@ const page = () => {
                         </div>
                         <DestinationSearch
                           destination="Destination"
-                          data={destination}
+                          data={dest}
                           contryCatcher={countryCatcher}
                         />
                       </div>
@@ -117,7 +143,7 @@ const page = () => {
                             </g>
                           </svg>
                         </div>
-                        <TourTypeDropdown typeCatcher={visaType} description={'Visa type'} typeTour={visa}/>
+                        <TourTypeDropdown typeCatcher={visaType} description={'Visa type'} typeTour={chooseV}/>
                       </div>
                     </div>
                   </div>
@@ -138,7 +164,7 @@ const page = () => {
                 </div>
                 <div className="list-grid-product-wrap mb-70">
                   <div className="row gy-4">
-                    {visaJson.map((item, index) => (
+                    {chooseV.map((item, index) => (
                       <div className="col-md-12 item" key={index}>
                         <div className="package-card4 four">
                           <Link href={`/visas/${item.id}`}

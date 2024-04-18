@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 
 const TourTypeDropdown = ({ typeCatcher,typeTour,description }) => {
   const [isActive, setIsActive] = useState(false);
-  const [selectedTourType, setSelectedTourType] = useState(typeTour?  typeTour[0].type : "");
+  const [selectedTourType, setSelectedTourType] = useState( "Choose Type");
   const dropdownRef = useRef(null);
 
   const handleToggleActive = () => {

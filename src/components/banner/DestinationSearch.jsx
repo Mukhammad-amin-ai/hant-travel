@@ -1,27 +1,18 @@
-import React, { useState, useEffect, useRef } from "react";
-import destinations from "../../data/destinationData";
-const DestinationSearch = ({ destination, style, data,contryCatcher }) => {
+import React, {useState, useEffect, useRef} from "react";
+const DestinationSearch = ({destination, style, data, contryCatcher}) => {
   const [isActive, setIsActive] = useState(false);
-  const [filteredDestination, setFilteredDestination] = useState("");
-  const [selectedDestination, setSelectedDestination] = useState(
-    destinations.length > 0 ? destinations[0].name : ""
-  );
+
+  const [selectedDestination, setSelectedDestination] = useState(    `Choose ${destination}`)
+
   const searchboxRef = useRef(null);
 
   const handleToggleActive = () => {
     setIsActive(!isActive);
   };
 
-  const handleFilterDestination = (event) => {
-    const query = event.target.value;
-    setFilteredDestination(query);
-  };
-
   const handleSelectDestination = (destination) => {
     setSelectedDestination(destination);
     contryCatcher(destination)
-    // setFilteredDestination("");
-    // setIsActive(false);
 
   };
 
@@ -41,11 +32,6 @@ const DestinationSearch = ({ destination, style, data,contryCatcher }) => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
-
-  const filteredDestinations = destinations.filter((destination) =>
-    destination.name.toLowerCase().includes(filteredDestination.toLowerCase())
-  );
-
   return (
     <div
       ref={searchboxRef}
@@ -61,44 +47,11 @@ const DestinationSearch = ({ destination, style, data,contryCatcher }) => {
             value={selectedDestination}
             onClick={handleToggleActive}
           />
-          <i className="bi bi-chevron-down" />
+          <i className="bi bi-chevron-down"/>
         </div>
         <div className={`${isActive ? "active" : ""} custom-select-wrap `}>
-          {/* <div className="custom-select-search-area">
-            <i className="bx bx-search" />
-            <input
-              type="text"
-              placeholder="Type Your Destination"
-              value={filteredDestination}
-              onChange={handleFilterDestination}
-              onClick={stopPropagation}
-            />
-          </div> */}
+
           <ul className="option-list">
-            {/* {filteredDestinations.length > 0 ? (
-              filteredDestinations.map((destination, index) => (
-                <li
-                  key={index}
-                  onClick={() => handleSelectDestination(destination.name)}
-                >
-                  <div className="destination">
-                    <h6>{destination.name}</h6>
-                    <p>{destination.locations}</p>
-                  </div>
-                  <div className="tour">
-                    <span>
-                      {destination.tourCount} <br /> Tour
-                    </span>
-                  </div>
-                </li>
-              ))
-            ) : (
-              <li>
-                <div className="destination">
-                  <h6>Not Found</h6>
-                </div>
-              </li>
-            )} */}
             {data?.map((destination, index) => (
               <li
                 key={index}
@@ -109,7 +62,7 @@ const DestinationSearch = ({ destination, style, data,contryCatcher }) => {
                 </div>
                 <div className="tour">
                   <span>
-                      {destination.tours} <br /> Tour
+                      {destination.tours} <br/> Tour
                     </span>
                 </div>
               </li>
