@@ -9,6 +9,7 @@ import typeTour from "@/data/custom/type.json";
 import destination from "@/data/custom/destination.json";
 import visa from '@/data/custom/visa.json'
 import Alert from '@/components/common/alert'
+import {useSelector} from "react-redux";
 
 
 const Banner1Bottom = ({data}) => {
@@ -17,7 +18,7 @@ const Banner1Bottom = ({data}) => {
   const [type, setType] = useState("");
   const [day, setDay] = useState("");
   const [alert, setAlert] = useState(false)
-
+  let language = useSelector((state) => state.language.languageValue)
   let countryCatcher = (country) => {
     setCountry(country);
   };
@@ -33,7 +34,7 @@ const Banner1Bottom = ({data}) => {
   const searchTour = (e) => {
     e.preventDefault();
     if (country !== '' && type !== "" && day !== "") {
-      router.push(`/package?search=${country}&day=${day}&type=${type}`);
+      router.push(`${language}/package?search=${country}&day=${day}&type=${type}`);
     } else {
       setAlert(true)
     }
@@ -41,7 +42,7 @@ const Banner1Bottom = ({data}) => {
   const searchVisa = (e) => {
     e.preventDefault();
     if (country !== '' && type !== "") {
-      router.push(`/visas?search=${country}&type=${type}`);
+      router.push(`${language}/visas?search=${country}&type=${type}`);
     } else {
       setAlert(true)
     }

@@ -85,15 +85,10 @@ const Home2About = ({data}) => {
                   </div>
                 </div>
                 <div className="content-bottom-area">
-                  <Link href="/about" className="primary-btn3">
-                    {data ? data?.[10].text : " "}
-                  </Link>
-                  <a
-                    data-fancybox="popup-video"
-                    style={{cursor: "pointer"}}
-                    onClick={() => setOpen(true)}
-                    className="video-area"
-                  >
+                  <a data-fancybox="popup-video"
+                     style={{cursor: "pointer"}}
+                     onClick={() => setOpen(true)}
+                     className="video-area">
                     <div className="icon">
                       <svg
                         className="video-circle"

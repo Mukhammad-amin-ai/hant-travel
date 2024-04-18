@@ -85,7 +85,7 @@ const Home1Fecilities2 = ({title, book}) => {
                         <div className="package-card">
                           <div className="package-card-img-wrap">
                             <Link
-                              href={`/package/${item.id}`}
+                              href={`${language}/package/${item.id}`}
                               className="card-img"
                             >
                               <img
@@ -117,7 +117,7 @@ const Home1Fecilities2 = ({title, book}) => {
                           <div className="package-card-content">
                             <div className="card-content-top">
                               <h5>
-                                <Link href={`/package/${item.id}`} style={{
+                                <Link href={`${language}/package/${item.id}`} style={{
                                   whiteSpace: "nowrap",
                                   textOverflow: "ellipsis",
                                   overflow: "hidden",
@@ -142,7 +142,7 @@ const Home1Fecilities2 = ({title, book}) => {
                                 <p>TAXES INCL/PERS</p>
                               </div>
                               <Link
-                                href={`/package/${item.id}`}
+                                href={`${language}/package/${item.id}`}
                                 className="primary-btn2"
                               >
                                 {book}

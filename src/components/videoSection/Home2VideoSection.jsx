@@ -4,10 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import SwiperCore, { Autoplay, EffectFade, Pagination } from "swiper";
 import Link from "next/link";
 import { useCountdownTimer } from "@/hooks/useCountdownTimer";
+import {useSelector} from "react-redux";
 // SwiperCore.use([Autoplay, EffectFade, Pagination]);
 
 const Home2VideoSection = ({book,title}) => {
   const endTime = "2024-03-24";
+  let language = useSelector((state) => state.language.languageValue)
   const { days, hours, minutes, seconds } = useCountdownTimer(endTime);
   const settings = useMemo(() => {
     return {
@@ -37,13 +39,13 @@ const Home2VideoSection = ({book,title}) => {
                   <div className="banner5-content">
                     <span>{title ? title?.[0].title : ""}</span>
                     <h3>20% Off</h3>
-                    <Link href="/package">{title ? title?.[2].title : ""}</Link>
+                    <Link href={`${language}/package`}>{title ? title?.[2].title : ""}</Link>
                   </div>
                   <div className="banner5-timer">
                     <h1>{title ? title?.[1].title : ""}</h1>
                   </div>
                   <Link
-                    href="/package?type=Piligrimage"
+                    href={`${language}/package?type=Piligrimage`}
                     className="primary-btn2"
                   >
                     {book}
@@ -63,7 +65,6 @@ const Home2VideoSection = ({book,title}) => {
             </div>
           </div>
         </div>
-
       </div>
     </>
   );

@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
-import React, {useEffect,useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useSelector} from 'react-redux'
 import En from "@/data/en/popularTour.json";
 import Ru from "@/data/ru/popularTour.json";
 import Uz from "@/data/uz/popularTour.json";
+
 const Home1TourPackage = ({book, data}) => {
   let [language, setLanguage] = useState('')
   let langTour = useSelector((state) => state.language.languageValue)
@@ -80,7 +81,7 @@ const Home1TourPackage = ({book, data}) => {
               <div key={index} className="col-lg-4 col-md-6">
                 <div className="package-card">
                   <div className="package-card-img-wrap">
-                    <Link href={`/package/${item.id}`} className="card-img">
+                    <Link href={`${langTour}/package/${item.id}`} className="card-img">
                       <img
                         style={{height: "177px", width: "100%"}}
                         src={item.img}
@@ -112,7 +113,7 @@ const Home1TourPackage = ({book, data}) => {
                   <div className="package-card-content">
                     <div className="card-content-top">
                       <h5>
-                        <Link href={`/package/${item.id}`}
+                        <Link href={`${langTour}/package/${item.id}`}
                               style={{
                                 whiteSpace: "nowrap",
                                 textOverflow: "ellipsis",
@@ -140,7 +141,7 @@ const Home1TourPackage = ({book, data}) => {
                         <p>TAXES INCL/PERS</p>
                       </div>
                       <Link
-                        href={`/package/${item.id}`}
+                        href={`${langTour}/package/${item.id}`}
                         className="primary-btn2"
                       >
                         {book}
@@ -165,7 +166,7 @@ const Home1TourPackage = ({book, data}) => {
           </div>
           <div className="row">
             <div className="col-lg-12 d-flex justify-content-center">
-              <Link href="/package" className="secondary-btn1">
+              <Link href={`${langTour}/package`} className="secondary-btn1">
                 {data ? data?.[2].title : " "}
               </Link>
             </div>

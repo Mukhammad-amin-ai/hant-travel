@@ -9,25 +9,21 @@ import {useSelector} from "react-redux";
 const Footer = ({data, book}) => {
   let language = useSelector((state) => state.language.languageValue)
   let [nav, setNav] = useState(navEn)
-  let [lang, setLang] = useState('')
   let languageFinder = () => {
     if (language === 'en') {
       setNav(navEn)
-      setLang("en")
     }
     if (language === 'ru') {
       setNav(navRu)
-      setLang("ru")
     }
     if (language === 'uz') {
       setNav(navUz)
-      setLang("uz")
     }
   }
 
   useEffect(() => {
     languageFinder()
-  }, [language,lang,nav]);
+  }, [language, nav]);
 
   return (
     <footer className={`footer-section `}>
@@ -37,14 +33,14 @@ const Footer = ({data, book}) => {
             <div className="col-lg-3 col-md-6 col-sm-6">
               <div className="footer-widget">
                 <div className="footer-logo">
-                  <Link href="/">
+                  <Link href={`/${language}`}>
                     <img src="/assets/img/logo.svg" alt=""/>
                   </Link>
                 </div>
                 <h3>
                   {data ? data?.[0].text : " "}
                 </h3>
-                <Link href="/package" className="primary-btn1">
+                <Link href={`${language}/package`} className="primary-btn1">
                   {book}
                 </Link>
               </div>
@@ -58,7 +54,7 @@ const Footer = ({data, book}) => {
                   {
                     nav.map((item, index) => (
                       <li key={index}>
-                        <Link href={`/${lang}${item.link}`}>{item.label}</Link>
+                        <Link href={`/${language}${item.link}`}>{item.label}</Link>
                       </li>
                     ))
                   }
@@ -175,12 +171,12 @@ const Footer = ({data, book}) => {
               <div className="footer-right">
                 <ul>
                   <li>
-                    <Link href="/policy">
+                    <Link href={`${language}/policy`}>
                       {data ? data?.[7].text : " "}
                     </Link>
                   </li>
                   <li>
-                    <Link href="/terms">
+                    <Link href={`${language}}/terms`}>
                       {data ? data?.[8].text : " "}
                     </Link>
                   </li>

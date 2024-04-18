@@ -2,42 +2,42 @@
   {
     "id": 1,
     "img": "/assets/images/destination/tadjikistan.webp",
-    "name": "Tadjikistan",
+    "name": "Tojikiston",
     "tours": "1",
     "class": "col-lg-3"
   },
   {
     "id": 2,
     "img": "/assets/images/destination/kazakstan.webp",
-    "name": "Kazakhstan",
+    "name": "Qozoqiston",
     "tours": "0",
     "class": "col-lg-5"
   },
   {
     "id": 3,
     "img": "/assets/images/destination/kyrgyzstan.webp",
-    "name": "Kyrgyzstan",
+    "name": "Qirg'iziston",
     "tours": "0",
     "class": "col-lg-4"
   },
   {
     "id": 4,
     "img": "/assets/images/destination/saudi.webp",
-    "name": "Saudi Arab",
+    "name": "Saudiya Arabistoni",
     "tours": "0",
     "class": "col-lg-5"
   },
   {
     "id": 5,
     "img": "/assets/images/destination/uaa.webp",
-    "name": "UAE",
+    "name": "BAA",
     "tours": "0",
     "class": "col-lg-3"
   },
   {
     "id": 6,
     "img": "/assets/images/destination/egypt.webp",
-    "name": "Egypt",
+    "name": "Misr",
     "tours": "0",
     "class": "col-lg-4"
   }

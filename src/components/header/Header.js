@@ -199,7 +199,7 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [lang, navigation, language,additionalWords]);
+  }, [lang, navigation, language]);
   return (
     <>
       <header ref={headerRef} className={`header-area style-1 ${state.scrollY > 10 ? "sticky" : ""}`}>
@@ -324,7 +324,7 @@ const Header = () => {
       >
         <div className="sidebar-logo-area d-flex justify-content-between align-items-center">
           <div className="sidebar-logo-wrap">
-            <Link href="/">
+            <Link href={`/${language}`}>
               <img alt="image" src="/assets/img/logo.svg"/>
             </Link>
           </div>
@@ -339,7 +339,7 @@ const Header = () => {
               {type.map((item, index) => (
                 <li key={index}>
                   <Link
-                    href={`/package?type=${item.type}`}
+                    href={`${language}/package?type=${item.type}`}
                     className="single-category"
                   >
                     <div className="icon">
@@ -365,7 +365,7 @@ const Header = () => {
                         <SwiperSlide key={index} className="swiper-slide">
                           <div className="destination-card2">
                             <Link
-                              href={`/destination/${item.id}`}
+                              href={`${language}/destination/${item.id}`}
                               className="destination-card-img"
                             >
                               <img
@@ -379,7 +379,7 @@ const Header = () => {
                             </div>
                             <div className="destination-card2-content">
                               <h4>
-                                <Link href={`/destination/${item.id}`}>
+                                <Link href={`${language}/destination/${item.id}`}>
                                   {item.name}
                                 </Link>
                               </h4>
@@ -401,7 +401,7 @@ const Header = () => {
                       <path d="M53 6.5L1 6.5M1 6.5L7 12M1 6.5L7 0.999996"/>
                     </svg>
                   </div>
-                  <Link href="/destination" className="secondary-btn2">
+                  <Link href={`${language}/destination`} className="secondary-btn2">
                     {additionalWords.view}
                   </Link>
                   <div className="destination-sidebar-next">

@@ -1,10 +1,32 @@
+"use client"
 import Link from "next/link";
-import React from "react";
-import PopularDestination from "@/data/custom/popularDestination";
+import React, {useEffect, useState} from "react";
+import En from "@/data/en/popularDestination.json"
+import Ru from "@/data/ru/popularDestination.json"
+import Uz from "@/data/ru/popularDestination.json"
 import Image from "next/image";
+import {useSelector} from "react-redux";
+
 
 
 const Destination1 = ({ data}) => {
+  let language = useSelector((state) => state.language.languageValue)
+  const [destination,SetDestination] = useState(En);
+
+  let languageFinder = () => {
+    if (language === 'en') {
+      SetDestination(En)
+    }
+    if (language === 'ru') {
+      SetDestination(Ru)
+    }
+    if (language === 'uz') {
+      SetDestination(Uz)
+    }
+  }
+  useEffect(() => {
+    languageFinder()
+  }, [language,data]);
   return (
     <>
       <div className="home1-destination-section mb-120">
@@ -46,7 +68,7 @@ const Destination1 = ({ data}) => {
           </div>
           <div className="row g-4">
             {
-              PopularDestination.map((item, index) => (
+              destination.map((item, index) => (
                 <div key={index} className={`${item.class} col-sm-6`}>
                   <div className="destination-card" style={{width: '100%', height: '350px'}}>
                     <Image fill src={item.img} sizes="(max-width: 350px) 414px, 100vw" alt="destination"/>
@@ -56,7 +78,7 @@ const Destination1 = ({ data}) => {
                     </div>
                     <div className="content">
                       <h4>
-                        <Link href={`/destination/${item.id}`}>
+                        <Link href={`${language}/destination/${item.id}`}>
                           {item.name}
                         </Link>
                       </h4>
