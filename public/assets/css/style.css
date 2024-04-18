@@ -5734,7 +5734,7 @@ header.style-3.four .nav-right .icon-list li:first-child svg {
 .right-sidebar-menu .sidebar-content-wrap .category-wrapper .category-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 20px;
     flex-wrap: wrap;
 }

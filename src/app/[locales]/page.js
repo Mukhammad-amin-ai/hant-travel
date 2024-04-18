@@ -19,8 +19,6 @@ export const metadata = {
   },
 };
 
-
-
 export default function Home() {
   const t = useTranslations("banner")
   const d = useTranslations("countries")
