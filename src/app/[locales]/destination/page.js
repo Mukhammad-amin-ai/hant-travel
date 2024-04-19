@@ -2,28 +2,26 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Link from "next/link";
 import React, {useEffect, useState} from "react";
-import destination from "@/data/custom/destination.json";
 import En from "@/data/en/destination.json";
 import Ru from "@/data/ru/destination.json";
 import Uz from "@/data/uz/destination.json";
 
 import Tour from "@/data/custom/tour.json";
 import {useSelector} from "react-redux";
-import destEn from "@/data/en/destination.json";
-import visaEn from "@/data/en/visa.json";
-import destRu from "@/data/ru/destination.json";
-import visaRu from "@/data/ru/visa.json";
-import destUz from "@/data/uz/destination.json";
-import visaUz from "@/data/uz/visa.json";
+
 
 const page = () => {
   let language = useSelector((state) => state.language.languageValue)
   const [dest, setDest] = useState(En)
+  const [textObj,setTextObj] = useState({
+    breadcrumb:"Countries",
+    tour:"Tours"
+  })
+
   //   PAGINATION ============================
   const [currentPage, setCurrentPage] = useState(1)
   let itemsPerPage = 6
   const totalPages = Math.ceil(Tour.length / itemsPerPage)
-
   const pageNumbers = Array.from({length: totalPages}, (_, index) => index + 1);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -54,22 +52,33 @@ const page = () => {
   const languageChecker = () => {
     if (language === 'en') {
       setDest(En)
+      setTextObj({
+        breadcrumb:"Countries",
+        tour:"Tours"
+      })
     }
     if (language === 'ru') {
       setDest(Ru)
+      setTextObj({
+        breadcrumb:"Страны",
+        tour:"Путешествия"
+      })
     }
     if (language === 'uz') {
       setDest(Uz)
+      setTextObj({
+        breadcrumb:"Mamlakatlar",
+        tour:"Sayohatlar"
+      })
     }
   }
 
   useEffect(() => {
     languageChecker()
-
   },[language])
   return (
     <>
-      <Breadcrumb pagename="Countries to Go" pagetitle="Countries" />
+      <Breadcrumb pagename={textObj.breadcrumb} pagetitle={textObj.breadcrumb} />
       <div className="destination-gallery-section pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5 mb-70">
@@ -88,13 +97,13 @@ const page = () => {
                   <div className="content">
                     <h4>
                       <Link
-                        href={`/destination/${index + 1}`}
+                        href={`${language}/destination/${index + 1}`}
                       >
                         {item.name}
                       </Link>
                     </h4>
                     <div className="eg-tag">
-                      <span>{item.tours} Tours</span>
+                      <span>{item.tours} {textObj.tour}</span>
                     </div>
                   </div>
                 </div>
