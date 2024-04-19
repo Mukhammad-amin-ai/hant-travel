@@ -1,12 +1,24 @@
 "use client"
-
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Link from "next/link";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import destination from "@/data/custom/destination.json";
+import En from "@/data/en/destination.json";
+import Ru from "@/data/ru/destination.json";
+import Uz from "@/data/uz/destination.json";
+
 import Tour from "@/data/custom/tour.json";
+import {useSelector} from "react-redux";
+import destEn from "@/data/en/destination.json";
+import visaEn from "@/data/en/visa.json";
+import destRu from "@/data/ru/destination.json";
+import visaRu from "@/data/ru/visa.json";
+import destUz from "@/data/uz/destination.json";
+import visaUz from "@/data/uz/visa.json";
 
 const page = () => {
+  let language = useSelector((state) => state.language.languageValue)
+  const [dest, setDest] = useState(En)
   //   PAGINATION ============================
   const [currentPage, setCurrentPage] = useState(1)
   let itemsPerPage = 6
@@ -36,16 +48,32 @@ const page = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
     }
-
   };
+  //   PAGINATION - END============================
 
+  const languageChecker = () => {
+    if (language === 'en') {
+      setDest(En)
+    }
+    if (language === 'ru') {
+      setDest(Ru)
+    }
+    if (language === 'uz') {
+      setDest(Uz)
+    }
+  }
+
+  useEffect(() => {
+    languageChecker()
+
+  },[language])
   return (
     <>
       <Breadcrumb pagename="Countries to Go" pagetitle="Countries" />
       <div className="destination-gallery-section pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5 mb-70">
-            {destination.map((item, index) => (
+            {dest.map((item, index) => (
               <div className={`${item.class} col-sm-6`} key={index}>
                 <div className="destination-card">
                   <img
@@ -73,7 +101,7 @@ const page = () => {
               </div>
             ))}
           </div>
-          {destination?.length > 9 ? (
+          {dest?.length > 9 ? (
             <div className="row">
               <div className="col-lg-12">
                 <nav className="inner-pagination-area">

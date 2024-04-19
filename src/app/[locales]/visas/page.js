@@ -25,6 +25,25 @@ const page = () => {
     const [visaJson, setVisaJson] = useState(visa)
     const [dest, setDest] = useState(destination)
     const [chooseV, setChoose] = useState(visaEn)
+    const [objText, setObjText] = useState(
+      {
+        breadCrumb: "Visa",
+        destination: "Destination",
+        type: "Visa Type",
+        Showing: "Showing ",
+        Of: "Of",
+        Results: "Results",
+        Country: "Country",
+        Mode: "Visa Mode",
+        Validity: "Validity",
+        day: "Days",
+        process: "Processing Time",
+        working: "Working Days",
+        start: "Starting Form",
+        person: "Per Person",
+        apply: "Apply Now"
+      }
+    )
     let visaType = (type) => {
       setVisaType(type)
       setVisaJson(visa)
@@ -82,14 +101,66 @@ const page = () => {
       if (language === 'en') {
         setDest(destEn)
         setChoose(visaEn)
+        setObjText({
+          breadCrumb: "Visa",
+          destination: "Destination",
+          type: "Visa Type",
+          Showing: "Showing ",
+          Of: "Of",
+          Results: "Results",
+          Country: "Country",
+          Mode: "Visa Mode",
+          Validity: "Validity",
+          day: "Days",
+          process: "Processing Time",
+          working: "Working Days",
+          start: "Starting Form",
+          person: "Per Person",
+          apply: "Apply Now"
+        })
+
       }
       if (language === 'ru') {
         setDest(destRu)
         setChoose(visaRu)
+        setObjText({
+          breadCrumb: "Виза",
+          destination: "Cтрана",
+          type: "Тип визы",
+          Showing: "Showing ",
+          Of: "Of",
+          Results: "Results",
+          Country: "Cтрана",
+          Mode: "Визовый режим",
+          Validity: "Допустимость",
+          day: "Дни",
+          process: "Время обработки",
+          working: "Рабочие дни",
+          start: "Начальная форма",
+          person: "На человека",
+          apply: "Подать заявку сейчас"
+        })
       }
       if (language === 'uz') {
         setDest(destUz)
         setChoose(visaUz)
+        setObjText({
+          breadCrumb: "Viza",
+          destination: "Mamlakat",
+          type: "Viza turi",
+          Showing: "Ko'rsatilgan  ",
+          Of: "Ning",
+          Results: "Natijalar",
+          Country: "Mamlakat",
+          Mode: "Viza Rejimi",
+          Validity: "Amal Qilish",
+          day: "Kunlar",
+          process: "Ishlov berish vaqti",
+          working: "Ish kuni",
+          start: "Boshlang'ich Shakl",
+          person: "Kishi boshiga",
+          apply: "Hozir murojaat qiling"
+        })
       }
     }
 
@@ -99,7 +170,7 @@ const page = () => {
     }, [language])
     return (
       <>
-        <Breadcrumb pagename="Visa" pagetitle="Visa"/>
+        <Breadcrumb pagename={objText.breadCrumb} pagetitle={objText.breadCrumb}/>
         <div className="package-search-filter-wrapper">
           <div className="container">
             <div className="filter-group">
@@ -120,7 +191,7 @@ const page = () => {
                           </svg>
                         </div>
                         <DestinationSearch
-                          destination="Destination"
+                          destination={objText.destination}
                           data={dest}
                           contryCatcher={countryCatcher}
                         />
@@ -143,7 +214,7 @@ const page = () => {
                             </g>
                           </svg>
                         </div>
-                        <TourTypeDropdown typeCatcher={visaType} description={'Visa type'} typeTour={chooseV}/>
+                        <TourTypeDropdown typeCatcher={visaType} description={objText.type} typeTour={chooseV}/>
                       </div>
                     </div>
                   </div>
@@ -159,7 +230,7 @@ const page = () => {
               <div className="col-lg-8">
                 <div className="package-inner-title-section mb-40">
                   <p>
-                    Showing {visa.length} of {visa.length} results
+                    {objText.Showing} {visa.length} {objText.Of} {visa.length} {objText.Results}
                   </p>
                 </div>
                 <div className="list-grid-product-wrap mb-70">
@@ -167,45 +238,42 @@ const page = () => {
                     {chooseV.map((item, index) => (
                       <div className="col-md-12 item" key={index}>
                         <div className="package-card4 four">
-                          <Link href={`/visas/${item.id}`}
-                                className="package-card-img">
-                            <img style={{height: "246.2px", width: "100%"}}
-                                 src={item.img}
-                                 alt=""/>
+                          <Link href={`${language}/visas/${item.id}`} className="package-card-img">
+                            <img style={{height: "100%", width: "100%"}} src={item.img} alt=""/>
                           </Link>
                           <div className="package-card-content">
                             <div className="card-content-top">
                               <h5>{item.country}</h5>
                               <ul>
                                 <li>
-                                  <span>Country :</span> {item.country}
+                                  <span>{objText.Country} :</span> {item.country}
                                 </li>
                                 <li>
-                                  <span>Visa Type :</span> {item.type}
+                                  <span>{objText.type} :</span> {item.type}
                                 </li>
                                 <li>
-                                  <span>Visa Mode :</span>
+                                  <span>{objText.Mode}:</span>
                                   {item.mode}
                                 </li>
                                 <li>
-                                  <span>Validity :</span> {item.valid} Days
+                                  <span>{objText.Validity} :</span> {item.valid} {objText.day}
                                 </li>
                                 <li>
                                   <span>Processing Time :</span>
-                                  {item.process}Working Day
+                                  {item.process} {objText.working}
                                 </li>
                               </ul>
                             </div>
                             <div className="card-content-bottom">
                               <div className="price-area">
-                                <span>Starting Form:</span>
+                                <span>{objText.start}:</span>
                                 <h6>
                                   <strong>$</strong>
-                                  {item.price} <span>Per Person</span>
+                                  {item.price} <span>{objText.person}</span>
                                 </h6>
                               </div>
-                              <Link href={`/visas/${item.id}`} className="apply-btn">
-                                Apply Now
+                              <Link href={`${language}/visas/${item.id}`} className="apply-btn">
+                                {objText.apply}
                                 <div className="arrow">
                                   <i className="bi bi-arrow-right"/>
                                 </div>
