@@ -166,6 +166,7 @@ const page = () => {
   };
 
   const languageChecker = () => {
+    console.log(language)
     if (language === 'en') {
       setDest(desEn)
       setType(typeEn)
@@ -256,6 +257,7 @@ const page = () => {
   return (
     <>
       <Breadcrumb pagename={text.tour} pagetitle={text.tour}/>
+
       <div className="package-grid-with-sidebar-section pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5">
@@ -285,7 +287,7 @@ const page = () => {
                       <div className="col-md-6 item" key={index}>
                         <div className="package-card">
                           <div className="package-card-img-wrap">
-                            <Link href={`/package/${item.id}`}
+                            <Link href={`/${language}/package/${item.id}`}
                                   className="card-img">
                               <img
                                 style={{height: "177px", width: "100%"}}
@@ -307,7 +309,7 @@ const page = () => {
                                 <ul className="location-list">
                                   {item.location_list.map((item, index) => (
                                     <li key={index}>
-                                      <Link href="/package">{item}</Link>
+                                      {item}
                                     </li>
                                   ))}
                                 </ul>
@@ -317,7 +319,7 @@ const page = () => {
                           <div className="package-card-content">
                             <div className="card-content-top">
                               <h5>
-                                <Link href={`/package/${item.id}`} style={{
+                                <Link href={`/${language}/package/${item.id}`} style={{
                                   whiteSpace: "nowrap",
                                   textOverflow: "ellipsis",
                                   overflow: "hidden",
@@ -331,7 +333,7 @@ const page = () => {
                                 <ul className="location-list scrollTextAni">
                                   {item.place_list.map((item, index) => (
                                     <li key={index}>
-                                      <Link href="/package">{item}</Link>
+                                      {item}
                                     </li>
                                   ))}
                                 </ul>
@@ -344,7 +346,7 @@ const page = () => {
                                 <p>{text.person}</p>
                               </div>
                               <Link
-                                href={`/package/${item.id}`}
+                                href={`${language}/package/${item.id}`}
                                 className="primary-btn2"
                               >
                                 {bookBtn}
