@@ -3,50 +3,71 @@
     "id": "1",
     "day": 6,
     "night": 5,
-    "type":"Piligrimage",
-    "country":"Uzbekistan",
+    "type": "Piligrimage",
+    "country": "Uzbekistan",
     "batch": "6 Kun  / 5 Tun",
     "img": "/assets/images/tour/uzbekistan.webp",
-    "location_list": ["O'zbekiston"],
+    "location_list": [
+      "O'zbekiston"
+    ],
     "title": "O'zbekistonning uch poytaxt",
     "price": "980",
-    "place_list": ["Toshkent"," Samarqand"," Buxoro","Toshkent"]
+    "place_list": [
+      "Toshkent",
+      " Samarqand",
+      " Buxoro",
+      "Toshkent"
+    ]
   },
   {
     "id": "2",
     "day": 8,
     "night": 7,
-    "type":"Adventure" ,
-    "country":"Uzbekistan",
+    "type": "Adventure",
+    "country": "Uzbekistan",
     "batch": "8 Kun / 7 Tun",
     "img": "/assets/images/tour/Khiva.webp",
-    "location_list": ["O'zbekiston"],
+    "location_list": [
+      "O'zbekiston"
+    ],
     "title": "O'zbekistonning to'rt marvaridi",
     "price": "2728 ",
-    "place_list": ["Xiva", "Buxoro", "Samarqand", "Toshkent"]
+    "place_list": [
+      "Xiva",
+      "Buxoro",
+      "Samarqand",
+      "Toshkent"
+    ]
   },
   {
     "id": "3",
     "batch": "4 Kun",
     "day": 4,
     "night": null,
-    "type":"Adventure" ,
-    "country":"Uzbekistan",
+    "type": "Adventure",
+    "country": "Uzbekistan",
     "img": "/assets/images/tour/bukhara_1.webp",
-    "location_list": ["O'zbekiston"],
+    "location_list": [
+      "O'zbekiston"
+    ],
     "title": "Ikki Afsona",
     "price": "2728 ",
-    "place_list": ["Buxoro","Samarqand"]
+    "place_list": [
+      "Buxoro",
+      "Samarqand"
+    ]
   },
   {
     "id": 4,
     "batch": "2 Hafta",
     "day": 14,
     "night": null,
-    "type":null ,
+    "type": null,
     "img": "/assets/images/tour/central-asia.webp",
-    "location_list": ["Markaziy Osiyo"],
-    "country":"Central Asia",
+    "location_list": [
+      "Markaziy Osiyo"
+    ],
+    "country": "Central Asia",
     "title": "2 Hafta Ichida Markaziy Osiyo Safari",
     "price": "530 ",
     "place_list": [
@@ -62,10 +83,12 @@
     "batch": " 12 Kun / 11 Tun",
     "day": 12,
     "night": null,
-    "type":null ,
+    "type": null,
     "img": "/assets/images/tour/Urganch.webp",
-    "location_list": ["O'zbekiston"],
-    "country":"Uzbekistan",
+    "location_list": [
+      "O'zbekiston"
+    ],
+    "country": "Uzbekistan",
     "title": "Yorqin va Quyoshli O'zbekistonga Sayohat",
     "price": "2250",
     "place_list": [
@@ -81,9 +104,11 @@
     "batch": "11 Kun",
     "day": 11,
     "night": null,
-    "type":null ,
+    "type": null,
     "img": "/assets/images/tour/Bishkek.webp",
-    "location_list": ["Markaziy Osiyo"],
+    "location_list": [
+      "Markaziy Osiyo"
+    ],
     "title": "Markaziy Osiyo Tur",
     "price": "3215",
     "place_list": [

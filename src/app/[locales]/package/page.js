@@ -2,13 +2,31 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Link from "next/link";
 import React, {useState, useEffect, useRef} from "react";
+
 import Tour from "@/data/custom/tour.json";
+// Tour =================================
+import tourEn from "@/data/en/tour.json"
+import tourRu from "@/data/ru/tour.json"
+import tourUz from "@/data/uz/tour.json"
+// ======================================
 import destination from "@/data/custom/destination.json";
+// Destination ===============================
+import desEn from '@/data/en/destination.json'
+import desRu from '@/data/ru/destination.json'
+import desUz from '@/data/uz/destination.json'
+// ============================================
 import Type from "@/data/custom/type.json";
+// Type==================================
+import typeEn from '@/data/en/type.json'
+import typeRu from '@/data/ru/type.json'
+import typeUz from '@/data/uz/type.json'
+// ============================================
 import {useSearchParams} from "next/navigation";
 import {useRouter} from 'next/navigation';
+import {useSelector} from "react-redux";
 
 const page = () => {
+  const language = useSelector((state) => state.language.languageValue)
   const router = useRouter();
   const searchParams = useSearchParams();
   const search = searchParams.get("search");
@@ -18,12 +36,32 @@ const page = () => {
   const [tourCheck, setTourCheck] = useState(-1);
   const [nameTour, setNameTour] = useState("");
   const [tourType, setTourType] = useState("");
-  const [tour, setTour] = useState(Tour);
   const [countryCheck, setCountryCheck] = useState(false)
   const [typeCheck, setTypeCheck] = useState(false)
   const fromDay = useRef(null);
   const selectPrice = useRef(null);
-
+  // USESTATES===================================================
+  const [tour, setTour] = useState(Tour);
+  const [dest, setDest] = useState(desEn)
+  const [type, setType] = useState(typeEn);
+  const [bookBtn,setBookBtn]=useState("Book a Trip")
+  const [text,setText]=useState({
+    tour:"",
+    show:"",
+    of:"",
+    result:"",
+    default:"",
+    height:"",
+    low:"",
+    destination:"",
+    duration:"",
+    type:"",
+    start:"",
+    person:"",
+    filter:"",
+    clear:""
+  })
+  // ============================================================
   let handleCheckboxChange = (index, name) => {
     setCheckedIndex(index);
     setNameTour(name);
@@ -114,11 +152,6 @@ const page = () => {
     setCurrentPage(pageNumber);
   };
 
-  const sliceFunc = () => {
-    return setTour(Tour.slice(startIndex, endIndex))
-  }
-
-
   const handlePrevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
@@ -130,17 +163,85 @@ const page = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
     }
-
   };
 
-
+  const languageChecker = () => {
+    if (language === 'en') {
+      setDest(desEn)
+      setType(typeEn)
+      setBookBtn("")
+      setText({
+        tour:"Tour",
+        show:"Showing ",
+        of:"Of",
+        result:"Results",
+        default:"Default Sorting",
+        height:"Price Hight to Low",
+        low:"Price Low to Hight",
+        destination:"Country",
+        duration:"Durations",
+        type:"Tour Types",
+        start:"Starting Form",
+        person:"TAXES INCL/PERS",
+        filter:"Filter",
+        clear:"Clear"
+      })
+      return setTour(tourEn.slice(startIndex, endIndex))
+    }
+    if (language === 'ru') {
+      setDest(desRu)
+      setType(typeRu)
+      setBookBtn("Забронировать ")
+      setText({
+        tour:"Путешествия",
+        show:"Показаны ",
+        of:"Из",
+        result:"Pезультаты",
+        default:"Сортировка по умолчанию",
+        height:"Цена от высокой к низкой",
+        low:"Цена от низкой до высокой",
+        destination:"Страна",
+        duration:"Продолжительность",
+        type:"Типы туров",
+        start:"Начиная с",
+        person:"НАЛОГИ",
+        filter:"Фильтр",
+        clear:"Oчищать"
+      })
+      return setTour(tourRu.slice(startIndex, endIndex))
+    }
+    if (language === 'uz') {
+      setDest(desUz)
+      setType(typeUz)
+      setBookBtn("Sayohatga buyurtma")
+      setText({
+        tour:"Tur",
+        show:"Kursatildi",
+        of:"dan",
+        result:"gacha",
+        default:"Boshlang'ch sortirovka",
+        height:"Narx balanddan pastgacha",
+        low:"Narx past va yuqori",
+        destination:"Mamlakat",
+        duration:"Davomiylik",
+        type:"Tur turlar",
+        start:"Boshlang'ich shakl",
+        person:"Soliqlar",
+        filter:"Filtr",
+        clear:"Tozalamoq"
+      })
+      return setTour(tourUz.slice(startIndex, endIndex))
+    }
+  }
   useEffect(() => {
-    sliceFunc()
-    let countryId = countryIdFinder() - 1;
+    languageChecker()
+
+    let idOfCountry = countryIdFinder() - 1;
+
     let tourType = typeFinder() - 1;
 
     if (search !== null) {
-      handleCheckboxChange(countryId, search);
+      handleCheckboxChange(idOfCountry, search);
     }
     if (typeOdour !== null) {
       tourCheckFunc(tourType, typeOdour);
@@ -150,22 +251,18 @@ const page = () => {
       if (dayInput && days) {
         dayInput.value = days;
       }
-
     }
-
-
-  }, [currentPage, Tour]);
-
+  }, [currentPage,dest, tour, language]);
   return (
     <>
-      <Breadcrumb pagename="Tour Packages" pagetitle="Tour"/>
+      <Breadcrumb pagename={text.tour} pagetitle={text.tour}/>
       <div className="package-grid-with-sidebar-section pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5">
             <div className="col-lg-8">
               <div className="package-inner-title-section mb-40">
                 <p>
-                  Showing {tour.length} of {Tour.length} results
+                  {text.show} {tour.length} {text.of} {Tour.length} {text.result}
                 </p>
                 <div className="selector-and-grid">
                   <div className="selector">
@@ -174,9 +271,9 @@ const page = () => {
                             ref={selectPrice}
                             id="price_sorting"
                             onChange={() => priceSorter()}>
-                      <option value="Default Sorting">Default Sorting</option>
-                      <option value="Low">Price Hight to Low</option>
-                      <option value="Hight">Price Low to Hight</option>
+                      <option value="Default Sorting">{text.default}</option>
+                      <option value="Low">{text.height}</option>
+                      <option value="Hight">{text.low}</option>
                     </select>
                   </div>
                 </div>
@@ -242,15 +339,15 @@ const page = () => {
                             </div>
                             <div className="card-content-bottom">
                               <div className="price-area">
-                                <h6>Starting Form:</h6>
+                                <h6>{text.start}:</h6>
                                 <span>$ {item.price}</span>
-                                <p>TAXES INCL/PERS</p>
+                                <p>{text.person}</p>
                               </div>
                               <Link
                                 href={`/package/${item.id}`}
                                 className="primary-btn2"
                               >
-                                Book a Trip
+                                {bookBtn}
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width={18}
@@ -365,7 +462,7 @@ const page = () => {
                           <div className="row g-3">
                             <div className="col">
                               <ul className="category-list two">
-                                {Type.map((item, index) => (
+                                {type.map((item, index) => (
                                   <li key={index}
                                       role="button"
                                       onClick={() => tourCheckFunc(index, item.type)}>
@@ -409,7 +506,7 @@ const page = () => {
                           <div className="row g-3">
                             <div className="col">
                               <ul className="category-list two">
-                                {destination.map((item, index) => (
+                                {dest.map((item, index) => (
                                   <li key={index}
                                       role="button"
                                       onClick={() => handleCheckboxChange(index, item.name)}>
@@ -439,7 +536,7 @@ const page = () => {
                 <div className="single-widget mb-30">
                   <div className="sidebar-area d-flex  justify-content-between">
                     <div className="primary-btn2 d-flex" onClick={() => Filter()}>
-                      Filter
+                      {text.filter}
                       <svg xmlns="http://www.w3.org/2000/svg"
                            width="18"
                            height="18"
@@ -456,7 +553,7 @@ const page = () => {
                     </div>
                     <div className=" btn btn-danger d-flex align-items-center gap-2"
                          onClick={() => clear()}>
-                      Clear
+                      {text.clear}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="18"

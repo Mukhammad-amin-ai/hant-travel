@@ -1,104 +1,130 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "day": 6,
     "night": 5,
-    "type":"Piligrimage",
-    "country":"Uzbekistan",
-    "batch": "6 Days / 5 Night",
+    "type": "Piligrimage",
+    "country": "Uzbekistan",
+    "batch": "6 Дней  / 5 Hочей",
     "img": "/assets/images/tour/uzbekistan.webp",
-    "location_list": ["Uzbekistan Tour"],
-    "title": "Three capitals of Uzbekistan",
+    "location_list": [
+      "Тур по Узбекистану"
+    ],
+    "title": "Три столицы Узбекистана",
     "price": "980",
-    "place_list": ["Tashkent", "Samarkand", "Bukhara", "Tashkent"]
+    "place_list": [
+      "Ташкент",
+      "Самарканд",
+      "Бухара",
+      "Ташкент"
+    ]
   },
   {
-    "id": 2,
+    "id": "2",
     "day": 8,
     "night": 7,
-    "type":"Adventure" ,
-    "country":"Uzbekistan",
-    "batch": "8 Days / 7 Night",
+    "type": "Adventure",
+    "country": "Uzbekistan",
+    "batch": "8 Дней / 7 Hочей",
     "img": "/assets/images/tour/Khiva.webp",
-    "location_list": ["Uzbekistan Tour"],
-    "title": "Four pearls of Uzbekistan",
+    "location_list": [
+      "Тур по Узбекистану"
+    ],
+    "title": "Четыре жемчужины Узбекистана",
     "price": "2728 ",
-    "place_list": ["Khiva", "Bukhara", "Samarkand", "Tashkent"]
+    "place_list": [
+      "Хива",
+      "Бухара",
+      "Самарканд",
+      "Ташкент"
+    ]
   },
   {
-    "id": 3,
-    "batch": "4 Days",
+    "id": "3",
     "day": 4,
     "night": null,
-    "type":"Adventure" ,
-    "country":"Uzbekistan",
+    "type": "Adventure",
+    "country": "Uzbekistan",
+    "batch": "4 Дня",
     "img": "/assets/images/tour/bukhara_1.webp",
-    "location_list": ["Uzbekistan Tour"],
-    "title": "Two Legends",
+    "location_list": [
+      "Тур по Узбекистану"
+    ],
+    "title": "Две легенды",
     "price": "2728 ",
-    "place_list": ["Bukhara", "Samarkand"]
+    "place_list": [
+      "Бухара",
+      "Самарканд"
+    ]
   },
   {
     "id": 4,
-    "batch": "2 Weeks",
     "day": 14,
     "night": null,
-    "type":null ,
+    "type": null,
+    "country": "Central Asia",
+    "batch": "2 Hедели",
     "img": "/assets/images/tour/central-asia.webp",
-    "location_list": ["Central Asia"],
-    "country":"Central Asia",
-    "title": "Central Asia Tour in 2 weeks",
+    "location_list": [
+      "Центральная Азия"
+    ],
+    "title": "Тур по Центральной Азии за 2 недели",
     "price": "530 ",
     "place_list": [
-      "Kazakhstan",
-      "Kyrgyzstan",
-      "Uzbekistan",
-      "Tadjikistan",
-      "Turkmenistan"
+      "Казахстан",
+      "Кыргызстан",
+      "Узбекистан",
+      "Таджикистан",
+      "Туркменистан"
     ]
   },
   {
     "id": 5,
-    "batch": " 12 Day / 11 Night",
     "day": 12,
     "night": null,
-    "type":null ,
+    "type": null,
+    "country": "Uzbekistan",
+    "batch": " 14 Дней",
     "img": "/assets/images/tour/Urganch.webp",
-    "location_list": ["Uzbekistan Tour"],
-    "country":"Uzbekistan",
-    "title": "Tour To Bright and Sunny Uzbekistan",
+    "location_list": [
+      "Тур по Узбекистану"
+    ],
+    "title": "Творческий тур по Узбекистану",
     "price": "2250",
     "place_list": [
-      "Nukus",
-      "Khiva",
-      "Bukhara",
-      "Samarkand",
-      "Tashkent"
+      "Урганч",
+      "Хива",
+      "Бухара",
+      "Самарканд",
+      "Шахрисабз",
+      "Ташкент"
     ]
   },
   {
     "id": 6,
-    "batch": "11 Day",
     "day": 11,
     "night": null,
-    "type":null ,
+    "type": null,
+    "batch": " 14 Дней",
     "img": "/assets/images/tour/Bishkek.webp",
-    "location_list": ["Central Asia Tourr"],
-    "title": "Central Asia Tour",
+    "location_list": [
+      "Центральная Азия"
+    ],
+    "title": "Тур по Центральной Азии",
     "price": "3215",
     "place_list": [
-      "Bishkek",
-      "Burana",
-      "Issyk Kul",
-      "Osh",
-      "Fergana",
-      "Tashkent",
-      "Kokand",
-      "Urganch",
-      "Khiva",
-      "Bukhara",
-      "Samarkand",
-      "Tashkent"
+      "Бишкек",
+      "Бурана",
+      "Иссык-Куль",
+      "Ош",
+      "Фергана",
+      "Ташкент",
+      "Коканд",
+      "Урганч",
+      "Хива",
+      "Бухара",
+      "Самарканд",
+      "Ташкент"
     ]
   },
   {
@@ -106,10 +132,12 @@
     "batch": "9 Days / 8 Nights",
     "day": 9,
     "night": null,
-    "type":null ,
+    "type": null,
     "img": "/assets/images/tour/central-asia.webp",
-    "location_list": ["Central Asia"],
-    "country":"Tadjikistan",
+    "location_list": [
+      "Central Asia"
+    ],
+    "country": "Tadjikistan",
     "title": "Tour to Pamir Mountains",
     "price": "1650",
     "place_list": [
