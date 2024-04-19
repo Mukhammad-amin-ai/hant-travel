@@ -252,7 +252,7 @@ const page = () => {
         dayInput.value = days;
       }
     }
-  }, [currentPage,dest, tour, language]);
+  }, [currentPage, language]);
   return (
     <>
       <Breadcrumb pagename={text.tour} pagetitle={text.tour}/>
@@ -411,7 +411,7 @@ const page = () => {
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseOne" aria-expanded="true"
                           aria-controls="collapseOne">
-                          <h5 className="widget-title mb-0">Durations</h5>
+                          <h5 className="widget-title mb-0">{text.duration}</h5>
                         </button>
                       </h2>
                       <div id="collapseOne"
@@ -452,7 +452,7 @@ const page = () => {
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseTwo" aria-expanded="true"
                           aria-controls="collapseOne">
-                          <h5 className="widget-title mb-0">Tour Types</h5>
+                          <h5 className="widget-title mb-0">{text.type}</h5>
                         </button>
                       </h2>
                       <div id="collapseTwo"
@@ -496,7 +496,7 @@ const page = () => {
                           data-bs-toggle="collapse"
                           data-bs-target="#collapseThree" aria-expanded="true"
                           aria-controls="collapseOne">
-                          <h5 className="widget-title mb-0">Country</h5>
+                          <h5 className="widget-title mb-0">{text.destination}</h5>
                         </button>
                       </h2>
                       <div id="collapseThree"
