@@ -346,7 +346,7 @@ const page = () => {
                                 <p>{text.person}</p>
                               </div>
                               <Link
-                                href={`${language}/package/${item.id}`}
+                                href={`/${language}/package/${item.id}`}
                                 className="primary-btn2"
                               >
                                 {bookBtn}

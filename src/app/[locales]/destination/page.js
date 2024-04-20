@@ -97,7 +97,7 @@ const page = () => {
                   <div className="content">
                     <h4>
                       <Link
-                        href={`${language}/destination/${index + 1}`}
+                        href={`/${language}/destination/${index + 1}`}
                       >
                         {item.name}
                       </Link>
