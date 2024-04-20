@@ -21,9 +21,11 @@ const Page = ({ params }) => {
     capital:"Capital City",
     language:"Language",
     currency:"Currency",
-    discover:"Discover"
+    discover:"Discover",
+
   })
   const [propObj,setPropObj]=useState({
+    lang:language,
     recommend:"Recommended Package",
     tax:"TAXES INCL/PERS",
     book:"Book a trip",
@@ -49,6 +51,7 @@ const Page = ({ params }) => {
         discover: "Discover"
       })
       setPropObj({
+        lang:language,
         recommend:"Recommended Package",
         tax:"TAXES INCL/PERS",
         book:"Book a trip",
@@ -69,6 +72,7 @@ const Page = ({ params }) => {
         discover: "Oткрыть"
       })
       setPropObj({
+        lang:language,
         recommend:"Рекомендуемый пакеты",
         tax:"НАЛОГИ ",
         book:"Забронировать",
@@ -89,6 +93,7 @@ const Page = ({ params }) => {
         discover: "Ochmoq"
       })
       setPropObj({
+        lang:language,
         recommend:"Tavsiya etilgan sayohatlar",
         tax:"Soliqlar",
         book:"Sayohatni bron qilish",

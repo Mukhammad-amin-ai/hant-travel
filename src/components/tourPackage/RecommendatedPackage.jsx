@@ -101,7 +101,7 @@ const RecommendatedPackage = ({data,destination,language}) => {
                       <div className="col-lg-4 col-md-6">
                         <div className="package-card">
                           <div className="package-card-img-wrap">
-                            <Link href={`/package/${item.id}`} className="card-img">
+                            <Link href={`/${language.lang}/package/${item.id}`} className="card-img">
                               <img
                                 style={{height: "177px", width: "100%"}}
                                 src={item.img}
@@ -131,7 +131,7 @@ const RecommendatedPackage = ({data,destination,language}) => {
                           <div className="package-card-content">
                             <div className="card-content-top">
                               <h5>
-                                <Link href={`/package/${item.id}`}>
+                                <Link href={`/${language.lang}/package/${item.id}`}>
                                   {item.title}
                                 </Link>
                               </h5>
@@ -152,7 +152,7 @@ const RecommendatedPackage = ({data,destination,language}) => {
                                 <p>{language.tax}</p>
                               </div>
                               <Link
-                                href={`/package/${item.link}`}
+                                href={`/${language.lang}/package/${item.link}`}
                                 className="primary-btn2"
                               >
                                 {language.book}
@@ -180,7 +180,7 @@ const RecommendatedPackage = ({data,destination,language}) => {
             </Swiper>
           </div>
           <div className="col-lg-12 d-flex align-items-center justify-content-center">
-            <Link href={`/package?search=${destination}`} className="secondary-btn4">
+            <Link href={`/${language.lang}/package?search=${destination}`} className="secondary-btn4">
               {language.view}
             </Link>
           </div>
