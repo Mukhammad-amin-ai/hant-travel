@@ -12,7 +12,7 @@ import Tour from "../../data/custom/tour.json";
 
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
-const RecommendatedPackage = ({data,destination}) => {
+const RecommendatedPackage = ({data,destination,language}) => {
   const settings = useMemo(() => {
     return {
       slidesPerView: 1,
@@ -64,7 +64,7 @@ const RecommendatedPackage = ({data,destination}) => {
         <div className="row">
           <div className="col-lg-12 mb-30 d-flex align-items-center justify-content-between">
             <div className="desti-title">
-              <h3>Recommended Package</h3>
+              <h3>{language.recommend}</h3>
             </div>
             <div className="slider-btn-grp2 width-100">
               <div className="slider-btn package-card-tab-prev">
@@ -147,15 +147,15 @@ const RecommendatedPackage = ({data,destination}) => {
                             </div>
                             <div className="card-content-bottom">
                               <div className="price-area">
-                                <h6>Starting Form:</h6>
+                                <h6>{language.start}</h6>
                                 <span>$ {item.price}</span>
-                                <p>TAXES INCL/PERS</p>
+                                <p>{language.tax}</p>
                               </div>
                               <Link
                                 href={`/package/${item.link}`}
                                 className="primary-btn2"
                               >
-                                Book a Trip
+                                {language.book}
                                 <svg
                                   xmlns="http://www.w3.org/2000/svg"
                                   width={18}
@@ -181,7 +181,7 @@ const RecommendatedPackage = ({data,destination}) => {
           </div>
           <div className="col-lg-12 d-flex align-items-center justify-content-center">
             <Link href={`/package?search=${destination}`} className="secondary-btn4">
-              View All Package
+              {language.view}
             </Link>
           </div>
         </div>

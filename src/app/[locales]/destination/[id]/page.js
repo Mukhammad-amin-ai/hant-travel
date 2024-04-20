@@ -1,23 +1,109 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Breadcrumb from "@/components/common/Breadcrumb";
-import RecommendatedPackage from "@/components/tourPackage/RecommendatedPackage";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import DestinationDetails from "@/data/custom/destinationDetails.json";
+import RecommendationPackage from "@/components/tourPackage/RecommendatedPackage";
+import {useSelector} from "react-redux";
+import En from '@/data/en/destinationDetails.json'
+import Ru from '@/data/ru/destinationDetails.json'
+import Uz from '@/data/uz/destinationDetails.json'
 
 const Page = ({ params }) => {
   const router = params.id;
-  
-  const [isOpenimg, setOpenimg] = useState({
+  const language = useSelector((state) => state.language.languageValue)
+  const [DestinationDetails,setDestinationDetails]=useState(En)
+  const[text,setText]=useState({
+    breadcrumb:"Country Details",
+    things:"Things To Do",
+    destination:"Destination",
+    population:"Population",
+    capital:"Capital City",
+    language:"Language",
+    currency:"Currency",
+    discover:"Discover"
+  })
+  const [propObj,setPropObj]=useState({
+    recommend:"Recommended Package",
+    tax:"TAXES INCL/PERS",
+    book:"Book a trip",
+    view:"View All Package",
+    start:"Starting From"
+  })
+  const [isOpening, setOpening] = useState({
     openingState: false,
     openingIndex: 0,
   });
 
+  const languageChecker = ()=>{
+    if(language === 'en'){
+      setDestinationDetails(En)
+      setText({
+        breadcrumb:"Country Details",
+        things:"Things To Do",
+        destination:"Destination",
+        population:"Population",
+        capital:"Capital City",
+        language:"Language",
+        currency:"Currency",
+        discover: "Discover"
+      })
+      setPropObj({
+        recommend:"Recommended Package",
+        tax:"TAXES INCL/PERS",
+        book:"Book a trip",
+        view:"View All Package",
+        start:"Starting From"
+      })
+    }
+    if(language === 'ru'){
+      setDestinationDetails(Ru)
+      setText({
+        breadcrumb:"Подробная информация о стране",
+        things:"Чем заняться",
+        destination:"Государство",
+        population:"Население",
+        capital:"Столичный город",
+        language:"Язык",
+        currency:"Валюта",
+        discover: "Oткрыть"
+      })
+      setPropObj({
+        recommend:"Рекомендуемый пакеты",
+        tax:"НАЛОГИ ",
+        book:"Забронировать",
+        view:"Просмотреть весь пакет",
+        start:"Начиная с"
+      })
+    }
+    if(language === 'uz'){
+      setDestinationDetails(Uz)
+      setText({
+        breadcrumb:"Mamlakat tafsilotlari",
+        things:"Qilinadigan ishlar",
+        destination:"Davlat",
+        population:"Aholi",
+        capital:"Poytaxt shahar",
+        language:"til",
+        currency:"valyuta",
+        discover: "Ochmoq"
+      })
+      setPropObj({
+        recommend:"Tavsiya etilgan sayohatlar",
+        tax:"Soliqlar",
+        book:"Sayohatni bron qilish",
+        view:"Barcha Paketlarni Ko'rish",
+        start:"Boshlab"
+      })
+    }
+  }
 
+  useEffect(() => {
+    languageChecker()
+  }, [language]);
   return (
     <>
-      <Breadcrumb pagename="Country Details" pagetitle="Country Details" />
+      <Breadcrumb pagename={text.breadcrumb} pagetitle={text.breadcrumb} />
       <div className="destination-details-wrap mb-120 pt-120">
         <div className="container">
           <div className="row g-lg-4 gy-5">
@@ -37,21 +123,21 @@ const Page = ({ params }) => {
                         <a data-fancybox="gallery-01">
                           <i
                             onClick={() =>
-                              setOpenimg({
+                              setOpening({
                                 openingState: true,
                                 openingIndex: 0,
                               })
                             }
                             className="bi bi-eye"
                           />{" "}
-                          Discover {DestinationDetails[router].name}
+                          {text.discover} {DestinationDetails[router].name}
                         </a>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
-              <h2>Things To Do</h2>
+              <h2>{text.things}</h2>
               <ul style={{ columns: "1" }}>
                 {DestinationDetails[router].tourism.map((item, index) => (
                   <li key={index}>{item}</li>
@@ -82,23 +168,23 @@ const Page = ({ params }) => {
               <div className="destination-sidebar">
                 <div className="destination-info mb-30">
                   <div className="single-info">
-                    <span>Destination:</span>
+                    <span>{text.destination}:</span>
                     <h5>{DestinationDetails[router].destionation}</h5>
                   </div>
                   <div className="single-info">
-                    <span>Population:</span>
+                    <span>{text.population}:</span>
                     <h5>{DestinationDetails[router].population} million</h5>
                   </div>
                   <div className="single-info">
-                    <span>Capital City:</span>
+                    <span>{text.capital}:</span>
                     <h5>{DestinationDetails[router].capital}</h5>
                   </div>
                   <div className="single-info">
-                    <span>Language:</span>
+                    <span>{text.language}:</span>
                     <h5>{DestinationDetails[router].language}</h5>
                   </div>
                   <div className="single-info">
-                    <span>Currency:</span>
+                    <span>{text.currency}:</span>
                     <h5>{DestinationDetails[router].currency}</h5>
                   </div>
                 </div>
@@ -107,13 +193,13 @@ const Page = ({ params }) => {
           </div>
         </div>
       </div>
-      <RecommendatedPackage data={DestinationDetails[router].tours} destination={DestinationDetails[router].name}/>
+      <RecommendationPackage data={DestinationDetails[router].tours} destination={DestinationDetails[router].name} language={propObj}/>
       <Lightbox
         className="img-fluid"
-        open={isOpenimg.openingState}
+        open={isOpening.openingState}
         plugins={[Fullscreen]}
-        index={isOpenimg.openingIndex}
-        close={() => setOpenimg(false)}
+        index={isOpening.openingIndex}
+        close={() => setOpening(false)}
         styles={{ container: { backgroundColor: "rgba(0, 0, 0, .9)" } }}
         slides={DestinationDetails[router].galery.map(function (elem) {
           return { src: elem.img };
