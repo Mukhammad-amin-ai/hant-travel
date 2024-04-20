@@ -238,7 +238,7 @@ const page = () => {
                     {chooseV.map((item, index) => (
                       <div className="col-md-12 item" key={index}>
                         <div className="package-card4 four">
-                          <Link href={`${language}/visas/${item.id}`} className="package-card-img">
+                          <Link href={`/${language}/visas/${item.id}`} className="package-card-img">
                             <img style={{height: "100%", width: "100%"}} src={item.img} alt=""/>
                           </Link>
                           <div className="package-card-content">
@@ -272,7 +272,7 @@ const page = () => {
                                   {item.price} <span>{objText.person}</span>
                                 </h6>
                               </div>
-                              <Link href={`${language}/visas/${item.id}`} className="apply-btn">
+                              <Link href={`/${language}/visas/${item.id}`} className="apply-btn">
                                 {objText.apply}
                                 <div className="arrow">
                                   <i className="bi bi-arrow-right"/>

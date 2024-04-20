@@ -1,14 +1,34 @@
 "use client";
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import Lightbox from "yet-another-react-lightbox";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import gallery from "@/data/custom/gallery.json";
+import {useSelector} from "react-redux";
+
 
 const Page = () => {
   const [isOpenimg, setOpenimg] = useState({
     openingState: false,
     openingIndex: 0,
   });
+  const [text, setText] = useState("Open image");
+  let language = useSelector((state) => state.language.languageValue)
+  const languageChecker = () => {
+    console.log(language)
+    if (language === 'en') {
+      setText("Open image")
+    }
+    if (language === 'ru') {
+      setText("Oткрыть изображение")
+    }
+    if (language === 'uz') {
+      setText("Rasm ochish")
+    }
+  }
+
+  useEffect(() => {
+    languageChecker()
+  }, [language]);
   return (
     <>
       <div className="destination-gallery pt-120 mb-120">
@@ -17,14 +37,14 @@ const Page = () => {
             {gallery.map((item, index) => (
               <div className={`${item.class} col-sm-6`} key={index}>
                 <div className="gallery-img-wrap">
-                  <img src={item.img} alt="" />
+                  <img src={item.img} alt=""/>
                   <a
                     data-fancybox="gallery-01"
                     onClick={() =>
-                      setOpenimg({ openingState: true, openingIndex: item.id })
+                      setOpenimg({openingState: true, openingIndex: item.id})
                     }
                   >
-                    <i className="bi bi-eye" /> Open image
+                    <i className="bi bi-eye"/> {text}
                   </a>
                 </div>
               </div>
@@ -49,9 +69,9 @@ const Page = () => {
         plugins={[Fullscreen]}
         index={isOpenimg.openingIndex}
         close={() => setOpenimg(false)}
-        styles={{ container: { backgroundColor: "rgba(0, 0, 0, .9)" } }}
+        styles={{container: {backgroundColor: "rgba(0, 0, 0, .9)"}}}
         slides={gallery.map(function (elem) {
-          return { src: elem.img };
+          return {src: elem.img};
         })}
       />
     </>

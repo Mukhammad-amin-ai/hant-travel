@@ -46,7 +46,7 @@ const layout = ({ children }) => {
     <>
       <Header />
       {children}
-      <Footer />
+      <Footer data={footer} book={t("book")} />
     </>
   );
 };

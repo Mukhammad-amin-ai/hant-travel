@@ -1,78 +1,41 @@
 [
   {
     "id": 1,
-    "title": "Egypt",
+    "title": "Misr",
     "price": "1,000",
     "img": "/assets/images/visa/egypt.webp",
-    "country": "Egypt",
-    "visaType": "Tourist",
+    "country": "Misr",
+    "visaType": "Turist",
     "time": "7-10",
     "length": 60,
     "max": 30,
-    "model": "Electronic",
+    "model": "Elektron",
     "documents": [
-      "Passport Scan Copy: Clearly scanned Passport copy required. Minimum of 6 months validity required from the arrival date.",
-      "Photo Specification: Passport Size Photo with White Background (clear scanned Copy required)",
-      "Previous Visa copy: If traveler has previous travel history on countries like Thailand, Malaysia, Singapore, USA, UK and so on, need those clear VISA scanned copy.",
-      "Flight and hotel reservations booking with dates clearly stated (DO NOT purchase until visa approval)",
-      "Processing time 7 working days."
+      "Pasportni skanerlash nusxasi: aniq skanerlangan pasport nusxasi talab qilinadi. Kelish sanasidan boshlab kamida 6 oylik amal qilish muddati talab qilinadi.",
+      "Fotosurat spetsifikatsiyasi: oq fon bilan pasport o'lchamidagi fotosurat (aniq skanerlangan nusxasi talab qilinadi)",
+      "Oldingi viza nusxasi: seyahatsever hokazo Tailand, Malayziya, Singapur, AQSh, buyuk Britaniya va kabi mamlakatlarda oldingi safar tarixga ega bo'lsa, o'sha aniq viza skaner nusxasini kerak.",
+      "Parvozlar va mehmonxonalarni bron qilish sanalari aniq ko'rsatilgan (viza tasdiqlanmaguncha sotib olmang)",
+      "Ishlov berish vaqti 7 ish kuni."
     ]
   },
   {
     "id": 2,
-    "title": "Saudi Arabia",
+    "title": "Saudiya Arabistoni",
     "price": "1,000",
     "img": "/assets/images/visa/saudi.webp",
-    "country": "Saudi Arabia",
-    "visaType": "Tourist",
+    "country": "Saudiya Arabistoni",
+    "visaType": "Salomatlik",
     "time": "7-10",
     "length": 60,
     "max": 30,
-    "model": "Electronic",
-    "documents": [
-      "Passport Scan Copy: Clearly scanned Passport copy required. Minimum of 6 months validity required from the arrival date.",
-      "Photo Specification: Passport Size Photo with White Background (clear scanned Copy required)",
-      "Previous Visa copy: If traveler has previous travel history on countries like Thailand, Malaysia, Singapore, USA, UK and so on, need those clear VISA scanned copy.",
-      "Flight and hotel reservations booking with dates clearly stated (DO NOT purchase until visa approval)",
-      "Processing time 7 working days."
-    ]
-  },
-  {
-    "id": 3,
-    "title": "UAE",
-    "price": "1,000",
-    "img": "/assets/images/visa/uaa.webp",
-    "country": "UAE",
-    "visaType": "Tourist",
-    "time": "7-10",
-    "length": 60,
-    "max": 30,
-    "model": "Electronic",
-    "documents": [
-      "Passport Scan Copy: Clearly scanned Passport copy required. Minimum of 6 months validity required from the arrival date.",
-      "Photo Specification: Passport Size Photo with White Background (clear scanned Copy required)",
-      "Previous Visa copy: If traveler has previous travel history on countries like Thailand, Malaysia, Singapore, USA, UK and so on, need those clear VISA scanned copy.",
-      "Flight and hotel reservations booking with dates clearly stated (DO NOT purchase until visa approval)",
-      "Processing time 7 working days."
-    ]
-  },
-  {
-    "id": 4,
-    "title": "India",
-    "price": "1,000",
-    "img": "/assets/images/visa/india_1.webp",
-    "country": "India",
-    "visaType": "Tourist",
-    "time": "7-10",
-    "length": 60,
-    "max": 30,
-    "model": "Electronic",
-    "documents": [
-      "Passport Scan Copy: Clearly scanned Passport copy required. Minimum of 6 months validity required from the arrival date.",
-      "Photo Specification: Passport Size Photo with White Background (clear scanned Copy required)",
-      "Previous Visa copy: If traveler has previous travel history on countries like Thailand, Malaysia, Singapore, USA, UK and so on, need those clear VISA scanned copy.",
-      "Flight and hotel reservations booking with dates clearly stated (DO NOT purchase until visa approval)",
-      "Processing time 7 working days."
+    "model": "Elektron",
+    "documents":  [
+      "Pasportni skanerlash nusxasi: aniq skanerlangan pasport nusxasi talab qilinadi. Kelish sanasidan boshlab kamida 6 oylik amal qilish muddati talab qilinadi.",
+      "Fotosurat spetsifikatsiyasi: oq fon bilan pasport o'lchamidagi fotosurat (aniq skanerlangan nusxasi talab qilinadi)",
+      "Oldingi viza nusxasi: seyahatsever hokazo Tailand, Malayziya, Singapur, AQSh, buyuk Britaniya va kabi mamlakatlarda oldingi safar tarixga ega bo'lsa, o'sha aniq viza skaner nusxasini kerak.",
+      "Parvozlar va mehmonxonalarni bron qilish sanalari aniq ko'rsatilgan (viza tasdiqlanmaguncha sotib olmang)",
+      "Ishlov berish vaqti 7 ish kuni."
     ]
   }
 ]
+
