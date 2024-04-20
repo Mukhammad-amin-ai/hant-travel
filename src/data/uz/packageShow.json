@@ -24,12 +24,12 @@
         "img": "/assets/images/tourShow/bukhara.webp"
       }
     ],
-    "title": "Three capitals of Uzbekistan",
-    "description": "We are all used to the fact that in every country there is one special city, which is called the capital. But the centuries-old history and unique traditions of Uzbekistan do not allow us to single out just one region. And although the official capital of the Uzbek Republic is kind and hospitable Tashkent, we suggest you visit two other equally charming towns of the eastern state – Bukhara and Samarkand. Long live Uzbek adventures!",
+    "title": "O'zbekistonning Uch Poytaxti",
+    "description": "O'zbekistonning boy tarixi uning poytaxti Toshkentdan tashqariga chiqadi. Buxoro va Samarqandni o'ziga xos madaniyatini tatib ko'rish uchun o'rganing",
     "price": 980,
     "maxPeople": 10,
-    "location": "Uzbekistan",
-    "length": "6 Days / 5 Night",
+    "location": "O'zbekiston",
+    "length": "6 Kun / 5 Tun",
     "iclueded": [
       "Entrance tickets to museums, to visit attractions, monuments",
       "Tour Guide (Certified)",
@@ -48,9 +48,9 @@
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent It will take you from 30 minutes to 1 hour to clear customs.  At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan.   Transfer to the hotel, registration, rest  Free day in Tashkent   Overnight at a hotel in Tashkent.   Power supply: not included.   The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Toshkent",
+        "name": "Poytaxt Toshkentga kelish, dam olish uchun bepul kun",
+        "description": "Toshkentga kelganingizda bojxona nazoratidan o'tish uchun 30 daqiqadan 1 soatgacha vaqt ketadi. Chiqish paytida sizni haydovchimiz qulay mashinada belgi bilan kutib oladi. Uchrashuv Sizning Parvozingiz O'zbekistonga kelgan vaqtga muvofiq tashkil etiladi. Mehmonxonaga o'tkazish, ro'yxatdan o'tish, Toshkentda dam olish uchun bepul kun, Toshkentdagi mehmonxonada tunash. Quvvat: yoqilmagan. Ekskursiya menejeri sizga mahalliy oshxonada tushlik va kechki ovqat qilishingiz mumkin bo'lgan tasdiqlangan joylarni aytib beradi va ko'rsatadi.",
         "places": [],
         "departure": [],
         "duration": ""
@@ -58,37 +58,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent.   During the tour you will visit and you will be told about:   ",
+        "location": "Samarqand",
+        "name": "Toshkent-ekskursiya va poezdda Samarqandga o'tish",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Toshkent bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "O'zbekiston amaliy san'at muzeyi",
+          "Eng mashhur Qur'on saqlanadigan Xast-Imom majmuasi - Usmon Qur'oni.",
+          "Eski Toshkent shahriga tashrif buyuring",
+          "Chor-su bozori, poytaxtning mashhur bozori.",
+          "Jasorat yodgorligi",
+          "Mustaqillik maydoniga tashrif",
+          "Amir Temur Maydoni, Temuriylar Muzeyi",
+          "Toshkent metro bekatlari (ixtiyoriy)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17: 45 Toshkent temir yo'l vokzaliga o'tish",
+          "18: 45 tezyurar konfor sinfidagi poyezdning Toshkentdan jo'nab ketishi",
+          "20: 58 Tamerlanning vatani Samarqandga kelish"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Samarqand",
+        "name": "Samarqandning mashhur tarixiy joylari-shahar safari",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Samarqand bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga: ",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Amir Temurning mashhur maqbarasi - \" Guri Amir\".",
+          "Uchta madrasa bilan afsonaviy Registon maydoni",
+          "Bibi Xonim Masjidi.",
+          "Mashhur Samarqand Sieb bozori. Qaerda quritilgan mevalar, yassi non va milliy shirinliklarni sotib olishingiz mumkin."
         ],
         "duration": "5-6",
         "departure": []
@@ -96,41 +96,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Samarqand shahar safari va poezdda Buxoroga o'tish",
+        "description": "mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Samarqand shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Temuriylar davridagi shohi Zinda nekropoli",
+          "Ulug'bek rasadxonasi 15-asrning noyob inshootidir, hozirgi paytda \"Sulse faxri\" o'lchov asbobining bir bo'lagi saqlanib qolgan",
+          "Doniyor Payg'ambar maqbarasi uchta din uchun muqaddas ibodat joyidir: musulmon, nasroniy va yahudiy",
+          "Cunha Meros qog'oz fabrikasi (qadimgi tut qog'ozini qo'lda ishlab chiqarish, bu erda siz butun qog'oz ishlab chiqarish jarayonini ko'rasiz"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "20: 00 Samarqand shahridagi temir yo'l stantsiyasiga o'tish",
+          "21: 03 tezyurar konfor sinfidagi poyezdning Samarqanddan jo'nab ketishi",
+          "21: 58 Buxoroga kelish - Sharq durdonasi"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Sharq durdonasi - Buxoroning ekskursiya tarixi",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasiga siz Buxoro safari boshida o'tkazish uchun qulay mashinada tasdiqlangan qo'llanma va haydovchi tomonidan kutib olinadi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Ismoil Samaniyning ulug'vor maqbarasi 9-asr Somoniylar sulolasining qudratli va nufuzli amirining dafn etilgan joyidir. Maqbara islomgacha bo'lgan madaniyatga xos tarzda yaratilgan noyob dizayni va badiiy g'isht ishlari bilan ajralib turadi",
+          "Somoniylar maqbarasi yaqinida joylashgan Chashma Ayub maqbarasi (Ayub qudug'i).",
+          "Bolo Xauz masjidi (18-20-asrlar)",
+          "Arkning ulkan qal'asi - Buxoro amirining qishki qarorgohi",
+          "Kalon Masjidi",
+          "Mashhur Kalyan Minorasi",
+          "Mir-Arab Madrasasi",
+          "Ulug'bek Madrasasi",
+          "Abdulazizxon madrasasi an'anaviy majolika bilan",
+          "Buxoroning qadimiy savdo gumbazlari ",
+          "Magoki-Attori masjidi (12-asr) arxitekturada o'z davri uchun maxsus.",
+          "Lyabi Uyi"
         ],
         "duration": "5-6",
         "departure": []
@@ -138,19 +138,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Buxoro-shahar tashqarisiga ekskursiya va poezdda Toshkentga ko'chirish",
+        "description": "Mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Buxoro shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Noyob yodgorlik \" Chor Minor \"1807-1809.",
+          "Buxoro amiri Moxi-Xosaning yozgi qarorgohi",
+          "1544 yilda barpo etilgan Bahouddin Naqshbandiy nekropoli. Bahouddin Naqshbandiy Buxoroda nufuzli Shayx, Suffist va ilohiyotshunos edi. So'fiylar va musulmonlar uning dafn etilgan joyini ziyorat qilishni kichik Haj bilan tenglashtirdilar"
         ],
         "duration": "4",
         "departure": [
-          "15:00 Transfer to the Bukhara railway station (Attention: departure and arrival times may be changed according to the train schedule)",
-          "15:50 Train departure from Bukhara",
-          "19:44 Arrival in Tashkent"
+          "15: 00 Buxoro temir yo'l vokzaliga o'tish (diqqat: qatnov va kelish vaqtlari poezdlar jadvaliga muvofiq o'zgartirilishi mumkin)",
+          "15: 50 Buxorodan poezd qatnovi",
+          "19: 44 Toshkentga kelish"
         ]
       }
     ]
@@ -180,37 +180,37 @@
         "img": "/assets/images/tourShow/tashkent.webp"
       }
     ],
-    "title": "Four pearls of Uzbekistan",
-    "description": "You've probably heard more than once that Uzbekistan is one of the most ancient civilizations, keeping thousands of secrets of history and culture. Then where do you start exploring such an amazing country? From the \"Four Pearls of Uzbekistan\" tour!",
+    "title": "O'zbekistonning To'rt Marvaridi",
+    "description": "O'zbekiston tarix va madaniyatning minglab sirlarini saqlagan eng qadimiy tsivilizatsiyalardan biri ekanligini bir necha bor eshitgandirsiz. Unda bunday ajoyib mamlakatni qaerdan o'rganishni boshlaysiz? \"O'zbekistonning to'rt marvaridi\" turkumidan!",    "type": "Adventure",
     "price": 2728,
     "maxPeople": 10,
     "location": "Uzbekistan",
-    "length": "8 Days / 7 Night",
+    "length": "8 Kun / 7 Tun",
     "iclueded": [
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Tour Guide (Certified)",
-      "Transportation during excursions",
-      "Economy class train tickets",
-      "Lunch boxes according to the program (Lunch Box)",
-      "A master class on cooking Pilaf in the national house",
-      "Accommodation in 3* hotels (according to the program)+ Breakfast",
-      "Meeting and seeing off at the airport",
-      "Tour Collection at the hotel"
+      "Muzeylarga kirish chiptalari, diqqatga sazovor joylar, yodgorliklarni ziyorat qilish",
+      "Ekskursiya Qo'llanmasi (Sertifikatlangan)",
+      "Ekskursiyalar paytida transport",
+      "Ekonom-klass poezd chiptalari",
+      "Dasturga muvofiq tushlik qutilari (tushlik qutisi)",
+      "Milliy uyda palov tayyorlash bo'yicha master-klass",
+      "3* mehmonxonada turar joy (dastur bo'yicha)+ nonushta",
+      "Uchrashuv va aeroportda kutib olish",
+      "Mehmonxonada sayohatlar to'plami"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
-      "Tips for the guide and drivers",
-      "Payment for photo and video shooting in museums and monuments",
-      "Additional leisure",
-      "Additional services in hotels"
+      "O'zbekistonga va undan xalqaro reyslar",
+      "Yo'lboshchi va haydovchilar uchun maslahatlar",
+      "Muzey va yodgorliklarda foto va video suratga olish uchun to'lov",
+      "Qo'shimcha bo'sh vaqt",
+      "Mehmonxonalarda qo'shimcha xizmatlar"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs.  At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan.   Transfer to the hotel, registration, rest  Free day in Tashkent   Overnight at a hotel in Tashkent.   Power supply: not included.   The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Toshkent",
+        "name": "Poytaxt Toshkentga kelish, dam olish uchun bepul kun",
+        "description": "Toshkentga kelganingizda bojxona nazoratidan o'tish uchun 30 daqiqadan 1 soatgacha vaqt ketadi. Chiqish paytida sizni haydovchimiz qulay mashinada belgi bilan kutib oladi. Uchrashuv Sizning Parvozingiz O'zbekistonga kelgan vaqtga muvofiq tashkil etiladi. Mehmonxonaga o'tkazish, ro'yxatdan o'tish, Toshkentda dam olish uchun bepul kun, Toshkentdagi mehmonxonada tunash. Quvvat: yoqilmagan. Ekskursiya menejeri sizga mahalliy oshxonada tushlik va kechki ovqat qilishingiz mumkin bo'lgan tasdiqlangan joylarni aytib beradi va ko'rsatadi.",
         "places": [],
         "departure": [],
         "duration": ""
@@ -218,37 +218,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent.   During the tour you will visit and you will be told about:   ",
+        "location": "Samarqand",
+        "name": "Toshkent-ekskursiya va poezdda Samarqandga o'tish",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Toshkent bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "O'zbekiston amaliy san'at muzeyi",
+          "Eng mashhur Qur'on saqlanadigan Xast-Imom majmuasi - Usmon Qur'oni.",
+          "Eski Toshkent shahriga tashrif buyuring",
+          "Chor-su bozori, poytaxtning mashhur bozori.",
+          "Jasorat yodgorligi",
+          "Mustaqillik maydoniga tashrif",
+          "Amir Temur Maydoni, Temuriylar Muzeyi",
+          "Toshkent metro bekatlari (ixtiyoriy)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17: 45 Toshkent temir yo'l vokzaliga o'tish",
+          "18: 45 tezyurar konfor sinfidagi poyezdning Toshkentdan jo'nab ketishi",
+          "20: 58 Tamerlanning vatani Samarqandga kelish"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Samarqand",
+        "name": "Samarqandning mashhur tarixiy joylari-shahar safari",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Samarqand bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga: ",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Amir Temurning mashhur maqbarasi - \" Guri Amir\".",
+          "Uchta madrasa bilan afsonaviy Registon maydoni",
+          "Bibi Xonim Masjidi.",
+          "Mashhur Samarqand Sieb bozori. Qaerda quritilgan mevalar, yassi non va milliy shirinliklarni sotib olishingiz mumkin."
         ],
         "duration": "5-6",
         "departure": []
@@ -256,41 +256,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Samarqand shahar safari va poezdda Buxoroga o'tish",
+        "description": "mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Samarqand shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Temuriylar davridagi shohi Zinda nekropoli",
+          "Ulug'bek rasadxonasi 15-asrning noyob inshootidir, hozirgi paytda \"Sulse faxri\" o'lchov asbobining bir bo'lagi saqlanib qolgan",
+          "Doniyor Payg'ambar maqbarasi uchta din uchun muqaddas ibodat joyidir: musulmon, nasroniy va yahudiy",
+          "Cunha Meros qog'oz fabrikasi (qadimgi tut qog'ozini qo'lda ishlab chiqarish, bu erda siz butun qog'oz ishlab chiqarish jarayonini ko'rasiz"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "20: 00 Samarqand shahridagi temir yo'l stantsiyasiga o'tish",
+          "21: 03 tezyurar konfor sinfidagi poyezdning Samarqanddan jo'nab ketishi",
+          "21: 58 Buxoroga kelish - Sharq durdonasi"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Sharq durdonasi - Buxoroning ekskursiya tarixi",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasiga siz Buxoro safari boshida o'tkazish uchun qulay mashinada tasdiqlangan qo'llanma va haydovchi tomonidan kutib olinadi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Ismoil Samaniyning ulug'vor maqbarasi 9-asr Somoniylar sulolasining qudratli va nufuzli amirining dafn etilgan joyidir. Maqbara islomgacha bo'lgan madaniyatga xos tarzda yaratilgan noyob dizayni va badiiy g'isht ishlari bilan ajralib turadi",
+          "Somoniylar maqbarasi yaqinida joylashgan Chashma Ayub maqbarasi (Ayub qudug'i).",
+          "Bolo Xauz masjidi (18-20-asrlar)",
+          "Arkning ulkan qal'asi - Buxoro amirining qishki qarorgohi",
+          "Kalon Masjidi",
+          "Mashhur Kalyan Minorasi",
+          "Mir-Arab Madrasasi",
+          "Ulug'bek Madrasasi",
+          "Abdulazizxon madrasasi an'anaviy majolika bilan",
+          "Buxoroning qadimiy savdo gumbazlari ",
+          "Magoki-Attori masjidi (12-asr) arxitekturada o'z davri uchun maxsus.",
+          "Lyabi Uyi"
         ],
         "duration": "5-6",
         "departure": []
@@ -298,19 +298,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Buxoro-shahar tashqarisiga ekskursiya va poezdda Toshkentga ko'chirish",
+        "description": "Mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Buxoro shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Noyob yodgorlik \" Chor Minor \"1807-1809.",
+          "Buxoro amiri Moxi-Xosaning yozgi qarorgohi",
+          "1544 yilda barpo etilgan Bahouddin Naqshbandiy nekropoli. Bahouddin Naqshbandiy Buxoroda nufuzli Shayx, Suffist va ilohiyotshunos edi. So'fiylar va musulmonlar uning dafn etilgan joyini ziyorat qilishni kichik Haj bilan tenglashtirdilar"
         ],
         "duration": "4",
         "departure": [
-          "15:00 Transfer to the Bukhara railway station (Attention: departure and arrival times may be changed according to the train schedule)",
-          "15:50 Train departure from Bukhara",
-          "19:44 Arrival in Tashkent"
+          "15: 00 Buxoro temir yo'l vokzaliga o'tish (diqqat: qatnov va kelish vaqtlari poezdlar jadvaliga muvofiq o'zgartirilishi mumkin)",
+          "15: 50 Buxorodan poezd qatnovi",
+          "19: 44 Toshkentga kelish"
         ]
       }
     ]
@@ -340,33 +340,33 @@
         "img": "/assets/images/tourShow/Ark_Bukhara.webp"
       }
     ],
-    "title": "Two Legends",
-    "description": "A four-day cultural tour to sunny Uzbekistan will take you from a modern metropolis to the peaceful silence of Bukhara and Samarkand, to the fabulous world of cities considered the \"eden\" of the ancient East. You will get acquainted with the history of the emergence of these cities, which were the concentration of ancient science and culture in Central Asia.",
+    "title": "O'zbekistonning Ikki Afsonasi",
+    "description": "Quyoshli O'zbekistonga to'rt kunlik madaniy sayohat sizni zamonaviy metropoldan Buxoro va Samarqandning tinch sukunatiga, qadimgi Sharqning \"Adan\" deb hisoblangan ajoyib shaharlar olamiga olib boradi. Siz Markaziy Osiyoda qadimiy ilm-fan va madaniyatning kontsentratsiyasi bo'lgan ushbu shaharlarning paydo bo'lishi tarixi bilan tanishasiz.",
     "price": 2728,
     "maxPeople": 10,
-    "location": "Uzbekistan",
-    "length": "4 Days",
+    "location": "O'zbekiston",
+    "length": "4 Kun",
     "iclueded": [
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Tour Guide (Certified)",
-      "Transportation during excursions",
-      "Economy class train tickets",
-      "Accommodation in 3* hotels (according to the program)+ Breakfast",
-      "Meeting and seeing off at the airport",
-      "Tour Collection at the hotel"
+      "Muzeylarga kirish chiptalari, diqqatga sazovor joylar, yodgorliklarni ziyorat qilish",
+      "Ekskursiya Qo'llanmasi (Sertifikatlangan)",
+      "Ekskursiyalar paytida transport",
+      "Ekonom-klass poezd chiptalari",
+      "3* mehmonxonada turar joy (dastur bo'yicha)+ nonushta",
+      "Uchrashuv va aeroportda kutib olish",
+      "Mehmonxonada sayohatlar to'plami"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
-      "Tips for the guide and drivers",
-      "Additional leisure"
+      "O'zbekistonga va undan xalqaro reyslar",
+      "Yo'lboshchi va haydovchilar uchun maslahatlar",
+      "Qo'shimcha bo'sh vaqt"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs.  At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan.   Transfer to the hotel, registration, rest  Free day in Tashkent   Overnight at a hotel in Tashkent.   Power supply: not included.   The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Toshkent",
+        "name": "Poytaxt Toshkentga kelish, dam olish uchun bepul kun",
+        "description": "Toshkentga kelganingizda bojxona nazoratidan o'tish uchun 30 daqiqadan 1 soatgacha vaqt ketadi. Chiqish paytida sizni haydovchimiz qulay mashinada belgi bilan kutib oladi. Uchrashuv Sizning Parvozingiz O'zbekistonga kelgan vaqtga muvofiq tashkil etiladi. Mehmonxonaga o'tkazish, ro'yxatdan o'tish, Toshkentda dam olish uchun bepul kun, Toshkentdagi mehmonxonada tunash. Quvvat: yoqilmagan. Ekskursiya menejeri sizga mahalliy oshxonada tushlik va kechki ovqat qilishingiz mumkin bo'lgan tasdiqlangan joylarni aytib beradi va ko'rsatadi.",
         "places": [],
         "departure": [],
         "duration": ""
@@ -374,37 +374,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent.   During the tour you will visit and you will be told about:   ",
+        "location": "Samarqand",
+        "name": "Toshkent-ekskursiya va poezdda Samarqandga o'tish",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Toshkent bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "O'zbekiston amaliy san'at muzeyi",
+          "Eng mashhur Qur'on saqlanadigan Xast-Imom majmuasi - Usmon Qur'oni.",
+          "Eski Toshkent shahriga tashrif buyuring",
+          "Chor-su bozori, poytaxtning mashhur bozori.",
+          "Jasorat yodgorligi",
+          "Mustaqillik maydoniga tashrif",
+          "Amir Temur Maydoni, Temuriylar Muzeyi",
+          "Toshkent metro bekatlari (ixtiyoriy)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17: 45 Toshkent temir yo'l vokzaliga o'tish",
+          "18: 45 tezyurar konfor sinfidagi poyezdning Toshkentdan jo'nab ketishi",
+          "20: 58 Tamerlanning vatani Samarqandga kelish"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Samarqand",
+        "name": "Samarqandning mashhur tarixiy joylari-shahar safari",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Samarqand bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga: ",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Amir Temurning mashhur maqbarasi - \" Guri Amir\".",
+          "Uchta madrasa bilan afsonaviy Registon maydoni",
+          "Bibi Xonim Masjidi.",
+          "Mashhur Samarqand Sieb bozori. Qaerda quritilgan mevalar, yassi non va milliy shirinliklarni sotib olishingiz mumkin."
         ],
         "duration": "5-6",
         "departure": []
@@ -412,41 +412,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Samarqand shahar safari va poezdda Buxoroga o'tish",
+        "description": "mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Samarqand shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Temuriylar davridagi shohi Zinda nekropoli",
+          "Ulug'bek rasadxonasi 15-asrning noyob inshootidir, hozirgi paytda \"Sulse faxri\" o'lchov asbobining bir bo'lagi saqlanib qolgan",
+          "Doniyor Payg'ambar maqbarasi uchta din uchun muqaddas ibodat joyidir: musulmon, nasroniy va yahudiy",
+          "Cunha Meros qog'oz fabrikasi (qadimgi tut qog'ozini qo'lda ishlab chiqarish, bu erda siz butun qog'oz ishlab chiqarish jarayonini ko'rasiz"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "20: 00 Samarqand shahridagi temir yo'l stantsiyasiga o'tish",
+          "21: 03 tezyurar konfor sinfidagi poyezdning Samarqanddan jo'nab ketishi",
+          "21: 58 Buxoroga kelish - Sharq durdonasi"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Sharq durdonasi - Buxoroning ekskursiya tarixi",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasiga siz Buxoro safari boshida o'tkazish uchun qulay mashinada tasdiqlangan qo'llanma va haydovchi tomonidan kutib olinadi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Ismoil Samaniyning ulug'vor maqbarasi 9-asr Somoniylar sulolasining qudratli va nufuzli amirining dafn etilgan joyidir. Maqbara islomgacha bo'lgan madaniyatga xos tarzda yaratilgan noyob dizayni va badiiy g'isht ishlari bilan ajralib turadi",
+          "Somoniylar maqbarasi yaqinida joylashgan Chashma Ayub maqbarasi (Ayub qudug'i).",
+          "Bolo Xauz masjidi (18-20-asrlar)",
+          "Arkning ulkan qal'asi - Buxoro amirining qishki qarorgohi",
+          "Kalon Masjidi",
+          "Mashhur Kalyan Minorasi",
+          "Mir-Arab Madrasasi",
+          "Ulug'bek Madrasasi",
+          "Abdulazizxon madrasasi an'anaviy majolika bilan",
+          "Buxoroning qadimiy savdo gumbazlari ",
+          "Magoki-Attori masjidi (12-asr) arxitekturada o'z davri uchun maxsus.",
+          "Lyabi Uyi"
         ],
         "duration": "5-6",
         "departure": []
@@ -454,19 +454,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Buxoro-shahar tashqarisiga ekskursiya va poezdda Toshkentga ko'chirish",
+        "description": "Mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Buxoro shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Noyob yodgorlik \" Chor Minor \"1807-1809.",
+          "Buxoro amiri Moxi-Xosaning yozgi qarorgohi",
+          "1544 yilda barpo etilgan Bahouddin Naqshbandiy nekropoli. Bahouddin Naqshbandiy Buxoroda nufuzli Shayx, Suffist va ilohiyotshunos edi. So'fiylar va musulmonlar uning dafn etilgan joyini ziyorat qilishni kichik Haj bilan tenglashtirdilar"
         ],
         "duration": "4",
         "departure": [
-          "15:00 Transfer to the Bukhara railway station (Attention: departure and arrival times may be changed according to the train schedule)",
-          "15:50 Train departure from Bukhara",
-          "19:44 Arrival in Tashkent"
+          "15: 00 Buxoro temir yo'l vokzaliga o'tish (diqqat: qatnov va kelish vaqtlari poezdlar jadvaliga muvofiq o'zgartirilishi mumkin)",
+          "15: 50 Buxorodan poezd qatnovi",
+          "19: 44 Toshkentga kelish"
         ]
       }
     ]
@@ -496,34 +496,34 @@
         "img": "/assets/images/tourShow/turkmenistan.webp"
       }
     ],
-    "title": "Central Asia Tour in 2 weeks",
-    "description": "Discover the historical, cultural, and scenic highlights of the five Stans as you journey from Kazakhstan’s cosmopolitan city of Almaty, to Kyrgyzstan’s fascinating nomadic culture, Tajikistan’s sparkling Seven Lakes, Uzbekistan’s stunning turquoise mausoleums, and the fiery deserts of Turkmenistan. Following our bestselling 2-week Central Asia itinerary, this private tour showcases the region’s major sights while giving you more flexibility and the ability to take things at your own pace",
+    "title": "2 hafta ichida Markaziy Osiyo Safari",
+    "description": "Tarixiy kashf, madaniyatli, va besh Stans Scenic diqqatga sazovor Olmaota Qozog'iston kosmopolit shahridan safar sifatida, Qirg'izistonning ajoyib ko'chmanchi madaniyati, Tojikistonning yorqin etti ko'llar, O'zbekistonning ajoyib Turkuaz maqbaralari, va Turkmaniston olovli cho'llar. Bizning eng xaridorgir 2-hafta Markaziy Osiyo marshrutni quyidagi, sizga ko'proq moslashuvchan va o'z suratini narsalarni olish qobiliyatini berib esa, bu xususiy tur mintaqaning asosiy diqqatga sazovor joylarni namoyish,",
     "price": 530,
     "maxPeople": 10,
-    "location": "Central Asia",
-    "length": "2 Weeks",
+    "location": "Markaziy Osiyo",
+    "length": "2 hafta",
     "iclueded": [
-      "All transfers: 1-2 pax in sedan type car, 3-8 pax in minivan/van",
-      "Accommodation based on double/twin room sharing, breakfasts included",
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Meeting and seeing off at the airport",
-      "Sightseeing tour programme with local, English speaking guides in each country",
-      "Economy class train tickets",
-      "Entrance fees to sights as per itinerary"
+      "Barcha transferlar: sedan tipidagi mashinada 1-2 pax, miniven/furgonda 3-8 pax",
+      "Ikki kishilik / egizak xonalarni almashish asosida turar joy, nonushta kiritilgan",
+      "Muzeylarga kirish chiptalari, diqqatga sazovor joylar, yodgorliklarni ziyorat qilish",
+      "Uchrashuv va aeroportda kutib olish",
+      "Har bir mamlakatda mahalliy, ingliz tilida so'zlashadigan qo'llanmalar bilan ekskursiya dasturi",
+      "Ekonom-klass poezd chiptalari",
+      "Yo'nalish bo'yicha diqqatga sazovor joylarga kirish to'lovlari"
     ],
     "excluded": [
-      "International flight tickets before and after the tou",
-      "Tips for the guide and drivers",
-      "Visa support ",
-      "Additional leisure"
+      "Ekskursiyadan oldin va keyin xalqaro aviachiptalar",
+      "Yo'lboshchi va haydovchilar uchun maslahatlar",
+      "Vizani qo'llab-quvvatlash ",
+      "Qo'shimcha bo'sh vaqt"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs.  At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan.   Transfer to the hotel, registration, rest  Free day in Tashkent   Overnight at a hotel in Tashkent.   Power supply: not included.   The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Toshkent",
+        "name": "Poytaxt Toshkentga kelish, dam olish uchun bepul kun",
+        "description": "Toshkentga kelganingizda bojxona nazoratidan o'tish uchun 30 daqiqadan 1 soatgacha vaqt ketadi. Chiqish paytida sizni haydovchimiz qulay mashinada belgi bilan kutib oladi. Uchrashuv Sizning Parvozingiz O'zbekistonga kelgan vaqtga muvofiq tashkil etiladi. Mehmonxonaga o'tkazish, ro'yxatdan o'tish, Toshkentda dam olish uchun bepul kun, Toshkentdagi mehmonxonada tunash. Quvvat: yoqilmagan. Ekskursiya menejeri sizga mahalliy oshxonada tushlik va kechki ovqat qilishingiz mumkin bo'lgan tasdiqlangan joylarni aytib beradi va ko'rsatadi.",
         "places": [],
         "departure": [],
         "duration": ""
@@ -531,37 +531,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent.   During the tour you will visit and you will be told about:   ",
+        "location": "Samarqand",
+        "name": "Toshkent-ekskursiya va poezdda Samarqandga o'tish",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Toshkent bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "O'zbekiston amaliy san'at muzeyi",
+          "Eng mashhur Qur'on saqlanadigan Xast-Imom majmuasi - Usmon Qur'oni.",
+          "Eski Toshkent shahriga tashrif buyuring",
+          "Chor-su bozori, poytaxtning mashhur bozori.",
+          "Jasorat yodgorligi",
+          "Mustaqillik maydoniga tashrif",
+          "Amir Temur Maydoni, Temuriylar Muzeyi",
+          "Toshkent metro bekatlari (ixtiyoriy)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17: 45 Toshkent temir yo'l vokzaliga o'tish",
+          "18: 45 tezyurar konfor sinfidagi poyezdning Toshkentdan jo'nab ketishi",
+          "20: 58 Tamerlanning vatani Samarqandga kelish"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Samarqand",
+        "name": "Samarqandning mashhur tarixiy joylari-shahar safari",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Samarqand bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga: ",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Amir Temurning mashhur maqbarasi - \" Guri Amir\".",
+          "Uchta madrasa bilan afsonaviy Registon maydoni",
+          "Bibi Xonim Masjidi.",
+          "Mashhur Samarqand Sieb bozori. Qaerda quritilgan mevalar, yassi non va milliy shirinliklarni sotib olishingiz mumkin."
         ],
         "duration": "5-6",
         "departure": []
@@ -569,41 +569,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Samarqand shahar safari va poezdda Buxoroga o'tish",
+        "description": "mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Samarqand shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Temuriylar davridagi shohi Zinda nekropoli",
+          "Ulug'bek rasadxonasi 15-asrning noyob inshootidir, hozirgi paytda \"Sulse faxri\" o'lchov asbobining bir bo'lagi saqlanib qolgan",
+          "Doniyor Payg'ambar maqbarasi uchta din uchun muqaddas ibodat joyidir: musulmon, nasroniy va yahudiy",
+          "Cunha Meros qog'oz fabrikasi (qadimgi tut qog'ozini qo'lda ishlab chiqarish, bu erda siz butun qog'oz ishlab chiqarish jarayonini ko'rasiz"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "20: 00 Samarqand shahridagi temir yo'l stantsiyasiga o'tish",
+          "21: 03 tezyurar konfor sinfidagi poyezdning Samarqanddan jo'nab ketishi",
+          "21: 58 Buxoroga kelish - Sharq durdonasi"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Sharq durdonasi - Buxoroning ekskursiya tarixi",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasiga siz Buxoro safari boshida o'tkazish uchun qulay mashinada tasdiqlangan qo'llanma va haydovchi tomonidan kutib olinadi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Ismoil Samaniyning ulug'vor maqbarasi 9-asr Somoniylar sulolasining qudratli va nufuzli amirining dafn etilgan joyidir. Maqbara islomgacha bo'lgan madaniyatga xos tarzda yaratilgan noyob dizayni va badiiy g'isht ishlari bilan ajralib turadi",
+          "Somoniylar maqbarasi yaqinida joylashgan Chashma Ayub maqbarasi (Ayub qudug'i).",
+          "Bolo Xauz masjidi (18-20-asrlar)",
+          "Arkning ulkan qal'asi - Buxoro amirining qishki qarorgohi",
+          "Kalon Masjidi",
+          "Mashhur Kalyan Minorasi",
+          "Mir-Arab Madrasasi",
+          "Ulug'bek Madrasasi",
+          "Abdulazizxon madrasasi an'anaviy majolika bilan",
+          "Buxoroning qadimiy savdo gumbazlari ",
+          "Magoki-Attori masjidi (12-asr) arxitekturada o'z davri uchun maxsus.",
+          "Lyabi Uyi"
         ],
         "duration": "5-6",
         "departure": []
@@ -611,19 +611,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Buxoro-shahar tashqarisiga ekskursiya va poezdda Toshkentga ko'chirish",
+        "description": "Mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Buxoro shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Noyob yodgorlik \" Chor Minor \"1807-1809.",
+          "Buxoro amiri Moxi-Xosaning yozgi qarorgohi",
+          "1544 yilda barpo etilgan Bahouddin Naqshbandiy nekropoli. Bahouddin Naqshbandiy Buxoroda nufuzli Shayx, Suffist va ilohiyotshunos edi. So'fiylar va musulmonlar uning dafn etilgan joyini ziyorat qilishni kichik Haj bilan tenglashtirdilar"
         ],
         "duration": "4",
         "departure": [
-          "15:00 Transfer to the Bukhara railway station (Attention: departure and arrival times may be changed according to the train schedule)",
-          "15:50 Train departure from Bukhara",
-          "19:44 Arrival in Tashkent"
+          "15: 00 Buxoro temir yo'l vokzaliga o'tish (diqqat: qatnov va kelish vaqtlari poezdlar jadvaliga muvofiq o'zgartirilishi mumkin)",
+          "15: 50 Buxorodan poezd qatnovi",
+          "19: 44 Toshkentga kelish"
         ]
       }
     ]
@@ -653,34 +653,34 @@
         "img": "/assets/images/tourShow/Tashkent-Spread.webp"
       }
     ],
-    "title": "Tour To Bright and Sunny Uzbekistan",
-    "description": "This twelve-day eventful tour will introduce you to the history and culture of the peoples living on the territory of Uzbekistan. \nOur tour will start from Nukus, a city that, according to The Telegraph's rating, has entered the top ten most unusual places to travel in the world. The unique Igor Savitsky Museum is located here, where a collection of works by Russian avant-garde artists is collected. Further along the route of the twelve-day tour of Uzbekistan, we will have a trip to the famous \"Cemetery of Ships\", located on the shallow bottom of the Aral Sea.\n\nDuring our tour you will get acquainted with the sights and architectural masterpieces of Khiva, Bukhara, Shakhrisabz, Samarkand and Tashkent. Many of them are listed by UNESCO as a World Heritage Site. They rightfully stand on a par with the famous architectural monuments of Egypt, India, Iran, ancient Greece and ancient Rome.\n\nYou will not be able to resist the abundance of colors and aromas of oriental bazaars. And having learned the hospitality of our people, known to the whole world, you will take with you not only bright and interesting memories, but also a ray of the Uzbek sun and a piece of our warmth.\n\nSpend unforgettable days traveling through the ancient cities of Uzbekistan - the cradle of culture and enlightenment in the East.",
+    "title": "Yorqin va quyoshli O'zbekistonga sayohat",
+    "description": "Ushbu o'n ikki kunlik tadbir sizni O'zbekiston hududida yashovchi xalqlar tarixi va madaniyati bilan tanishtiradi. \\nOur tour The Telegraph reytingiga ko'ra dunyodagi sayohat qilish uchun eng noodatiy joylar o'ntaligiga kirgan Nukus shahridan boshlanadi. Bu erda noyob Igor Savitskiy muzeyi joylashgan bo'lib, u erda rus avangard rassomlarining asarlari to'plami to'plangan. O'zbekiston bo'ylab o'n ikki kunlik sayohat marshruti bo'ylab Orol dengizining sayoz tubida joylashgan mashhur \\\"kemalar qabristoni\\\" ga sayohat qilamiz.\\ n \\ ndarijamiz davomida Xiva, Buxoro, Shahrisabz, Samarqand va Toshkentning diqqatga sazovor joylari va me'moriy durdonalari bilan tanishasiz. Ularning aksariyati YUNESKO tomonidan Jahon merosi ro'yxatiga kiritilgan. Ular haqli ravishda Misr, Hindiston, Eron, qadimgi Yunoniston va qadimgi Rimning mashhur me'moriy yodgorliklari bilan bir qatorda turishadi.\\n\\nYou Sharq bozorlarining ranglari va hidlarining ko'pligiga qarshi tura olmaysiz. Va butun dunyoga ma'lum bo'lgan xalqimizning mehmondo'stligini bilib, siz o'zingiz bilan nafaqat yorqin va qiziqarli xotiralarni, balki o'zbek quyoshining nurini va iliqligimizning bir qismini ham olib ketasiz.\\ N \\ nO'zbekistonning qadimiy shaharlari - Sharqdagi madaniyat va ma'rifat beshigi bo'ylab sayohat qilib, unutilmas kunlarni o'tkazing",
     "price": 2250,
     "maxPeople": 10,
-    "location": "Uzbekistan",
-    "length": "12 Days / 11 Night",
+    "location": " O'zbekiston",
+    "length": "12 Kun / 11 Tun",
     "iclueded": [
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Tour Guide (Certified)",
-      "Transportation during excursions",
-      "Economy class train tickets",
-      "Accommodation in 4*/ 5* hotels (according to the program)+ Breakfast",
-      "Meeting and seeing off at the airport",
-      "Tour Collection at the hotel"
+      "Muzeylarga kirish chiptalari, diqqatga sazovor joylar, yodgorliklarni ziyorat qilish",
+      "Ekskursiya Qo'llanmasi (Sertifikatlangan)",
+      "Ekskursiyalar paytida transport",
+      "Ekonom-klass poezd chiptalari",
+      "Turar joy 4*/ 5* mehmonxonalar (dastur bo'yicha) + nonushta",
+      "Uchrashuv va aeroportda kutib olish",
+      "Mehmonxonada sayohatlar to'plami"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
-      "Tips for the guide and drivers",
-      "Full board(Breakfast + Lunch + Dinner)",
-      "Additional leisure"
+      "O'zbekistonga va undan xalqaro reyslar",
+      "Yo'lboshchi va haydovchilar uchun maslahatlar",
+      "To'liq pansion(nonushta + tushlik + kechki ovqat)",
+      "Qo'shimcha bo'sh vaqt"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs.  At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan.   Transfer to the hotel, registration, rest  Free day in Tashkent   Overnight at a hotel in Tashkent.   Power supply: not included.   The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Toshkent",
+        "name": "Poytaxt Toshkentga kelish, dam olish uchun bepul kun",
+        "description": "Toshkentga kelganingizda bojxona nazoratidan o'tish uchun 30 daqiqadan 1 soatgacha vaqt ketadi. Chiqish paytida sizni haydovchimiz qulay mashinada belgi bilan kutib oladi. Uchrashuv Sizning Parvozingiz O'zbekistonga kelgan vaqtga muvofiq tashkil etiladi. Mehmonxonaga o'tkazish, ro'yxatdan o'tish, Toshkentda dam olish uchun bepul kun, Toshkentdagi mehmonxonada tunash. Quvvat: yoqilmagan. Ekskursiya menejeri sizga mahalliy oshxonada tushlik va kechki ovqat qilishingiz mumkin bo'lgan tasdiqlangan joylarni aytib beradi va ko'rsatadi.",
         "places": [],
         "departure": [],
         "duration": ""
@@ -688,37 +688,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent.   During the tour you will visit and you will be told about:   ",
+        "location": "Samarqand",
+        "name": "Toshkent-ekskursiya va poezdda Samarqandga o'tish",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Toshkent bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "O'zbekiston amaliy san'at muzeyi",
+          "Eng mashhur Qur'on saqlanadigan Xast-Imom majmuasi - Usmon Qur'oni.",
+          "Eski Toshkent shahriga tashrif buyuring",
+          "Chor-su bozori, poytaxtning mashhur bozori.",
+          "Jasorat yodgorligi",
+          "Mustaqillik maydoniga tashrif",
+          "Amir Temur Maydoni, Temuriylar Muzeyi",
+          "Toshkent metro bekatlari (ixtiyoriy)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17: 45 Toshkent temir yo'l vokzaliga o'tish",
+          "18: 45 tezyurar konfor sinfidagi poyezdning Toshkentdan jo'nab ketishi",
+          "20: 58 Tamerlanning vatani Samarqandga kelish"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Samarqand",
+        "name": "Samarqandning mashhur tarixiy joylari-shahar safari",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Samarqand bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga: ",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Amir Temurning mashhur maqbarasi - \" Guri Amir\".",
+          "Uchta madrasa bilan afsonaviy Registon maydoni",
+          "Bibi Xonim Masjidi.",
+          "Mashhur Samarqand Sieb bozori. Qaerda quritilgan mevalar, yassi non va milliy shirinliklarni sotib olishingiz mumkin."
         ],
         "duration": "5-6",
         "departure": []
@@ -726,41 +726,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Samarqand shahar safari va poezdda Buxoroga o'tish",
+        "description": "mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Samarqand shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Temuriylar davridagi shohi Zinda nekropoli",
+          "Ulug'bek rasadxonasi 15-asrning noyob inshootidir, hozirgi paytda \"Sulse faxri\" o'lchov asbobining bir bo'lagi saqlanib qolgan",
+          "Doniyor Payg'ambar maqbarasi uchta din uchun muqaddas ibodat joyidir: musulmon, nasroniy va yahudiy",
+          "Cunha Meros qog'oz fabrikasi (qadimgi tut qog'ozini qo'lda ishlab chiqarish, bu erda siz butun qog'oz ishlab chiqarish jarayonini ko'rasiz"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "20: 00 Samarqand shahridagi temir yo'l stantsiyasiga o'tish",
+          "21: 03 tezyurar konfor sinfidagi poyezdning Samarqanddan jo'nab ketishi",
+          "21: 58 Buxoroga kelish - Sharq durdonasi"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Sharq durdonasi - Buxoroning ekskursiya tarixi",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasiga siz Buxoro safari boshida o'tkazish uchun qulay mashinada tasdiqlangan qo'llanma va haydovchi tomonidan kutib olinadi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Ismoil Samaniyning ulug'vor maqbarasi 9-asr Somoniylar sulolasining qudratli va nufuzli amirining dafn etilgan joyidir. Maqbara islomgacha bo'lgan madaniyatga xos tarzda yaratilgan noyob dizayni va badiiy g'isht ishlari bilan ajralib turadi",
+          "Somoniylar maqbarasi yaqinida joylashgan Chashma Ayub maqbarasi (Ayub qudug'i).",
+          "Bolo Xauz masjidi (18-20-asrlar)",
+          "Arkning ulkan qal'asi - Buxoro amirining qishki qarorgohi",
+          "Kalon Masjidi",
+          "Mashhur Kalyan Minorasi",
+          "Mir-Arab Madrasasi",
+          "Ulug'bek Madrasasi",
+          "Abdulazizxon madrasasi an'anaviy majolika bilan",
+          "Buxoroning qadimiy savdo gumbazlari ",
+          "Magoki-Attori masjidi (12-asr) arxitekturada o'z davri uchun maxsus.",
+          "Lyabi Uyi"
         ],
         "duration": "5-6",
         "departure": []
@@ -768,19 +768,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Buxoro",
+        "name": "Buxoro-shahar tashqarisiga ekskursiya va poezdda Toshkentga ko'chirish",
+        "description": "Mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Buxoro shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Noyob yodgorlik \" Chor Minor \"1807-1809.",
+          "Buxoro amiri Moxi-Xosaning yozgi qarorgohi",
+          "1544 yilda barpo etilgan Bahouddin Naqshbandiy nekropoli. Bahouddin Naqshbandiy Buxoroda nufuzli Shayx, Suffist va ilohiyotshunos edi. So'fiylar va musulmonlar uning dafn etilgan joyini ziyorat qilishni kichik Haj bilan tenglashtirdilar"
         ],
         "duration": "4",
         "departure": [
-          "15:00 Transfer to the Bukhara railway station (Attention: departure and arrival times may be changed according to the train schedule)",
-          "15:50 Train departure from Bukhara",
-          "19:44 Arrival in Tashkent"
+          "15: 00 Buxoro temir yo'l vokzaliga o'tish (diqqat: qatnov va kelish vaqtlari poezdlar jadvaliga muvofiq o'zgartirilishi mumkin)",
+          "15: 50 Buxorodan poezd qatnovi",
+          "19: 44 Toshkentga kelish"
         ]
       }
     ]
@@ -810,33 +810,33 @@
         "img": "/assets/images/tourShow/turkmenistan.webp"
       }
     ],
-    "title": "Central Asia Tour",
-    "description": "Though Central Asia is off the beaten track today, this wasn’t always the case. In fact, the Silk Road passed through many of the region’s main cities (including Samarkand, Bukhara, Merv, Khujand and Osh). As merchants stopped in these cities on their way from China to Europe, they traded not only goods, but also knowledge, with locals. This made Central Asia a lively region with master-craftsmen, world-class scholars, and a diverse population. Between the cities, the Silk Road passed through remote and evocative landscapes – including the Tajikistan’s towering Pamir Mountains, Turkmenistan’s and Uzbekistan’s vast deserts, and Kyrgyzstan’s secluded alpine lakes.",
+    "title": "Markaziy Osiyo Safari",
+    "description": "Bugungi kunda Markaziy Osiyo mag'lubiyatga uchragan bo'lsa-da, bu har doim ham shunday emas edi. Darhaqiqat, Ipak yo'li viloyatning ko'plab asosiy shaharlari (jumladan, Samarqand, Buxoro, Marv, Xo'jand va O'sh) orqali o'tgan. Savdogarlar Xitoydan Evropaga ketayotganda bu shaharlarda to'xtab, mahalliy aholi bilan nafaqat tovarlar, balki bilimlar ham savdo qilishgan. Bu Markaziy Osiyoni usta-hunarmandlar, jahon darajasidagi olimlar va turli xil aholi bilan jonli mintaqaga aylantirdi. Shaharlar o'rtasida Ipak yo'li uzoq va hayajonli landshaftlar, jumladan Tojikistonning baland Pomir tog'lari, Turkmaniston va O'zbekistonning bepoyon cho'llari va Qirg'izistonning tanho Alp ko'llari orqali o'tdi.",
     "price": 3215,
     "maxPeople": 10,
     "location": "Uzbekistan",
-    "length": "11 Days / 10 Night",
+    "length": "11 Kun / 10 Tun",
     "iclueded": [
-      "All transfers: 1-2 pax in sedan type car, 3-8 pax in minivan/van",
-      "Accommodation based on double/twin room sharing, breakfasts included",
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Meeting and seeing off at the airport",
-      "Sightseeing tour programme with local, English speaking guides in each country",
-      "Economy class train tickets",
-      "Entrance fees to sights as per itinerary"
+      "Barcha transferlar: sedan tipidagi mashinada 1-2 pax, miniven/furgonda 3-8 pax",
+      "Ikki kishilik / egizak xonalarni almashish asosida turar joy, nonushta kiritilgan",
+      "Muzeylarga kirish chiptalari, diqqatga sazovor joylar, yodgorliklarni ziyorat qilish",
+      "Uchrashuv va aeroportda kutib olish",
+      "Har bir mamlakatda mahalliy, ingliz tilida so'zlashadigan qo'llanmalar bilan ekskursiya dasturi",
+      "Ekonom-klass poezd chiptalari",
+      "Yo'nalish bo'yicha diqqatga sazovor joylarga kirish to'lovlari"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
-      "Tips for the guide and drivers",
-      "Additional leisure"
+      "O'zbekistonga va undan xalqaro reyslar",
+      "Yo'lboshchi va haydovchilar uchun maslahatlar",
+      "Qo'shimcha bo'sh vaqt"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs. <br/>At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan. <br/> Transfer to the hotel, registration, rest <br/>Free day in Tashkent <br/> Overnight at a hotel in Tashkent. <br/> Power supply: not included. <br/> The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Toshkent",
+        "name": "Poytaxt Toshkentga kelish, dam olish uchun bepul kun",
+        "description": "Toshkentga kelganingizda bojxona nazoratidan o'tish uchun 30 daqiqadan 1 soatgacha vaqt ketadi. Chiqish paytida sizni haydovchimiz qulay mashinada belgi bilan kutib oladi. Uchrashuv Sizning Parvozingiz O'zbekistonga kelgan vaqtga muvofiq tashkil etiladi. Mehmonxonaga o'tkazish, ro'yxatdan o'tish, Toshkentda dam olish uchun bepul kun, Toshkentdagi mehmonxonada tunash. Quvvat: yoqilmagan. Ekskursiya menejeri sizga mahalliy oshxonada tushlik va kechki ovqat qilishingiz mumkin bo'lgan tasdiqlangan joylarni aytib beradi va ko'rsatadi.",
         "places": [],
         "departure": [],
         "duration": ""
@@ -844,37 +844,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Samarqand",
+        "name": "Toshkent-ekskursiya va poezdda Samarqandga o'tish",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Toshkent bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "O'zbekiston amaliy san'at muzeyi",
+          "Eng mashhur Qur'on saqlanadigan Xast-Imom majmuasi - Usmon Qur'oni.",
+          "Eski Toshkent shahriga tashrif buyuring",
+          "Chor-su bozori, poytaxtning mashhur bozori.",
+          "Jasorat yodgorligi",
+          "Mustaqillik maydoniga tashrif",
+          "Amir Temur Maydoni, Temuriylar Muzeyi",
+          "Toshkent metro bekatlari (ixtiyoriy)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17: 45 Toshkent temir yo'l vokzaliga o'tish",
+          "18: 45 tezyurar konfor sinfidagi poyezdning Toshkentdan jo'nab ketishi",
+          "20: 58 Tamerlanning vatani Samarqandga kelish"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Samarqand",
+        "name": "Samarqandning mashhur tarixiy joylari-shahar safari",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Samarqand bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga: ",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Amir Temurning mashhur maqbarasi - \" Guri Amir\".",
+          "Uchta madrasa bilan afsonaviy Registon maydoni",
+          "Bibi Xonim Masjidi.",
+          "Mashhur Samarqand Sieb bozori. Qaerda quritilgan mevalar, yassi non va milliy shirinliklarni sotib olishingiz mumkin."
         ],
         "duration": "5-6",
         "departure": []
@@ -882,41 +882,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel <br/> Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Buxoro",
+        "name": "Samarqand shahar safari va poezdda Buxoroga o'tish",
+        "description": "mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Samarqand shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Temuriylar davridagi shohi Zinda nekropoli",
+          "Ulug'bek rasadxonasi 15-asrning noyob inshootidir, hozirgi paytda \"Sulse faxri\" o'lchov asbobining bir bo'lagi saqlanib qolgan",
+          "Doniyor Payg'ambar maqbarasi uchta din uchun muqaddas ibodat joyidir: musulmon, nasroniy va yahudiy",
+          "Cunha Meros qog'oz fabrikasi (qadimgi tut qog'ozini qo'lda ishlab chiqarish, bu erda siz butun qog'oz ishlab chiqarish jarayonini ko'rasiz"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "20: 00 Samarqand shahridagi temir yo'l stantsiyasiga o'tish",
+          "21: 03 tezyurar konfor sinfidagi poyezdning Samarqanddan jo'nab ketishi",
+          "21: 58 Buxoroga kelish - Sharq durdonasi"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Buxoro",
+        "name": "Sharq durdonasi - Buxoroning ekskursiya tarixi",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasiga siz Buxoro safari boshida o'tkazish uchun qulay mashinada tasdiqlangan qo'llanma va haydovchi tomonidan kutib olinadi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Ismoil Samaniyning ulug'vor maqbarasi 9-asr Somoniylar sulolasining qudratli va nufuzli amirining dafn etilgan joyidir. Maqbara islomgacha bo'lgan madaniyatga xos tarzda yaratilgan noyob dizayni va badiiy g'isht ishlari bilan ajralib turadi",
+          "Somoniylar maqbarasi yaqinida joylashgan Chashma Ayub maqbarasi (Ayub qudug'i).",
+          "Bolo Xauz masjidi (18-20-asrlar)",
+          "Arkning ulkan qal'asi - Buxoro amirining qishki qarorgohi",
+          "Kalon Masjidi",
+          "Mashhur Kalyan Minorasi",
+          "Mir-Arab Madrasasi",
+          "Ulug'bek Madrasasi",
+          "Abdulazizxon madrasasi an'anaviy majolika bilan",
+          "Buxoroning qadimiy savdo gumbazlari ",
+          "Magoki-Attori masjidi (12-asr) arxitekturada o'z davri uchun maxsus.",
+          "Lyabi Uyi"
         ],
         "duration": "5-6",
         "departure": []
@@ -924,20 +924,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel <br/> Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Buxoro",
+        "name": "Buxoro-shahar tashqarisiga ekskursiya va poezdda Toshkentga ko'chirish",
+        "description": "Mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Buxoro shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Noyob yodgorlik \" Chor Minor \"1807-1809.",
+          "Buxoro amiri Moxi-Xosaning yozgi qarorgohi",
+          "1544 yilda barpo etilgan Bahouddin Naqshbandiy nekropoli. Bahouddin Naqshbandiy Buxoroda nufuzli Shayx, Suffist va ilohiyotshunos edi. So'fiylar va musulmonlar uning dafn etilgan joyini ziyorat qilishni kichik Haj bilan tenglashtirdilar"
         ],
         "duration": "4",
         "departure": [
-          "International flight tickets before and after the tou",
-          "Tips for the guide and drivers",
-          "Visa support ",
-          "Additional leisure"
+          "15: 00 Buxoro temir yo'l vokzaliga o'tish (diqqat: qatnov va kelish vaqtlari poezdlar jadvaliga muvofiq o'zgartirilishi mumkin)",
+          "15: 50 Buxorodan poezd qatnovi",
+          "19: 44 Toshkentga kelish"
         ]
       }
     ]
@@ -967,33 +966,33 @@
         "img": "/assets/images/tourShow/turkmenistan.webp"
       }
     ],
-    "title": "Central Asia Tour",
-    "description": "Though Central Asia is off the beaten track today, this wasn’t always the case. In fact, the Silk Road passed through many of the region’s main cities (including Samarkand, Bukhara, Merv, Khujand and Osh). As merchants stopped in these cities on their way from China to Europe, they traded not only goods, but also knowledge, with locals. This made Central Asia a lively region with master-craftsmen, world-class scholars, and a diverse population. Between the cities, the Silk Road passed through remote and evocative landscapes – including the Tajikistan’s towering Pamir Mountains, Turkmenistan’s and Uzbekistan’s vast deserts, and Kyrgyzstan’s secluded alpine lakes.",
+    "title": "Markaziy Osiyo Safari",
+    "description": "Bugungi kunda Markaziy Osiyo mag'lubiyatga uchragan bo'lsa-da, bu har doim ham shunday emas edi. Darhaqiqat, Ipak yo'li viloyatning ko'plab asosiy shaharlari (jumladan, Samarqand, Buxoro, Marv, Xo'jand va O'sh) orqali o'tgan. Savdogarlar Xitoydan Evropaga ketayotganda bu shaharlarda to'xtab, mahalliy aholi bilan nafaqat tovarlar, balki bilimlar ham savdo qilishgan. Bu Markaziy Osiyoni usta-hunarmandlar, jahon darajasidagi olimlar va turli xil aholi bilan jonli mintaqaga aylantirdi. Shaharlar o'rtasida Ipak yo'li uzoq va hayajonli landshaftlar, jumladan Tojikistonning baland Pomir tog'lari, Turkmaniston va O'zbekistonning bepoyon cho'llari va Qirg'izistonning tanho Alp ko'llari orqali o'tdi.",
     "price": 3215,
     "maxPeople": 10,
     "location": "Uzbekistan",
-    "length": "11 Days / 10 Night",
+    "length": "11 Kun / 10 Tun",
     "iclueded": [
-      "All transfers: 1-2 pax in sedan type car, 3-8 pax in minivan/van",
-      "Accommodation based on double/twin room sharing, breakfasts included",
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Meeting and seeing off at the airport",
-      "Sightseeing tour programme with local, English speaking guides in each country",
-      "Economy class train tickets",
-      "Entrance fees to sights as per itinerary"
+      "Barcha transferlar: sedan tipidagi mashinada 1-2 pax, miniven/furgonda 3-8 pax",
+      "Ikki kishilik / egizak xonalarni almashish asosida turar joy, nonushta kiritilgan",
+      "Muzeylarga kirish chiptalari, diqqatga sazovor joylar, yodgorliklarni ziyorat qilish",
+      "Uchrashuv va aeroportda kutib olish",
+      "Har bir mamlakatda mahalliy, ingliz tilida so'zlashadigan qo'llanmalar bilan ekskursiya dasturi",
+      "Ekonom-klass poezd chiptalari",
+      "Yo'nalish bo'yicha diqqatga sazovor joylarga kirish to'lovlari"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
-      "Tips for the guide and drivers",
-      "Additional leisure"
+      "O'zbekistonga va undan xalqaro reyslar",
+      "Yo'lboshchi va haydovchilar uchun maslahatlar",
+      "Qo'shimcha bo'sh vaqt"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs. <br/>At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan. <br/> Transfer to the hotel, registration, rest <br/>Free day in Tashkent <br/> Overnight at a hotel in Tashkent. <br/> Power supply: not included. <br/> The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Toshkent",
+        "name": "Poytaxt Toshkentga kelish, dam olish uchun bepul kun",
+        "description": "Toshkentga kelganingizda bojxona nazoratidan o'tish uchun 30 daqiqadan 1 soatgacha vaqt ketadi. Chiqish paytida sizni haydovchimiz qulay mashinada belgi bilan kutib oladi. Uchrashuv Sizning Parvozingiz O'zbekistonga kelgan vaqtga muvofiq tashkil etiladi. Mehmonxonaga o'tkazish, ro'yxatdan o'tish, Toshkentda dam olish uchun bepul kun, Toshkentdagi mehmonxonada tunash. Quvvat: yoqilmagan. Ekskursiya menejeri sizga mahalliy oshxonada tushlik va kechki ovqat qilishingiz mumkin bo'lgan tasdiqlangan joylarni aytib beradi va ko'rsatadi.",
         "places": [],
         "departure": [],
         "duration": ""
@@ -1001,37 +1000,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Samarqand",
+        "name": "Toshkent-ekskursiya va poezdda Samarqandga o'tish",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Toshkent bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "O'zbekiston amaliy san'at muzeyi",
+          "Eng mashhur Qur'on saqlanadigan Xast-Imom majmuasi - Usmon Qur'oni.",
+          "Eski Toshkent shahriga tashrif buyuring",
+          "Chor-su bozori, poytaxtning mashhur bozori.",
+          "Jasorat yodgorligi",
+          "Mustaqillik maydoniga tashrif",
+          "Amir Temur Maydoni, Temuriylar Muzeyi",
+          "Toshkent metro bekatlari (ixtiyoriy)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17: 45 Toshkent temir yo'l vokzaliga o'tish",
+          "18: 45 tezyurar konfor sinfidagi poyezdning Toshkentdan jo'nab ketishi",
+          "20: 58 Tamerlanning vatani Samarqandga kelish"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Samarqand",
+        "name": "Samarqandning mashhur tarixiy joylari-shahar safari",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi Samarqand bo'ylab sayohat qilish uchun qulay mashinada kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga: ",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Amir Temurning mashhur maqbarasi - \" Guri Amir\".",
+          "Uchta madrasa bilan afsonaviy Registon maydoni",
+          "Bibi Xonim Masjidi.",
+          "Mashhur Samarqand Sieb bozori. Qaerda quritilgan mevalar, yassi non va milliy shirinliklarni sotib olishingiz mumkin."
         ],
         "duration": "5-6",
         "departure": []
@@ -1039,41 +1038,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel <br/> Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Buxoro",
+        "name": "Samarqand shahar safari va poezdda Buxoroga o'tish",
+        "description": "mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Samarqand shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Temuriylar davridagi shohi Zinda nekropoli",
+          "Ulug'bek rasadxonasi 15-asrning noyob inshootidir, hozirgi paytda \"Sulse faxri\" o'lchov asbobining bir bo'lagi saqlanib qolgan",
+          "Doniyor Payg'ambar maqbarasi uchta din uchun muqaddas ibodat joyidir: musulmon, nasroniy va yahudiy",
+          "Cunha Meros qog'oz fabrikasi (qadimgi tut qog'ozini qo'lda ishlab chiqarish, bu erda siz butun qog'oz ishlab chiqarish jarayonini ko'rasiz"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "20: 00 Samarqand shahridagi temir yo'l stantsiyasiga o'tish",
+          "21: 03 tezyurar konfor sinfidagi poyezdning Samarqanddan jo'nab ketishi",
+          "21: 58 Buxoroga kelish - Sharq durdonasi"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Buxoro",
+        "name": "Sharq durdonasi - Buxoroning ekskursiya tarixi",
+        "description": "Mehmonxonada nonushta mehmonxona qabulxonasiga siz Buxoro safari boshida o'tkazish uchun qulay mashinada tasdiqlangan qo'llanma va haydovchi tomonidan kutib olinadi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Ismoil Samaniyning ulug'vor maqbarasi 9-asr Somoniylar sulolasining qudratli va nufuzli amirining dafn etilgan joyidir. Maqbara islomgacha bo'lgan madaniyatga xos tarzda yaratilgan noyob dizayni va badiiy g'isht ishlari bilan ajralib turadi",
+          "Somoniylar maqbarasi yaqinida joylashgan Chashma Ayub maqbarasi (Ayub qudug'i).",
+          "Bolo Xauz masjidi (18-20-asrlar)",
+          "Arkning ulkan qal'asi - Buxoro amirining qishki qarorgohi",
+          "Kalon Masjidi",
+          "Mashhur Kalyan Minorasi",
+          "Mir-Arab Madrasasi",
+          "Ulug'bek Madrasasi",
+          "Abdulazizxon madrasasi an'anaviy majolika bilan",
+          "Buxoroning qadimiy savdo gumbazlari ",
+          "Magoki-Attori masjidi (12-asr) arxitekturada o'z davri uchun maxsus.",
+          "Lyabi Uyi"
         ],
         "duration": "5-6",
         "departure": []
@@ -1081,20 +1080,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel <br/> Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Buxoro",
+        "name": "Buxoro-shahar tashqarisiga ekskursiya va poezdda Toshkentga ko'chirish",
+        "description": "Mehmonxonada nonushta mehmonxonadan chiqish, mehmonxona qabulxonasida sizni sertifikatlangan gid va haydovchi qulay Mashinada Buxoro shahridan tashqariga sayohat qilish uchun kutib oladi. Ekskursiya davomida siz tashrif buyurasiz va sizga:",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Noyob yodgorlik \" Chor Minor \"1807-1809.",
+          "Buxoro amiri Moxi-Xosaning yozgi qarorgohi",
+          "1544 yilda barpo etilgan Bahouddin Naqshbandiy nekropoli. Bahouddin Naqshbandiy Buxoroda nufuzli Shayx, Suffist va ilohiyotshunos edi. So'fiylar va musulmonlar uning dafn etilgan joyini ziyorat qilishni kichik Haj bilan tenglashtirdilar"
         ],
         "duration": "4",
         "departure": [
-          "International flight tickets before and after the tou",
-          "Tips for the guide and drivers",
-          "Visa support ",
-          "Additional leisure"
+          "15: 00 Buxoro temir yo'l vokzaliga o'tish (diqqat: qatnov va kelish vaqtlari poezdlar jadvaliga muvofiq o'zgartirilishi mumkin)",
+          "15: 50 Buxorodan poezd qatnovi",
+          "19: 44 Toshkentga kelish"
         ]
       }
     ]

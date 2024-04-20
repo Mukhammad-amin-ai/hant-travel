@@ -24,33 +24,33 @@
         "img": "/assets/images/tourShow/bukhara.webp"
       }
     ],
-    "title": "Three capitals of Uzbekistan",
-    "description": "We are all used to the fact that in every country there is one special city, which is called the capital. But the centuries-old history and unique traditions of Uzbekistan do not allow us to single out just one region. And although the official capital of the Uzbek Republic is kind and hospitable Tashkent, we suggest you visit two other equally charming towns of the eastern state – Bukhara and Samarkand. Long live Uzbek adventures!",
+    "title": "Три столицы Узбекистана",
+    "description": "Богатая история Узбекистана выходит за рамки его столицы Ташкента. Исследуйте Бухару и Самарканд, чтобы познакомиться с их уникальной культурой",
     "price": 980,
     "maxPeople": 10,
-    "location": "Uzbekistan",
-    "length": "6 Days / 5 Night",
+    "location": "Узбекистан",
+    "length": "6 дней  / 5 ночей",
     "iclueded": [
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Tour Guide (Certified)",
-      "Transportation during excursions",
-      "Economy class train tickets",
-      "Accommodation in 3* hotels (according to the program)+ Breakfast",
-      "Meeting and seeing off at the airport",
-      "Tour Collection at the hotel"
+      "Входные билеты в музеи, на посещение достопримечательностей, памятников архитектуры",
+      "Гид-экскурсовод (сертифицированный)",
+      "Транспорт во время экскурсий",
+      "Билеты на поезд эконом-класса",
+      "Проживание в отелях 3* (согласно программе)+ завтраки",
+      "Встреча и проводы в аэропорту",
+      "Сбор экскурсий в отеле"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
-      "Tips for the guide and drivers",
-      "Additional leisure"
+      "Международные рейсы в Узбекистан и из Узбекистана обратно",
+      "Советы гиду и водителям",
+      "Дополнительный досуг"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent It will take you from 30 minutes to 1 hour to clear customs.  At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan.   Transfer to the hotel, registration, rest  Free day in Tashkent   Overnight at a hotel in Tashkent.   Power supply: not included.   The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Ташкент",
+        "name": "Прибытие в столицу Ташкент, свободный день для отдыха",
+        "description": "По прибытии в Ташкент прохождение таможенного контроля займет у вас от 30 минут до 1 часа. На выходе вас встретит наш водитель в комфортабельном автомобиле с табличкой. Встреча будет организована в соответствии со временем прибытия вашего рейса в Узбекистан. Трансфер в гостиницу, регистрация, свободный день для отдыха в Ташкенте, ночевка в гостинице в Ташкенте. Питание: не включено. Тур-менеджер расскажет вам и покажет проверенные места, где вы можете пообедать и поужинать блюдами местной кухни ",
         "places": [],
         "departure": [],
         "duration": ""
@@ -58,37 +58,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent.   During the tour you will visit and you will be told about:   ",
+        "location": "Самарканд",
+        "name": "Исторический Ташкент - экскурсия и трансфер в Самарканд на поезде",
+        "description": "Завтрак в отеле В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для экскурсии по Ташкенту. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "Музей прикладного искусства Узбекистана",
+          "Комплекс Хаст-Имам, где хранится самый известный Коран - Коран Османа",
+          "Посещение старого города Ташкента",
+          "Базар Чорсу, знаменитый столичный рынок",
+          "Памятник мужеству",
+          "Посещение площади Независимости",
+          "Площадь Амира Тимура, музей Тимуридов",
+          "Станции Ташкентского метро (по желанию)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17:45 Пересадка на Ташкентский железнодорожный вокзал",
+          "18:45 Отправление скоростного поезда комфорт-класса из Ташкента",
+          "20:58 Прибытие в Самарканд, на родину Тамерлана"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Самарканд",
+        "name": "Знаменитые исторические места Самарканда - обзорная экскурсия по городу",
+        "description": "Завтрак в отеле\" В холле отеля вас встретят сертифицированный гид и водитель в комфортабельном автомобиле совершите экскурсию по Самарканду. Во время экскурсии вы посетите и вам расскажут о:",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Знаменитый мавзолей Амира Тимура - \"Гур Эмир\".",
+          "Легендарная площадь Регистан с тремя медресе",
+          "Мечеть Биби ханум",
+          "Знаменитый Самаркандский базар Сибов. Где можно купить сухофрукты, лепешки и национальные сладости."
         ],
         "duration": "5-6",
         "departure": []
@@ -96,41 +96,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Экскурсия по Самарканду и трансфер в Бухару на поезде",
+        "description": "Завтрак в отеле, выезд из отеля, в холле отеля вас ждет встреча с сертифицированным гидом и водителем на комфортабельном автомобиле для экскурсионного выезда за пределы города Самарканд. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Некрополь Шахи-Зинда времен Тимуридов",
+          "Обсерватория Улугбека - уникальное сооружение 15 века; на данный момент сохранился фрагмент измерительного прибора \"Сульсе Фахри\"",
+          "Мавзолей пророка Даниила является священным местом поклонения для трех религий: мусульманской, христианской и еврейской",
+          "Кунья Бумажная фабрика Мероса (воссоздано ручное производство древней тутовой бумаги, здесь вы увидите весь процесс производства бумаги"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "В 20:00 Трансфер на железнодорожный вокзал города Самарканд",
+          "21:03 Отправление скоростного поезда комфорт-класса из Самарканда",
+          "21:58 Прибытие в Бухару - жемчужину Востока"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Жемчужина Востока - экскурсионная история Бухары",
+        "description": "Завтрак в отеле\" В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для трансфера к началу экскурсии по Бухаре. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Величественный мавзолей Исмаила Самани - это место захоронения могущественного и влиятельного эмира династии Саманидов 9 века. Мавзолей отличается уникальным дизайном и художественной кирпичной кладкой, выполненной в манере, характерной для доисламской культуры",
+          "Мавзолей Чашма Аюб (колодец Иова), расположенный рядом с мавзолеем Саманидов",
+          "Мечеть Боло Хауз (18-20 века)",
+          "Огромная цитадель Арк - зимняя резиденция эмира Бухарского",
+          "Мечеть Калон",
+          "Знаменитый минарет Калян",
+          "Медресе Мир-Араб",
+          "Медресе Улугбека",
+          "Медресе Абдулазизхана с традиционной майоликой",
+          "Древние торговые купола Бухары",
+          "Мечеть Магоки-Аттори (12 век) в архитектуре, особенной для своего времени",
+          "Дом Ляби"
         ],
         "duration": "5-6",
         "departure": []
@@ -138,19 +138,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Бухара - экскурсионная поездка за город и трансфер на поезде в Ташкент",
+        "description": "Завтрак в отеле, выезд из отеля, в отеле в вестибюле вас встретит сертифицированный гид и водитель на комфортабельном автомобиле для экскурсионного выезда за пределы города Бухара. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Уникальный памятник \"Чор Минор\" 1807-1809 гг.",
+          "Летняя резиденция эмира Бухары Мохи-Хоса",
+          "Некрополь Бахауддина Накшбанди, возведенный в 1544 году. Бахауддин Накшбанди был влиятельным шейхом Бухары, суфистом и теологом. Суфии и мусульмане приравнивали посещение места его захоронения к небольшому хаджу"
         ],
         "duration": "4",
         "departure": [
-          "15:00 Transfer to the Bukhara railway station (Attention: departure and arrival times may be changed according to the train schedule)",
-          "15:50 Train departure from Bukhara",
-          "19:44 Arrival in Tashkent"
+          "15:00 Трансфер на железнодорожный вокзал Бухары (Внимание: время отправления и прибытия может быть изменено в соответствии с расписанием поездов)",
+          "15:50 Отправление поезда из Бухары",
+          "19:44 Прибытие в Ташкент"
         ]
       }
     ]
@@ -180,37 +180,37 @@
         "img": "/assets/images/tourShow/tashkent.webp"
       }
     ],
-    "title": "Four pearls of Uzbekistan",
-    "description": "You've probably heard more than once that Uzbekistan is one of the most ancient civilizations, keeping thousands of secrets of history and culture. Then where do you start exploring such an amazing country? From the \"Four Pearls of Uzbekistan\" tour!",
+    "title": "Четыре жемчужины Узбекистана",
+    "description": "Вы, наверное, не раз слышали, что Узбекистан - одна из древнейших цивилизаций, хранящая тысячи тайн истории и культуры. Тогда с чего же вы начнете знакомство со столь удивительной страной? С тура \"Четыре жемчужины Узбекистана!\"",
     "price": 2728,
     "maxPeople": 10,
-    "location": "Uzbekistan",
-    "length": "8 Days / 7 Night",
+    "location": "Узбекистан",
+    "length": "8 Дни / 7 Ночь",
     "iclueded": [
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Tour Guide (Certified)",
-      "Transportation during excursions",
-      "Economy class train tickets",
-      "Lunch boxes according to the program (Lunch Box)",
-      "A master class on cooking Pilaf in the national house",
-      "Accommodation in 3* hotels (according to the program)+ Breakfast",
-      "Meeting and seeing off at the airport",
-      "Tour Collection at the hotel"
+      "Входные билеты в музеи, на посещение достопримечательностей, памятников",
+      "Гид-экскурсовод (сертифицированный)",
+      "Транспорт во время экскурсий",
+      "Билеты на поезд эконом-класса",
+      "Ланч-боксы по программе (Ланч-бокс)",
+      "Мастер-класс по приготовлению плова в национальном доме",
+      "Проживание в отелях 3* (согласно программе)+ завтрак",
+      "Встреча и проводы в аэропорту",
+      "Сбор тура в отеле"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
-      "Tips for the guide and drivers",
-      "Payment for photo and video shooting in museums and monuments",
-      "Additional leisure",
-      "Additional services in hotels"
+      "Международные перелеты в Узбекистан и обратно",
+      "Чаевые гиду и водителям",
+      "Оплата фото- и видеосъемки в музеях и памятниках",
+      "Дополнительный досуг",
+      "Дополнительные услуги в отелях"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs.  At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan.   Transfer to the hotel, registration, rest  Free day in Tashkent   Overnight at a hotel in Tashkent.   Power supply: not included.   The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Ташкент",
+        "name": "Прибытие в столицу Ташкент, свободный день для отдыха",
+        "description": "По прибытии в Ташкент прохождение таможенного контроля займет у вас от 30 минут до 1 часа. На выходе вас встретит наш водитель в комфортабельном автомобиле с табличкой. Встреча будет организована в соответствии со временем прибытия вашего рейса в Узбекистан. Трансфер в гостиницу, регистрация, свободный день для отдыха в Ташкенте, ночевка в гостинице в Ташкенте. Питание: не включено. Тур-менеджер расскажет вам и покажет проверенные места, где вы можете пообедать и поужинать блюдами местной кухни ",
         "places": [],
         "departure": [],
         "duration": ""
@@ -218,37 +218,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent.   During the tour you will visit and you will be told about:   ",
+        "location": "Самарканд",
+        "name": "Исторический Ташкент - экскурсия и трансфер в Самарканд на поезде",
+        "description": "Завтрак в отеле В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для экскурсии по Ташкенту. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "Музей прикладного искусства Узбекистана",
+          "Комплекс Хаст-Имам, где хранится самый известный Коран - Коран Османа",
+          "Посещение старого города Ташкента",
+          "Базар Чорсу, знаменитый столичный рынок",
+          "Памятник мужеству",
+          "Посещение площади Независимости",
+          "Площадь Амира Тимура, музей Тимуридов",
+          "Станции Ташкентского метро (по желанию)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17:45 Пересадка на Ташкентский железнодорожный вокзал",
+          "18:45 Отправление скоростного поезда комфорт-класса из Ташкента",
+          "20:58 Прибытие в Самарканд, на родину Тамерлана"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Самарканд",
+        "name": "Знаменитые исторические места Самарканда - обзорная экскурсия по городу",
+        "description": "Завтрак в отеле\" В холле отеля вас встретят сертифицированный гид и водитель в комфортабельном автомобиле совершите экскурсию по Самарканду. Во время экскурсии вы посетите и вам расскажут о:",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Знаменитый мавзолей Амира Тимура - \"Гур Эмир\".",
+          "Легендарная площадь Регистан с тремя медресе",
+          "Мечеть Биби ханум",
+          "Знаменитый Самаркандский базар Сибов. Где можно купить сухофрукты, лепешки и национальные сладости."
         ],
         "duration": "5-6",
         "departure": []
@@ -256,41 +256,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Экскурсия по Самарканду и трансфер в Бухару на поезде",
+        "description": "Завтрак в отеле, выезд из отеля, в холле отеля вас ждет встреча с сертифицированным гидом и водителем на комфортабельном автомобиле для экскурсионного выезда за пределы города Самарканд. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Некрополь Шахи-Зинда времен Тимуридов",
+          "Обсерватория Улугбека - уникальное сооружение 15 века; на данный момент сохранился фрагмент измерительного прибора \"Сульсе Фахри\"",
+          "Мавзолей пророка Даниила является священным местом поклонения для трех религий: мусульманской, христианской и еврейской",
+          "Кунья Бумажная фабрика Мероса (воссоздано ручное производство древней тутовой бумаги, здесь вы увидите весь процесс производства бумаги"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "В 20:00 Трансфер на железнодорожный вокзал города Самарканд",
+          "21:03 Отправление скоростного поезда комфорт-класса из Самарканда",
+          "21:58 Прибытие в Бухару - жемчужину Востока"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Жемчужина Востока - экскурсионная история Бухары",
+        "description": "Завтрак в отеле\" В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для трансфера к началу экскурсии по Бухаре. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Величественный мавзолей Исмаила Самани - это место захоронения могущественного и влиятельного эмира династии Саманидов 9 века. Мавзолей отличается уникальным дизайном и художественной кирпичной кладкой, выполненной в манере, характерной для доисламской культуры",
+          "Мавзолей Чашма Аюб (колодец Иова), расположенный рядом с мавзолеем Саманидов",
+          "Мечеть Боло Хауз (18-20 века)",
+          "Огромная цитадель Арк - зимняя резиденция эмира Бухарского",
+          "Мечеть Калон",
+          "Знаменитый минарет Калян",
+          "Медресе Мир-Араб",
+          "Медресе Улугбека",
+          "Медресе Абдулазизхана с традиционной майоликой",
+          "Древние торговые купола Бухары",
+          "Мечеть Магоки-Аттори (12 век) в архитектуре, особенной для своего времени",
+          "Дом Ляби"
         ],
         "duration": "5-6",
         "departure": []
@@ -298,19 +298,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Бухара - экскурсионная поездка за город и трансфер на поезде в Ташкент",
+        "description": "Завтрак в отеле, выезд из отеля, в отеле в вестибюле вас встретит сертифицированный гид и водитель на комфортабельном автомобиле для экскурсионного выезда за пределы города Бухара. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Уникальный памятник \"Чор Минор\" 1807-1809 гг.",
+          "Летняя резиденция эмира Бухары Мохи-Хоса",
+          "Некрополь Бахауддина Накшбанди, возведенный в 1544 году. Бахауддин Накшбанди был влиятельным шейхом Бухары, суфистом и теологом. Суфии и мусульмане приравнивали посещение места его захоронения к небольшому хаджу"
         ],
         "duration": "4",
         "departure": [
-          "15:00 Transfer to the Bukhara railway station (Attention: departure and arrival times may be changed according to the train schedule)",
-          "15:50 Train departure from Bukhara",
-          "19:44 Arrival in Tashkent"
+          "15:00 Трансфер на железнодорожный вокзал Бухары (Внимание: время отправления и прибытия может быть изменено в соответствии с расписанием поездов)",
+          "15:50 Отправление поезда из Бухары",
+          "19:44 Прибытие в Ташкент"
         ]
       }
     ]
@@ -340,33 +340,33 @@
         "img": "/assets/images/tourShow/Ark_Bukhara.webp"
       }
     ],
-    "title": "Two Legends",
-    "description": "A four-day cultural tour to sunny Uzbekistan will take you from a modern metropolis to the peaceful silence of Bukhara and Samarkand, to the fabulous world of cities considered the \"eden\" of the ancient East. You will get acquainted with the history of the emergence of these cities, which were the concentration of ancient science and culture in Central Asia.",
+    "title": "Две Легенды Узбекистана",
+    "description": "Четырехдневный культурный тур по солнечному Узбекистану перенесет вас из современного мегаполиса в умиротворяющую тишину Бухары и Самарканда, в сказочный мир городов, считающихся \"Эдемом\" Древнего Востока. Вы познакомитесь с историей возникновения этих городов, которые были средоточием древней науки и культуры в Центральной Азии.",
     "price": 2728,
     "maxPeople": 10,
-    "location": "Uzbekistan",
-    "length": "4 Days",
+    "location": "Узбекистан",
+    "length": "4 дня",
     "iclueded": [
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Tour Guide (Certified)",
-      "Transportation during excursions",
-      "Economy class train tickets",
-      "Accommodation in 3* hotels (according to the program)+ Breakfast",
-      "Meeting and seeing off at the airport",
-      "Tour Collection at the hotel"
+      "Входные билеты в музеи, на посещение достопримечательностей, памятников",
+      "Гид-экскурсовод (сертифицированный)",
+      "Транспорт во время экскурсий",
+      "Билеты на поезд эконом-класса",
+      "Проживание в отелях 3* (согласно программе)+ завтрак",
+      "Встречи и проводы встреча в аэропорту",
+      "Сбор тура в отеле"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
-      "Tips for the guide and drivers",
-      "Additional leisure"
+      "Международные рейсы в Узбекистан и обратно",
+      "Чаевые гиду и водителям",
+      "Дополнительный досуг"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs.  At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan.   Transfer to the hotel, registration, rest  Free day in Tashkent   Overnight at a hotel in Tashkent.   Power supply: not included.   The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Ташкент",
+        "name": "Прибытие в столицу Ташкент, свободный день для отдыха",
+        "description": "По прибытии в Ташкент прохождение таможенного контроля займет у вас от 30 минут до 1 часа. На выходе вас встретит наш водитель в комфортабельном автомобиле с табличкой. Встреча будет организована в соответствии со временем прибытия вашего рейса в Узбекистан. Трансфер в гостиницу, регистрация, свободный день для отдыха в Ташкенте, ночевка в гостинице в Ташкенте. Питание: не включено. Тур-менеджер расскажет вам и покажет проверенные места, где вы можете пообедать и поужинать блюдами местной кухни ",
         "places": [],
         "departure": [],
         "duration": ""
@@ -374,37 +374,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent.   During the tour you will visit and you will be told about:   ",
+        "location": "Самарканд",
+        "name": "Исторический Ташкент - экскурсия и трансфер в Самарканд на поезде",
+        "description": "Завтрак в отеле В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для экскурсии по Ташкенту. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "Музей прикладного искусства Узбекистана",
+          "Комплекс Хаст-Имам, где хранится самый известный Коран - Коран Османа",
+          "Посещение старого города Ташкента",
+          "Базар Чорсу, знаменитый столичный рынок",
+          "Памятник мужеству",
+          "Посещение площади Независимости",
+          "Площадь Амира Тимура, музей Тимуридов",
+          "Станции Ташкентского метро (по желанию)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17:45 Пересадка на Ташкентский железнодорожный вокзал",
+          "18:45 Отправление скоростного поезда комфорт-класса из Ташкента",
+          "20:58 Прибытие в Самарканд, на родину Тамерлана"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Самарканд",
+        "name": "Знаменитые исторические места Самарканда - обзорная экскурсия по городу",
+        "description": "Завтрак в отеле\" В холле отеля вас встретят сертифицированный гид и водитель в комфортабельном автомобиле совершите экскурсию по Самарканду. Во время экскурсии вы посетите и вам расскажут о:",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Знаменитый мавзолей Амира Тимура - \"Гур Эмир\".",
+          "Легендарная площадь Регистан с тремя медресе",
+          "Мечеть Биби ханум",
+          "Знаменитый Самаркандский базар Сибов. Где можно купить сухофрукты, лепешки и национальные сладости."
         ],
         "duration": "5-6",
         "departure": []
@@ -412,41 +412,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Экскурсия по Самарканду и трансфер в Бухару на поезде",
+        "description": "Завтрак в отеле, выезд из отеля, в холле отеля вас ждет встреча с сертифицированным гидом и водителем на комфортабельном автомобиле для экскурсионного выезда за пределы города Самарканд. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Некрополь Шахи-Зинда времен Тимуридов",
+          "Обсерватория Улугбека - уникальное сооружение 15 века; на данный момент сохранился фрагмент измерительного прибора \"Сульсе Фахри\"",
+          "Мавзолей пророка Даниила является священным местом поклонения для трех религий: мусульманской, христианской и еврейской",
+          "Кунья Бумажная фабрика Мероса (воссоздано ручное производство древней тутовой бумаги, здесь вы увидите весь процесс производства бумаги"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "В 20:00 Трансфер на железнодорожный вокзал города Самарканд",
+          "21:03 Отправление скоростного поезда комфорт-класса из Самарканда",
+          "21:58 Прибытие в Бухару - жемчужину Востока"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Жемчужина Востока - экскурсионная история Бухары",
+        "description": "Завтрак в отеле\" В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для трансфера к началу экскурсии по Бухаре. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Величественный мавзолей Исмаила Самани - это место захоронения могущественного и влиятельного эмира династии Саманидов 9 века. Мавзолей отличается уникальным дизайном и художественной кирпичной кладкой, выполненной в манере, характерной для доисламской культуры",
+          "Мавзолей Чашма Аюб (колодец Иова), расположенный рядом с мавзолеем Саманидов",
+          "Мечеть Боло Хауз (18-20 века)",
+          "Огромная цитадель Арк - зимняя резиденция эмира Бухарского",
+          "Мечеть Калон",
+          "Знаменитый минарет Калян",
+          "Медресе Мир-Араб",
+          "Медресе Улугбека",
+          "Медресе Абдулазизхана с традиционной майоликой",
+          "Древние торговые купола Бухары",
+          "Мечеть Магоки-Аттори (12 век) в архитектуре, особенной для своего времени",
+          "Дом Ляби"
         ],
         "duration": "5-6",
         "departure": []
@@ -454,19 +454,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Бухара - экскурсионная поездка за город и трансфер на поезде в Ташкент",
+        "description": "Завтрак в отеле, выезд из отеля, в отеле в вестибюле вас встретит сертифицированный гид и водитель на комфортабельном автомобиле для экскурсионного выезда за пределы города Бухара. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Уникальный памятник \"Чор Минор\" 1807-1809 гг.",
+          "Летняя резиденция эмира Бухары Мохи-Хоса",
+          "Некрополь Бахауддина Накшбанди, возведенный в 1544 году. Бахауддин Накшбанди был влиятельным шейхом Бухары, суфистом и теологом. Суфии и мусульмане приравнивали посещение места его захоронения к небольшому хаджу"
         ],
         "duration": "4",
         "departure": [
-          "15:00 Transfer to the Bukhara railway station (Attention: departure and arrival times may be changed according to the train schedule)",
-          "15:50 Train departure from Bukhara",
-          "19:44 Arrival in Tashkent"
+          "15:00 Трансфер на железнодорожный вокзал Бухары (Внимание: время отправления и прибытия может быть изменено в соответствии с расписанием поездов)",
+          "15:50 Отправление поезда из Бухары",
+          "19:44 Прибытие в Ташкент"
         ]
       }
     ]
@@ -496,34 +496,34 @@
         "img": "/assets/images/tourShow/turkmenistan.webp"
       }
     ],
-    "title": "Central Asia Tour in 2 weeks",
-    "description": "Discover the historical, cultural, and scenic highlights of the five Stans as you journey from Kazakhstan’s cosmopolitan city of Almaty, to Kyrgyzstan’s fascinating nomadic culture, Tajikistan’s sparkling Seven Lakes, Uzbekistan’s stunning turquoise mausoleums, and the fiery deserts of Turkmenistan. Following our bestselling 2-week Central Asia itinerary, this private tour showcases the region’s major sights while giving you more flexibility and the ability to take things at your own pace",
+    "title": "Тур по Центральной Азии за 2 недели",
+    "description": "Откройте для себя исторические, культурные и живописные достопримечательности пяти станов, путешествуя из космополитичного города Алматы в увлекательную кочевую культуру Кыргызстана, сверкающие семь озер Таджикистана, потрясающие бирюзовые мавзолеи Узбекистана и огненные пустыни Туркменистана. Следуя нашему популярному 2-недельному маршруту по Центральной Азии, этот частный тур знакомит вас с основными достопримечательностями региона, предоставляя вам больше гибкости и возможности действовать в своем собственном темпе ",
     "price": 530,
     "maxPeople": 10,
-    "location": "Central Asia",
-    "length": "2 Weeks",
+    "location": "Центральная Азия",
+    "length": "2 недели",
     "iclueded": [
-      "All transfers: 1-2 pax in sedan type car, 3-8 pax in minivan/van",
-      "Accommodation based on double/twin room sharing, breakfasts included",
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Meeting and seeing off at the airport",
-      "Sightseeing tour programme with local, English speaking guides in each country",
-      "Economy class train tickets",
-      "Entrance fees to sights as per itinerary"
+      "Все трансферы: 1-2 человека в автомобиле типа седан, 3-8 человек в минивэне/минивэн-фургоне",
+      "Размещение из расчета на двухместное размещение/проживание в двухместном номере с завтраком включено",
+      "Входные билеты в музеи, на посещение достопримечательностей, памятников архитектуры",
+      "Встреча и проводы в аэропорту",
+      "Экскурсионная программа с местными англоговорящими гидами в каждой стране",
+      "Билеты на поезд эконом-класса",
+      "Входные билеты в достопримечательности в соответствии с маршрут"
     ],
     "excluded": [
-      "International flight tickets before and after the tou",
-      "Tips for the guide and drivers",
-      "Visa support ",
-      "Additional leisure"
+      "Билеты на международные рейсы до и после тура",
+      "Советы гиду и водителям",
+      "Визовая поддержка",
+      "Дополнительный досуг"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs.  At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan.   Transfer to the hotel, registration, rest  Free day in Tashkent   Overnight at a hotel in Tashkent.   Power supply: not included.   The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Ташкент",
+        "name": "Прибытие в столицу Ташкент, свободный день для отдыха",
+        "description": "По прибытии в Ташкент прохождение таможенного контроля займет у вас от 30 минут до 1 часа. На выходе вас встретит наш водитель в комфортабельном автомобиле с табличкой. Встреча будет организована в соответствии со временем прибытия вашего рейса в Узбекистан. Трансфер в гостиницу, регистрация, свободный день для отдыха в Ташкенте, ночевка в гостинице в Ташкенте. Питание: не включено. Тур-менеджер расскажет вам и покажет проверенные места, где вы можете пообедать и поужинать блюдами местной кухни ",
         "places": [],
         "departure": [],
         "duration": ""
@@ -531,37 +531,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent.   During the tour you will visit and you will be told about:   ",
+        "location": "Самарканд",
+        "name": "Исторический Ташкент - экскурсия и трансфер в Самарканд на поезде",
+        "description": "Завтрак в отеле В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для экскурсии по Ташкенту. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "Музей прикладного искусства Узбекистана",
+          "Комплекс Хаст-Имам, где хранится самый известный Коран - Коран Османа",
+          "Посещение старого города Ташкента",
+          "Базар Чорсу, знаменитый столичный рынок",
+          "Памятник мужеству",
+          "Посещение площади Независимости",
+          "Площадь Амира Тимура, музей Тимуридов",
+          "Станции Ташкентского метро (по желанию)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17:45 Пересадка на Ташкентский железнодорожный вокзал",
+          "18:45 Отправление скоростного поезда комфорт-класса из Ташкента",
+          "20:58 Прибытие в Самарканд, на родину Тамерлана"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Самарканд",
+        "name": "Знаменитые исторические места Самарканда - обзорная экскурсия по городу",
+        "description": "Завтрак в отеле\" В холле отеля вас встретят сертифицированный гид и водитель в комфортабельном автомобиле совершите экскурсию по Самарканду. Во время экскурсии вы посетите и вам расскажут о:",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Знаменитый мавзолей Амира Тимура - \"Гур Эмир\".",
+          "Легендарная площадь Регистан с тремя медресе",
+          "Мечеть Биби ханум",
+          "Знаменитый Самаркандский базар Сибов. Где можно купить сухофрукты, лепешки и национальные сладости."
         ],
         "duration": "5-6",
         "departure": []
@@ -569,41 +569,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Экскурсия по Самарканду и трансфер в Бухару на поезде",
+        "description": "Завтрак в отеле, выезд из отеля, в холле отеля вас ждет встреча с сертифицированным гидом и водителем на комфортабельном автомобиле для экскурсионного выезда за пределы города Самарканд. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Некрополь Шахи-Зинда времен Тимуридов",
+          "Обсерватория Улугбека - уникальное сооружение 15 века; на данный момент сохранился фрагмент измерительного прибора \"Сульсе Фахри\"",
+          "Мавзолей пророка Даниила является священным местом поклонения для трех религий: мусульманской, христианской и еврейской",
+          "Кунья Бумажная фабрика Мероса (воссоздано ручное производство древней тутовой бумаги, здесь вы увидите весь процесс производства бумаги"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "В 20:00 Трансфер на железнодорожный вокзал города Самарканд",
+          "21:03 Отправление скоростного поезда комфорт-класса из Самарканда",
+          "21:58 Прибытие в Бухару - жемчужину Востока"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Жемчужина Востока - экскурсионная история Бухары",
+        "description": "Завтрак в отеле\" В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для трансфера к началу экскурсии по Бухаре. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Величественный мавзолей Исмаила Самани - это место захоронения могущественного и влиятельного эмира династии Саманидов 9 века. Мавзолей отличается уникальным дизайном и художественной кирпичной кладкой, выполненной в манере, характерной для доисламской культуры",
+          "Мавзолей Чашма Аюб (колодец Иова), расположенный рядом с мавзолеем Саманидов",
+          "Мечеть Боло Хауз (18-20 века)",
+          "Огромная цитадель Арк - зимняя резиденция эмира Бухарского",
+          "Мечеть Калон",
+          "Знаменитый минарет Калян",
+          "Медресе Мир-Араб",
+          "Медресе Улугбека",
+          "Медресе Абдулазизхана с традиционной майоликой",
+          "Древние торговые купола Бухары",
+          "Мечеть Магоки-Аттори (12 век) в архитектуре, особенной для своего времени",
+          "Дом Ляби"
         ],
         "duration": "5-6",
         "departure": []
@@ -611,19 +611,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Бухара - экскурсионная поездка за город и трансфер на поезде в Ташкент",
+        "description": "Завтрак в отеле, выезд из отеля, в отеле в вестибюле вас встретит сертифицированный гид и водитель на комфортабельном автомобиле для экскурсионного выезда за пределы города Бухара. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Уникальный памятник \"Чор Минор\" 1807-1809 гг.",
+          "Летняя резиденция эмира Бухары Мохи-Хоса",
+          "Некрополь Бахауддина Накшбанди, возведенный в 1544 году. Бахауддин Накшбанди был влиятельным шейхом Бухары, суфистом и теологом. Суфии и мусульмане приравнивали посещение места его захоронения к небольшому хаджу"
         ],
         "duration": "4",
         "departure": [
-          "15:00 Transfer to the Bukhara railway station (Attention: departure and arrival times may be changed according to the train schedule)",
-          "15:50 Train departure from Bukhara",
-          "19:44 Arrival in Tashkent"
+          "15:00 Трансфер на железнодорожный вокзал Бухары (Внимание: время отправления и прибытия может быть изменено в соответствии с расписанием поездов)",
+          "15:50 Отправление поезда из Бухары",
+          "19:44 Прибытие в Ташкент"
         ]
       }
     ]
@@ -653,34 +653,34 @@
         "img": "/assets/images/tourShow/Tashkent-Spread.webp"
       }
     ],
-    "title": "Tour To Bright and Sunny Uzbekistan",
-    "description": "This twelve-day eventful tour will introduce you to the history and culture of the peoples living on the territory of Uzbekistan. \nOur tour will start from Nukus, a city that, according to The Telegraph's rating, has entered the top ten most unusual places to travel in the world. The unique Igor Savitsky Museum is located here, where a collection of works by Russian avant-garde artists is collected. Further along the route of the twelve-day tour of Uzbekistan, we will have a trip to the famous \"Cemetery of Ships\", located on the shallow bottom of the Aral Sea.\n\nDuring our tour you will get acquainted with the sights and architectural masterpieces of Khiva, Bukhara, Shakhrisabz, Samarkand and Tashkent. Many of them are listed by UNESCO as a World Heritage Site. They rightfully stand on a par with the famous architectural monuments of Egypt, India, Iran, ancient Greece and ancient Rome.\n\nYou will not be able to resist the abundance of colors and aromas of oriental bazaars. And having learned the hospitality of our people, known to the whole world, you will take with you not only bright and interesting memories, but also a ray of the Uzbek sun and a piece of our warmth.\n\nSpend unforgettable days traveling through the ancient cities of Uzbekistan - the cradle of culture and enlightenment in the East.",
+    "title": "Тур в Яркий и Солнечный Узбекистан",
+    "description": "Этот насыщенный событиями двенадцатидневный тур познакомит вас с историей и культурой народов, проживающих на территории Узбекистана. \\ Наш тур начнется с Нукуса, города, который, согласно рейтингу The Telegraph, вошел в десятку самых необычных мест для путешествий в мире. Здесь находится уникальный музей Игоря Савицкого, где собрана коллекция работ художников русского авангарда. Далее по маршруту двенадцатидневного тура по Узбекистану нас ждет поездка на знаменитое \"Кладбище кораблей\", расположенное на мелководном дне Аральского моря. Во время нашего тура вы познакомитесь с достопримечательностями и архитектурными шедеврами Хивы, Бухары, Шахрисабз, Самарканд и Ташкент. Многие из них внесены ЮНЕСКО в список объектов Всемирного наследия. Они по праву стоят в одном ряду со знаменитыми архитектурными памятниками Египта, Индии, Ирана, Древней Греции и древнего Рима.\\п\\п Вы не сможете устоять перед обилием красок и ароматов восточных базаров. А познав гостеприимство нашего народа, известного на весь мир, вы увезете с собой не только яркие и интересные воспоминания, но и луч узбекского солнца и частичку нашего тепла.\\n\\П Проведите незабываемые дни, путешествуя по древним городам Узбекистана - колыбели культуры и просвещение на Востоке.",
     "price": 2250,
     "maxPeople": 10,
-    "location": "Uzbekistan",
-    "length": "12 Days / 11 Night",
+    "location": "Узбекистан",
+    "length": "12 дней  / 11 ночей",
     "iclueded": [
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Tour Guide (Certified)",
-      "Transportation during excursions",
-      "Economy class train tickets",
-      "Accommodation in 4*/ 5* hotels (according to the program)+ Breakfast",
-      "Meeting and seeing off at the airport",
-      "Tour Collection at the hotel"
+      "Входные билеты в музеи, на посещение достопримечательностей, памятников",
+      "Тур Гид (сертифицированный)",
+      "Транспорт во время экскурсий",
+      "Билеты на поезд эконом-класса",
+      "Проживание в 4*/ 5* отели (согласно программе)+ завтрак",
+      "Встреча и проводы в аэропорту",
+      "Сбор тура в отеле"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
-      "Tips for the guide and drivers",
-      "Full board(Breakfast + Lunch + Dinner)",
-      "Additional leisure"
+      "Международные рейсы в Узбекистан и обратно",
+      "Чаевые гиду и водителям",
+      "Полный пансион (завтрак + обед + ужин)",
+      "Дополнительный досуг"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs.  At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan.   Transfer to the hotel, registration, rest  Free day in Tashkent   Overnight at a hotel in Tashkent.   Power supply: not included.   The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Ташкент",
+        "name": "Прибытие в столицу Ташкент, свободный день для отдыха",
+        "description": "По прибытии в Ташкент прохождение таможенного контроля займет у вас от 30 минут до 1 часа. На выходе вас встретит наш водитель в комфортабельном автомобиле с табличкой. Встреча будет организована в соответствии со временем прибытия вашего рейса в Узбекистан. Трансфер в гостиницу, регистрация, свободный день для отдыха в Ташкенте, ночевка в гостинице в Ташкенте. Питание: не включено. Тур-менеджер расскажет вам и покажет проверенные места, где вы можете пообедать и поужинать блюдами местной кухни ",
         "places": [],
         "departure": [],
         "duration": ""
@@ -688,37 +688,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent.   During the tour you will visit and you will be told about:   ",
+        "location": "Самарканд",
+        "name": "Исторический Ташкент - экскурсия и трансфер в Самарканд на поезде",
+        "description": "Завтрак в отеле В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для экскурсии по Ташкенту. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "Музей прикладного искусства Узбекистана",
+          "Комплекс Хаст-Имам, где хранится самый известный Коран - Коран Османа",
+          "Посещение старого города Ташкента",
+          "Базар Чорсу, знаменитый столичный рынок",
+          "Памятник мужеству",
+          "Посещение площади Независимости",
+          "Площадь Амира Тимура, музей Тимуридов",
+          "Станции Ташкентского метро (по желанию)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17:45 Пересадка на Ташкентский железнодорожный вокзал",
+          "18:45 Отправление скоростного поезда комфорт-класса из Ташкента",
+          "20:58 Прибытие в Самарканд, на родину Тамерлана"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Самарканд",
+        "name": "Знаменитые исторические места Самарканда - обзорная экскурсия по городу",
+        "description": "Завтрак в отеле\" В холле отеля вас встретят сертифицированный гид и водитель в комфортабельном автомобиле совершите экскурсию по Самарканду. Во время экскурсии вы посетите и вам расскажут о:",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Знаменитый мавзолей Амира Тимура - \"Гур Эмир\".",
+          "Легендарная площадь Регистан с тремя медресе",
+          "Мечеть Биби ханум",
+          "Знаменитый Самаркандский базар Сибов. Где можно купить сухофрукты, лепешки и национальные сладости."
         ],
         "duration": "5-6",
         "departure": []
@@ -726,41 +726,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Экскурсия по Самарканду и трансфер в Бухару на поезде",
+        "description": "Завтрак в отеле, выезд из отеля, в холле отеля вас ждет встреча с сертифицированным гидом и водителем на комфортабельном автомобиле для экскурсионного выезда за пределы города Самарканд. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Некрополь Шахи-Зинда времен Тимуридов",
+          "Обсерватория Улугбека - уникальное сооружение 15 века; на данный момент сохранился фрагмент измерительного прибора \"Сульсе Фахри\"",
+          "Мавзолей пророка Даниила является священным местом поклонения для трех религий: мусульманской, христианской и еврейской",
+          "Кунья Бумажная фабрика Мероса (воссоздано ручное производство древней тутовой бумаги, здесь вы увидите весь процесс производства бумаги"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "В 20:00 Трансфер на железнодорожный вокзал города Самарканд",
+          "21:03 Отправление скоростного поезда комфорт-класса из Самарканда",
+          "21:58 Прибытие в Бухару - жемчужину Востока"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel   In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Жемчужина Востока - экскурсионная история Бухары",
+        "description": "Завтрак в отеле\" В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для трансфера к началу экскурсии по Бухаре. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Величественный мавзолей Исмаила Самани - это место захоронения могущественного и влиятельного эмира династии Саманидов 9 века. Мавзолей отличается уникальным дизайном и художественной кирпичной кладкой, выполненной в манере, характерной для доисламской культуры",
+          "Мавзолей Чашма Аюб (колодец Иова), расположенный рядом с мавзолеем Саманидов",
+          "Мечеть Боло Хауз (18-20 века)",
+          "Огромная цитадель Арк - зимняя резиденция эмира Бухарского",
+          "Мечеть Калон",
+          "Знаменитый минарет Калян",
+          "Медресе Мир-Араб",
+          "Медресе Улугбека",
+          "Медресе Абдулазизхана с традиционной майоликой",
+          "Древние торговые купола Бухары",
+          "Мечеть Магоки-Аттори (12 век) в архитектуре, особенной для своего времени",
+          "Дом Ляби"
         ],
         "duration": "5-6",
         "departure": []
@@ -768,19 +768,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel   Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara.   During the tour you will visit and you will be told about:   ",
+        "location": "Бухара",
+        "name": "Бухара - экскурсионная поездка за город и трансфер на поезде в Ташкент",
+        "description": "Завтрак в отеле, выезд из отеля, в отеле в вестибюле вас встретит сертифицированный гид и водитель на комфортабельном автомобиле для экскурсионного выезда за пределы города Бухара. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Уникальный памятник \"Чор Минор\" 1807-1809 гг.",
+          "Летняя резиденция эмира Бухары Мохи-Хоса",
+          "Некрополь Бахауддина Накшбанди, возведенный в 1544 году. Бахауддин Накшбанди был влиятельным шейхом Бухары, суфистом и теологом. Суфии и мусульмане приравнивали посещение места его захоронения к небольшому хаджу"
         ],
         "duration": "4",
         "departure": [
-          "15:00 Transfer to the Bukhara railway station (Attention: departure and arrival times may be changed according to the train schedule)",
-          "15:50 Train departure from Bukhara",
-          "19:44 Arrival in Tashkent"
+          "15:00 Трансфер на железнодорожный вокзал Бухары (Внимание: время отправления и прибытия может быть изменено в соответствии с расписанием поездов)",
+          "15:50 Отправление поезда из Бухары",
+          "19:44 Прибытие в Ташкент"
         ]
       }
     ]
@@ -810,33 +810,33 @@
         "img": "/assets/images/tourShow/turkmenistan.webp"
       }
     ],
-    "title": "Central Asia Tour",
-    "description": "Though Central Asia is off the beaten track today, this wasn’t always the case. In fact, the Silk Road passed through many of the region’s main cities (including Samarkand, Bukhara, Merv, Khujand and Osh). As merchants stopped in these cities on their way from China to Europe, they traded not only goods, but also knowledge, with locals. This made Central Asia a lively region with master-craftsmen, world-class scholars, and a diverse population. Between the cities, the Silk Road passed through remote and evocative landscapes – including the Tajikistan’s towering Pamir Mountains, Turkmenistan’s and Uzbekistan’s vast deserts, and Kyrgyzstan’s secluded alpine lakes.",
+    "title": "Тур по Центральной Азии",
+    "description": "Хотя сегодня Центральная Азия находится в глуши, так было не всегда. На самом деле, Великий шелковый путь проходил через многие главные города региона (включая Самарканд, Бухару, Мерв, Худжанд и Ош). Когда купцы останавливались в этих городах по пути из Китая в Европу, они обменивались с местными жителями не только товарами, но и знаниями. Это сделало Центральную Азию оживленным регионом с мастерами-ремесленниками, учеными мирового уровня и разнообразным населением. Между городами Шелковый путь проходил через отдаленные и вызывающие воспоминания пейзажи, включая высокие горы Памира в Таджикистане, обширные пустыни Туркменистана и Узбекистана и уединенные высокогорные озера Кыргызстана. ",
     "price": 3215,
     "maxPeople": 10,
-    "location": "Uzbekistan",
-    "length": "11 Days / 10 Night",
+    "location": "Центральная Азия",
+    "length": "11 дней  / 10 ночей",
     "iclueded": [
-      "All transfers: 1-2 pax in sedan type car, 3-8 pax in minivan/van",
-      "Accommodation based on double/twin room sharing, breakfasts included",
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Meeting and seeing off at the airport",
-      "Sightseeing tour programme with local, English speaking guides in each country",
-      "Economy class train tickets",
-      "Entrance fees to sights as per itinerary"
+      "Все трансферы: 1-2 человека в автомобиле типа седан, 3-8 человек в минивэне/микроавтобусе-фургоне",
+      "Проживание в двухместном номере, завтраки включены",
+      "Входные билеты в музеи, на посещение достопримечательностей, памятников",
+      "Встреча и проводы в аэропорту",
+      "Обзорная программа с местными англоговорящими гидами в каждой стране",
+      "Билеты на поезд эконом-класса",
+      "Входные билеты в достопримечательности в соответствии с маршрутом"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
-      "Tips for the guide and drivers",
-      "Additional leisure"
+      "Международные рейсы в Узбекистан и обратно",
+      "Чаевые гиду и водителям",
+      "Дополнительный досуг"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs. <br/>At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan. <br/> Transfer to the hotel, registration, rest <br/>Free day in Tashkent <br/> Overnight at a hotel in Tashkent. <br/> Power supply: not included. <br/> The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Ташкент",
+        "name": "Прибытие в столицу Ташкент, свободный день для отдыха",
+        "description": "По прибытии в Ташкент прохождение таможенного контроля займет у вас от 30 минут до 1 часа. На выходе вас встретит наш водитель в комфортабельном автомобиле с табличкой. Встреча будет организована в соответствии со временем прибытия вашего рейса в Узбекистан. Трансфер в гостиницу, регистрация, свободный день для отдыха в Ташкенте, ночевка в гостинице в Ташкенте. Питание: не включено. Тур-менеджер расскажет вам и покажет проверенные места, где вы можете пообедать и поужинать блюдами местной кухни ",
         "places": [],
         "departure": [],
         "duration": ""
@@ -844,37 +844,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Самарканд",
+        "name": "Исторический Ташкент - экскурсия и трансфер в Самарканд на поезде",
+        "description": "Завтрак в отеле В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для экскурсии по Ташкенту. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "Музей прикладного искусства Узбекистана",
+          "Комплекс Хаст-Имам, где хранится самый известный Коран - Коран Османа",
+          "Посещение старого города Ташкента",
+          "Базар Чорсу, знаменитый столичный рынок",
+          "Памятник мужеству",
+          "Посещение площади Независимости",
+          "Площадь Амира Тимура, музей Тимуридов",
+          "Станции Ташкентского метро (по желанию)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17:45 Пересадка на Ташкентский железнодорожный вокзал",
+          "18:45 Отправление скоростного поезда комфорт-класса из Ташкента",
+          "20:58 Прибытие в Самарканд, на родину Тамерлана"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Самарканд",
+        "name": "Знаменитые исторические места Самарканда - обзорная экскурсия по городу",
+        "description": "Завтрак в отеле\" В холле отеля вас встретят сертифицированный гид и водитель в комфортабельном автомобиле совершите экскурсию по Самарканду. Во время экскурсии вы посетите и вам расскажут о:",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Знаменитый мавзолей Амира Тимура - \"Гур Эмир\".",
+          "Легендарная площадь Регистан с тремя медресе",
+          "Мечеть Биби ханум",
+          "Знаменитый Самаркандский базар Сибов. Где можно купить сухофрукты, лепешки и национальные сладости."
         ],
         "duration": "5-6",
         "departure": []
@@ -882,41 +882,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel <br/> Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Бухара",
+        "name": "Экскурсия по Самарканду и трансфер в Бухару на поезде",
+        "description": "Завтрак в отеле, выезд из отеля, в холле отеля вас ждет встреча с сертифицированным гидом и водителем на комфортабельном автомобиле для экскурсионного выезда за пределы города Самарканд. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Некрополь Шахи-Зинда времен Тимуридов",
+          "Обсерватория Улугбека - уникальное сооружение 15 века; на данный момент сохранился фрагмент измерительного прибора \"Сульсе Фахри\"",
+          "Мавзолей пророка Даниила является священным местом поклонения для трех религий: мусульманской, христианской и еврейской",
+          "Кунья Бумажная фабрика Мероса (воссоздано ручное производство древней тутовой бумаги, здесь вы увидите весь процесс производства бумаги"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "В 20:00 Трансфер на железнодорожный вокзал города Самарканд",
+          "21:03 Отправление скоростного поезда комфорт-класса из Самарканда",
+          "21:58 Прибытие в Бухару - жемчужину Востока"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Бухара",
+        "name": "Жемчужина Востока - экскурсионная история Бухары",
+        "description": "Завтрак в отеле\" В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для трансфера к началу экскурсии по Бухаре. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Величественный мавзолей Исмаила Самани - это место захоронения могущественного и влиятельного эмира династии Саманидов 9 века. Мавзолей отличается уникальным дизайном и художественной кирпичной кладкой, выполненной в манере, характерной для доисламской культуры",
+          "Мавзолей Чашма Аюб (колодец Иова), расположенный рядом с мавзолеем Саманидов",
+          "Мечеть Боло Хауз (18-20 века)",
+          "Огромная цитадель Арк - зимняя резиденция эмира Бухарского",
+          "Мечеть Калон",
+          "Знаменитый минарет Калян",
+          "Медресе Мир-Араб",
+          "Медресе Улугбека",
+          "Медресе Абдулазизхана с традиционной майоликой",
+          "Древние торговые купола Бухары",
+          "Мечеть Магоки-Аттори (12 век) в архитектуре, особенной для своего времени",
+          "Дом Ляби"
         ],
         "duration": "5-6",
         "departure": []
@@ -924,20 +924,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel <br/> Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Бухара",
+        "name": "Бухара - экскурсионная поездка за город и трансфер на поезде в Ташкент",
+        "description": "Завтрак в отеле, выезд из отеля, в отеле в вестибюле вас встретит сертифицированный гид и водитель на комфортабельном автомобиле для экскурсионного выезда за пределы города Бухара. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Уникальный памятник \"Чор Минор\" 1807-1809 гг.",
+          "Летняя резиденция эмира Бухары Мохи-Хоса",
+          "Некрополь Бахауддина Накшбанди, возведенный в 1544 году. Бахауддин Накшбанди был влиятельным шейхом Бухары, суфистом и теологом. Суфии и мусульмане приравнивали посещение места его захоронения к небольшому хаджу"
         ],
         "duration": "4",
         "departure": [
-          "International flight tickets before and after the tou",
-          "Tips for the guide and drivers",
-          "Visa support ",
-          "Additional leisure"
+          "15:00 Трансфер на железнодорожный вокзал Бухары (Внимание: время отправления и прибытия может быть изменено в соответствии с расписанием поездов)",
+          "15:50 Отправление поезда из Бухары",
+          "19:44 Прибытие в Ташкент"
         ]
       }
     ]
@@ -967,33 +966,33 @@
         "img": "/assets/images/tourShow/turkmenistan.webp"
       }
     ],
-    "title": "Central Asia Tour",
-    "description": "Though Central Asia is off the beaten track today, this wasn’t always the case. In fact, the Silk Road passed through many of the region’s main cities (including Samarkand, Bukhara, Merv, Khujand and Osh). As merchants stopped in these cities on their way from China to Europe, they traded not only goods, but also knowledge, with locals. This made Central Asia a lively region with master-craftsmen, world-class scholars, and a diverse population. Between the cities, the Silk Road passed through remote and evocative landscapes – including the Tajikistan’s towering Pamir Mountains, Turkmenistan’s and Uzbekistan’s vast deserts, and Kyrgyzstan’s secluded alpine lakes.",
+    "title": "Тур по Центральной Азии",
+    "description": "Хотя сегодня Центральная Азия находится в глуши, так было не всегда. На самом деле, Великий шелковый путь проходил через многие главные города региона (включая Самарканд, Бухару, Мерв, Худжанд и Ош). Когда купцы останавливались в этих городах по пути из Китая в Европу, они обменивались с местными жителями не только товарами, но и знаниями. Это сделало Центральную Азию оживленным регионом с мастерами-ремесленниками, учеными мирового уровня и разнообразным населением. Между городами Шелковый путь проходил через отдаленные и вызывающие воспоминания пейзажи, включая высокие горы Памира в Таджикистане, обширные пустыни Туркменистана и Узбекистана и уединенные высокогорные озера Кыргызстана.",
     "price": 3215,
     "maxPeople": 10,
-    "location": "Uzbekistan",
-    "length": "11 Days / 10 Night",
+    "location": "Центральная Азия",
+    "length": "11 дней  / 10 ночей",
     "iclueded": [
-      "All transfers: 1-2 pax in sedan type car, 3-8 pax in minivan/van",
-      "Accommodation based on double/twin room sharing, breakfasts included",
-      "Entrance tickets to museums, to visit attractions, monuments",
-      "Meeting and seeing off at the airport",
-      "Sightseeing tour programme with local, English speaking guides in each country",
-      "Economy class train tickets",
-      "Entrance fees to sights as per itinerary"
+      "Все трансферы: 1-2 человека в автомобиле типа седан, 3-8 человек в минивэне/микроавтобусе-фургоне",
+      "Проживание в двухместном номере, завтраки включены",
+      "Входные билеты в музеи, на посещение достопримечательностей, памятников",
+      "Встреча и проводы в аэропорту",
+      "Обзорная программа с местными англоговорящими гидами в каждой стране",
+      "Билеты на поезд эконом-класса",
+      "Входные билеты в достопримечательности в соответствии с маршрутом"
     ],
     "excluded": [
-      "International flights to and from Uzbekistan",
-      "Tips for the guide and drivers",
-      "Additional leisure"
+      "Международные рейсы в Узбекистан и обратно",
+      "Чаевые гиду и водителям",
+      "Дополнительный досуг"
     ],
     "plan": [
       {
         "id": 1,
         "heading": "One",
-        "location": "Tashkent",
-        "name": "Arrival in the capital Tashkent, a free day for rest.",
-        "description": "Arrival in Tashkent  It will take you from 30 minutes to 1 hour to clear customs. <br/>At the exit you will be met by our driver in a comfortable vehicle with a sign. The meeting will be arranged according to the arrival time of your flight to Uzbekistan. <br/> Transfer to the hotel, registration, rest <br/>Free day in Tashkent <br/> Overnight at a hotel in Tashkent. <br/> Power supply: not included. <br/> The tour manager will tell you and show you the proven places where you can have lunch and dinner with local cuisine.",
+        "location": "Ташкент",
+        "name": "Прибытие в столицу Ташкент, свободный день для отдыха",
+        "description": "По прибытии в Ташкент прохождение таможенного контроля займет у вас от 30 минут до 1 часа. На выходе вас встретит наш водитель в комфортабельном автомобиле с табличкой. Встреча будет организована в соответствии со временем прибытия вашего рейса в Узбекистан. Трансфер в гостиницу, регистрация, свободный день для отдыха в Ташкенте, ночевка в гостинице в Ташкенте. Питание: не включено. Тур-менеджер расскажет вам и покажет проверенные места, где вы можете пообедать и поужинать блюдами местной кухни ",
         "places": [],
         "departure": [],
         "duration": ""
@@ -1001,37 +1000,37 @@
       {
         "id": 2,
         "heading": "Two",
-        "location": "Samarkand",
-        "name": "Historical Tashkent - excursion and transfer to Samarkand by train",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Tashkent. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Самарканд",
+        "name": "Исторический Ташкент - экскурсия и трансфер в Самарканд на поезде",
+        "description": "Завтрак в отеле В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для экскурсии по Ташкенту. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Museum of Applied Arts of Uzbekistan",
-          "The Khast-Imam complex, where the most famous Koran is kept - the Koran of Osman.",
-          "Visit the old city of Tashkent,",
-          "Chor-su bazaar, the famous market of the capital.",
-          "Monument of Courage",
-          "Visit to Independence Square",
-          "Amir Timur Square, Timurid Museum",
-          "Tashkent metro stations (optional)"
+          "Музей прикладного искусства Узбекистана",
+          "Комплекс Хаст-Имам, где хранится самый известный Коран - Коран Османа",
+          "Посещение старого города Ташкента",
+          "Базар Чорсу, знаменитый столичный рынок",
+          "Памятник мужеству",
+          "Посещение площади Независимости",
+          "Площадь Амира Тимура, музей Тимуридов",
+          "Станции Ташкентского метро (по желанию)"
         ],
         "duration": "5-6",
         "departure": [
-          "17:45 Transfer to Tashkent railway station",
-          "18:45 Departure of the high-speed comfort class train from Tashkent",
-          "20:58 Arrival in Samarkand, Tamerlane's homeland"
+          "17:45 Пересадка на Ташкентский железнодорожный вокзал",
+          "18:45 Отправление скоростного поезда комфорт-класса из Ташкента",
+          "20:58 Прибытие в Самарканд, на родину Тамерлана"
         ]
       },
       {
         "id": 3,
         "heading": "Three",
-        "location": "Samarkand",
-        "name": "Famous historical places of Samarkand - city tour",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for a tour of Samarkand. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Самарканд",
+        "name": "Знаменитые исторические места Самарканда - обзорная экскурсия по городу",
+        "description": "Завтрак в отеле\" В холле отеля вас встретят сертифицированный гид и водитель в комфортабельном автомобиле совершите экскурсию по Самарканду. Во время экскурсии вы посетите и вам расскажут о:",
         "places": [
-          "The famous Mausoleum of Amir Timur - \"Gur Emir\".",
-          "Legendary Registan Square with three madrassas",
-          "Bibi Khanum Mosque.",
-          "The famous Samarkand Sieb Bazaar. Where you can buy dried fruits, flatbreads and national sweets."
+          "Знаменитый мавзолей Амира Тимура - \"Гур Эмир\".",
+          "Легендарная площадь Регистан с тремя медресе",
+          "Мечеть Биби ханум",
+          "Знаменитый Самаркандский базар Сибов. Где можно купить сухофрукты, лепешки и национальные сладости."
         ],
         "duration": "5-6",
         "departure": []
@@ -1039,41 +1038,41 @@
       {
         "id": 4,
         "heading": "Four",
-        "location": "Bukhara",
-        "name": "Samarkand city tour and transfer to Bukhara by train",
-        "description": "Breakfast at the hotel <br/> Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Samarkand. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Бухара",
+        "name": "Экскурсия по Самарканду и трансфер в Бухару на поезде",
+        "description": "Завтрак в отеле, выезд из отеля, в холле отеля вас ждет встреча с сертифицированным гидом и водителем на комфортабельном автомобиле для экскурсионного выезда за пределы города Самарканд. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "Necropolis of Shahi Zinda from Timurid times",
-          "The Ulugbek Observatory is a unique structure of the 15th century; at the moment, a fragment of the measuring instrument \"Sulse Fakhri\" has been preserved",
-          "The Mausoleum of the Prophet Daniel is a holy place of worship for three religions: Muslim, Christian and Jewish",
-          "Cunha Meros Paper Mill (recreated handmade production of ancient mulberry paper, here you will see the entire paper production process"
+          "Некрополь Шахи-Зинда времен Тимуридов",
+          "Обсерватория Улугбека - уникальное сооружение 15 века; на данный момент сохранился фрагмент измерительного прибора \"Сульсе Фахри\"",
+          "Мавзолей пророка Даниила является священным местом поклонения для трех религий: мусульманской, христианской и еврейской",
+          "Кунья Бумажная фабрика Мероса (воссоздано ручное производство древней тутовой бумаги, здесь вы увидите весь процесс производства бумаги"
         ],
         "duration": "4-5",
         "departure": [
-          "20:00 Transfer to the railway station of the city of Samarkand",
-          "21:03 Departure of the high-speed comfort class train from Samarkand",
-          "21:58 Arrival in Bukhara - the pearl of the East"
+          "В 20:00 Трансфер на железнодорожный вокзал города Самарканд",
+          "21:03 Отправление скоростного поезда комфорт-класса из Самарканда",
+          "21:58 Прибытие в Бухару - жемчужину Востока"
         ]
       },
       {
         "id": 5,
         "heading": "Five",
-        "location": "Bukhara",
-        "name": "Pearl of the East - excursion history of Bukhara",
-        "description": "Breakfast at the hotel <br/> In the hotel lobby you will be met by a certified guide and driver in a comfortable car for transfer to the beginning of the tour of Bukhara. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Бухара",
+        "name": "Жемчужина Востока - экскурсионная история Бухары",
+        "description": "Завтрак в отеле\" В холле отеля вас встретит сертифицированный гид и водитель в комфортабельном автомобиле для трансфера к началу экскурсии по Бухаре. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The majestic Mausoleum of Ismail Samani is the burial place of the powerful and influential Emir of the Samanid Dynasty of the 9th century. The mausoleum is distinguished by a unique design and artistic brickwork, made in a manner characteristic of pre-Islamic culture",
-          "Chashma Ayub Mausoleum (Job's Well), located near the Samanid Mausoleum.",
-          "Bolo Hauz Mosque (18th-20th century)",
-          "The huge Citadel of Ark - the winter residence of the Emir of Bukhara",
-          "Kalon Mosque",
-          "Famous Kalyan Minaret",
-          "Madrasah Mir-Arab",
-          "Ulugbek Madrasah",
-          "Abdulazizkhan Madrasah with traditional majolica",
-          "Ancient trading domes of Bukhara ",
-          "Magoki-Attori Mosque (12th century) in architecture special for its time.",
-          "Lyabi House"
+          "Величественный мавзолей Исмаила Самани - это место захоронения могущественного и влиятельного эмира династии Саманидов 9 века. Мавзолей отличается уникальным дизайном и художественной кирпичной кладкой, выполненной в манере, характерной для доисламской культуры",
+          "Мавзолей Чашма Аюб (колодец Иова), расположенный рядом с мавзолеем Саманидов",
+          "Мечеть Боло Хауз (18-20 века)",
+          "Огромная цитадель Арк - зимняя резиденция эмира Бухарского",
+          "Мечеть Калон",
+          "Знаменитый минарет Калян",
+          "Медресе Мир-Араб",
+          "Медресе Улугбека",
+          "Медресе Абдулазизхана с традиционной майоликой",
+          "Древние торговые купола Бухары",
+          "Мечеть Магоки-Аттори (12 век) в архитектуре, особенной для своего времени",
+          "Дом Ляби"
         ],
         "duration": "5-6",
         "departure": []
@@ -1081,20 +1080,19 @@
       {
         "id": 6,
         "heading": "Six",
-        "location": "Bukhara",
-        "name": "Bukhara - excursion trip outside the city and transfer by train to Tashkent",
-        "description": "Breakfast at the hotel <br/> Check out from the hotel, in the hotel lobby you will be met by a certified guide and driver in a comfortable car for an excursion to travel outside the city of Bukhara. <br/> During the tour you will visit and you will be told about:  <br/>",
+        "location": "Бухара",
+        "name": "Бухара - экскурсионная поездка за город и трансфер на поезде в Ташкент",
+        "description": "Завтрак в отеле, выезд из отеля, в отеле в вестибюле вас встретит сертифицированный гид и водитель на комфортабельном автомобиле для экскурсионного выезда за пределы города Бухара. Во время экскурсии вы посетите и вам расскажут о: ",
         "places": [
-          "The unique monument \"Chor Minor\" 1807 -1809.",
-          "Summer residence of the Emir of Bukhara Mokhi-Khosa",
-          "Necropolis of Bahauddin Naqshbandi, erected in 1544. Bahauddin Naqshbandi was an influential sheikh in Bukhara, a Suffist, and theologian. Sufis and Muslims equated visiting his burial site with a small Hajj"
+          "Уникальный памятник \"Чор Минор\" 1807-1809 гг.",
+          "Летняя резиденция эмира Бухары Мохи-Хоса",
+          "Некрополь Бахауддина Накшбанди, возведенный в 1544 году. Бахауддин Накшбанди был влиятельным шейхом Бухары, суфистом и теологом. Суфии и мусульмане приравнивали посещение места его захоронения к небольшому хаджу"
         ],
         "duration": "4",
         "departure": [
-          "International flight tickets before and after the tou",
-          "Tips for the guide and drivers",
-          "Visa support ",
-          "Additional leisure"
+          "15:00 Трансфер на железнодорожный вокзал Бухары (Внимание: время отправления и прибытия может быть изменено в соответствии с расписанием поездов)",
+          "15:50 Отправление поезда из Бухары",
+          "19:44 Прибытие в Ташкент"
         ]
       }
     ]
