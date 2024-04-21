@@ -170,7 +170,7 @@ const page = () => {
     if (language === 'en') {
       setDest(desEn)
       setType(typeEn)
-      setBookBtn("")
+      setBookBtn("Book a Trip")
       setText({
         tour:"Tour",
         show:"Showing ",

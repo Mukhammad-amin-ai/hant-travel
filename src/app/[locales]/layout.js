@@ -23,7 +23,7 @@ export default function RootLayout({children, params: {locale}}) {
 
   useEffect(() => {
     setIsClient(true)
-    // require("bootstrap/dist/js/bootstrap.bundle.min.js");
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
   return (
     isClient ? (

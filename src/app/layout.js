@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 import "../../public/assets/css/bootstrap-icons.css";
 import "../../public/assets/css/boxicons.min.css";
 import "../../public/assets/css/fontawesome.min.css";
@@ -14,13 +14,12 @@ import "yet-another-react-lightbox/styles.css";
 import "../../public/assets/css/all.min.css";
 import "../../public/assets/css/style.css";
 import StoreProvider from "@/store/StoreProvide";
-// import {useEffect} from "react";
+import {useEffect} from "react";
 
 export default function RootLayout({children}) {
-  // useEffect(() => {
-  //   require("bootstrap/dist/js/bootstrap.bundle.min.js");
-  // }, []);
-
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
   return (
     <StoreProvider>
       <html lang="en">
