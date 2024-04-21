@@ -34,7 +34,7 @@ const Banner1Bottom = ({data}) => {
   const searchTour = (e) => {
     e.preventDefault();
     if (country !== '' && type !== "" && day !== "") {
-      router.push(`${language}/package?search=${country}&day=${day}&type=${type}`);
+      router.push(`/${language}/package?search=${country}&day=${day}&type=${type}`);
     } else {
       setAlert(true)
     }
@@ -42,7 +42,7 @@ const Banner1Bottom = ({data}) => {
   const searchVisa = (e) => {
     e.preventDefault();
     if (country !== '' && type !== "") {
-      router.push(`${language}/visas?search=${country}&type=${type}`);
+      router.push(`/${language}/visas?search=${country}&type=${type}`);
     } else {
       setAlert(true)
     }

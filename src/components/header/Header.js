@@ -339,7 +339,7 @@ const Header = () => {
               {type.map((item, index) => (
                 <li key={index}>
                   <Link
-                    href={`${language}/package?type=${item.type}`}
+                    href={`/${language}/package?type=${item.type}`}
                     className="single-category"
                   >
                     <div className="icon">
@@ -365,7 +365,7 @@ const Header = () => {
                         <SwiperSlide key={index} className="swiper-slide">
                           <div className="destination-card2">
                             <Link
-                              href={`${language}/destination/${item.id}`}
+                              href={`/${language}/destination/${item.id}`}
                               className="destination-card-img"
                             >
                               <img
@@ -401,7 +401,7 @@ const Header = () => {
                       <path d="M53 6.5L1 6.5M1 6.5L7 12M1 6.5L7 0.999996"/>
                     </svg>
                   </div>
-                  <Link href={`${language}/destination`} className="secondary-btn2">
+                  <Link href={`/${language}/destination`} className="secondary-btn2">
                     {additionalWords.view}
                   </Link>
                   <div className="destination-sidebar-next">

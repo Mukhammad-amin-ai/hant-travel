@@ -108,7 +108,7 @@ const page = () => {
   };
 
   const clear = () => {
-    sliceFunc()
+    languageChecker()
     selectPrice.current.value = "Default Sorting";
     fromDay.current.value = 0;
     setCheckedIndex(-1);
@@ -166,7 +166,6 @@ const page = () => {
   };
 
   const languageChecker = () => {
-    console.log(language)
     if (language === 'en') {
       setDest(desEn)
       setType(typeEn)
