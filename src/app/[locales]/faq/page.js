@@ -1,7 +1,6 @@
 import Breadcrumb from "@/components/common/Breadcrumb";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
-import Link from "next/link";
 import React from "react";
 import {useTranslations} from "next-intl";
 export const metadata = {

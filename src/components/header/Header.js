@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import navData from "@/data/nav.json";
+import navEn from "@/data/en/nav.json";
 import navRu from "@/data/ru/nav.json"
 import navUz from '@/data/uz/nav.json'
 import typeEn from '@/data/en/type.json'
@@ -22,7 +22,6 @@ import SwiperCore, {
 
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
-// import {useRouter, usePathname} from "next/navigation";
 
 const initialState = {
   activeMenu: "",
@@ -79,7 +78,7 @@ function reducer(state, action) {
 const Header = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
-  const [navigation, setNavigation] = useState(navData)
+  const [navigation, setNavigation] = useState(navEn)
   const [type, setType] = useState(typeEn)
   const [destination, setDestination] = useState(desEn)
   const [additionalWords, setAddWords] = useState({
@@ -99,7 +98,7 @@ const Header = () => {
   let [lang, setLang] = useState("")
   let languageFinder = () => {
     if (language === 'en') {
-      setNavigation(navData)
+      setNavigation(navEn)
       setLang("Eng")
       setType(typeEn)
       setDestination(desEn)
