@@ -29,7 +29,7 @@
     "description": "O'zbekiston tarix va madaniyatning minglab sirlarini saqlagan eng qadimiy tsivilizatsiyalardan biri ekanligini bir necha bor eshitgandirsiz. Unda bunday ajoyib mamlakatni qaerdan o'rganishni boshlaysiz? \"O'zbekistonning to'rt marvaridi\" turkumidan!",    "type": "Adventure",
     "country": "Uzbekistan",
     "batch": "8 Kun / 7 Tun",
-    "img": "/assets/images/tour/frame_KH.jpg",
+    "img": "/assets/images/tour/Khiva.webp",
     "location_list": [
       "Uzbekistan Tour"
     ],
@@ -51,7 +51,7 @@
     "night": null,
     "type": "Adventure",
     "country": "Uzbekistan",
-    "img": "/assets/images/tour/frame_Bukh.jpg",
+    "img": "/assets/images/tour/bukhara_1.webp",
     "location_list": [
       "Uzbekistan Tour"
     ],

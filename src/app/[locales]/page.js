@@ -10,7 +10,6 @@ import HomeVise from "@/components/visaComponents/Home1Vise";
 import HomeWhyChoose from "@/components/whyChoose/Home1WhyChoose";
 import VideoSection from "@/components/videoSection/Home2VideoSection";
 import {useTranslations} from 'next-intl';
-
 export const metadata = {
   title: "HANT TRAVEL",
   description: "Hant travel tour agency official webpage",
