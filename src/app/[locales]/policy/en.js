@@ -1,11 +1,10 @@
 import React from 'react';
-function Page() {
+
+const en = () => {
   return (
-    <div className="container pt-50 mb-120">
+    <>
       <h1>Privacy Policy of HANT TRAVEL</h1>
-
       <p>HANT TRAVEL operates the https://hant-travel.vercel.app/ website, which provides the SERVICE.</p>
-
       <p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of
         Personal Information if anyone decided to use our Service, the hant-travel.vercel.app website.</p>
 
@@ -83,8 +82,8 @@ function Page() {
       <h2>Contact Us</h2>
 
       <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.</p>
-    </div>
+    </>
   );
 }
 
-export default Page;
+export default en;
