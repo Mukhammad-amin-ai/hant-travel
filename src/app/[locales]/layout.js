@@ -1,6 +1,5 @@
 "use client";
 import "../../../public/assets/css/bootstrap-icons.css";
-import "../../../public/assets/css/all.min.css";
 import "../../../public/assets/css/boxicons.min.css";
 import "../../../public/assets/css/fontawesome.min.css";
 import "../../../public/assets/css/swiper-bundle.min.css";
@@ -12,6 +11,7 @@ import "../../../public/assets/css/bootstrap-datetimepicker.min.css";
 import "react-datepicker/dist/react-datepicker.css";
 import "../../../public/assets/css/bootstrap.min.css";
 import "yet-another-react-lightbox/styles.css";
+import "../../../public/assets/css/all.min.css";
 import "../../../public/assets/css/style.css";
 import StoreProvider from "@/store/StoreProvide";
 import {useEffect, useState} from "react";
