@@ -40,7 +40,7 @@ const Footer = ({data, book}) => {
                 <h3>
                   {data ? data?.[0].text : " "}
                 </h3>
-                <Link href={`${language}/package`} className="primary-btn1">
+                <Link href={`/${language}/package`} className="primary-btn1">
                   {book}
                 </Link>
               </div>
@@ -171,12 +171,12 @@ const Footer = ({data, book}) => {
               <div className="footer-right">
                 <ul>
                   <li>
-                    <Link href={`${language}/policy`}>
+                    <Link href={`/${language}/policy`}>
                       {data ? data?.[7].text : " "}
                     </Link>
                   </li>
                   <li>
-                    <Link href={`${language}}/terms`}>
+                    <Link href={`/${language}/terms`}>
                       {data ? data?.[8].text : " "}
                     </Link>
                   </li>
