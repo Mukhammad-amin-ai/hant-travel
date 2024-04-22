@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "How Do I Book A Trip On Your Website?",
+    "content": "Throught Contact us Page or Form Section in a spesific tour",
+    "countable": []
+  },
+  {
+    "id": 2,
+    "title": "What Payment Methods Do You Accept?",
+    "content": "",
+    "countable":[
+      "Credit Card: We accept major credit cards like Visa, Mastercard, and potentially others (please confirm with Hant Travel for the most up-to-date information)",
+      "Debit Card: Depending on your bank and the card type, debit cards might also be accepted. It's advisable to check with Hant Travel beforehand.",
+      "Bank Transfer: For secure online transfers, bank transfers might be an option. Inquire with Hant Travel for their bank details if you prefer this method.",
+      "Cash: While booking online might require a card initially, you might have the option to pay the remaining balance in cash upon arrival in Samarkand (depending on the specific booking process). Always confirm this possibility with Hant Travel."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Can I Make Changes To My Reservation After Booking?",
+    "content": "Yes, Of course you can change your booking",
+    "countable": []
+  },
+  {
+    "id": 4,
+    "title": "What Is Your Cancellation Policy?",
+    "content": "Cancellation policies can vary depending on the specific tour and how far in advance you cancel. It's crucial to review the policy for your chosen tour before booking.  Generally, cancellation fees increase the closer you get to the departure date.",
+    "countable": []
+  },
+  {
+    "id": 5,
+    "title": "Do You Offer Group Booking Discounts?",
+    "content": "Yes we are offer group booking discounts",
+    "countable": []
+  }
+]

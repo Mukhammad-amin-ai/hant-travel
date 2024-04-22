@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Veb-saytingizda sayohatni qanday bron qilishim mumkin?",
+    "content": "Biz bilan bog'lanish sahifasi yoki Ruyxatdan utish bo'limi bilan",
+    "countable": []
+  },
+  {
+    "id": 2,
+    "title": "Siz qanday to'lov usullarini qabul qilasiz?",
+    "content": "",
+    "countable":[
+      "Kredit karta: biz Visa, Mastercard va boshqa potentsial kredit kartalarini qabul qilamiz(iltimos, eng so'nggi ma'lumot uchun Hant Travel bilan tasdiqlang)",
+      "Debet karta: bankingiz va karta turiga qarab, debet kartalari ham qabul qilinishi mumkin. Oldindan Hant Travel bilan tekshirish tavsiya etiladi.",
+      "Bank o'tkazmasi: xavfsiz onlayn o'tkazmalar uchun bank o'tkazmalari variant bo'lishi mumkin. Agar siz ushbu usulni afzal ko'rsangiz, Hant Travel-dan bank ma'lumotlarini so'rang.",
+      "Naqd pul: onlayn bron qilish uchun dastlab karta kerak bo'lishi mumkin bo'lsa-da, siz Samarqandga kelganingizda qolgan qoldiqni naqd pulda to'lashingiz mumkin (maxsus bronlash jarayoniga qarab). Ushbu imkoniyatni har doim Hant Travel bilan tasdiqlang."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Brondan keyin bronimga o'zgartirish kirita olamanmi?",
+    "content": "Ha, albatta siz bron qilishni o'zgartirishingiz mumkin",
+    "countable": []
+  },
+  {
+    "id": 4,
+    "title": "Sizning bekor siyosati nima?",
+    "content": "Bekor qilish siyosati aniq turga va oldindan bekor qilishingizga qarab farq qilishi mumkin. Rezervasyondan oldin siz tanlagan tur uchun siyosatni ko'rib chiqish juda muhimdir. Odatda, bekor qilish to'lovlari jo'nash sanasiga qanchalik yaqinlashsangiz, ko'payadi.",
+    "countable": []
+  },
+  {
+    "id": 5,
+    "title": "Siz guruhni bron qilishda chegirmalar taklif qilasizmi?",
+    "content": "Ha, biz  bron chegirmalar bor",
+    "countable": []
+  }
+]

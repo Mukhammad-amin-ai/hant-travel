@@ -1,51 +1,39 @@
-import Breadcrumb from "@/components/common/Breadcrumb";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
-import React from "react";
-import {useTranslations} from "next-intl";
-export const metadata = {
-  title: "HANT TRAVEL",
-  description: "Frequently asked question",
-  icons: {
-    icon: "/assets/img/sm-logo.svg",
-  },
-};
+"use client"
+import React, {useEffect, useState} from "react";
+import generalEn from "@/data/en/faqGeneral.json"
+import generalRu from "@/data/ru/faqGeneral.json"
+import generalUz from "@/data/uz/faqGeneral.json"
+import {useSelector} from "react-redux";
+
 const page = () => {
-  const t = useTranslations("banner")
-  const fo = useTranslations("footer")
-  const footer = [
-    {
-      text: fo("title")
-    },
-    {
-      text: fo("link")
-    },
-    {
-      text: fo("whatsapp")
-    },
-    {
-      text: fo("email")
-    },
-    {
-      text: fo("address")
-    },
-    {
-      text: fo("we")
-    },
-    {
-      text: fo("payment")
-    },
-    {
-      text: fo("policy")
-    },
-    {
-      text: fo("terms")
+  const language = useSelector((state) => state.language.languageValue)
+  const [general,setGeneral]=useState(generalEn)
+
+  const [activeId, setActiveId] = useState('');
+  const [active, setActive] = useState('');
+  const toggleCollapse = (id) => {
+    setActiveId(id === activeId ? '' : id);
+  };
+  const toggleFAQ = (id) => {
+    setActive(id === active ? '' : id);
+  };
+  let languageChecker = ()=>{
+    if(language === 'en'){
+      setGeneral(generalEn)
     }
-  ]
+    if(language === 'ru'){
+      setGeneral(generalRu)
+    }
+    if(language === 'uz'){
+      setGeneral(generalUz)
+    }
+  }
+
+  useEffect(() => {
+    languageChecker()
+  }, [language]);
   return (
     <>
-      <Header />
-      <Breadcrumb pagename="FAQ" pagetitle="FAQ" />
       <div className="faq-section pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5">
@@ -69,150 +57,48 @@ const page = () => {
                 </div>
                 <div className="faq-content">
                   <div className="accordion" id="accordionTravel">
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="travelheadingOne">
-                        <button
-                          className="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#travelcollapseOne"
-                          aria-expanded="true"
-                          aria-controls="travelcollapseOne"
-                        >
-                          01. How do I book a trip on your website?
-                        </button>
-                      </h2>
-                      <div
-                        id="travelcollapseOne"
-                        className="accordion-collapse collapse "
-                        aria-labelledby="travelheadingOne"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inci only Integer purus onthis felis non
-                          aliquam.Mauris nec just vitae ann auctor tol euismod
-                          sit amet non ipsul growing this.
+                    {general.map((item, index) => {
+                      const collapseId = `travelcollapse${index + 1}`;
+                      const isCollapsed = collapseId !== activeId;
+                      return (
+                        <div key={index} className="accordion-item">
+                          <h2 className="accordion-header" id={`travelheading${index + 1}`}>
+                            <button
+                              className={`accordion-button ${isCollapsed ? 'collapsed' : 'show'}`}
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target={`#${collapseId}`}
+                              aria-expanded={!isCollapsed} // Consistent aria-expanded
+                              aria-controls={collapseId}
+                              onClick={() => toggleCollapse(collapseId)}
+                            >
+                              {item.title}
+                            </button>
+                          </h2>
+                          <div
+                            id={collapseId}
+                            className={`accordion-collapse collapse ${!isCollapsed ? 'show' : ''}`} // Concise class toggle
+                            aria-labelledby={`travelheading${index + 1}`}
+                            data-bs-parent="#accordionTravel"
+                          >
+                            <div className="accordion-body">
+                              {
+                                item.content !== "" ?
+                                  item.content
+                                  :
+                                  <ul>
+                                    {
+                                      item.countable.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                      ))
+                                    }
+                                  </ul>
+                              }
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="travelheadingTwo">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#travelcollapseTwo"
-                          aria-expanded="false"
-                          aria-controls="travelcollapseTwo"
-                        >
-                          02. What payment methods do you accept?
-                        </button>
-                      </h2>
-                      <div
-                        id="travelcollapseTwo"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="travelheadingTwo"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="travelheadingThree">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#travelcollapseThree"
-                          aria-expanded="false"
-                          aria-controls="travelcollapseThree"
-                        >
-                          03. Can I make changes to my reservation after
-                          booking?
-                        </button>
-                      </h2>
-                      <div
-                        id="travelcollapseThree"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="travelheadingThree"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="travelheadingFour">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#travelcollapseFour"
-                          aria-expanded="false"
-                          aria-controls="travelcollapseFour"
-                        >
-                          04. What is your cancellation policy?
-                        </button>
-                      </h2>
-                      <div
-                        id="travelcollapseFour"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="travelheadingFour"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="travelheadingFive">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#travelcollapseFive"
-                          aria-expanded="false"
-                          aria-controls="travelcollapseFive"
-                        >
-                          05. Do you offer group booking discounts?
-                        </button>
-                      </h2>
-                      <div
-                        id="travelcollapseFive"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="travelheadingFive"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
@@ -235,149 +121,48 @@ const page = () => {
                 </div>
                 <div className="faq-content">
                   <div className="accordion" id="accordionTravel2">
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="tripheadingOne">
-                        <button
-                          className="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#tripcollapseOne"
-                          aria-expanded="true"
-                          aria-controls="tripcollapseOne"
-                        >
-                          01. What is your payment schedule and process?
-                        </button>
-                      </h2>
-                      <div
-                        id="tripcollapseOne"
-                        className="accordion-collapse collapse "
-                        aria-labelledby="tripheadingOne"
-                        data-bs-parent="#accordionTravel2"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inci only Integer purus onthis felis non
-                          aliquam.Mauris nec just vitae ann auctor tol euismod
-                          sit amet non ipsul growing this.
+                    {general.map((item, index) => {
+                      const collapse = `travelcollape${index + 1}`;
+                      const isCollapsed = collapse !== active;
+                      return (
+                        <div key={index} className="accordion-item">
+                          <h2 className="accordion-header" id={`travel${index + 1}`}>
+                            <button
+                              className={`accordion-button ${isCollapsed ? 'collapsed' : 'show'}`}
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target={`#${collapse}`}
+                              aria-expanded={!isCollapsed}
+                              aria-controls={collapse}
+                              onClick={() => toggleFAQ(collapse)}
+                            >
+                              {item.title}
+                            </button>
+                          </h2>
+                          <div
+                            id={collapse}
+                            className={`accordion-collapse collapse ${!isCollapsed ? 'show' : ''}`} // Concise class toggle
+                            aria-labelledby={`travel${index + 1}`}
+                            data-bs-parent="#accordionTravel"
+                          >
+                            <div className="accordion-body">
+                              {
+                                item.content !== "" ?
+                                  item.content
+                                  :
+                                  <ul>
+                                    {
+                                      item.countable.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                      ))
+                                    }
+                                  </ul>
+                              }
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="tripheadingTwo">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#tripcollapseTwo"
-                          aria-expanded="false"
-                          aria-controls="tripcollapseTwo"
-                        >
-                          02. Are there any additional fees or surcharges?
-                        </button>
-                      </h2>
-                      <div
-                        id="tripcollapseTwo"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="tripheadingTwo"
-                        data-bs-parent="#accordionTravel2"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="tripheadingThree">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#tripcollapseThree"
-                          aria-expanded="false"
-                          aria-controls="tripcollapseThree"
-                        >
-                          03. Can I transfer my reservation to another person?
-                        </button>
-                      </h2>
-                      <div
-                        id="tripcollapseThree"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="tripheadingThree"
-                        data-bs-parent="#accordionTravel2"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="tripheadingFour">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#tripcollapseFour"
-                          aria-expanded="false"
-                          aria-controls="tripcollapseFour"
-                        >
-                          04. Can I request a private tour for my group?
-                        </button>
-                      </h2>
-                      <div
-                        id="tripcollapseFour"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="tripheadingFour"
-                        data-bs-parent="#accordionTravel2"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="tripheadingFive">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#tripcollapseFive"
-                          aria-expanded="false"
-                          aria-controls="tripcollapseFive"
-                        >
-                          05. Do you offer special rates for group bookings?
-                        </button>
-                      </h2>
-                      <div
-                        id="tripcollapseFive"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="tripheadingFive"
-                        data-bs-parent="#accordionTravel2"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
@@ -385,7 +170,6 @@ const page = () => {
           </div>
         </div>
       </div>
-      <Footer data={footer} book={t("book")} />
     </>
   );
 };
