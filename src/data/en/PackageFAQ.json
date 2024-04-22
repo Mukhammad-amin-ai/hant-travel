@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "target": "One",
+    "title": "What types of tours do you offer?",
+    "content": "Hant Travel offers a variety of Samarkand tour packages catering to different interests and travel styles. We have options for history buffs, architecture enthusiasts, and those seeking a cultural immersion experience.",
+    "countable": []
+  },
+  {
+    "id": 2,
+    "target": "Two",
+    "title": "What's typically included in a Hant Travel tour package?",
+    "content": "",
+    "countable": [
+      "Accommodation: Comfortable hotels located within Samarkand or close to major attractions.",
+      "Transportation: Reliable transportation within Samarkand (taxis, buses, or private vehicles depending on the package).",
+      "Entrance Fees: Entry fees to all historical sites and museums listed in the itinerary.",
+      "Guided Tours: Knowledgeable English-speaking guides for all included activities.",
+      "Meals: Breakfast is usually included, while lunch and dinner may vary depending on the package (check details)."
+    ]
+  },
+  {
+    "id": 3,
+    "target": "Three",
+    "title": "What's generally not included in a Hant Travel tour package?",
+    "content": "",
+    "countable": [
+      "International Flights: Flights to and from Samarkand are not included unless specified in the package.",
+      "Travel Insurance: Travel insurance is highly recommended to protect your trip (not typically included).",
+      "Meals: Lunches and dinners might be excluded depending on the package (check details).",
+      "Personal Expenses: Souvenirs, drinks, gratuities, and other personal spending are not included.",
+      "Visa Fees: Visa fees for Uzbekistan are your responsibility (check visa requirements).",
+      "Optional Activities: Excursions outside the planned itinerary are typically extra."
+    ]
+  },
+  {
+    "id": 4,
+    "target": "Four",
+    "title": "How do I book a tour with Hant Travel?",
+    "content": "",
+    "countable": [
+      "Website: Browse Hant Travel's website and explore Samarkand tour options. Book directly online if you find the perfect tour.",
+      "Contact Us: Reach out to Hant Travel's Samarkand office by phone or email. Our friendly travel agents will answer your questions and help you choose the ideal tour.",
+      "Visit Us: If located conveniently, visit the Hant Travel office in Samarkand (address details can likely be found on their website)."
+    ]
+  },
+  {
+    "id": 5,
+    "target": "Five",
+    "title": "What is Hant Travel's cancellation policy?",
+    "content": "Cancellation policies can vary depending on the specific tour and how far in advance you cancel. It's crucial to review the policy for your chosen tour before booking.  Generally, cancellation fees increase the closer you get to the departure date.",
+    "countable": []
+  }
+]

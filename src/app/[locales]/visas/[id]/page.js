@@ -18,6 +18,9 @@ import En from '@/data/en/visaDetails.json'
 import Ru from '@/data/ru/visaDetails.json'
 import Uz from '@/data/uz/visaDetails.json'
 
+import visaFaqEn from '@/data/en/VisaFAQ.json'
+import visaFaqRu from '@/data/ru/VisaFAQ.json'
+import visaFaqUz from '@/data/uz/VisaFAQ.json'
 
 const page = ({params}) => {
   let router = params.id;
@@ -31,6 +34,7 @@ const page = ({params}) => {
   const [visaDetails, setVisaDetails] = useState(En);
   const [visa, setVisa] = useState(visaEn)
   const [destination, setDestination] = useState(destEn)
+  const [visaFAQ, setVisaFAQ] = useState(visaFaqEn)
   const [text, setText] = useState({
     breadcrumbs: "Visa Details",
     country: "Country",
@@ -99,6 +103,7 @@ const page = ({params}) => {
 
   const LanguageChecker = () => {
     if (language === 'en') {
+      setVisaFAQ(visaFaqEn)
       setVisaDetails(En)
       setVisa(visaEn)
       setDestination(destEn)
@@ -131,6 +136,7 @@ const page = ({params}) => {
       })
     }
     if (language === 'ru') {
+      setVisaFAQ(visaFaqRu)
       setVisaDetails(Ru)
       setVisa(visaRu)
       setDestination(destRu)
@@ -163,6 +169,7 @@ const page = ({params}) => {
       })
     }
     if (language === 'uz') {
+      setVisaFAQ(visaFaqUz)
       setVisaDetails(Uz)
       setVisa(visaUz)
       setDestination(destUz)
@@ -196,9 +203,19 @@ const page = ({params}) => {
     }
   }
 
+  const [activeId, setActiveId] = useState('');
+
+  const toggleCollapse = (id) => {
+    setActiveId(id === activeId ? '' : id);
+  };
+
+
+
   useEffect(() => {
     LanguageChecker()
   }, [language]);
+
+
   return (
     <>
       <Breadcrumb pagename={text.breadcrumbs} pagetitle={text.breadcrumbs}/>
@@ -265,237 +282,39 @@ const page = ({params}) => {
                 </div>
               </div>
               <h4 className="widget-title mb-30">
-                FAQ - General Visa Information:
+                FAQ - For Visa Application:
               </h4>
               <div className="faq-content">
                 <div className="accordion" id="accordionTravel">
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="travelheadingOne">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#travelcollapseOne"
-                        aria-expanded="true"
-                        aria-controls="travelcollapseOne"
-                      >
-                        01. Can I fill in my visa application in a language
-                        other than English?
-                      </button>
-                    </h2>
-                    <div
-                      id="travelcollapseOne"
-                      className="accordion-collapse collapse "
-                      aria-labelledby="travelheadingOne"
-                      data-bs-parent="#accordionTravel"
-                    >
-                      <div className="accordion-body">
-                        No. At Present our online application system only
-                        supports applications made in English.
+                  {visaFAQ.map((item, index) => {
+                    const collapseId = `travelcollapse${index + 1}`;
+                    const isCollapsed = collapseId !== activeId;
+                    return (
+                      <div key={index} className="accordion-item">
+                        <h2 className="accordion-header" id={`travelheading${index + 1}`}>
+                          <button
+                            className={`accordion-button ${isCollapsed ? 'collapsed' : 'show'}`}
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target={`#${collapseId}`}
+                            aria-expanded={!isCollapsed} // Consistent aria-expanded
+                            aria-controls={collapseId}
+                            onClick={() => toggleCollapse(collapseId)}
+                          >
+                            {item.title}
+                          </button>
+                        </h2>
+                        <div
+                          id={collapseId}
+                          className={`accordion-collapse collapse ${!isCollapsed ? 'show' : ''}`} // Concise class toggle
+                          aria-labelledby={`travelheading${index + 1}`}
+                          data-bs-parent="#accordionTravel"
+                        >
+                          <div className="accordion-body">{item.content}</div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="travelheadingTwo">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#travelcollapseTwo"
-                        aria-expanded="false"
-                        aria-controls="travelcollapseTwo"
-                      >
-                        02. Will I be able to access the online application
-                        system using my computer?
-                      </button>
-                    </h2>
-                    <div
-                      id="travelcollapseTwo"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="travelheadingTwo"
-                      data-bs-parent="#accordionTravel"
-                    >
-                      <div className="accordion-body">
-                        We are doing our best to support as many computers,
-                        operating systems and internet browsers as possible but
-                        due to the technologies we use for our online
-                        application system, there are certain browsers we
-                        exclude due to their age or design. Currently our site
-                        is tested at IE 5.0 or later and Mozilla Firefox 3.5 or
-                        later.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="travelheadingThree">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#travelcollapseThree"
-                        aria-expanded="false"
-                        aria-controls="travelcollapseThree"
-                      >
-                        03. Can I save my application mid-way through the
-                        application process?
-                      </button>
-                    </h2>
-                    <div
-                      id="travelcollapseThree"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="travelheadingThree"
-                      data-bs-parent="#accordionTravel"
-                    >
-                      <div className="accordion-body">
-                        Yes. You can save your online visa application wherever
-                        you see the "Save &amp; Exit" icon. To login again and
-                        complete your application, you will require your unique
-                        "Visa Application Id". This number will have been sent
-                        to the email address that you supplied in your
-                        application security details.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="travelheadingFour">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#travelcollapseFour"
-                        aria-expanded="false"
-                        aria-controls="travelcollapseFour"
-                      >
-                        04. I do not understand one of the questions. What can I
-                        do?
-                      </button>
-                    </h2>
-                    <div
-                      id="travelcollapseFour"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="travelheadingFour"
-                      data-bs-parent="#accordionTravel"
-                    >
-                      <div className="accordion-body">
-                        Throughout the online form we have added "More Info"
-                        icons to some questions that might require further
-                        guidance.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="travelheadingFive">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#travelcollapseFive"
-                        aria-expanded="false"
-                        aria-controls="travelcollapseFive"
-                      >
-                        05. I made a mistake on one of my answers. Can I change
-                        it?
-                      </button>
-                    </h2>
-                    <div
-                      id="travelcollapseFive"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="travelheadingFive"
-                      data-bs-parent="#accordionTravel"
-                    >
-                      <div className="accordion-body">
-                        If you didn't submit your application finally you can do
-                        the change. After submitting the application you can't
-                        change it.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="travelheadingSix">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#travelcollapseSix"
-                        aria-expanded="false"
-                        aria-controls="travelcollapseSix"
-                      >
-                        06. The date I entered is not being accepted. What is
-                        the correct format?
-                      </button>
-                    </h2>
-                    <div
-                      id="travelcollapseSix"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="travelheadingSix"
-                      data-bs-parent="#accordionTravel"
-                    >
-                      <div className="accordion-body">
-                        All date fields in our forms are set up in the following
-                        format: dd/mm/yyyy (for example 21/08/2011).
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="travelheadingSevene">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#travelcollapseSevene"
-                        aria-expanded="false"
-                        aria-controls="travelcollapseSevene"
-                      >
-                        07. I have not received my Completed Application
-                        confirmation email. Can you resend it to me?
-                      </button>
-                    </h2>
-                    <div
-                      id="travelcollapseSevene"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="travelheadingSevene"
-                      data-bs-parent="#accordionTravel"
-                    >
-                      <div className="accordion-body">
-                        Yes. But please check first that your inbox has not
-                        treated our email confirmation as SPAM and that you have
-                        given us the correct email address. If you have not
-                        received your confirmation email after 24 hours please
-                        contact us through Complain and Feedback link.
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item">
-                    <h2 className="accordion-header" id="travelheadingEight">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#travelcollapseEight"
-                        aria-expanded="false"
-                        aria-controls="travelcollapseEight"
-                      >
-                        08. I am unable to retrieve my application. What can I
-                        do?
-                      </button>
-                    </h2>
-                    <div
-                      id="travelcollapseEight"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="travelheadingEight"
-                      data-bs-parent="#accordionTravel"
-                    >
-                      <div className="accordion-body">
-                        This could be because you did not save your application
-                        by selecting the "Save &amp; Exit" option flagged by the
-                        following image on the application form or your did not
-                        retrieve your application within 7 days of last saving
-                        it. If you are sure you saved your application in the
-                        last seven days, empty your browser cache(temporary
-                        internet files) and try again.
-                      </div>
-                    </div>
-                  </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>

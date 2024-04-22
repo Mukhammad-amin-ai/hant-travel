@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "target": "One",
+    "title": "Siz qanday turlarni taklif qilasiz?",
+    "content": "Hant Travel turli xil qiziqishlar va sayohat uslublariga mos keladigan turli xil Samarqand turistik paketlarini taklif etadi. Bizda tarix ixlosmandlari, arxitektura ixlosmandlari va madaniy suvga cho'mish tajribasini izlayotganlar uchun imkoniyatlar mavjud.",
+    "countable": []
+  },
+  {
+    "id": 2,
+    "target": "Two",
+    "title": "Odatda Hant Travel tur paketiga nimalar kiradi?",
+    "content": "",
+    "countable": [
+      "Turar joy: Samarqand ichida yoki yirik diqqatga sazovor joylarga yaqin joylashgan qulay mehmonxonalar.",
+      "Tashish: Samarqand ichida ishonchli transport (paketga qarab taksilar, avtobuslar yoki shaxsiy transport vositalari).",
+      "Kirish to'lovlari: marshrutda ko'rsatilgan barcha tarixiy joylar va muzeylarga kirish to'lovlari.",
+      "Hidoyat Tours: barcha kiritilgan faoliyati uchun bilimdon ingliz tilida so'zlashuvchi hidoyat.",
+      "Ovqatlar: nonushta odatda kiritiladi, tushlik va kechki ovqat esa paketga qarab farq qilishi mumkin (tafsilotlarni tekshiring)."
+    ]
+  },
+  {
+    "id": 3,
+    "target": "Three",
+    "title": "Hant Travel tour paketiga umuman nima kiritilmagan?",
+    "content": "",
+    "countable": [
+      "Xalqaro reyslar: agar paketda ko'rsatilmagan bo'lsa, Samarqandga va undan parvozlar qo'shilmaydi.",
+      "Sayohat sug'urtasi: sayohat sug'urtasi sayohatingizni himoya qilish uchun juda tavsiya etiladi (odatda qo'shilmaydi).",
+      "Ovqatlar: tushlik va ovqatlarni paketi qarab istisno qilinishi mumkin (ma'lumotlarni tekshirish).",
+      "Shaxsiy xarajatlar: suvenirlar, ichimliklar, sovg'alar va boshqa shaxsiy xarajatlar hisobga olinmaydi.",
+      "Viza to'lovlari: O'zbekiston uchun viza to'lovlari sizning zimmangizda (viza talablarini tekshiring).",
+      "Ixtiyoriy tadbirlar: rejalashtirilgan marshrutdan tashqari Ekskursiyalar odatda qo'shimcha hisoblanadi."
+    ]
+  },
+  {
+    "id": 4,
+    "target": "Four",
+    "title": "Hant Travel bilan sayohatni qanday bron qilishim mumkin?",
+    "content": "",
+    "countable": [
+      "Veb-sayt: Hant Travel veb-saytini ko'rib chiqing va Samarqand safari variantlarini o'rganing. Agar siz mukammal sayohatni topsangiz, to'g'ridan-to'g'ri onlayn bron qiling.",
+      "Biz bilan bog'laning: Hant Travelning Samarqanddagi ofisiga telefon yoki elektron pochta orqali murojaat qiling. Bizning do'stona sayohat agentlarimiz sizning savollaringizga javob beradi va sizga ideal turni tanlashda yordam beradi.",
+      "Bizga tashrif buyuring: Agar qulay joylashgan bo'lsa, Samarqanddagi Hant sayyohlik ofisiga tashrif buyuring (manzil ma'lumotlarini ularning veb-saytida topish mumkin)."
+    ]
+  },
+  {
+    "id": 5,
+    "target": "Five",
+    "title": "Hant Travelning bekor qilish siyosati nima?",
+    "content": "Bekor qilish siyosati aniq turga va oldindan bekor qilishingizga qarab farq qilishi mumkin. Rezervasyondan oldin siz tanlagan tur uchun siyosatni ko'rib chiqish juda muhimdir. Odatda, bekor qilish to'lovlari jo'nash sanasiga qanchalik yaqinlashsangiz, ko'payadi.",
+    "countable": []
+  }
+]

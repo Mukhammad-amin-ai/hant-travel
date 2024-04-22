@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "O'zbekistonga sayohat qilish uchun menga viza kerakmi?",
+    "content": "Bu sizning qayerdanligingizga bog'liq. Hant Travel sizga vizasiz kirish huquqiga ega ekanligingizni yoki oldindan viza olish uchun murojaat qilishingiz kerakligini aniqlashga yordam beradi."
+  },
+  {
+    "id": 2,
+    "title": "Hant Travel menga O'zbekistonga viza olishimga yordam bera oladimi?",
+    "content": "Ko'p hollarda, ha! Hant Travel sizning turingiz tasdiqlangandan so'ng viza taklifnomasini taqdim etish orqali viza olish jarayonida yordam berishi mumkin. Ushbu xat ko'pincha viza olish uchun, ayniqsa vizasiz kirish huquqiga ega bo'lmaganlar uchun talab qilinadi"
+  },
+  {
+    "id": 3,
+    "title": "Viza taklif xati uchun Hant Travel ga taqdim etish uchun qanday ma'lumot kerak?",
+    "content": "Hant Travel-ga sizning to'liq ismingiz, pasport ma'lumotlari (fuqaroligi, raqami va amal qilish muddati), O'zbekistonga rejalashtirilgan kelish va jo'nash sanalari va pasport fotosuratingiz nusxasi kerak bo'ladi."
+  },
+  {
+    "id": 4,
+    "title": "Hant Traveldan viza taklifnomasini olish uchun qancha vaqt ketadi?",
+    "content": "Qayta ishlash muddati viza turiga va elchixona qoidalariga qarab farq qilishi mumkin. Biroq, Hant Travel sizning so'rovingizni olgandan so'ng, taxminiy muddatni taqdim etishi kerak"
+  },
+  {
+    "id": 5,
+    "title": "Hant Travelning viza olish uchun yordami uchun qo'shimcha to'lovlar bormi?",
+    "content": "Hant Travel bilan viza taklifnomasi xizmati bilan bog'liq har qanday potentsial to'lovlar haqida to'g'ridan-to'g'ri tekshirish yaxshidir. Bu to'lovlar sizning tur paketingiz xarajatlaridan alohida bo'lishi mumkin."
+  }
+]

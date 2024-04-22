@@ -11,13 +11,15 @@ import En from '@/data/en/packageShow.json'
 import Ru from '@/data/ru/packageShow.json'
 import Uz from '@/data/uz/packageShow.json'
 
+import faqEn from '@/data/en/PackageFAQ.json'
+import faqRu from '@/data/ru/PackageFAQ.json'
+import faqUz from '@/data/uz/PackageFAQ.json'
+
 import {useSelector} from "react-redux";
 
 const Page = ({params}) => {
   const router = params.id - 1;
-  const [isOpen, setOpen] = useState(false);
   let language = useSelector((state) => state.language.languageValue)
-  const [colapseBtn, setCollapseBtn] = useState('collapsed')
   const [startDate, setStartDate] = useState('');
   const [pax, setPax] = useState(0);
   const [form, setForm] = useState("");
@@ -63,7 +65,7 @@ const Page = ({params}) => {
     write: "Write Your Message",
     writeMessage: "Message"
   })
-
+  const [faq, setFaq] = useState(faqEn)
   let handleDateChange = (data) => {
     setStartingData(data)
     const date = new Date(data);
@@ -113,6 +115,7 @@ const Page = ({params}) => {
 
   let langChecker = () => {
     if (language === 'en') {
+      setFaq(faqEn)
       setPackageShow(En)
       setText({
         breadcrumbs: "Package Details",
@@ -147,6 +150,7 @@ const Page = ({params}) => {
     }
     if (language === 'ru') {
       setPackageShow(Ru)
+      setFaq(faqRu)
       setText({
         breadcrumbs: "Подробности о пакете",
         per: "на человека",
@@ -180,6 +184,7 @@ const Page = ({params}) => {
     }
     if (language === 'uz') {
       setPackageShow(Uz)
+      setFaq(faqUz)
       setText({
         breadcrumbs: "Paket tafsilotlari",
         per: "kishi boshiga",
@@ -214,11 +219,16 @@ const Page = ({params}) => {
 
   }
 
+  const [activeId, setActiveId] = useState('');
+
+  const toggleCollapse = (id) => {
+    setActiveId(id === activeId ? '' : id);
+  };
+
+
   useEffect(() => {
     langChecker()
   }, [language]);
-
-
   return (
     <>
       <Breadcrumb pagename={text.breadcrumbs} pagetitle={text.breadcrumbs}/>
@@ -447,7 +457,7 @@ const Page = ({params}) => {
                 <h4>{text.location}</h4>
                 <div className="map-area mb-30">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193325.0481540361!2d-74.06757856146028!3d40.79052383652264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1660366711448!5m2!1sen!2sbd"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12287.659429529445!2d66.97859485461426!3d39.65163066888735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d18b7c2e59337%3A0x532c8e039ecc92af!2z0J_Qu9C-0YnQsNC00YwgItCg0LXQs9C40YHRgtC-0L0nJw!5e0!3m2!1sru!2s!4v1713787576619!5m2!1sru!2s"
                     width={600}
                     height={450}
                     style={{border: 0}}
@@ -463,150 +473,49 @@ const Page = ({params}) => {
                 </div>
                 <div className="faq-content">
                   <div className="accordion" id="accordionTravel">
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="travelheadingOne">
-                        <button
-                          className="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#travelcollapseOne"
-                          aria-expanded="true"
-                          aria-controls="travelcollapseOne"
-                        >
-                          01. How do I book a trip on your website?
-                        </button>
-                      </h2>
-                      <div
-                        id="travelcollapseOne"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="travelheadingOne"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inci only Integer purus onthis felis non
-                          aliquam.Mauris nec just vitae ann auctor tol euismod
-                          sit amet non ipsul growing this.
+                    {faq.map((item, index) => {
+                      const collapseId = `travelcollapse${index + 1}`; // Unique collapse ID
+                      const isCollapsed = collapseId !== activeId; // Efficient collapse state
+
+                      return (
+                        <div key={index} className="accordion-item">
+                          <h2 className="accordion-header" id={`travelheading${index + 1}`}>
+                            <button
+                              className={`accordion-button ${isCollapsed ? 'collapsed' : 'show'}`}
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target={`#${collapseId}`}
+                              aria-expanded={!isCollapsed} // Consistent aria-expanded
+                              aria-controls={collapseId}
+                              onClick={() => toggleCollapse(collapseId)}
+                            >
+                              {item.title}
+                            </button>
+                          </h2>
+                          <div
+                            id={collapseId}
+                            className={`accordion-collapse collapse ${!isCollapsed ? 'show' : ''}`} // Concise class toggle
+                            aria-labelledby={`travelheading${index + 1}`}
+                            data-bs-parent="#accordionTravel"
+                          >
+                            <div className="accordion-body">
+                              {
+                                item.content !== "" ?
+                                  item.content
+                                  :
+                                  <ul>
+                                    {
+                                      item.countable.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                      ))
+                                    }
+                                  </ul>
+                              }
+                            </div>
+                          </div>
                         </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="travelheadingTwo">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#travelcollapseTwo"
-                          aria-expanded="false"
-                          aria-controls="travelcollapseTwo"
-                        >
-                          02. What payment methods do you accept?
-                        </button>
-                      </h2>
-                      <div
-                        id="travelcollapseTwo"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="travelheadingTwo"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="travelheadingThree">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#travelcollapseThree"
-                          aria-expanded="false"
-                          aria-controls="travelcollapseThree"
-                        >
-                          03. Can I make changes to my reservation after
-                          booking?
-                        </button>
-                      </h2>
-                      <div
-                        id="travelcollapseThree"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="travelheadingThree"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="travelheadingFour">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#travelcollapseFour"
-                          aria-expanded="false"
-                          aria-controls="travelcollapseFour"
-                        >
-                          04. What is your cancellation policy?
-                        </button>
-                      </h2>
-                      <div
-                        id="travelcollapseFour"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="travelheadingFour"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <h2 className="accordion-header" id="travelheadingFive">
-                        <button
-                          className="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#travelcollapseFive"
-                          aria-expanded="false"
-                          aria-controls="travelcollapseFive"
-                        >
-                          05. Do you offer group booking discounts?
-                        </button>
-                      </h2>
-                      <div
-                        id="travelcollapseFive"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="travelheadingFive"
-                        data-bs-parent="#accordionTravel"
-                      >
-                        <div className="accordion-body">
-                          Aptent taciti sociosqu ad litora torquent per conubia
-                          nostra, per inceptos only Integer purus onthis
-                          placerat felis non aliquam.Mauris nec justo vitae ante
-                          auctor tol euismod sit amet non ipsul growing this
-                          Praesent commodo at massa eget suscipit. Utani vitae
-                          enim velit.
-                        </div>
-                      </div>
-                    </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>
