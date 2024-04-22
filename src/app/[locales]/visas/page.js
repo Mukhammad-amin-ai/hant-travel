@@ -193,6 +193,7 @@ const page = () => {
                         <DestinationSearch
                           destination={objText.destination}
                           data={dest}
+                          language={language}
                           contryCatcher={countryCatcher}
                         />
                       </div>
@@ -214,7 +215,7 @@ const page = () => {
                             </g>
                           </svg>
                         </div>
-                        <TourTypeDropdown typeCatcher={visaType} description={objText.type} typeTour={chooseV}/>
+                        <TourTypeDropdown language={language} typeCatcher={visaType} description={objText.type} typeTour={chooseV}/>
                       </div>
                     </div>
                   </div>
