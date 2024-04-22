@@ -1,8 +1,8 @@
 import React, {useState, useEffect, useRef} from "react";
-const DestinationSearch = ({destination, style, data, contryCatcher}) => {
+const DestinationSearch = ({destination, style, data, countryCatcher,language}) => {
   const [isActive, setIsActive] = useState(false);
 
-  const [selectedDestination, setSelectedDestination] = useState(    `Choose ${destination}`)
+  const [selectedDestination, setSelectedDestination] = useState(    `Choose Destination`)
 
   const searchboxRef = useRef(null);
 
@@ -12,14 +12,21 @@ const DestinationSearch = ({destination, style, data, contryCatcher}) => {
 
   const handleSelectDestination = (destination) => {
     setSelectedDestination(destination);
-    contryCatcher(destination)
+    countryCatcher(destination)
 
   };
 
-  const stopPropagation = (event) => {
-    event.stopPropagation();
+  const languageCheck = () => {
+    if(language === 'en'){
+      setSelectedDestination("Choose Destination")
+    }
+    if(language === 'ru'){
+      setSelectedDestination("Выберите пункт назначения")
+    }
+    if(language === 'uz'){
+      setSelectedDestination("Mamlamat ni tanlang")
+    }
   };
-
   const handleClickOutside = (event) => {
     if (searchboxRef.current && !searchboxRef.current.contains(event.target)) {
       setIsActive(false);
@@ -27,11 +34,12 @@ const DestinationSearch = ({destination, style, data, contryCatcher}) => {
   };
 
   useEffect(() => {
+    languageCheck()
     document.addEventListener("click", handleClickOutside);
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, []);
+  }, [language]);
   return (
     <div
       ref={searchboxRef}

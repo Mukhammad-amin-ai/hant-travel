@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 
-const TourTypeDropdown = ({ typeCatcher,typeTour,description }) => {
+const TourTypeDropdown = ({ typeCatcher,typeTour,description,language }) => {
   const [isActive, setIsActive] = useState(false);
   const [selectedTourType, setSelectedTourType] = useState( "Choose Type");
   const dropdownRef = useRef(null);
@@ -22,13 +22,25 @@ const TourTypeDropdown = ({ typeCatcher,typeTour,description }) => {
     }
   };
 
+  const languageCheck = () => {
+    if(language === 'en'){
+      setSelectedTourType("Choose Type")
+    }
+    if(language === 'ru'){
+      setSelectedTourType("Выберите Тип")
+    }
+    if(language === 'uz'){
+      setSelectedTourType("Turini tanlang")
+    }
+  };
+
   useEffect(() => {
-    // setSelectedTourType()
+    languageCheck()
     document.addEventListener("click", handleClickOutside);
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, []);
+  }, [language]);
 
   const tourTypes = [
     "Adventure",

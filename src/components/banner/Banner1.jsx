@@ -38,20 +38,6 @@ const Banner1 = ({banner}) => {
   }, []);
   const [language, setLanguage] = useState(headerCarousel);
   let lang = useSelector((state) => state.language.languageValue)
-  // const [cookie, setCookie] = useState("")
-  // let cookieCatch = () => {
-  //   const cookieString = document.cookie;
-  //   let cookiePairs = cookieString.split(';');
-  //   let nextLocaleValue = null;
-  //   for (let i = 0; i < cookiePairs.length; i++) {
-  //     let pair = cookiePairs[i].trim();
-  //     if (pair.indexOf('NEXT_LOCALE=') === 0) {
-  //       nextLocaleValue = pair.substring('NEXT_LOCALE='.length);
-  //       break;
-  //     }
-  //   }
-  //   setCookie(nextLocaleValue)
-  // }
   let languageFinder = () => {
     if (lang === 'en') {
       setLanguage(headerCarousel)
@@ -67,7 +53,6 @@ const Banner1 = ({banner}) => {
   useEffect(() => {
     languageFinder()
   }, [lang]);
-
   return (
     <>
       <div className="home1-banner-area">
@@ -76,19 +61,16 @@ const Banner1 = ({banner}) => {
             <div className="swiper-wrapper">
               {
                 language.map((item, index) => (
-                  <SwiperSlide key={index} className="swiper-slide">
-                    <div className="home1-banner-wrapper image-responsiveness">
-                      {/*// style={{*/}
-                      {/*//   backgroundImage: `linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(${item.img})`*/}
-                      {/*// }}>*/}
+                  <SwiperSlide key={index} className="swiper-slide custom-height">
+                    <div className="home1-banner-wrapper">
+                         {/*// style={{*/}
+                         {/*//   backgroundImage: `linear-gradient(180deg, rgba(16, 12, 8, 0.4) 0%, rgba(16, 12, 8, 0.4) 100%), url(${item.img})`*/}
+                         {/*// }}>*/}
                       <div className="gradiant-color"></div>
                       <Image
-                        // width={1780}
-                        // height={828}
                         src={item.img}
                         alt={'img'}
                         fill
-                        // responsive={true}
                         priority
                         className="backgroundImage"
                       />

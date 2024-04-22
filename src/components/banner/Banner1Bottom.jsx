@@ -1,13 +1,25 @@
 "use client";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useRouter} from "next/navigation";
 import DestinationSearch from "./DestinationSearch";
 import TourTypeDropdown from "./TourTypeDropdown";
 import TourCategoryDropdown from "./TourCategoryDropdown";
 import DateRange from "./DateRange";
-import typeTour from "@/data/custom/type.json";
-import destination from "@/data/custom/destination.json";
-import visa from '@/data/custom/visa.json'
+
+// import typeTour from "@/data/custom/type.json";
+import typeEn from '@/data/en/type.json'
+import typeRu from '@/data/ru/type.json'
+import typeUz from '@/data/uz/type.json'
+
+// import destination from "@/data/custom/destination.json";
+import destEn from '@/data/en/destination.json'
+import destRu from '@/data/ru/destination.json'
+import destUz from '@/data/uz/destination.json'
+
+import visaEn from '@/data/en/visa.json'
+import visaRu from '@/data/ru/visa.json'
+import visaUz from '@/data/uz/visa.json'
+
 import Alert from '@/components/common/alert'
 import {useSelector} from "react-redux";
 
@@ -18,6 +30,10 @@ const Banner1Bottom = ({data}) => {
   const [type, setType] = useState("");
   const [day, setDay] = useState("");
   const [alert, setAlert] = useState(false)
+  const [typeTour, setTypeTour] = useState(typeEn)
+  const [destination, setDestination] = useState(destEn)
+  const [visa, setVisa] = useState(visaEn)
+  const [category, setCategory] = useState(["Economy", "Luxury", "Delux"])
   let language = useSelector((state) => state.language.languageValue)
   let countryCatcher = (country) => {
     setCountry(country);
@@ -39,6 +55,7 @@ const Banner1Bottom = ({data}) => {
       setAlert(true)
     }
   }
+
   const searchVisa = (e) => {
     e.preventDefault();
     if (country !== '' && type !== "") {
@@ -47,6 +64,31 @@ const Banner1Bottom = ({data}) => {
       setAlert(true)
     }
   }
+
+  let languageChecker = () => {
+    if (language === 'en') {
+      setTypeTour(typeEn)
+      setDestination(destEn)
+      setVisa(visaEn)
+      setCategory(["Economy", "Luxury", "Delux"])
+    }
+    if (language === 'ru') {
+      setTypeTour(typeRu)
+      setDestination(destRu)
+      setVisa(visaRu)
+      setCategory(["Эконом", "Люкс", "Делюкс"])
+    }
+    if (language === 'uz') {
+      setTypeTour(typeUz)
+      setDestination(destUz)
+      setVisa(visaUz)
+      setCategory(["Ekonom", "Lyuks", "Deluks"])
+    }
+  }
+
+  useEffect(() => {
+    languageChecker()
+  }, [language]);
   return (
     <div className="home1-banner-bottom mb-120">
       {
@@ -142,7 +184,8 @@ const Banner1Bottom = ({data}) => {
                           <DestinationSearch
                             destination={data ? data?.[0].title : ""}
                             data={destination}
-                            contryCatcher={countryCatcher}
+                            language={language}
+                            countryCatcher={countryCatcher}
                           />
                         </div>
                       </div>
@@ -165,7 +208,11 @@ const Banner1Bottom = ({data}) => {
                               </g>
                             </svg>
                           </div>
-                          <TourTypeDropdown typeCatcher={typeCatcher} typeTour={typeTour} description={data ? data?.[1].title : ""}/>
+                          <TourTypeDropdown
+                            typeCatcher={typeCatcher}
+                            typeTour={typeTour}
+                            language={language}
+                            description={data ? data?.[1].title : ""}/>
                         </div>
                       </div>
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center divider">
@@ -185,7 +232,9 @@ const Banner1Bottom = ({data}) => {
                               </g>
                             </svg>
                           </div>
-                          <DateRange dayCatcher={dayCatcher} Day={data ? data?.[2].title : ""}/>
+                          <DateRange
+                            dayCatcher={dayCatcher}
+                            Day={data ? data?.[2].title : ""}/>
                         </div>
                       </div>
                       <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
@@ -208,7 +257,8 @@ const Banner1Bottom = ({data}) => {
                             </svg>
                           </div>
                           <TourCategoryDropdown
-                            data={["Economy", "Luxury", "Delux"]}
+                            language={language}
+                            data={category}
                             labelType={data ? data?.[3].title : ""}
                           />
                         </div>
@@ -242,6 +292,7 @@ const Banner1Bottom = ({data}) => {
                           <DestinationSearch
                             destination={data ? data?.[0].title : ""}
                             data={destination}
+                            language={language}
                             contryCatcher={countryCatcher}
                           />
                         </div>
@@ -265,7 +316,11 @@ const Banner1Bottom = ({data}) => {
                               </g>
                             </svg>
                           </div>
-                          <TourTypeDropdown typeCatcher={typeCatcher} description={data ? data?.[1].title : ""} typeTour={visa}/>
+                          <TourTypeDropdown
+                            language={language}
+                            typeCatcher={typeCatcher}
+                            description={data ? data?.[1].title : ""}
+                            typeTour={visa}/>
                         </div>
                       </div>
                     </div>

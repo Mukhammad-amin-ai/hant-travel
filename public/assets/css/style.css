@@ -7103,6 +7103,7 @@ form
         margin-bottom: 30px;
     }
 }
+
 /*=====================================
   14.Home1 Testimonial section
 ========================================*/
@@ -11672,7 +11673,6 @@ li:first-child::before {
 }
 
 
-
 /*=====================================
   48 .Home4 Visa Application section
 ========================================*/
@@ -13356,10 +13356,6 @@ li:first-child::before {
 }
 
 
-
-
-
-
 .package-details-area .booking-form-wrap p {
     color: var(--text-color);
     text-align: center;
@@ -14295,9 +14291,6 @@ span:first-child {
     height: 300px;
     filter: grayscale(199%) invert(98%) contrast(122%);
 }
-
-
-
 
 
 /*=====================================
@@ -16103,6 +16096,11 @@ form
 
 /*# sourceMappingURL=style.css.map */
 
+.custom-height {
+    height: 730px;
+}
+
+
 .gradiant-color {
     width: 100%;
     border-radius: 30px 30px !important;
@@ -16119,6 +16117,10 @@ form
 
 /*=============================*/
 @media screen and (max-width: 1200px) {
+    .custom-height {
+        height: 680px;
+    }
+
     .home1-banner-area {
         height: 60vh;
     }
@@ -16134,6 +16136,7 @@ form
     }
 
     .home1-banner-bottom {
+        margin-top: -50px;
         margin-bottom: 150px;
     }
 }
@@ -16146,7 +16149,7 @@ form
 
 @media screen and (max-width: 768px) {
     .home1-banner-area {
-        height: 70vh;
+        height: 60vh;
     }
 
     .backgroundImage {
@@ -16160,8 +16163,20 @@ form
     .home1-banner-bottom .container-fluid {
         padding-right: 0 !important;
         padding-left: 0 !important;
+    }
 
+    .home1-banner-wrapper {
+        height: 100%;
     }
 }
 
+@media screen and (max-width: 500px) {
+    .custom-height {
+        height: 450px;
+    }
+
+    .banner-content-bottom {
+        display: none !important;
+    }
+}
 

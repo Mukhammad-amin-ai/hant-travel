@@ -9,32 +9,32 @@ const DateRange = ({ label = "From / To", style = "",dayCatcher,Day }) => {
   const handleDateChange = (dates) => {
     const [start, end] = dates;
     function calculateLengthOfDays(startDate, endDate) {
-      var start = new Date(startDate).getTime();
-      var end = new Date(endDate).getTime();
+      let start = new Date(startDate).getTime();
+      let end = new Date(endDate).getTime();
 
-      var difference = Math.abs(end - start);
+      let difference = Math.abs(end - start);
 
-      var days = Math.ceil(difference / (1000 * 3600 * 24));
+      let days = Math.ceil(difference / (1000 * 3600 * 24));
 
       return days;
     }
     function formatDate(dateString) {
-      var date = new Date(dateString);
+      let date = new Date(dateString);
 
-      var year = date.getFullYear();
-      var month = String(date.getMonth() + 1).padStart(2, "0");
-      var day = String(date.getDate()).padStart(2, "0");
+      let year = date.getFullYear();
+      let month = String(date.getMonth() + 1).padStart(2, "0");
+      let day = String(date.getDate()).padStart(2, "0");
 
-      var formattedDate = year + "-" + month + "-" + day;
+      let formattedDate = year + "-" + month + "-" + day;
 
       return formattedDate;
     }
 
-    var startDateF = formatDate(dates[0]);
+    let startDateF = formatDate(dates[0]);
 
-    var endDateF = formatDate(dates[1]);
+    let endDateF = formatDate(dates[1]);
 
-    var lengthOfDays = calculateLengthOfDays(startDateF, endDateF);
+    let lengthOfDays = calculateLengthOfDays(startDateF, endDateF);
 
     dayCatcher(lengthOfDays);
     setStartDate(start);
