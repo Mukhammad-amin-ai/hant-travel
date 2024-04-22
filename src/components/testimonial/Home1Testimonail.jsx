@@ -1,15 +1,16 @@
 "use client";
-import React, { useMemo } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, {useMemo} from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
 import SwiperCore, {
   Autoplay,
   EffectFade,
   Navigation,
   Pagination,
 } from "swiper";
+
 SwiperCore.use([Autoplay, EffectFade, Navigation, Pagination]);
 
-const Home1Testimonail = ({title,subtitle}) => {
+const Home1Testimonail = ({title, subtitle}) => {
   const settings = useMemo(() => {
     return {
       slidesPerView: "auto",
@@ -17,7 +18,7 @@ const Home1Testimonail = ({title,subtitle}) => {
       spaceBetween: 25,
       loop: true,
       autoplay: {
-        delay: 2500, 
+        delay: 2500,
         disableOnInteraction: false,
       },
       navigation: {
@@ -139,7 +140,7 @@ const Home1Testimonail = ({title,subtitle}) => {
                   aria-selected="false"
                 >
                   <div className="icon">
-                    <img src="/assets/img/home1/icon/google-logo.svg" alt="" />
+                    <img src="/assets/img/home1/icon/google-logo.svg" alt=""/>
                   </div>
                   Google
                 </div>
@@ -168,29 +169,32 @@ const Home1Testimonail = ({title,subtitle}) => {
                             <div className="tesimonial-card">
                               <div className="testimonial-content">
                                 <p>
-                                  “I cannot express enough how satisfied I am
-                                  with the web development services provided by
-                                  Egens Lab. From the initial consultation to
-                                  the final delivery, they have exceeded.”
+                                  “Hant Travel made my dream trip to Uzbekistan a reality! From the moment I contacted
+                                  them, they were incredibly helpful and responsive. They listened carefully to my
+                                  interests and crafted a personalized itinerary that perfectly balanced historical
+                                  sites like the Registan Square in Samarkand with off-the-beaten-path experiences like
+                                  visiting a traditional yurt camp. I wouldn't hesitate to recommend Hant Travel to
+                                  anyone looking for an authentic and
+                                  unforgettable adventure on the Silk Road.”
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
                                 <div className="rating-area">
                                   <ul className="rating">
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                   </ul>
                                 </div>
@@ -202,14 +206,16 @@ const Home1Testimonail = ({title,subtitle}) => {
                                     viewBox="0 0 74 51"
                                   >
                                     <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
+                                      <path
+                                        d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z"/>
+                                      <path
+                                        d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z"/>
                                     </g>
                                   </svg>
                                 </div>
                                 <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
+                                  <p>May 18, 2023</p>
+                                  <span>12.55 PM</span>
                                 </div>
                               </div>
                             </div>
@@ -232,29 +238,30 @@ const Home1Testimonail = ({title,subtitle}) => {
                             <div className="tesimonial-card">
                               <div className="testimonial-content">
                                 <p>
-                                  “I love Tour! This is an amazing service and
-                                  it has saved me and my small business so much
-                                  time. I plan to use it for a long time to
-                                  come. And i travel with Hant Travel again ”{" "}
+                                  “As a solo traveler in Uzbekistan, I was a bit apprehensive at first. However, Hant
+                                  Travel put all my worries at ease. Their communication was excellent, and they
+                                  provided clear instructions and support throughout the entire booking process. During
+                                  my trip, their local guides were fantastic. Hant Travel's dedication to customer
+                                  service made my solo trip to Uzbekistan feel worry-free and truly special.”{" "}
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
                                 <div className="rating-area">
                                   <ul className="rating">
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                   </ul>
                                 </div>
@@ -266,14 +273,16 @@ const Home1Testimonail = ({title,subtitle}) => {
                                     viewBox="0 0 74 51"
                                   >
                                     <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
+                                      <path
+                                        d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z"/>
+                                      <path
+                                        d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z"/>
                                     </g>
                                   </svg>
                                 </div>
                                 <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
+                                  <p>Apr 19, 2023</p>
+                                  <span>11.35 PM</span>
                                 </div>
                               </div>
                             </div>
@@ -296,29 +305,31 @@ const Home1Testimonail = ({title,subtitle}) => {
                             <div className="tesimonial-card">
                               <div className="testimonial-content">
                                 <p>
-                                  “Duis ac est tincidunt, bibendum eros
-                                  attendato, dignissim purus. Nunc posuere
-                                  ornare velitbon, bibendum venenatis metus
-                                  bibendum admora. Aliquam at vestibulum.”
+                                  “I came across Hant Travel while researching smaller, local travel agencies in
+                                  Samarkand. I'm so glad I did! Their focus on personalized tours and cultural immersion
+                                  was exactly what I was looking for. Unlike some larger tour groups, Hant Travel
+                                  offered a more intimate experience.If you're looking for a travel agency that truly
+                                  goes the extra mile to show you the hidden gems of Uzbekistan, then Hant Travel is the
+                                  perfect choice.”
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
                                 <div className="rating-area">
                                   <ul className="rating">
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                   </ul>
                                 </div>
@@ -330,206 +341,16 @@ const Home1Testimonail = ({title,subtitle}) => {
                                     viewBox="0 0 74 51"
                                   >
                                     <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
+                                      <path
+                                        d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z"/>
+                                      <path
+                                        d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z"/>
                                     </g>
                                   </svg>
                                 </div>
                                 <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img3.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Jack Michael</h5>
-                                <span>Bangladesh</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “I cannot express enough how satisfied I am
-                                  with the web development services provided by
-                                  Egens Lab. From the initial consultation to
-                                  the final delivery, they have exceeded.”
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img1.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Mateo Daniel</h5>
-                                <span>Indonesia</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “I love Tour! This is an amazing service and
-                                  it has saved me and my small business so much
-                                  time. I plan to use it for a long time to
-                                  come. And i travel with Hant Travel again ”{" "}
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img2.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Liam Nohkan</h5>
-                                <span>Istanbul</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “Duis ac est tincidunt, bibendum eros
-                                  attendato, dignissim purus. Nunc posuere
-                                  ornare velitbon, bibendum venenatis metus
-                                  bibendum admora. Aliquam at vestibulum.”
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
+                                  <p>Jun 29, 2023</p>
+                                  <span>14.25 PM</span>
                                 </div>
                               </div>
                             </div>
@@ -566,29 +387,30 @@ const Home1Testimonail = ({title,subtitle}) => {
                             <div className="tesimonial-card">
                               <div className="testimonial-content">
                                 <p>
-                                  “I cannot express enough how satisfied I am
-                                  with the web development services provided by
-                                  Egens Lab. From the initial consultation to
-                                  the final delivery, they have exceeded.”
+                                  “Hant Travel made my Uzbekistan trip spellbinding! I booked a solo tour to Samarkand
+                                  and Bukhara, and it was flawlessly organized. The historical sites were breathtaking,
+                                  especially the Registan Square in Samarkand. But what truly elevated the experience
+                                  were the included visits to local workshops and a homestay with a traditional family.
+                                  Highly recommend Hant Travel for an immersive and unforgettable Uzbek adventure!”
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
                                 <div className="rating-area tripadvisor">
                                   <ul className="rating">
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-half" />
+                                      <i className="bi bi-circle-half"/>
                                     </li>
                                   </ul>
                                   <img
@@ -604,27 +426,29 @@ const Home1Testimonail = ({title,subtitle}) => {
                                     viewBox="0 0 74 51"
                                   >
                                     <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
+                                      <path
+                                        d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z"/>
+                                      <path
+                                        d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z"/>
                                     </g>
                                   </svg>
                                 </div>
                                 <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
+                                  <p>Apr 16 , 2023</p>
+                                  <span>15.10 PM</span>
                                 </div>
                               </div>
                             </div>
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/images/testimonials/testi-author-img1.png"
+                                  src="https://media-cdn.tripadvisor.com/media/photo-l/1a/f6/f2/b8/default-avatar-2020-26.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="author-content">
-                                <h5>Mateo Daniel</h5>
-                                <span>Indonesia</span>
+                                <h5>Sarah W.</h5>
+                                <span>Toronto, Canada</span>
                               </div>
                             </div>
                           </div>
@@ -634,29 +458,30 @@ const Home1Testimonail = ({title,subtitle}) => {
                             <div className="tesimonial-card">
                               <div className="testimonial-content">
                                 <p>
-                                  “I love Tour! This is an amazing service and
-                                  it has saved me and my small business so much
-                                  time. I plan to use it for a long time to
-                                  come. And i travel with Hant Travel again ”{" "}
+                                  “We booked a 10-day Silk Road tour with Hant Travel, starting in Samarkand. It was an
+                                  absolute dream! From the ancient caravanserais to the bustling bazaars, every stop was
+                                  fascinating. Hant Travel's local guides were superb - fluent in English and incredibly
+                                  informative. We couldn't have asked for a better travel agency. Thanks, Hant
+                                  Travel!”{" "}
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
                                 <div className="rating-area tripadvisor">
                                   <ul className="rating">
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-half" />
+                                      <i className="bi bi-circle-half"/>
                                     </li>
                                   </ul>
                                   <img
@@ -672,27 +497,29 @@ const Home1Testimonail = ({title,subtitle}) => {
                                     viewBox="0 0 74 51"
                                   >
                                     <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
+                                      <path
+                                        d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z"/>
+                                      <path
+                                        d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z"/>
                                     </g>
                                   </svg>
                                 </div>
                                 <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
+                                  <p>Jun 9, 2022</p>
+                                  <span>14.20 PM</span>
                                 </div>
                               </div>
                             </div>
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/images/testimonials/testi-author-img2.png"
+                                  src="https://media-cdn.tripadvisor.com/media/photo-l/1a/f6/f2/7a/default-avatar-2020-25.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="author-content">
-                                <h5>Liam Nohkan</h5>
-                                <span>Istanbul</span>
+                                <h5>Alex K.</h5>
+                                <span>Melbourne, Australia</span>
                               </div>
                             </div>
                           </div>
@@ -702,29 +529,30 @@ const Home1Testimonail = ({title,subtitle}) => {
                             <div className="tesimonial-card">
                               <div className="testimonial-content">
                                 <p>
-                                  “Duis ac est tincidunt, bibendum eros
-                                  attendato, dignissim purus. Nunc posuere
-                                  ornare velitbon, bibendum venenatis metus
-                                  bibendum admora. Aliquam at vestibulum.”
+                                  “Hant Travel gets a big thumbs up from me! We opted for a customized tour of
+                                  Uzbekistan, focusing on historical sites and local crafts. Hant Travel delivered
+                                  perfectly. We visited some lesser-known historical gems alongside the famous ones,
+                                  getting a more well-rounded picture of Uzbekistan's past.Highly recommend Hant Travel
+                                  for those seeking a personalized Uzbekistan adventure. ”
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
                                 <div className="rating-area tripadvisor">
                                   <ul className="rating">
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-fill" />
+                                      <i className="bi bi-circle-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-circle-half" />
+                                      <i className="bi bi-circle-half"/>
                                     </li>
                                   </ul>
                                   <img
@@ -740,231 +568,29 @@ const Home1Testimonail = ({title,subtitle}) => {
                                     viewBox="0 0 74 51"
                                   >
                                     <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
+                                      <path
+                                        d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z"/>
+                                      <path
+                                        d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z"/>
                                     </g>
                                   </svg>
                                 </div>
                                 <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
+                                  <p>May 15, 2023</p>
+                                  <span>10.50PM</span>
                                 </div>
                               </div>
                             </div>
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/images/testimonials/testi-author-img3.png"
+                                  src="https://media-cdn.tripadvisor.com/media/photo-l/1a/f6/e4/59/default-avatar-2020-49.jpg"
                                   alt=""
                                 />
                               </div>
                               <div className="author-content">
-                                <h5>Jack Michael</h5>
-                                <span>Bangladesh</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “I cannot express enough how satisfied I am
-                                  with the web development services provided by
-                                  Egens Lab. From the initial consultation to
-                                  the final delivery, they have exceeded.”
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area tripadvisor">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-half" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/tripadvisor-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img1.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Mateo Daniel</h5>
-                                <span>Indonesia</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “I love Tour! This is an amazing service and
-                                  it has saved me and my small business so much
-                                  time. I plan to use it for a long time to
-                                  come. And i travel with Hant Travel again ”{" "}
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area tripadvisor">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-half" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/tripadvisor-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img2.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Liam Nohkan</h5>
-                                <span>Istanbul</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “Duis ac est tincidunt, bibendum eros
-                                  attendato, dignissim purus. Nunc posuere
-                                  ornare velitbon, bibendum venenatis metus
-                                  bibendum admora. Aliquam at vestibulum.”
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area tripadvisor">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-circle-half" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/tripadvisor-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img3.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Jack Michael</h5>
-                                <span>Bangladesh</span>
+                                <h5>Marie B.</h5>
+                                <span>Paris, France</span>
                               </div>
                             </div>
                           </div>
@@ -972,430 +598,6 @@ const Home1Testimonail = ({title,subtitle}) => {
                       </div>
                     </Swiper>
                   </div>
-
-                  {/* <div
-                    className="tab-pane fade"
-                    id="facebook"
-                    role="tabpanel"
-                    aria-labelledby="facebook-tab"
-                  >
-                    <Swiper
-                      {...settings}
-                      className="swiper testimonial-card-slider"
-                    >
-                      <div className="swiper-wrapper">
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “I cannot express enough how satisfied I am
-                                  with the web development services provided by
-                                  Egens Lab. From the initial consultation to
-                                  the final delivery, they have exceeded.”
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/facebook-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img1.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Mateo Daniel</h5>
-                                <span>Indonesia</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “I love Tour! This is an amazing service and
-                                  it has saved me and my small business so much
-                                  time. I plan to use it for a long time to
-                                  come. And i travel with Hant Travel again ”{" "}
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/facebook-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img2.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Liam Nohkan</h5>
-                                <span>Istanbul</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “Duis ac est tincidunt, bibendum eros
-                                  attendato, dignissim purus. Nunc posuere
-                                  ornare velitbon, bibendum venenatis metus
-                                  bibendum admora. Aliquam at vestibulum.”
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/facebook-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img3.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Jack Michael</h5>
-                                <span>Bangladesh</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “I cannot express enough how satisfied I am
-                                  with the web development services provided by
-                                  Egens Lab. From the initial consultation to
-                                  the final delivery, they have exceeded.”
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/facebook-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img1.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Mateo Daniel</h5>
-                                <span>Indonesia</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “I love Tour! This is an amazing service and
-                                  it has saved me and my small business so much
-                                  time. I plan to use it for a long time to
-                                  come. And i travel with Hant Travel again ”{" "}
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/facebook-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img2.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Liam Nohkan</h5>
-                                <span>Istanbul</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “Duis ac est tincidunt, bibendum eros
-                                  attendato, dignissim purus. Nunc posuere
-                                  ornare velitbon, bibendum venenatis metus
-                                  bibendum admora. Aliquam at vestibulum.”
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/facebook-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img3.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Jack Michael</h5>
-                                <span>Bangladesh</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                      </div>
-                    </Swiper>
-                  </div> */}
-                 
                   <div
                     className="tab-pane fade"
                     id="google"
@@ -1412,29 +614,30 @@ const Home1Testimonail = ({title,subtitle}) => {
                             <div className="tesimonial-card">
                               <div className="testimonial-content">
                                 <p>
-                                  “I cannot express enough how satisfied I am
-                                  with the web development services provided by
-                                  Egens Lab. From the initial consultation to
-                                  the final delivery, they have exceeded.”
+                                  “Hant Travel deserves all the praise! Planning a trip to Uzbekistan can be daunting,
+                                  but Hant Travel made it a breeze. Their team in Samarkand was incredibly helpful and
+                                  responsive, crafting a personalized itinerary that exceeded my expectations. Highly
+                                  recommend Hant Travel for anyone seeking an authentic and unforgettable Uzbek
+                                  experience.”
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
                                 <div className="rating-area">
                                   <ul className="rating">
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                   </ul>
                                   <img
@@ -1450,27 +653,29 @@ const Home1Testimonail = ({title,subtitle}) => {
                                     viewBox="0 0 74 51"
                                   >
                                     <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
+                                      <path
+                                        d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z"/>
+                                      <path
+                                        d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z"/>
                                     </g>
                                   </svg>
                                 </div>
                                 <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
+                                  <p>Jun 9, 2023</p>
+                                  <span>17.30 PM</span>
                                 </div>
                               </div>
                             </div>
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/images/testimonials/testi-author-img1.png"
+                                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-f/01/2e/70/5a/avatar032.jpg?w=100&h=-1&s=1"
                                   alt=""
                                 />
                               </div>
                               <div className="author-content">
-                                <h5>Mateo Daniel</h5>
-                                <span>Indonesia</span>
+                                <h5>John Smith</h5>
+                                <span>Australia </span>
                               </div>
                             </div>
                           </div>
@@ -1480,29 +685,30 @@ const Home1Testimonail = ({title,subtitle}) => {
                             <div className="tesimonial-card">
                               <div className="testimonial-content">
                                 <p>
-                                  “I love Tour! This is an amazing service and
-                                  it has saved me and my small business so much
-                                  time. I plan to use it for a long time to
-                                  come. And i travel with Hant Travel again ”{" "}
+                                  “As a solo female traveler, I prioritize safety and cultural immersion. Hant Travel
+                                  delivered on both! Their female guides in Samarkand were fantastic - friendly,
+                                  professional, and ensured I felt comfortable throughout the trip. Hant Travel helped
+                                  me experience the real Uzbekistan, beyond the tourist facade. Highly recommend them,
+                                  especially for solo female travelers.”{" "}
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
                                 <div className="rating-area">
                                   <ul className="rating">
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                   </ul>
                                   <img
@@ -1518,27 +724,29 @@ const Home1Testimonail = ({title,subtitle}) => {
                                     viewBox="0 0 74 51"
                                   >
                                     <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
+                                      <path
+                                        d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z"/>
+                                      <path
+                                        d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z"/>
                                     </g>
                                   </svg>
                                 </div>
                                 <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
+                                  <p>Aug 9, 2023</p>
+                                  <span>9.30 PM</span>
                                 </div>
                               </div>
                             </div>
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/images/testimonials/testi-author-img2.png"
+                                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/ee/68/default-avatar-2020-9.jpg?w=100&h=-1&s=1"
                                   alt=""
                                 />
                               </div>
                               <div className="author-content">
-                                <h5>Liam Nohkan</h5>
-                                <span>Istanbul</span>
+                                <h5>Lisa Jones</h5>
+                                <span>Italy</span>
                               </div>
                             </div>
                           </div>
@@ -1548,29 +756,30 @@ const Home1Testimonail = ({title,subtitle}) => {
                             <div className="tesimonial-card">
                               <div className="testimonial-content">
                                 <p>
-                                  “Duis ac est tincidunt, bibendum eros
-                                  attendato, dignissim purus. Nunc posuere
-                                  ornare velitbon, bibendum venenatis metus
-                                  bibendum admora. Aliquam at vestibulum.”
+                                  “Planning a family vacation to Uzbekistan can be tricky. But Hant Travel made it a
+                                  success! Their Samarkand office curated a family-friendly itinerary that kept everyone
+                                  entertained, from the kids to the grandparents.Hant Travel also arranged for
+                                  comfortable family-friendly accommodations. Overall, a fantastic experience. Thanks,
+                                  Hant Travel! ”
                                 </p>
                               </div>
                               <div className="testimonial-bottom">
                                 <div className="rating-area">
                                   <ul className="rating">
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                     <li>
-                                      <i className="bi bi-star-fill" />
+                                      <i className="bi bi-star-fill"/>
                                     </li>
                                   </ul>
                                   <img
@@ -1586,231 +795,29 @@ const Home1Testimonail = ({title,subtitle}) => {
                                     viewBox="0 0 74 51"
                                   >
                                     <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
+                                      <path
+                                        d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z"/>
+                                      <path
+                                        d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z"/>
                                     </g>
                                   </svg>
                                 </div>
                                 <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
+                                  <p>Apr 23, 2023</p>
+                                  <span>13.45 PM</span>
                                 </div>
                               </div>
                             </div>
                             <div className="author-area">
                               <div className="author-img">
                                 <img
-                                  src="/assets/images/testimonials/testi-author-img3.png"
+                                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e3/6a/default-avatar-2020-47.jpg?w=100&h=-1&s=1"
                                   alt=""
                                 />
                               </div>
                               <div className="author-content">
-                                <h5>Jack Michael</h5>
-                                <span>Bangladesh</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “I cannot express enough how satisfied I am
-                                  with the web development services provided by
-                                  Egens Lab. From the initial consultation to
-                                  the final delivery, they have exceeded.”
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/google-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img1.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Mateo Daniel</h5>
-                                <span>Indonesia</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “I love Tour! This is an amazing service and
-                                  it has saved me and my small business so much
-                                  time. I plan to use it for a long time to
-                                  come. And i travel with Hant Travel again ”{" "}
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/google-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img2.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Liam Nohkan</h5>
-                                <span>Istanbul</span>
-                              </div>
-                            </div>
-                          </div>
-                        </SwiperSlide>
-                        <SwiperSlide className="swiper-slide">
-                          <div className="tesimonial-card-wrapper">
-                            <div className="tesimonial-card">
-                              <div className="testimonial-content">
-                                <p>
-                                  “Duis ac est tincidunt, bibendum eros
-                                  attendato, dignissim purus. Nunc posuere
-                                  ornare velitbon, bibendum venenatis metus
-                                  bibendum admora. Aliquam at vestibulum.”
-                                </p>
-                              </div>
-                              <div className="testimonial-bottom">
-                                <div className="rating-area">
-                                  <ul className="rating">
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                    <li>
-                                      <i className="bi bi-star-fill" />
-                                    </li>
-                                  </ul>
-                                  <img
-                                    src="/assets/img/home1/icon/google-text-logo.svg"
-                                    alt=""
-                                  />
-                                </div>
-                                <div className="quote">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width={74}
-                                    height={51}
-                                    viewBox="0 0 74 51"
-                                  >
-                                    <g>
-                                      <path d="M34.6075 16.7875C34.5735 16.4389 34.5054 16.0817 34.4202 15.733C33.6625 6.92252 26.2643 0 17.2484 0C7.72178 0 0 7.71343 0 17.2298C0 26.474 7.28758 33.9918 16.4311 34.417C14.2261 37.8953 10.676 40.7102 6.34258 42.0369L6.19785 42.0794C4.18866 42.6917 2.80095 44.6477 2.98825 46.8248C3.20109 49.3336 5.40609 51.1961 7.9261 50.9835C15.3414 50.3541 22.7567 46.5697 27.7967 40.4211C30.3252 37.3595 32.2833 33.7537 33.4752 29.8247C34.6756 25.9042 35.0843 21.669 34.6756 17.4934L34.6075 16.7875Z" />
-                                      <path d="M73.1681 16.7875C73.134 16.4389 73.0659 16.0817 72.9808 15.733C72.2231 6.92252 64.8248 0 55.809 0C46.2823 0 38.5605 7.71343 38.5605 17.2298C38.5605 26.474 45.8481 33.9918 54.9917 34.417C52.7867 37.8953 49.2365 40.7102 44.9031 42.0369L44.7584 42.0794C42.7492 42.6917 41.3615 44.6477 41.5488 46.8248C41.7616 49.3336 43.9666 51.1961 46.4866 50.9835C53.9019 50.3541 61.3172 46.5697 66.3572 40.4211C68.8858 37.3595 70.8439 33.7537 72.0358 29.8247C73.2362 25.9042 73.6448 21.669 73.2362 17.4934L73.1681 16.7875Z" />
-                                    </g>
-                                  </svg>
-                                </div>
-                                <div className="date-and-time">
-                                  <p>May 9, 2023</p>
-                                  <span>10.30 PM</span>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="author-area">
-                              <div className="author-img">
-                                <img
-                                  src="/assets/images/testimonials/testi-author-img3.png"
-                                  alt=""
-                                />
-                              </div>
-                              <div className="author-content">
-                                <h5>Jack Michael</h5>
-                                <span>Bangladesh</span>
+                                <h5>David Miller</h5>
+                                <span>Canada</span>
                               </div>
                             </div>
                           </div>
@@ -1832,7 +839,8 @@ const Home1Testimonail = ({title,subtitle}) => {
                     height={17}
                     viewBox="0 0 9 17"
                   >
-                    <path d="M8.83399 0.281832L8.72217 0.16683L0.500652 8.50016L8.72217 16.8335L8.83398 16.7185L8.83398 13.0602L4.33681 8.50016L8.83399 3.94016L8.83399 0.281832Z" />
+                    <path
+                      d="M8.83399 0.281832L8.72217 0.16683L0.500652 8.50016L8.72217 16.8335L8.83398 16.7185L8.83398 13.0602L4.33681 8.50016L8.83399 3.94016L8.83399 0.281832Z"/>
                   </svg>
                 </div>
                 <div className="slider-btn testimonial-card-tab-next">
@@ -1843,7 +851,8 @@ const Home1Testimonail = ({title,subtitle}) => {
                     viewBox="0 0 9 17"
                     fill="none"
                   >
-                    <path d="M0.166016 16.7182L0.277828 16.8332L8.49935 8.49984L0.277828 0.166504L0.166016 0.281504V3.93984L4.66319 8.49984L0.166016 13.0598V16.7182Z" />
+                    <path
+                      d="M0.166016 16.7182L0.277828 16.8332L8.49935 8.49984L0.277828 0.166504L0.166016 0.281504V3.93984L4.66319 8.49984L0.166016 13.0598V16.7182Z"/>
                   </svg>
                 </div>
               </div>
