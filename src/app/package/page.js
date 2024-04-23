@@ -94,11 +94,11 @@ const page = () => {
     let typeTour = Type;
     if (typeOdour !== null) {
       let idOfTour = typeTour.filter((item) => item.type === typeOdour);
-      if (idOfTour.length === 0) {
-        router.push('/not_found')
-      } else {
-        return idOfTour[0]?.id;
-      }
+      // if (idOfTour.length === 0) {
+      //   router.push('/not_found')
+      // } else {
+      //   return idOfTour[0]?.id;
+      // }
     }
   };
 

@@ -3,8 +3,8 @@
     "id": "1",
     "day": 6,
     "night": 5,
-    "type": "Piligrimage",
-    "country": "Uzbekistan",
+    "type": "Ziyorat",
+    "country": "O'zbekiston",
     "batch": "6 Kun  / 5 Tun",
     "img": "/assets/images/tour/uzbekistan.webp",
     "location_list": [
@@ -23,8 +23,8 @@
     "id": "2",
     "day": 8,
     "night": 7,
-    "type": "Adventure",
-    "country": "Uzbekistan",
+    "type": "Sarguzasht",
+    "country": "O'zbekiston",
     "batch": "8 Kun / 7 Tun",
     "img": "/assets/images/tour/Khiva.webp",
     "location_list": [
@@ -44,8 +44,8 @@
     "batch": "4 Kun",
     "day": 4,
     "night": null,
-    "type": "Adventure",
-    "country": "Uzbekistan",
+    "type": "Sarguzasht",
+    "country": "O'zbekiston",
     "img": "/assets/images/tour/bukhara_1.webp",
     "location_list": [
       "O'zbekiston"
@@ -67,7 +67,7 @@
     "location_list": [
       "Markaziy Osiyo"
     ],
-    "country": "Central Asia",
+    "country": "Markaziy Osiyo",
     "title": "2 Hafta Ichida Markaziy Osiyo Safari",
     "price": "530 ",
     "place_list": [
@@ -88,7 +88,7 @@
     "location_list": [
       "O'zbekiston"
     ],
-    "country": "Uzbekistan",
+    "country": "O'zbekiston",
     "title": "Yorqin va Quyoshli O'zbekistonga Sayohat",
     "price": "2250",
     "place_list": [
@@ -109,6 +109,7 @@
     "location_list": [
       "Markaziy Osiyo"
     ],
+    "country": "Markaziy Osiyo",
     "title": "Markaziy Osiyo Tur",
     "price": "3215",
     "place_list": [
@@ -134,7 +135,7 @@
     "type": null,
     "img": "/assets/images/tour/central-asia.webp",
     "location_list": [
-      "Central Asia"
+      "Markaziy Osiyo"
     ],
     "country": "Tadjikistan",
     "title": "Tour to Pamir Mountains",

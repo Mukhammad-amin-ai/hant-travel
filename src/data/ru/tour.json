@@ -3,8 +3,8 @@
     "id": "1",
     "day": 6,
     "night": 5,
-    "type": "Piligrimage",
-    "country": "Uzbekistan",
+    "type": "Паломничество",
+    "country": "Узбекистан",
     "batch": "6 Дней  / 5 Hочей",
     "img": "/assets/images/tour/uzbekistan.webp",
     "location_list": [
@@ -23,8 +23,8 @@
     "id": "2",
     "day": 8,
     "night": 7,
-    "type": "Adventure",
-    "country": "Uzbekistan",
+    "type": "Приключение",
+    "country": "Узбекистан",
     "batch": "8 Дней / 7 Hочей",
     "img": "/assets/images/tour/Khiva.webp",
     "location_list": [
@@ -43,8 +43,8 @@
     "id": "3",
     "day": 4,
     "night": null,
-    "type": "Adventure",
-    "country": "Uzbekistan",
+    "type": "Приключение",
+    "country": "Узбекистан",
     "batch": "4 Дня",
     "img": "/assets/images/tour/bukhara_1.webp",
     "location_list": [
@@ -62,7 +62,7 @@
     "day": 14,
     "night": null,
     "type": null,
-    "country": "Central Asia",
+    "country": "Центральная Азия",
     "batch": "2 Hедели",
     "img": "/assets/images/tour/central-asia.webp",
     "location_list": [
@@ -83,7 +83,7 @@
     "day": 12,
     "night": null,
     "type": null,
-    "country": "Uzbekistan",
+    "country": "Узбекистан",
     "batch": " 14 Дней",
     "img": "/assets/images/tour/Urganch.webp",
     "location_list": [
@@ -105,6 +105,7 @@
     "day": 11,
     "night": null,
     "type": null,
+    "country": "Центральная Азия",
     "batch": " 14 Дней",
     "img": "/assets/images/tour/Bishkek.webp",
     "location_list": [

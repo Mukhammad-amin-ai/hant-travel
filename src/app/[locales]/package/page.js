@@ -9,13 +9,11 @@ import tourEn from "@/data/en/tour.json"
 import tourRu from "@/data/ru/tour.json"
 import tourUz from "@/data/uz/tour.json"
 // ======================================
-import destination from "@/data/custom/destination.json";
 // Destination ===============================
 import desEn from '@/data/en/destination.json'
 import desRu from '@/data/ru/destination.json'
 import desUz from '@/data/uz/destination.json'
 // ============================================
-import Type from "@/data/custom/type.json";
 // Type==================================
 import typeEn from '@/data/en/type.json'
 import typeRu from '@/data/ru/type.json'
@@ -41,25 +39,25 @@ const page = () => {
   const fromDay = useRef(null);
   const selectPrice = useRef(null);
   // USESTATES===================================================
-  const [tour, setTour] = useState(Tour);
+  const [tour, setTour] = useState(tourEn);
   const [dest, setDest] = useState(desEn)
   const [type, setType] = useState(typeEn);
-  const [bookBtn,setBookBtn]=useState("Book a Trip")
-  const [text,setText]=useState({
-    tour:"",
-    show:"",
-    of:"",
-    result:"",
-    default:"",
-    height:"",
-    low:"",
-    destination:"",
-    duration:"",
-    type:"",
-    start:"",
-    person:"",
-    filter:"",
-    clear:""
+  const [bookBtn, setBookBtn] = useState("Book a Trip")
+  const [text, setText] = useState({
+    tour: "",
+    show: "",
+    of: "",
+    result: "",
+    default: "",
+    height: "",
+    low: "",
+    destination: "",
+    duration: "",
+    type: "",
+    start: "",
+    person: "",
+    filter: "",
+    clear: ""
   })
   // ============================================================
   let handleCheckboxChange = (index, name) => {
@@ -76,9 +74,7 @@ const page = () => {
 
   const sorterDays = () => {
     let days = fromDay.current.value;
-    let filteredItems = Tour.filter(
-      (item) => item.day <= days,
-    );
+    let filteredItems = tour.filter((item) => item.day <= days);
     setTour(filteredItems);
   };
 
@@ -117,25 +113,67 @@ const page = () => {
   };
 
   let countryIdFinder = () => {
-    let country = destination;
     if (search !== null) {
-      let idOfTour = country.filter((item) => item.name === search);
-      if (idOfTour.length === 0) {
-        router.push('/not_found')
-      } else {
-        return idOfTour[0]?.id;
+      if (language === 'en') {
+        let searchVar = desEn
+        let idOfTour = searchVar.filter((item) => item.name === search);
+        if (idOfTour.length === 0) {
+          router.push('/not_found')
+        } else {
+          return idOfTour[0]?.id;
+        }
+      }
+      if (language === 'ru') {
+        let searchVar = desRu
+        let idOfTour = searchVar.filter((item) => item.name === search);
+        console.log(idOfTour)
+        if (idOfTour.length === 0) {
+          router.push('/not_found')
+        } else {
+          return idOfTour[0]?.id;
+        }
+      }
+      if (language === 'uz') {
+        let searchVar = desUz
+        let idOfTour = searchVar.filter((item) => item.name === search);
+        if (idOfTour.length === 0) {
+          router.push('/not_found')
+        } else {
+          return idOfTour[0]?.id;
+        }
       }
     }
+
   };
 
   let typeFinder = () => {
-    let typeTour = Type;
     if (typeOdour !== null) {
-      let idOfTour = typeTour.filter((item) => item.type === typeOdour);
-      if (idOfTour.length === 0) {
-        router.push('/not_found')
-      } else {
-        return idOfTour[0]?.id;
+      if (language === 'en') {
+        let typeVar = typeEn
+        let idOfTour = typeVar.filter((item) => item.type === typeOdour);
+        if (idOfTour.length === 0) {
+          router.push('/not_found')
+        } else {
+          return idOfTour[0]?.id;
+        }
+      }
+      if (language === 'ru') {
+        let typeVar = typeRu
+        let idOfTour = typeVar.filter((item) => item.type === typeOdour);
+        if (idOfTour.length === 0) {
+          router.push('/not_found')
+        } else {
+          return idOfTour[0]?.id;
+        }
+      }
+      if (language === 'uz') {
+        let typeVar = typeUz
+        let idOfTour = typeVar.filter((item) => item.type === typeOdour);
+        if (idOfTour.length === 0) {
+          router.push('/not_found')
+        } else {
+          return idOfTour[0]?.id;
+        }
       }
     }
   };
@@ -155,36 +193,38 @@ const page = () => {
   const handlePrevPage = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1);
-      console.log(currentPage)
+      window.scrollTo(0, 200);
     }
+
   };
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {
       setCurrentPage(currentPage + 1);
+      window.scrollTo(0, 200);
     }
   };
 
-  const languageChecker = () => {
+  let languageChecker = () => {
     if (language === 'en') {
       setDest(desEn)
       setType(typeEn)
       setBookBtn("Book a Trip")
       setText({
-        tour:"Tour",
-        show:"Showing ",
-        of:"Of",
-        result:"Results",
-        default:"Default Sorting",
-        height:"Price Hight to Low",
-        low:"Price Low to Hight",
-        destination:"Country",
-        duration:"Durations",
-        type:"Tour Types",
-        start:"Starting Form",
-        person:"TAXES INCL/PERS",
-        filter:"Filter",
-        clear:"Clear"
+        tour: "Tour",
+        show: "Showing ",
+        of: "Of",
+        result: "Results",
+        default: "Default Sorting",
+        height: "Price Hight to Low",
+        low: "Price Low to Hight",
+        destination: "Country",
+        duration: "Durations",
+        type: "Tour Types",
+        start: "Starting Form",
+        person: "TAXES INCL/PERS",
+        filter: "Filter",
+        clear: "Clear"
       })
       return setTour(tourEn.slice(startIndex, endIndex))
     }
@@ -193,20 +233,20 @@ const page = () => {
       setType(typeRu)
       setBookBtn("Забронировать ")
       setText({
-        tour:"Путешествия",
-        show:"Показаны ",
-        of:"Из",
-        result:"Pезультаты",
-        default:"Сортировка по умолчанию",
-        height:"Цена от высокой к низкой",
-        low:"Цена от низкой до высокой",
-        destination:"Страна",
-        duration:"Продолжительность",
-        type:"Типы туров",
-        start:"Начиная с",
-        person:"НАЛОГИ",
-        filter:"Фильтр",
-        clear:"Oчищать"
+        tour: "Путешествия",
+        show: "Показаны ",
+        of: "Из",
+        result: "Pезультаты",
+        default: "Сортировка по умолчанию",
+        height: "Цена от высокой к низкой",
+        low: "Цена от низкой до высокой",
+        destination: "Страна",
+        duration: "Продолжительность",
+        type: "Типы туров",
+        start: "Начиная с",
+        person: "НАЛОГИ",
+        filter: "Фильтр",
+        clear: "Oчищать"
       })
       return setTour(tourRu.slice(startIndex, endIndex))
     }
@@ -215,20 +255,20 @@ const page = () => {
       setType(typeUz)
       setBookBtn("Sayohatga buyurtma")
       setText({
-        tour:"Tur",
-        show:"Kursatildi",
-        of:"dan",
-        result:"gacha",
-        default:"Boshlang'ch sortirovka",
-        height:"Narx balanddan pastgacha",
-        low:"Narx past va yuqori",
-        destination:"Mamlakat",
-        duration:"Davomiylik",
-        type:"Tur turlar",
-        start:"Boshlang'ich shakl",
-        person:"Soliqlar",
-        filter:"Filtr",
-        clear:"Tozalamoq"
+        tour: "Tur",
+        show: "Kursatildi",
+        of: "dan",
+        result: "gacha",
+        default: "Boshlang'ch sortirovka",
+        height: "Narx balanddan pastgacha",
+        low: "Narx past va yuqori",
+        destination: "Mamlakat",
+        duration: "Davomiylik",
+        type: "Tur turlar",
+        start: "Boshlang'ich shakl",
+        person: "Soliqlar",
+        filter: "Filtr",
+        clear: "Tozalamoq"
       })
       return setTour(tourUz.slice(startIndex, endIndex))
     }
@@ -252,6 +292,7 @@ const page = () => {
         dayInput.value = days;
       }
     }
+
   }, [currentPage, language]);
   return (
     <>
@@ -263,7 +304,7 @@ const page = () => {
             <div className="col-lg-8">
               <div className="package-inner-title-section mb-40">
                 <p>
-                  {text.show} {tour.length} {text.of} {Tour.length} {text.result}
+                  {text.show} {tour.length} {text.of} {tourEn.length} {text.result}
                 </p>
                 <div className="selector-and-grid">
                   <div className="selector">
