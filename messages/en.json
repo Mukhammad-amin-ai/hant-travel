@@ -5,7 +5,8 @@
     "type": "Tour Type",
     "day": "From / To",
     "category": "Tour Category",
-    "visa": "Visa Category"
+    "visa": "Visa Category",
+    "search": "Search"
   },
   "countries": {
     "country": "Tour",

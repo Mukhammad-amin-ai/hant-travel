@@ -13,7 +13,6 @@ const DestinationSearch = ({destination, style, data, countryCatcher,language}) 
   const handleSelectDestination = (destination) => {
     setSelectedDestination(destination);
     countryCatcher(destination)
-
   };
 
   const languageCheck = () => {

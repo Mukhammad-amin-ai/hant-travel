@@ -24,7 +24,7 @@ import Alert from '@/components/common/alert'
 import {useSelector} from "react-redux";
 
 
-const Banner1Bottom = ({data}) => {
+const Banner1Bottom = ({data,search}) => {
   const router = useRouter();
   const [country, setCountry] = useState("");
   const [type, setType] = useState("");
@@ -266,7 +266,7 @@ const Banner1Bottom = ({data}) => {
                     </div>
                   </div>
                   <button type="submit" color="#fff">
-                    Search
+                    {search}
                   </button>
                 </form>
               </div>
@@ -293,7 +293,7 @@ const Banner1Bottom = ({data}) => {
                             destination={data ? data?.[0].title : ""}
                             data={destination}
                             language={language}
-                            contryCatcher={countryCatcher}
+                            countryCatcher={countryCatcher}
                           />
                         </div>
                       </div>
@@ -326,7 +326,7 @@ const Banner1Bottom = ({data}) => {
                     </div>
                   </div>
                   <button type="submit" style={{color: "#fff !important"}}>
-                    Search
+                    {search}
                   </button>
                 </form>
               </div>

@@ -7,7 +7,6 @@ import DestinationSearch from "@/components/banner/DestinationSearch";
 import TourTypeDropdown from "@/components/banner/TourTypeDropdown";
 import destination from "@/data/custom/destination.json";
 import visa from "@/data/custom/visa.json";
-import Tour from "@/data/custom/tour.json";
 
 import destEn from '@/data/en/destination.json'
 import destRu from '@/data/ru/destination.json'
@@ -68,7 +67,7 @@ const page = () => {
     //   PAGINATION ============================
     const [currentPage, setCurrentPage] = useState(1)
     let itemsPerPage = 6
-    const totalPages = Math.ceil(Tour.length / itemsPerPage)
+    const totalPages = Math.ceil(visa.length / itemsPerPage)
 
     const pageNumbers = Array.from({length: totalPages}, (_, index) => index + 1);
     const startIndex = (currentPage - 1) * itemsPerPage;

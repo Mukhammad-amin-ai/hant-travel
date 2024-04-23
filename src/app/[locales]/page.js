@@ -205,7 +205,7 @@ export default function Home() {
     <>
       <Header/>
       <Banner banner={t("book")}/>
-      <BannerBottom data={bannerBottom}/>
+      <BannerBottom data={bannerBottom} search={t("search")}/>
       <Destination data={tour}/>
       <HomeFacilities title={facility} book={t("book")}/>
       <VideoSection title={video} book={t("book")}/>
