@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "O'zbekistonga viza kerakmi?",
+    "content": "Bu sizning millatingizga bog'liq. Viza talablari va ariza berish tartib-qoidalarini aniqlash uchun safaringizdan oldin o'z mamlakatingizdagi O'zbekiston elchixonasi yoki konsulligiga murojaat qiling"
+  },
+  {
+    "id": 2,
+    "title": "O'zbekistonda valyuta nima?",
+    "content": "O'zbekiston Som (so'm) milliy valyutadir. Hant Travel nufuzli valyuta ayirboshlash joylari va eng yaxshi valyuta kurslari haqida maslahat berishi mumkin. O'zbekistonning yirik shaharlarida bankomatlar keng tarqalmoqda, ammo kelgandan keyin naqd pul olib yurish har doim oqilona."
+  },
+  {
+    "id": 3,
+    "title": "Nima kiyish kerak",
+    "content": "O'zbekiston kontinental iqlimga ega, yozi issiq, qishi sovuq. Siz sayohat qiladigan mavsumga mos ravishda to'plang. Konservativ kiyim, ayniqsa yirik shaharlardan tashqarida qadrlanadi. Yengli uzun shim va ko'ylaklar, ayniqsa diniy joylarga tashrif buyurganingizda tavsiya etiladi."
+  },
+  {
+    "id": 4,
+    "title": "Savdolashish",
+    "content": "Bozorlar va bozorlarda savdolashish kutilmoqda. Muloyim bo'ling va muzokaralar jarayonidan zavqlaning!"
+  },
+  {
+    "id": 5,
+    "title": "Oziq-ovqat va ichimlik",
+    "content": "O'zbek oshxonasi mazali va mazali. Sarguzashtli bo'ling va yangi taomlarni sinab ko'ring! Musluk suvini ichish odatda xavfsiz emas, shuning uchun shisha suvga yopishib oling."
+  }
+]

@@ -108,6 +108,9 @@
   "Reviews": {
     "title": "Reviews",
     "subtitle": "Reviews From Travelers"
+  },
+  "faq": {
+    "breadcrumbs": "FAQ"
   }
 }
 

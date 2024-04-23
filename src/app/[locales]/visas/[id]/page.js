@@ -210,12 +210,9 @@ const page = ({params}) => {
   };
 
 
-
   useEffect(() => {
     LanguageChecker()
   }, [language]);
-
-
   return (
     <>
       <Breadcrumb pagename={text.breadcrumbs} pagetitle={text.breadcrumbs}/>

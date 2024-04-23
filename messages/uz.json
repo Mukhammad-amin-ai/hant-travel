@@ -108,6 +108,9 @@
   "Reviews": {
     "title": "Sharhlar",
     "subtitle": "Sayohatchilarning Sharhlari"
+  },
+  "faq": {
+    "breadcrumbs": "Ko'p beriladigan savollar"
   }
 }
 

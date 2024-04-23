@@ -3,6 +3,7 @@ import Header from "@/components/header/Header";
 import {useTranslations} from "next-intl";
 import React from "react";
 import Breadcrumb from "@/components/common/Breadcrumb";
+
 export const metadata = {
   title: "HANT TRAVEL",
   description:
@@ -14,6 +15,7 @@ export const metadata = {
 const layout = ({children}) => {
   const t = useTranslations("banner")
   const fo = useTranslations("footer")
+  const faq = useTranslations("faq")
   const footer = [
     {
       text: fo("title")
@@ -45,8 +47,8 @@ const layout = ({children}) => {
   ]
   return (
     <>
-      <Header />
-      <Breadcrumb pagename="FAQ" pagetitle="FAQ" />
+      <Header/>
+      <Breadcrumb pagename={faq("breadcrumbs")} pagetitle={faq("breadcrumbs")}/>
       {children}
       <Footer data={footer} book={t("book")}/>
     </>

@@ -3,12 +3,19 @@ import React, {useEffect, useState} from "react";
 import generalEn from "@/data/en/faqGeneral.json"
 import generalRu from "@/data/ru/faqGeneral.json"
 import generalUz from "@/data/uz/faqGeneral.json"
+import travelEn from '@/data/en/travelTips.json'
+import travelRu from '@/data/ru/travelTips.json'
+import travelUz from '@/data/uz/travelTips.json'
 import {useSelector} from "react-redux";
 
 const page = () => {
   const language = useSelector((state) => state.language.languageValue)
   const [general,setGeneral]=useState(generalEn)
-
+  const [tips,setTips]=useState(travelEn)
+  const [text,setText]=useState({
+    general:"General",
+    tips:"Travel Tips"
+  })
   const [activeId, setActiveId] = useState('');
   const [active, setActive] = useState('');
   const toggleCollapse = (id) => {
@@ -20,12 +27,27 @@ const page = () => {
   let languageChecker = ()=>{
     if(language === 'en'){
       setGeneral(generalEn)
+      setTips(travelEn)
+      setText({
+        general:"General",
+        tips:"Travel Tips"
+      })
     }
     if(language === 'ru'){
       setGeneral(generalRu)
+      setTips(travelRu)
+      setText({
+        general:"Oсновной",
+        tips:"Советы путешественникам"
+      })
     }
     if(language === 'uz'){
       setGeneral(generalUz)
+      setTips(travelUz)
+      setText({
+        general:"Umumiy",
+        tips:"Sayohat bo'yicha maslahatlar"
+      })
     }
   }
 
@@ -41,7 +63,7 @@ const page = () => {
               <div className="faq-content-wrap mb-80">
                 <div className="faq-content-title mb-50">
                   <h3>
-                    General
+                    {text.general}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={23}
@@ -105,7 +127,7 @@ const page = () => {
               <div className="faq-content-wrap">
                 <div className="faq-content-title mb-50">
                   <h3>
-                    Travel Tips
+                    {text.tips}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={23}
@@ -121,7 +143,7 @@ const page = () => {
                 </div>
                 <div className="faq-content">
                   <div className="accordion" id="accordionTravel2">
-                    {general.map((item, index) => {
+                    {tips.map((item, index) => {
                       const collapse = `travelcollape${index + 1}`;
                       const isCollapsed = collapse !== active;
                       return (
