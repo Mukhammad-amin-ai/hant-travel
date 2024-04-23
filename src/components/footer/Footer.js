@@ -138,7 +138,17 @@ const Footer = ({data, book}) => {
                     <ul>
                       <li>
                         <img
-                          src="/assets/img/home1/icon/visa-logo.svg"
+                          width={35}
+                          height={25}
+                          src="/assets/images/logos/78027.webp"
+                          alt=""
+                        />
+                      </li>
+                      <li>
+                        <img
+                          width={35}
+                          height={25}
+                          src="/assets/images/logos/78402.webp"
                           alt=""
                         />
                       </li>
