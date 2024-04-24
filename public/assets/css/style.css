@@ -16136,7 +16136,7 @@ form
     }
 
     .home1-banner-bottom {
-        margin-top: -50px;
+        margin-top:100px;
         margin-bottom: 150px;
     }
 }
@@ -16177,6 +16177,9 @@ form
 
     .banner-content-bottom {
         display: none !important;
+    }
+    .home1-banner-bottom {
+        margin-top:-50px;
     }
 }
 
