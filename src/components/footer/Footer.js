@@ -78,7 +78,7 @@ const Footer = ({data, book}) => {
                     </svg>
                     <h5>{data ? data?.[2].text : " "}</h5>
                   </div>
-                  <a href="tel:999858624984">+998-91-123-45-67</a>
+                  <a href="tel:998979297315">+998-97-929-73-15</a>
                 </div>
                 <div className="single-contact mb-35">
                   <div className="widget-title">
