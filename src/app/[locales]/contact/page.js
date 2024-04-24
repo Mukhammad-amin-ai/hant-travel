@@ -1,5 +1,5 @@
 "use client"
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import {useSelector} from "react-redux";
 
 const page = () => {
@@ -11,7 +11,7 @@ const page = () => {
     open: "Opening Time",
     reach: "Reach Us Anytime",
     name: "Full Name",
-    phone: "Phone Number",
+    country: "Where Are You From",
     email: "Email Address",
     write: "Write Your Massage",
     submit: "Submit Now"
@@ -24,7 +24,7 @@ const page = () => {
         open: "Opening Time",
         reach: "Reach Us Anytime",
         name: "Full Name",
-        phone: "Phone Number",
+        country: "Where Are You From",
         email: "Email Address",
         write: "Write Your Massage",
         submit: "Submit Now"
@@ -37,10 +37,10 @@ const page = () => {
         open: "Время открытия",
         reach: "Свяжитесь с нами в любое время",
         name: "Полное имя",
-        phone: "Номер телефона",
+        country: "Откуда вы",
         email: "Адрес электронной почты",
         write: "Напиши Cвой Cообщение",
-        message: "Отправить"
+        submit: "Отправить"
       })
     }
     if (language === 'uz') {
@@ -50,11 +50,45 @@ const page = () => {
         open: "Ochilish Vaqti",
         reach: "Xoxlagan Vaqtda Biz bilan Bog'laning",
         name: "To'liq F.I.SH",
-        phone: "Telefon Nomer",
+        country: "Qayerdan Siz",
         email: "Elektron Addres",
         write: "Xabaringizni Yozing",
         submit: "Yubormoq"
       })
+    }
+  }
+
+  let fullName = useRef("")
+  let email = useRef("")
+  let country = useRef("")
+  let message = useRef("")
+
+
+  let sendMail = async (e)=>{
+    e.preventDefault()
+
+    let obj = {
+      user_name : fullName.current.value,
+      user_email:email.current.value,
+      user_address:country.current.value,
+      user_message:message.current.value
+    }
+
+    try{
+      let response = await fetch("/api/contactUs", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(obj),
+      });
+      const data = await response.json();
+      if (data?.success) {
+        window.location.reload()
+      }
+    }
+    catch(e){
+      console.error(e)
     }
   }
 
@@ -185,30 +219,30 @@ const page = () => {
             <div className="col-lg-7">
               <div className="contact-form-area">
                 <h3>{text.reach}</h3>
-                <form>
+                <form onSubmit={sendMail}>
                   <div className="row">
                     <div className="col-lg-12 mb-20">
                       <div className="form-inner">
                         <label>{text.name}*</label>
-                        <input type="text"/>
+                        <input type="text" ref={fullName}/>
                       </div>
                     </div>
                     <div className="col-lg-6 mb-20">
                       <div className="form-inner">
-                        <label>{text.phone}</label>
-                        <input type="text"/>
+                        <label>{text.country}</label>
+                        <input type="text" ref={country}/>
                       </div>
                     </div>
                     <div className="col-lg-6 mb-20">
                       <div className="form-inner">
                         <label>{text.email}</label>
-                        <input type="email"/>
+                        <input type="email" ref={email}/>
                       </div>
                     </div>
                     <div className="col-lg-12 mb-30">
                       <div className="form-inner">
                         <label>{text.write}*</label>
-                        <textarea defaultValue={""}/>
+                        <textarea defaultValue={""} ref={message}/>
                       </div>
                     </div>
                     <div className="col-lg-12">

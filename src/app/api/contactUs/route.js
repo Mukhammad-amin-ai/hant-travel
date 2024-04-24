@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 
 export async function POST(req, res) {
   try {
-    const {user_name,  user_email,user_adress,user_message, tour_date,tour_name, pax} = await req.json();
+    const {user_name,  user_email,user_address,user_message} = await req.json();
     const transporter = nodemailer.createTransport({
       host: "smtp-relay.brevo.com",
       port: 587,
@@ -23,10 +23,7 @@ export async function POST(req, res) {
       text: `
             Client Name:${user_name}
             Client Email: ${user_email}
-            Client From: ${user_adress}
-            Tour Name : ${tour_name}
-            Tour Data Choused by Client : ${tour_date}
-            Pax : ${pax}
+            Client From: ${user_address}
             ==========================================
             Clients Message: ${user_message}
             `
@@ -36,7 +33,7 @@ export async function POST(req, res) {
     console.log("Email sent:", info.response);
     return NextResponse.json({
       success: true,
-      message: "Your free trial request has been sent ",
+      message: "Your free  request has been sent ",
     });
   } catch (error) {
     console.error("Error:", error);
