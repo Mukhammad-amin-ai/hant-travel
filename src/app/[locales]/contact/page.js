@@ -1,14 +1,66 @@
-import React from "react";
-
-export const metadata = {
-  title: "HANT TRAVEL",
-  description: "Contact us",
-  icons: {
-    icon: "/assets/img/sm-logo.svg",
-  },
-};
+"use client"
+import {useEffect, useState} from "react";
+import {useSelector} from "react-redux";
 
 const page = () => {
+
+  const language = useSelector(state => state.language.languageValue);
+  const [text, setText] = useState({
+    mail: "Email Now",
+    location: "Location",
+    open: "Opening Time",
+    reach: "Reach Us Anytime",
+    name: "Full Name",
+    phone: "Phone Number",
+    email: "Email Address",
+    write: "Write Your Massage",
+    submit: "Submit Now"
+  });
+  const languageChecker = () => {
+    if (language === 'en') {
+      setText({
+        mail: "Email Now",
+        location: "Location",
+        open: "Opening Time",
+        reach: "Reach Us Anytime",
+        name: "Full Name",
+        phone: "Phone Number",
+        email: "Email Address",
+        write: "Write Your Massage",
+        submit: "Submit Now"
+      })
+    }
+    if (language === 'ru') {
+      setText({
+        mail: "Написать сейчас",
+        location: "Местоположение",
+        open: "Время открытия",
+        reach: "Свяжитесь с нами в любое время",
+        name: "Полное имя",
+        phone: "Номер телефона",
+        email: "Адрес электронной почты",
+        write: "Напиши Cвой Cообщение",
+        message: "Отправить"
+      })
+    }
+    if (language === 'uz') {
+      setText({
+        mail: "Electron Pochta",
+        location: "Manzil",
+        open: "Ochilish Vaqti",
+        reach: "Xoxlagan Vaqtda Biz bilan Bog'laning",
+        name: "To'liq F.I.SH",
+        phone: "Telefon Nomer",
+        email: "Elektron Addres",
+        write: "Xabaringizni Yozing",
+        submit: "Yubormoq"
+      })
+    }
+  }
+
+  useEffect(() => {
+    languageChecker()
+  }, [language]);
   return (
     <>
       <div className="contact-page pt-120 mb-120">
@@ -36,16 +88,13 @@ const page = () => {
                 </div>
                 <div className="content">
                   <h6>
-                    <a href="tel:">+998-91-123-45-67</a>
-                  </h6>
-                  <h6>
-                    <a href="tel:">+998-91-123-45-67</a>
+                    <a href="tel:998-97-929-73-15">+998-97-929-73-15</a>
                   </h6>
                 </div>
               </div>
               <div className="single-contact mb-40">
                 <div className="title">
-                  <h6>Email Now</h6>
+                  <h6>{text.mail}</h6>
                 </div>
                 <div className="icon">
                   <svg
@@ -60,16 +109,13 @@ const page = () => {
                 </div>
                 <div className="content">
                   <h6>
-                    <a href="mailto:info@example.com">info@example.com</a>
-                  </h6>
-                  <h6>
-                    <a href="mailto:example@example.com">example@example.com</a>
+                    <a href="mailto:info@hant-travel.com">info@hant-travel.com</a>
                   </h6>
                 </div>
               </div>
               <div className="single-contact mb-40">
                 <div className="title">
-                  <h6>Location</h6>
+                  <h6>{text.location}</h6>
                 </div>
                 <div className="icon">
                   <svg
@@ -94,7 +140,7 @@ const page = () => {
               </div>
               <div className="single-contact">
                 <div className="title">
-                  <h6>Opening Time</h6>
+                  <h6>{text.open}</h6>
                 </div>
                 <div className="icon">
                   <svg
@@ -138,34 +184,31 @@ const page = () => {
             </div>
             <div className="col-lg-7">
               <div className="contact-form-area">
-                <h3>Reach Us Anytime</h3>
+                <h3>{text.reach}</h3>
                 <form>
                   <div className="row">
                     <div className="col-lg-12 mb-20">
                       <div className="form-inner">
-                        <label>Name*</label>
-                        <input type="text" placeholder="Daniel Scoot"/>
+                        <label>{text.name}*</label>
+                        <input type="text"/>
                       </div>
                     </div>
                     <div className="col-lg-6 mb-20">
                       <div className="form-inner">
-                        <label>Phone</label>
-                        <input type="text" placeholder="Phone Number..."/>
+                        <label>{text.phone}</label>
+                        <input type="text"/>
                       </div>
                     </div>
                     <div className="col-lg-6 mb-20">
                       <div className="form-inner">
-                        <label>Email</label>
-                        <input type="email" placeholder="Email Us...."/>
+                        <label>{text.email}</label>
+                        <input type="email"/>
                       </div>
                     </div>
                     <div className="col-lg-12 mb-30">
                       <div className="form-inner">
-                        <label>Write Your Massage*</label>
-                        <textarea
-                          placeholder="What’s on your mind"
-                          defaultValue={""}
-                        />
+                        <label>{text.write}*</label>
+                        <textarea defaultValue={""}/>
                       </div>
                     </div>
                     <div className="col-lg-12">
@@ -174,7 +217,7 @@ const page = () => {
                           className="primary-btn1 btn-hover"
                           type="submit"
                         >
-                          Submit Now
+                          {text.submit}
                         </button>
                       </div>
                     </div>

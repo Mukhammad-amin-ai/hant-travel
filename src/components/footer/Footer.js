@@ -95,7 +95,7 @@ const Footer = ({data, book}) => {
                     </svg>
                     <h5>{data ? data?.[3].text : " "}</h5>
                   </div>
-                  <a href="mailto:info@example.com">info@example.com</a>
+                  <a href="mailto:info@hant-travel.com">info@hant-travel.com</a>
                 </div>
                 <div className="single-contact">
                   <div className="widget-title">
