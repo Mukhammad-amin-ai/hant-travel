@@ -91,13 +91,14 @@ const page = ({params}) => {
       })
       const data = await response.json();
       if (data?.success) {
-        // console.log("Message send")
-        // window.location.reload()\
-        setModalOpen('exampleModal')
+        if (data?.success) {
+          setModalOpen('Your Email Successfully sent ')
+        }
       }
 
     } catch (e) {
       console.error("Error sending visa document:", e);
+      setModalOpen("Something went wrong")
     }
   }
 
@@ -216,7 +217,7 @@ const page = ({params}) => {
   return (
     <>
       <Breadcrumb pagename={text.breadcrumbs} pagetitle={text.breadcrumbs}/>
-      <Modal/>
+      <Modal text={modalOpen}/>
       <div className="visa-details-pages pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5">
@@ -392,7 +393,7 @@ const page = ({params}) => {
                     </div>
                     <div className="form-inner">
                       <button type="submit" className="primary-btn1 two " data-bs-toggle="modal"
-                              data-bs-target={`#${modalOpen}`}>
+                              data-bs-target="#exampleModal">
                         {text.submit}
                       </button>
                     </div>

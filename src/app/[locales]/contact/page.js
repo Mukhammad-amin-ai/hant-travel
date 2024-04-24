@@ -1,6 +1,8 @@
 "use client"
 import {useEffect, useRef, useState} from "react";
 import {useSelector} from "react-redux";
+import Modal from "@/components/common/Modal";
+
 
 const page = () => {
 
@@ -57,24 +59,23 @@ const page = () => {
       })
     }
   }
-
+  const [modalOpen, setModalOpen] = useState("")
   let fullName = useRef("")
   let email = useRef("")
   let country = useRef("")
   let message = useRef("")
 
-
-  let sendMail = async (e)=>{
+  let sendMail = async (e) => {
     e.preventDefault()
 
     let obj = {
-      user_name : fullName.current.value,
-      user_email:email.current.value,
-      user_address:country.current.value,
-      user_message:message.current.value
+      user_name: fullName.current.value,
+      user_email: email.current.value,
+      user_address: country.current.value,
+      user_message: message.current.value
     }
 
-    try{
+    try {
       let response = await fetch("/api/contactUs", {
         method: "POST",
         headers: {
@@ -84,11 +85,11 @@ const page = () => {
       });
       const data = await response.json();
       if (data?.success) {
-        window.location.reload()
+        setModalOpen('Your Email Successfully sent ')
       }
-    }
-    catch(e){
-      console.error(e)
+    } catch (error) {
+      console.error("Error sending email:", error);
+      setModalOpen("Something went wrong")
     }
   }
 
@@ -97,6 +98,7 @@ const page = () => {
   }, [language]);
   return (
     <>
+      <Modal text={modalOpen}/>
       <div className="contact-page pt-120 mb-120">
         <div className="container">
           <div className="row g-lg-4 gy-5">
@@ -250,6 +252,7 @@ const page = () => {
                         <button
                           className="primary-btn1 btn-hover"
                           type="submit"
+                          data-bs-toggle="modal" data-bs-target="#exampleModal"
                         >
                           {text.submit}
                         </button>

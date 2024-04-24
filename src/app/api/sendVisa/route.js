@@ -19,7 +19,7 @@ export async function POST(req, res) {
         const mailOptions = {
             from: user_email,
             to: "aminahmadov123@gmail.com",
-            subject: "Sending email through SMTP",
+            subject: "Email from Visa Application",
             text: `
             Client Name:${user_name}
             Client Email: ${user_email}

@@ -1,21 +1,25 @@
 import React from 'react';
 
-const Modal = () => {
+const Modal = ({text} ) => {
+
+  let clear = ()=>{
+    window.location.reload();
+  }
+
   return (
     <>
-      <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel"
-           aria-hidden="true">
-        <div className="modal-dialog">
+      <div className="modal" id="exampleModal" tabIndex="-1">
+        <div className="modal-dialog  modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h5 className="modal-title">Message</h5>
+              <button onClick={clear} type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
-              Your Message Have Sent
+              <p>{text}</p>
             </div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+              <button onClick={clear} type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>

@@ -12,14 +12,14 @@ export async function POST(req, res) {
       port: 587,
       secure: false,
       auth: {
-        user: "aminahmadov123@gmail.com",
+        user: process.env.SMTP_USER,
         pass: "xsmtpsib-a7b4c92167974fdb50fa342e4a83f276ea7d8b2bb4b0e94581cc171376d641d0-29ULaZGTzSOXk1cR",
       },
     });
     const mailOptions = {
       from: user_email,
       to: "aminahmadov123@gmail.com",
-      subject: "Sending email through SMTP",
+      subject: "Email from Contact Us",
       text: `
             Client Name:${user_name}
             Client Email: ${user_email}

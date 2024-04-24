@@ -5,6 +5,7 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import {useEffect, useRef, useState} from "react";
 import QuantityCounter from "@/uitils/QuantityCounter";
 import Breadcrumb from "@/components/common/Breadcrumb";
+import Modal from "@/components/common/Modal";
 import DatePicker from "react-datepicker";
 
 import En from '@/data/en/packageShow.json'
@@ -106,10 +107,11 @@ const Page = ({params}) => {
       });
       const data = await response.json();
       if (data?.success) {
-        setModalOpen('exampleModal')
+        setModalOpen('Your Email Successfully sent ')
       }
     } catch (error) {
       console.error("Error sending email:", error);
+      setModalOpen("Something went wrong")
     }
   };
 
@@ -232,6 +234,7 @@ const Page = ({params}) => {
   return (
     <>
       <Breadcrumb pagename={text.breadcrumbs} pagetitle={text.breadcrumbs}/>
+      <Modal text={modalOpen} />
       <div className="package-details-area pt-120 mb-120 position-relative">
         <div className="container">
           <div className="row">
@@ -599,6 +602,7 @@ const Page = ({params}) => {
                       <button
                         onClick={() => GotoForm()}
                         className="primary-btn1 two"
+
                       >
                         {text.bookNow}
                       </button>
@@ -658,7 +662,7 @@ const Page = ({params}) => {
                           type="Submit"
                           onClick={() => handleSendEmail()}
                           className="primary-btn1 two"
-                          data-bs-toggle="modal" data-bs-target={`#${modalOpen}`}
+                          data-bs-toggle="modal" data-bs-target="#exampleModal"
                         >
                           {text.submit}
                         </button>
