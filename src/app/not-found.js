@@ -2,7 +2,6 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Link from "next/link";
 import React from "react";
-
 const Not_found = () => {
   return (
     <>

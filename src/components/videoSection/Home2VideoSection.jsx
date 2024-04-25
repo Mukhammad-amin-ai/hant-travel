@@ -45,7 +45,7 @@ const Home2VideoSection = ({book,title}) => {
                     <h1>{title ? title?.[1].title : ""}</h1>
                   </div>
                   <Link
-                    href={`${language}/package?type=Piligrimage`}
+                    href={`${language}/package?type=Pilgrimage`}
                     className="primary-btn2"
                   >
                     {book}

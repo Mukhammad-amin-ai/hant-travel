@@ -61,6 +61,7 @@ const page = () => {
   })
   // ============================================================
   let handleCheckboxChange = (index, name) => {
+    console.log(name)
     setCheckedIndex(index);
     setNameTour(name);
     setCountryCheck(true)
@@ -110,6 +111,10 @@ const page = () => {
     setCheckedIndex(-1);
     setTourCheck(-1);
     window.scrollTo(0, 200);
+
+    if(search !== '' && typeOdour !== '' && days !== ''){
+      router.push(`/${language}/package`)
+    }
   };
 
   let countryIdFinder = () => {
@@ -118,7 +123,7 @@ const page = () => {
         let searchVar = desEn
         let idOfTour = searchVar.filter((item) => item.name === search);
         if (idOfTour.length === 0) {
-          router.push('/not_found')
+          router.push(`/${language}/not-found`)
         } else {
           return idOfTour[0]?.id;
         }
@@ -128,7 +133,7 @@ const page = () => {
         let idOfTour = searchVar.filter((item) => item.name === search);
         console.log(idOfTour)
         if (idOfTour.length === 0) {
-          router.push('/not_found')
+          router.push(`/${language}/not-found`)
         } else {
           return idOfTour[0]?.id;
         }
@@ -137,7 +142,7 @@ const page = () => {
         let searchVar = desUz
         let idOfTour = searchVar.filter((item) => item.name === search);
         if (idOfTour.length === 0) {
-          router.push('/not_found')
+          router.push(`/${language}/not-found`)
         } else {
           return idOfTour[0]?.id;
         }
@@ -151,7 +156,7 @@ const page = () => {
         let typeVar = typeEn
         let idOfTour = typeVar.filter((item) => item.type === typeOdour);
         if (idOfTour.length === 0) {
-          router.push('/not_found')
+          router.push(`/${language}/not-found`)
         } else {
           return idOfTour[0]?.id;
         }
@@ -160,7 +165,7 @@ const page = () => {
         let typeVar = typeRu
         let idOfTour = typeVar.filter((item) => item.type === typeOdour);
         if (idOfTour.length === 0) {
-          router.push('/not_found')
+          router.push(`/${language}/not-found`)
         } else {
           return idOfTour[0]?.id;
         }
@@ -169,7 +174,7 @@ const page = () => {
         let typeVar = typeUz
         let idOfTour = typeVar.filter((item) => item.type === typeOdour);
         if (idOfTour.length === 0) {
-          router.push('/not_found')
+          router.push(`/${language}/not-found`)
         } else {
           return idOfTour[0]?.id;
         }
