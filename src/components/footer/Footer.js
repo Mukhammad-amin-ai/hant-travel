@@ -113,7 +113,7 @@ const Footer = ({data, book}) => {
                     <h5>{data ? data?.[4].text : " "}</h5>
                   </div>
                   <a
-                    href="https://www.google.com/maps/place/Egens+Lab/@23.8340712,90.3631117,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c14c8682a473:0xa6c74743d52adb88!8m2!3d23.8340663!4d90.3656866!16s%2Fg%2F11rs9vlwsk?entry=ttu">
+                    href="https://maps.app.goo.gl/W3K9DuidBY1Sbgj4A">
                     Samarkand,Uzbekistan
                   </a>
                 </div>
