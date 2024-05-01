@@ -153,9 +153,9 @@ const Footer = ({data, book}) => {
                         />
                       </li>
                     </ul>
-                    <Link href="/sitemap.xml" color={"#fff"}>
+                    <a href="/sitemap.xml" color={"#fff"}>
                       Sitemap
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
