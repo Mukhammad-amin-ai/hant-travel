@@ -137,9 +137,17 @@ const Home1Fecilities2 = ({title, book}) => {
                             </div>
                             <div className="card-content-bottom">
                               <div className="price-area">
-                                <h6>Starting Form:</h6>
+                                <h6>
+                                  {
+                                    title ? title?.[2].title : ""
+                                  }
+                                </h6>
                                 <span>$ {item.price}</span>
-                                <p>TAXES INCL/PERS</p>
+                                <p>
+                                  {
+                                    title ? title?.[3].title : ""
+                                  }
+                                </p>
                               </div>
                               <Link
                                 href={`${language}/package/${item.id}`}

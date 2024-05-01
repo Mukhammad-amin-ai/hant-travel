@@ -74,6 +74,12 @@ export default function Home() {
     },
     {
       title: f("subTitle"),
+    },
+    {
+      title: f("start"),
+    },
+    {
+      title: f("per"),
     }
   ]
   const video = [
@@ -96,6 +102,12 @@ export default function Home() {
     },
     {
       title: a("view")
+    },
+    {
+      title: f("start"),
+    },
+    {
+      title: f("per"),
     }
   ]
   const why = [

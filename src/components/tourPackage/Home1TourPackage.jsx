@@ -136,9 +136,13 @@ const Home1TourPackage = ({book, data}) => {
                     </div>
                     <div className="card-content-bottom">
                       <div className="price-area">
-                        <h6>Starting Form:</h6>
+                        <h6> {
+                          data ? data?.[3].title : ""
+                        }</h6>
                         <span>$ {item.price}</span>
-                        <p>TAXES INCL/PERS</p>
+                        <p> {
+                          data ? data?.[4].title : ""
+                        }</p>
                       </div>
                       <Link
                         href={`${langTour}/package/${item.id}`}

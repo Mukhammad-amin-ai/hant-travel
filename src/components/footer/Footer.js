@@ -34,7 +34,7 @@ const Footer = ({data, book}) => {
               <div className="footer-widget">
                 <div className="footer-logo">
                   <Link href={`/${language}`}>
-                    <img src="/assets/img/logo.svg" alt=""/>
+                    <img src="/assets/img/logo3.svg" alt=""/>
                   </Link>
                 </div>
                 <h3>
@@ -153,6 +153,9 @@ const Footer = ({data, book}) => {
                         />
                       </li>
                     </ul>
+                    <Link href="/sitemap.xml" color={"#fff"}>
+                      Sitemap
+                    </Link>
                   </div>
                 </div>
               </div>

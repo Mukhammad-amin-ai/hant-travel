@@ -15,12 +15,16 @@
   },
   "facility": {
     "title": "Sarguzashtlar",
-    "subTitle": "Top turlar"
+    "subTitle": "Top turlar",
+    "start": "Boshlash:",
+    "per": "Soliqlar"
   },
   "affordable": {
     "title": "Xotiralar Osonlashdi",
     "subtitle":"Ta'tilni Arzon Rejalashtirish",
-    "view": "Barcha Paketlarni Ko'rish"
+    "view": "Barcha Paketlarni Ko'rish",
+    "start": "Boshlash:",
+    "per": "Soliqlar"
   },
   "video": {
     "save": "Dunyo bo'ylab tejash",

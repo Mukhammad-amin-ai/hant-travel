@@ -15,12 +15,16 @@
   },
   "facility": {
     "title": "Unveiled Adventures",
-    "subTitle": "Immerse Yourself in Top Tours"
+    "subTitle": "Immerse Yourself in Top Tours",
+    "start": "Starting Form:",
+    "per": "TAXES INCL/PERS"
   },
   "affordable": {
     "title": "Memories Made Easy",
     "subtitle": "Affordable Vacation Planning",
-    "view": "View All Package"
+    "view": "View All Package",
+    "start": "Starting Form:",
+    "per": "TAXES INCL/PERS"
   },
   "video": {
     "save": "Savings worldwide",
